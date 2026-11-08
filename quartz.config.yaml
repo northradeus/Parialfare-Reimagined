@@ -169,7 +169,7 @@ plugins:
     options:
       links:
         "Reading Room": "./"
-        "Author: Chhum Pichthyachhanan": "https://northradeus.github.io/Parialfare-Reimagined/"
+        "Author: Chhum Pichthyachhanan": "https://northrad.carrd.co/"
     layout:
       position: footer
       priority: 50
