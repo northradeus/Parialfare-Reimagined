@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-faction">
 <h3>Konish's Group</h3>
-<img src="Assets/20240917_153834.png" alt="Konish's Group" />
+<img src="Assets/Konish's Group Emblem.png" alt="Konish's Group" />
 <table>
 <tr><th>Title</th><td>Konish's Group</td></tr>
 <tr><th>Subtitle</th><td>Transnational Cladish umbrella coalition</td></tr>

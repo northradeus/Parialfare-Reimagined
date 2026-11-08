@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-country">
 <h3>Kingdom of the Ai'ron Land</h3>
-<img src="Assets/ChatGPT Image Nov 4- 2026- 10_50_03 PM.jpg" alt="Kingdom of the Ai'ron Land" />
+<img src="Assets/Ironland Flag.jpg" alt="Kingdom of the Ai'ron Land" />
 <table>
 <tr><th>Title</th><td>Kingdom of the Ai'ron Land</td></tr>
 <tr><th>Subtitle</th><td>Desteina Reamchea O'Airon</td></tr>
