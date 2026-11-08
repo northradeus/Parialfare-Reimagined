@@ -7,36 +7,52 @@ echo       NOLHEIM WIKI DEPLOYMENT SCRIPT
 echo =========================================
 echo.
 
-:: Navigate to the directory where this bat file is located
 cd /d "%~dp0"
 
-echo [1/3] Extracting and building content from vault...
+echo [1/4] Building content from vault...
 call node build-content.cjs
-
 if %ERRORLEVEL% NEQ 0 (
-    echo.
-    echo ERROR: Build failed. Please check the console output above.
-    pause
-    exit /b %ERRORLEVEL%
+    echo ERROR: Build failed. Check output above.
+    pause & exit /b %ERRORLEVEL%
 )
 echo.
 
-echo [2/3] Pushing changes to GitHub...
+echo [2/4] Pushing to GitHub...
 call npx quartz sync
-
 if %ERRORLEVEL% NEQ 0 (
-    echo.
-    echo ERROR: Failed to push to GitHub. Check your internet or git credentials.
-    pause
-    exit /b %ERRORLEVEL%
+    echo ERROR: Push failed. Check internet or git credentials.
+    pause & exit /b %ERRORLEVEL%
 )
 echo.
 
-echo [3/3] Deployment triggered!
-echo =========================================
-echo SUCCESS: Your site is building on GitHub.
-echo It will be live in about 1-2 minutes at:
-echo https://northradeus.github.io/Parialfare-Reimagined/
-echo =========================================
+echo [3/4] Waiting for GitHub Actions to deploy...
+echo (This takes 1-2 minutes. Do not close this window.)
+echo.
 
+where gh >nul 2>nul
+if %ERRORLEVEL% NEQ 0 (
+    echo WARNING: GitHub CLI ^(gh^) not installed.
+    echo Cannot wait for deployment status. Install with: winget install GitHub.cli
+    echo The push succeeded; check status manually at:
+    echo   https://github.com/northradeus/Parialfare-Reimagined/actions
+    goto :deploy_check_skipped
+)
+
+gh run watch --exit-status
+if %ERRORLEVEL% NEQ 0 (
+    echo.
+    echo ERROR: GitHub Actions workflow FAILED.
+    echo Open https://github.com/northradeus/Parialfare-Reimagined/actions to see the log.
+    pause & exit /b %ERRORLEVEL%
+)
+
+:deploy_check_skipped
+echo.
+echo [4/4] Deployment complete.
+echo =========================================
+echo SUCCESS: Site is live at:
+echo   https://northradeus.github.io/Parialfare-Reimagined/
+echo.
+echo If images look wrong, press Ctrl+Shift+R on the site.
+echo =========================================
 pause
