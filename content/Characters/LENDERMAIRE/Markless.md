@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Markless</h3>
+<img src="assets/markless.jpg" alt="Markless" />
 <table>
 <tr><th>Title</th><td>Markless</td></tr>
 <tr><th>Subtitle</th><td>Breacher of LENDERMAIRE</td></tr>

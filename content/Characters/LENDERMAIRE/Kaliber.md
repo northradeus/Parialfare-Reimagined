@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Kaliber</h3>
+<img src="assets/kaliber.jpg" alt="Kaliber" />
 <table>
 <tr><th>Title</th><td>Kaliber</td></tr>
 <tr><th>Subtitle</th><td>Shield specialist of LENDERMAIRE</td></tr>

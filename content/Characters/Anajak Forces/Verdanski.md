@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Verdanski</h3>
+<img src="assets/verdanski.png" alt="Verdanski" />
 <table>
 <tr><th>Title</th><td>Verdanski</td></tr>
 <tr><th>Subtitle</th><td>A+ facility-trained member of Anajak Forces</td></tr>

@@ -51,16 +51,23 @@ function parseImageField(raw) {
 
 const vaultImages = new Map();
 if (fs.existsSync(sourceAssets) && fs.statSync(sourceAssets).isDirectory()) {
-    for (const file of fs.readdirSync(sourceAssets)) {
-        const srcPath = path.join(sourceAssets, file);
-        if (fs.statSync(srcPath).isFile()) {
-            const outName = assetName(file);
-            // Register under multiple keys so lookups succeed regardless of format
-            vaultImages.set(file.toLowerCase(), outName);
-            vaultImages.set(outName.toLowerCase(), outName);
-            fs.copyFileSync(srcPath, path.join(destAssets, outName));
+    const walkAssets = (dir) => {
+        for (const file of fs.readdirSync(dir)) {
+            const srcPath = path.join(dir, file);
+            if (fs.statSync(srcPath).isDirectory()) {
+                walkAssets(srcPath);
+            } else {
+                const outName = assetName(file);
+                // Register under multiple keys so lookups succeed regardless of format
+                vaultImages.set(file.toLowerCase(), outName);
+                vaultImages.set(outName.toLowerCase(), outName);
+                if (!fs.existsSync(path.join(destAssets, outName))) {
+                    fs.copyFileSync(srcPath, path.join(destAssets, outName));
+                }
+            }
         }
-    }
+    };
+    walkAssets(sourceAssets);
 }
 
 const ignoreKeys = ['tags', 'entity-type', 'character-type', 'faction-type', 'location-type', 'concept-type', 'country-type', 'UID', 'continuity', 'subject', 'status', 'image', 'layout', 'aliases', 'alias'];

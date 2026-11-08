@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Tarnished</h3>
+<img src="assets/tarnished.jpg" alt="Tarnished" />
 <table>
 <tr><th>Title</th><td>Tarnished</td></tr>
 <tr><th>Subtitle</th><td>Former ITF special task force leader, volunteer of Anajak Forces</td></tr>

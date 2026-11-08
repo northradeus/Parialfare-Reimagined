@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Salmon</h3>
+<img src="assets/salmon.jpg" alt="Salmon" />
 <table>
 <tr><th>Title</th><td>Salmon</td></tr>
 <tr><th>Subtitle</th><td>Shock trooper of LENDERMAIRE</td></tr>

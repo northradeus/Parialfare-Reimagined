@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Medic</h3>
+<img src="assets/medic.jpg" alt="Medic" />
 <table>
 <tr><th>Title</th><td>Medic</td></tr>
 <tr><th>Subtitle</th><td>Combat medic of LENDERMAIRE</td></tr>
