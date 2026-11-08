@@ -1,88 +1,88 @@
 @use "./variables.scss" as *;
 
 // ==========================================
-// NOLHEIM: CLASSIFIED ARCHIVE THEME
-// Inspired by clinical intelligence dossiers.
+// NOLHEIM: WIKIPEDIA-STYLE REFERENCE
 // ==========================================
 
 // --- TYPOGRAPHY & BASE ---
 body {
   font-family: var(--bodyFont);
-  line-height: 1.8;
+  line-height: 1.6;
   color: var(--darkgray);
   background-color: var(--light);
+  font-size: 0.9rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--headerFont);
   color: var(--dark);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-top: 3rem;
-  margin-bottom: 1.25rem;
-  line-height: 1.2;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
 }
 
 h1 {
-  font-size: 2.8rem;
-  border-bottom: 2px solid var(--secondary);
-  padding-bottom: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 0.25rem;
 }
 
 h2 {
-  font-size: 1.8rem;
-  border-bottom: 1px solid var(--gray);
-  padding-bottom: 0.5rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
   font-size: 1.4rem;
+  font-weight: 400;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 0.2rem;
 }
 
 h3 {
-  font-size: 1.25rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--secondary);
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 0.8rem;
 }
 
 // --- LINKS ---
 a {
   color: var(--secondary);
   text-decoration: none;
-  border-bottom: 1px solid rgba(166, 83, 92, 0.4);
-  transition: all 0.2s ease;
 }
 
 a:hover {
-  background-color: var(--secondary);
-  color: var(--light);
-  border-bottom-color: transparent;
+  text-decoration: underline;
 }
 
 // --- LEAD PARAGRAPH ---
 p.lead {
-  font-size: 1.15rem;
-  line-height: 1.8;
-  color: var(--dark);
-  font-style: italic;
-  margin-bottom: 2.5rem;
-  border-left: 4px solid var(--secondary);
-  padding: 0.5rem 0 0.5rem 1.25rem;
-  background: linear-gradient(90deg, rgba(166, 83, 92, 0.05) 0%, transparent 100%);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--darkgray);
+  font-style: normal;
+  margin-bottom: 1rem;
+  border-left: none;
+  padding-left: 0;
+  background: none;
 }
 
-// --- INFOBOX BASE STYLES (DOSSIER PANEL) ---
+// --- INFOBOX BASE STYLES (WIKIPEDIA) ---
 .custom-infobox {
   float: right;
-  width: 360px;
-  margin: 0 0 2.5rem 3rem;
+  width: 280px;
+  max-width: min(42%, 100%);
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  margin: 0 0 1rem 1.5rem;
   background-color: var(--lightgray);
   border: 1px solid var(--gray);
-  border-top: 4px solid var(--secondary);
+  border-top: 2px solid var(--secondary);
   border-radius: 0;
-  padding: 1.5rem;
-  font-size: 0.9rem;
-  box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  box-shadow: none;
   clear: right;
 }
 
@@ -90,22 +90,23 @@ p.lead {
   width: 100%;
   height: auto;
   border-radius: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.5rem;
   display: block;
   border: 1px solid var(--gray);
-  filter: grayscale(20%) contrast(110%);
+  filter: none;
 }
 
 .custom-infobox h3 {
-  margin: 0 0 1rem 0;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--gray);
-  font-size: 1.1rem;
-  text-align: left;
-  color: var(--secondary);
-  font-family: var(--codeFont);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  margin: 0 0 0.5rem 0;
+  padding-bottom: 0.25rem;
+  border-bottom: none;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 600;
+  color: var(--dark);
+  font-family: var(--headerFont);
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .custom-infobox table {
@@ -118,69 +119,65 @@ p.lead {
   text-align: left;
   font-weight: 600;
   color: var(--dark);
-  font-family: var(--codeFont);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  padding: 8px 12px 8px 0;
+  font-family: var(--bodyFont);
+  font-size: 0.8rem;
+  text-transform: none;
+  letter-spacing: normal;
+  padding: 0.25rem 0.5rem 0.25rem 0;
   vertical-align: top;
   width: 35%;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid var(--lightgray);
 }
 
 .custom-infobox td {
-  padding: 8px 0;
+  padding: 0.25rem 0;
   vertical-align: top;
-  border-bottom: 1px solid var(--gray);
+  border-bottom: 1px solid var(--lightgray);
   color: var(--darkgray);
-  line-height: 1.5;
+  line-height: 1.4;
   font-family: var(--bodyFont);
+  font-size: 0.8rem;
 }
 
 // --- ARTICLE FAMILY ACCENTS ---
 .infobox-character { border-top-color: var(--tertiary); }
-.infobox-character h3 { color: var(--tertiary); }
-
 .infobox-faction { border-top-color: var(--secondary); }
-.infobox-faction h3 { color: var(--secondary); }
-
-.infobox-location, .infobox-country { border-top-color: var(--darkgray); }
-.infobox-location h3, .infobox-country h3 { color: var(--darkgray); }
-
+.infobox-location, .infobox-country { border-top-color: var(--gray); }
 .infobox-event { border-top-color: var(--secondary); }
-.infobox-event h3 { color: var(--secondary); }
 
 // --- MISSING VALUES (Semantic) ---
-.val-tbd { color: var(--gray); font-style: italic; font-size: 0.85rem; font-family: var(--codeFont); }
-.val-unknown { color: var(--secondary); font-style: italic; font-family: var(--codeFont); }
-.val-none { color: var(--darkgray); font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.5px; font-family: var(--codeFont); }
-.val-undefined { color: #ff4d4d; text-decoration: underline wavy; font-weight: bold; font-family: var(--codeFont); }
+.val-tbd { color: var(--gray); font-style: italic; }
+.val-unknown { color: var(--secondary); font-style: italic; }
+.val-none { color: var(--darkgray); font-weight: 600; text-transform: uppercase; font-size: 0.75rem; }
+.val-undefined { color: #ff4d4d; text-decoration: underline wavy; font-weight: bold; }
 
 // --- GENERAL TABLES ---
 table {
   width: 100%;
   border-collapse: collapse;
-  margin: 2rem 0;
-  font-size: 0.9rem;
+  margin: 1rem 0;
+  font-size: 0.8rem;
   border: 1px solid var(--gray);
 }
 
 th {
   background-color: var(--lightgray);
   color: var(--dark);
-  font-family: var(--codeFont);
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  font-weight: 700;
+  font-family: var(--bodyFont);
+  font-size: 0.8rem;
+  text-transform: none;
+  letter-spacing: normal;
+  font-weight: 600;
   text-align: left;
-  padding: 12px;
-  border-bottom: 2px solid var(--secondary);
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid var(--gray);
+  border-right: 1px solid var(--lightgray);
 }
 
 td {
-  padding: 12px;
-  border-bottom: 1px solid var(--gray);
+  padding: 0.25rem 0.5rem;
+  border-bottom: 1px solid var(--lightgray);
+  border-right: 1px solid var(--lightgray);
   color: var(--darkgray);
 }
 
@@ -189,16 +186,10 @@ td {
   .custom-infobox {
     float: none;
     width: 100%;
-    margin: 0 0 2rem 0;
+    max-width: 100%;
+    margin: 0 0 1rem 0;
     box-sizing: border-box;
-    padding: 1rem;
-  }
-  .custom-infobox th {
-    width: 40%;
-    padding-right: 8px;
-  }
-  p.lead {
-    font-size: 1.05rem;
+    padding: 0.5rem;
   }
 }
 
@@ -256,9 +247,86 @@ td {
 }
 
 // ==========================================
-// CATEGORY & CARD GRIDS (Claude's Defensive Layout)
+// SHARED CARD STYLES (Homepage + Category Grids)
 // ==========================================
 
+a.featured-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  background: var(--lightgray);
+  color: var(--darkgray);
+  border: 1px solid var(--gray);
+  text-decoration: none !important;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    border-color: var(--secondary);
+  }
+}
+
+.card-image {
+  display: block;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--light);
+  border-bottom: 1px solid var(--gray);
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    object-fit: cover;
+    object-position: top center;
+  }
+
+  &.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--light) 0%, var(--lightgray) 100%);
+    color: var(--gray);
+    font-family: var(--headerFont);
+    font-size: 4rem;
+    font-weight: 700;
+    opacity: 0.4;
+  }
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  padding: 1rem;
+  flex-grow: 1;
+}
+
+.card-title {
+  display: block;
+  font-family: var(--headerFont);
+  font-weight: 700;
+  color: var(--secondary);
+  font-size: 1.1rem;
+  line-height: 1.3;
+  margin: 0;
+}
+
+.card-subtitle {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--gray);
+  line-height: 1.4;
+  margin: 0;
+}
+
+// --- CATEGORY GRID CONTAINER ---
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -268,84 +336,6 @@ td {
 
   > p { display: contents; }
   > br, > p:empty { display: none; }
-
-  a.featured-card {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-width: 0;
-    margin: 0;
-    padding: 0;
-    background: var(--lightgray);
-    color: var(--darkgray);
-    border: 1px solid var(--gray);
-    text-decoration: none !important;
-    overflow: hidden;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-
-    &:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-      border-color: var(--secondary);
-    }
-  }
-
-  .card-image {
-    display: block;
-    aspect-ratio: 4 / 5;
-    overflow: hidden;
-    background: var(--light);
-    border-bottom: 1px solid var(--gray);
-
-    img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      object-fit: cover;
-      object-position: top center;
-    }
-
-    &.placeholder {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: linear-gradient(135deg, var(--light) 0%, var(--lightgray) 100%);
-      color: var(--gray);
-      font-family: var(--headerFont);
-      font-size: 4rem;
-      font-weight: 700;
-      opacity: 0.4;
-    }
-  }
-
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    padding: 1rem;
-  }
-
-  .card-title {
-    font-family: var(--headerFont);
-    font-weight: 700;
-    color: var(--secondary);
-    font-size: 1.1rem;
-    line-height: 1.2;
-  }
-
-  .card-subtitle {
-    font-size: 0.85rem;
-    color: var(--gray);
-  }
-}
-
-// --- HOMEPAGE HERO GRID (Reuses .featured-card layout) ---
-.featured-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
-  margin-bottom: 4rem;
 }
 
 // --- PORTAL BUTTONS ---
@@ -385,4 +375,45 @@ td {
 }
 h2.folder-title + p + ul {
   display: none !important;
+}
+
+// --- REFERENCE TABLE SAFEGUARDS ---
+.custom-infobox table {
+  table-layout: fixed;
+}
+
+.custom-infobox th,
+.custom-infobox td {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 600px) {
+  .featured-grid,
+  .category-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+  }
+
+  .category-grid .card-content {
+    padding: 0.7rem;
+  }
+
+  .category-grid .card-title {
+    font-size: 0.95rem;
+  }
+
+  .home-hero {
+    padding-top: 2rem;
+  }
+
+  .hero-title {
+    font-size: clamp(2.3rem, 12vw, 4rem);
+  }
+}
+
+@media (max-width: 380px) {
+  .featured-grid,
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -9,21 +9,17 @@ cd /d "%~dp0"
 
 echo [1/2] Building content from vault...
 call node build-content.cjs
-
-if %ERRORLEVEL% NEQ 0 (
+if errorlevel 1 (
     echo.
-    echo ERROR: Build failed. Please check the console output above.
+    echo ERROR: Content generation failed. Existing content was preserved.
     pause
-    exit /b %ERRORLEVEL%
+    exit /b 1
 )
 echo.
 
 echo [2/2] Starting local Quartz server...
-echo.
-echo The site is now available at:
 echo http://localhost:8080
 echo.
-echo Press Ctrl+C in this window to stop the server when you are done.
-echo.
+echo Press Ctrl+C to stop the server.
 call npx quartz build --serve
 pause

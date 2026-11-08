@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-faction">
 <h3>VISTA</h3>
-<img src="../assets/vista_flag.png, "vista flag"" alt="VISTA" />
+<img src="../assets/vista_flag.png" alt="VISTA" />
 <table>
 <tr><th>Title</th><td>VISTA</td></tr>
 <tr><th>Subtitle</th><td>Intergovernmental military organisation of twelve member delegations</td></tr>

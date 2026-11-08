@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Konish Kimbotin</h3>
-<img src="../../assets/konish.jpg, "konish kimbotin"" alt="Konish Kimbotin" />
+<img src="../../assets/konish.jpg" alt="Konish Kimbotin" />
 <table>
 <tr><th>Title</th><td>Konish Kimbotin</td></tr>
 <tr><th>Subtitle</th><td>Cladish warlord and founder of Konish Group</td></tr>

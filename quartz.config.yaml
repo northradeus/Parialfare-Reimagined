@@ -15,8 +15,8 @@ configuration:
     fontOrigin: googleFonts
     cdnCaching: true
     typography:
-      header: "Playfair Display"
-      body: "Merriweather"
+      header: "Inter"
+      body: "Inter"
       code: "IBM Plex Mono"
     colors:
       lightMode:
@@ -168,7 +168,7 @@ plugins:
     enabled: true
     options:
       links:
-        "Reading Room": "/"
+        "Reading Room": "./"
     layout:
       position: footer
       priority: 50

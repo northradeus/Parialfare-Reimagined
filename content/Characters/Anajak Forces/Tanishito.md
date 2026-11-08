@@ -42,7 +42,7 @@ The partnership with Nogo was assigned, and the closeness between them is a tact
 | Party | Knows closeness is a tactic |
 |-------|------------------------------|
 | [[Ironish Task Force (ITF)]] | Yes |
-| [[Noradus|Northrad]] | No |
+| [[Noradus\|Northrad]] | No |
 
 ## 4. Reputation
 

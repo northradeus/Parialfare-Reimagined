@@ -1,12 +1,33 @@
 const fs = require('fs');
 const path = require('path');
 
-const sourceDir = 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Continuities\\Parialfare - Reimagined';
-const sourceAssets = 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Assets\\Images';
-const destDir = path.join(__dirname, 'content');
+// Override these paths on another machine with:
+//   NOLHEIM_SOURCE_DIR="C:/path/to/Parialfare - Reimagined"
+//   NOLHEIM_ASSETS_DIR="C:/path/to/Images"
+const sourceDir = process.env.NOLHEIM_SOURCE_DIR
+    || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Continuities\\Parialfare - Reimagined';
+const sourceAssets = process.env.NOLHEIM_ASSETS_DIR
+    || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Assets\\Images';
+const finalDir = path.join(__dirname, 'content');
+const destDir = path.join(__dirname, '.content-staging');
+const backupDir = path.join(__dirname, '.content-previous');
 const destAssets = path.join(destDir, 'assets');
 
-if (fs.existsSync(destDir)) { fs.rmSync(destDir, { recursive: true, force: true }); }
+// Validate inputs BEFORE deleting the previous generated site.
+if (!fs.existsSync(sourceDir) || !fs.statSync(sourceDir).isDirectory()) {
+    console.error(`[content] Source vault directory does not exist: ${sourceDir}`);
+    console.error('[content] Set NOLHEIM_SOURCE_DIR to the correct vault directory.');
+    process.exit(1);
+}
+
+if (!fs.existsSync(sourceAssets) || !fs.statSync(sourceAssets).isDirectory()) {
+    console.warn(`[assets] Image directory not found: ${sourceAssets}`);
+    console.warn('[assets] Continuing without copied image assets.');
+}
+
+if (fs.existsSync(destDir)) {
+    fs.rmSync(destDir, { recursive: true, force: true });
+}
 fs.mkdirSync(destDir, { recursive: true });
 fs.mkdirSync(destAssets, { recursive: true });
 fs.writeFileSync(path.join(destDir, '.nojekyll'), '');
@@ -23,13 +44,13 @@ const assetName = (name) => {
 };
 
 function parseImageField(raw) {
-    const m = raw.match(/\[\[([^\]|]+)/)
+    const m = raw.match(/\[\[([^\]|,]+)/)
            || raw.match(/^\s*["']?([^"'\n,]+)/);
     return m ? path.basename(m[1].trim()) : '';
 }
 
 const vaultImages = new Map();
-if (fs.existsSync(sourceAssets)) {
+if (fs.existsSync(sourceAssets) && fs.statSync(sourceAssets).isDirectory()) {
     for (const file of fs.readdirSync(sourceAssets)) {
         const srcPath = path.join(sourceAssets, file);
         if (fs.statSync(srcPath).isFile()) {
@@ -164,7 +185,16 @@ function processDir(dir, outDir) {
 }
 processDir(sourceDir, destDir);
 
-const indexContent = `---\ntitle: Nolheim\n---\n<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div><h2 class="home-section-title">Featured Records</h2><div class="featured-grid"><a href="characters/lendermaire/konish-kimbotin-(reimagined)" class="featured-card"><span class="card-image"><img src="assets/konish.jpg" alt="Konish Kimbotin" loading="lazy"></span><span class="card-content"><span class="card-title">Konish Kimbotin</span><span class="card-subtitle">Supreme Warlord of the Cladish insurgency.</span></span></a><a href="characters/lendermaire/samsara-lykor" class="featured-card"><span class="card-image"><img src="assets/samsara.jpg" alt="Samsara Lykor" loading="lazy"></span><span class="card-content"><span class="card-title">Samsara Lykor</span><span class="card-subtitle">The concealed thirteenth member of LENDERMAIRE.</span></span></a><a href="events/2008-pocheasang-palace-raid" class="featured-card"><span class="card-image"><img src="assets/nighttime-gendarmerie-assault.png" alt="Event" loading="lazy"></span><span class="card-content"><span class="card-title">2008 Pocheasang Palace Raid</span><span class="card-subtitle">The foundational act of the modern insurgency.</span></span></a></div><h2 class="home-section-title">Explore the Archive</h2><div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div>`;
+function featuredMedia(fileName, altText) {
+    const mappedName = vaultImages.get(fileName.toLowerCase());
+    if (!mappedName) {
+        const initial = altText.charAt(0).toUpperCase();
+        return `<span class="card-image placeholder"><span class="placeholder-initial">${initial}</span></span>`;
+    }
+    return `<span class="card-image"><img src="assets/${mappedName}" alt="${altText}" loading="lazy"></span>`;
+}
+
+const indexContent = `---\ntitle: Nolheim\n---\n<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div><h2 class="home-section-title">Featured Records</h2><div class="featured-grid"><a href="characters/lendermaire/konish-kimbotin-(reimagined)" class="featured-card">${featuredMedia("konish.jpg", "Konish Kimbotin")}<span class="card-content"><span class="card-title">Konish Kimbotin</span><span class="card-subtitle">Supreme Warlord of the Cladish insurgency.</span></span></a><a href="characters/lendermaire/samsara-lykor" class="featured-card">${featuredMedia("samsara.jpg", "Samsara Lykor")}<span class="card-content"><span class="card-title">Samsara Lykor</span><span class="card-subtitle">The concealed thirteenth member of LENDERMAIRE.</span></span></a><a href="events/2008-pocheasang-palace-raid" class="featured-card">${featuredMedia("nighttime-gendarmerie-assault.png", "Event")}<span class="card-content"><span class="card-title">2008 Pocheasang Palace Raid</span><span class="card-subtitle">The foundational act of the modern insurgency.</span></span></a></div><h2 class="home-section-title">Explore the Archive</h2><div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div>`;
 fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
 
 function generateIndices(srcDir, outDir, isRoot = false) {
@@ -224,4 +254,24 @@ function generateIndices(srcDir, outDir, isRoot = false) {
 }
 
 generateIndices(sourceDir, destDir, true);
+
+// Replace the published content only after the complete generation succeeds.
+if (fs.existsSync(backupDir)) {
+    fs.rmSync(backupDir, { recursive: true, force: true });
+}
+if (fs.existsSync(finalDir)) {
+    fs.renameSync(finalDir, backupDir);
+}
+try {
+    fs.renameSync(destDir, finalDir);
+    if (fs.existsSync(backupDir)) {
+        fs.rmSync(backupDir, { recursive: true, force: true });
+    }
+} catch (error) {
+    if (!fs.existsSync(finalDir) && fs.existsSync(backupDir)) {
+        fs.renameSync(backupDir, finalDir);
+    }
+    throw error;
+}
+
 console.log('Content built successfully with normalized assets and grid layouts.');

@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-country">
 <h3>Kingdom of the Ai'ron Land</h3>
-<img src="../../assets/ironland-flag.jpg, "flag"" alt="Kingdom of the Ai'ron Land" />
+<img src="../../assets/ironland-flag.jpg" alt="Kingdom of the Ai'ron Land" />
 <table>
 <tr><th>Title</th><td>Kingdom of the Ai'ron Land</td></tr>
 <tr><th>Subtitle</th><td>Desteina Reamchea O'Airon</td></tr>

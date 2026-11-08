@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-faction">
 <h3>Laopanster Gendarmerie</h3>
-<img src="../assets/laospanter-emblem.png, "emblem"" alt="Laopanster Gendarmerie" />
+<img src="../assets/laospanter-emblem.png" alt="Laopanster Gendarmerie" />
 <table>
 <tr><th>Title</th><td>Laopanster Gendarmerie</td></tr>
 <tr><th>Subtitle</th><td>National gendarmerie force of the Kingdom of the Ai'ron Land</td></tr>

@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-event">
 <h3>2008 Pocheasang Palace raid</h3>
-<img src="../assets/nighttime-gendarmerie-assault.png, "nighttime"" alt="2008 Pocheasang Palace raid" />
+<img src="../assets/nighttime-gendarmerie-assault.png" alt="2008 Pocheasang Palace raid" />
 <table>
 <tr><th>Title</th><td>2008 Pocheasang Palace raid</td></tr>
 <tr><th>Subtitle</th><td>25–26 August 2008</td></tr>
