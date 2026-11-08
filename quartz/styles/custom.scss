@@ -1,50 +1,81 @@
 @use "./variables.scss" as *;
 
 // ==========================================
-// NOLHEIM ENCYCLOPEDIA STYLES
+// NOLHEIM EDITORIAL THEME
 // ==========================================
+
+// --- TYPOGRAPHY & BASE ---
+body {
+  font-family: var(--bodyFont);
+  line-height: 1.8;
+  color: var(--darkgray);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--headerFont);
+  color: var(--dark);
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 1.75rem; border-bottom: 1px solid var(--gray); padding-bottom: 0.5rem; }
+h3 { font-size: 1.35rem; }
+
+// --- LINKS ---
+a {
+  color: var(--secondary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.2s ease;
+}
+a:hover {
+  border-bottom-color: var(--secondary);
+}
 
 // --- LEAD PARAGRAPH (Intro Summary) ---
 p.lead {
-  font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: 1.15rem;
+  line-height: 1.8;
   color: var(--dark);
   font-style: italic;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 3px solid var(--secondary);
+  padding-left: 1.25rem;
 }
 
 // --- INFOBOX BASE STYLES ---
 .custom-infobox {
   float: right;
-  width: 320px;
-  margin: 0 0 1.5rem 2rem;
-  background-color: var(--light);
-  border: 1px solid var(--lightgray);
-  border-radius: 6px;
-  padding: 1rem;
-  font-size: 0.85rem;
-  font-family: var(--bodyFont);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  width: 340px;
+  margin: 0 0 2rem 2.5rem;
+  background-color: var(--lightgray);
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   clear: right;
 }
 
 .custom-infobox img {
   width: 100%;
   height: auto;
-  border-radius: 4px;
-  margin-bottom: 12px;
+  border-radius: 2px;
+  margin-bottom: 1.25rem;
   display: block;
-  border: 1px solid var(--lightgray);
+  border: 1px solid var(--gray);
 }
 
 .custom-infobox h3 {
-  margin: 0 0 12px 0;
-  padding-bottom: 8px;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.75rem;
   border-bottom: 2px solid var(--secondary);
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   text-align: center;
   color: var(--dark);
-  font-family: var(--headerFont);
 }
 
 .custom-infobox table {
@@ -57,71 +88,56 @@ p.lead {
   text-align: left;
   font-weight: 600;
   color: var(--secondary);
-  padding: 6px 10px 6px 0;
+  padding: 8px 12px 8px 0;
   vertical-align: top;
   width: 35%;
-  border-bottom: 1px solid var(--lightgray);
+  border-bottom: 1px solid var(--gray);
 }
 
 .custom-infobox td {
-  padding: 6px 0;
+  padding: 8px 0;
   vertical-align: top;
-  border-bottom: 1px solid var(--lightgray);
+  border-bottom: 1px solid var(--gray);
   color: var(--darkgray);
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
-// --- ARTICLE FAMILY SPECIFIC STYLES ---
-// Characters: warm, personal accent
-.infobox-character h3 { border-bottom-color: var(--secondary); }
+// --- ARTICLE FAMILY ACCENTS ---
+.infobox-character h3 { border-bottom-color: var(--tertiary); }
 
-// Factions: organizational, strong authority
-.infobox-faction {
-  border-left: 4px solid var(--tertiary);
-}
-.infobox-faction h3 {
-  border-bottom-color: var(--tertiary);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
+.infobox-faction { border-left: 4px solid var(--secondary); }
+.infobox-faction h3 { text-transform: uppercase; letter-spacing: 1px; font-size: 1.1rem; }
 
-// Locations: geographic, stable
-.infobox-location, .infobox-country {
-  border-top: 4px solid var(--darkgray);
-}
+.infobox-location, .infobox-country { border-top: 4px solid var(--secondary); }
 
-// Events: chronological, sharp
-.infobox-event {
-  border-left: 4px solid var(--secondary);
+.infobox-event { border-left: 4px solid var(--tertiary); }
+.infobox-event th { font-family: monospace; font-size: 0.8rem; text-transform: uppercase; }
+
+// --- MISSING VALUES (Semantic) ---
+.val-tbd { color: var(--gray); font-style: italic; font-size: 0.85rem; }
+.val-unknown { color: var(--secondary); font-style: italic; }
+.val-none { color: var(--darkgray); font-weight: bold; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.5px; }
+.val-undefined { color: #ff4d4d; text-decoration: underline wavy; font-weight: bold; }
+
+// --- GENERAL TABLES ---
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  font-size: 0.95rem;
 }
-.infobox-event th {
+th {
+  background-color: var(--lightgray);
   color: var(--dark);
-  font-family: monospace;
-  text-transform: uppercase;
-  font-size: 0.75rem;
+  font-weight: 600;
+  text-align: left;
+  padding: 12px;
+  border-bottom: 2px solid var(--gray);
 }
-
-// --- MISSING VALUES (Semantic Presentation) ---
-.val-tbd {
-  color: var(--gray);
-  font-style: italic;
-  font-size: 0.8rem;
-}
-.val-unknown {
-  color: var(--secondary);
-  font-style: italic;
-}
-.val-none {
+td {
+  padding: 12px;
+  border-bottom: 1px solid var(--gray);
   color: var(--darkgray);
-  font-weight: bold;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 0.5px;
-}
-.val-undefined {
-  color: var(--text-error);
-  text-decoration: underline wavy;
-  font-weight: bold;
 }
 
 // --- RESPONSIVE / MOBILE RENDERING ---
@@ -131,16 +147,13 @@ p.lead {
     width: 100%;
     margin: 0 0 2rem 0;
     box-sizing: border-box;
+    padding: 1rem;
   }
   .custom-infobox th {
     width: 40%;
+    padding-right: 8px;
   }
-}
-
-// --- GENERAL TYPOGRAPHY ---
-article h1, article h2, article h3 {
-  border-bottom: 1px solid var(--lightgray);
-  padding-bottom: 0.3rem;
-  margin-top: 2.5rem;
-  color: var(--dark);
+  p.lead {
+    font-size: 1.05rem;
+  }
 }
