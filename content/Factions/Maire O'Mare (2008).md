@@ -10,11 +10,12 @@
 </table>
 </aside>
 
+
 # Maire O'Mare
 
 
 
-<p class="lead">**Maire O'Mare** is an insurgent group in [[Ironclad]], active in 2008. It presents itself as the modern return of the ideology of the medieval [[Maire O'Mare (Rogolfenstine)|Maire O'Mare movement]] led by [[Koilen Rogolf (Rogolfenstine)|Rogolf]].</p>
+**Maire O'Mare** is an insurgent group in [[Ironclad]], active in 2008. It presents itself as the modern return of the ideology of the medieval [[Maire O'Mare (Rogolfenstine)|Maire O'Mare movement]] led by [[Koilen Rogolf (Rogolfenstine)|Rogolf]].
 
 It is not the person returning. It is the idea.
 

@@ -6,9 +6,10 @@
 </table>
 </aside>
 
+
 # Locations
 
-<p class="lead">A curated index of the geographic entities in the region.</p>
+A curated index of the geographic entities in the region.
 
 ## Sovereign States
 - [[Ironland]] — The Kingdom of the Ai'ron Land.

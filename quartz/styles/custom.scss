@@ -56,15 +56,13 @@ a:hover {
 }
 
 // --- LEAD PARAGRAPH ---
-p.lead {
-  font-size: 0.95rem;
-  line-height: 1.6;
+// The first paragraph in the article body is styled as a lead paragraph.
+// Using CSS :first-of-type instead of an HTML wrapper preserves markdown parsing.
+article > p:first-of-type {
+  font-size: 1rem;
+  line-height: 1.65;
   color: var(--darkgray);
-  font-style: normal;
-  margin-bottom: 1rem;
-  border-left: none;
-  padding-left: 0;
-  background: none;
+  margin-bottom: 1.25rem;
 }
 
 // --- INFOBOX BASE STYLES (WIKIPEDIA) ---

@@ -8,25 +8,26 @@
 <tr><th>Life Span</th><td>1987-Present</td></tr>
 <tr><th>Living Status</th><td>Alive</td></tr>
 <tr><th>Born</th><td>1987</td></tr>
-<tr><th>Ethnicity</th><td>['Lurkish']</td></tr>
+<tr><th>Ethnicity</th><td>Lurkish</td></tr>
 <tr><th>Gender</th><td>Male</td></tr>
 <tr><th>Tier</th><td>3</td></tr>
-<tr><th>Factions</th><td>['LENDERMAIRE', Lurkish Army]</td></tr>
-<tr><th>Nation</th><td>['Lurkinsberg', 'Ironclad']</td></tr>
+<tr><th>Factions</th><td>LENDERMAIRE, Lurkish Army</td></tr>
+<tr><th>Nation</th><td>Lurkinsberg, Ironclad</td></tr>
 <tr><th>Codename</th><td>Northrad</td></tr>
 <tr><th>Specialty</th><td>Cleanup, backup sniper</td></tr>
 <tr><th>Unit Role</th><td>The 13th of LENDERMAIRE</td></tr>
-<tr><th>Weapons</th><td>["SMG", "Sniper Rifle"]</td></tr>
+<tr><th>Weapons</th><td>SMG, Sniper Rifle</td></tr>
 <tr><th>Fighting Style</th><td>Solo, finishes unfinished objectives</td></tr>
-<tr><th>Training Origin</th><td>["Lurkish Marine Training"]</td></tr>
+<tr><th>Training Origin</th><td>Lurkish Marine Training</td></tr>
 </table>
 </aside>
+
 
 # Samsara Lykor
 
 
 
-<p class="lead">**Samsara Lykor** (born 1987) is a [[Lurkish]] operator and the concealed thirteenth member of [[LENDERMAIRE]]. A former [[Lurkish]] SWAT officer and marine, he is an independent operator who completes unfinished objectives and serves as the team's backup sniper. He is known publicly only by the designation "Northrad."</p>
+**Samsara Lykor** (born 1987) is a [[Lurkish]] operator and the concealed thirteenth member of [[LENDERMAIRE]]. A former [[Lurkish]] SWAT officer and marine, he is an independent operator who completes unfinished objectives and serves as the team's backup sniper. He is known publicly only by the designation "Northrad."
 
 Lykor is a different individual from [[Noradus]], the president of [[VISTA]]. The two share a designation through the [[Military naming custom]] and have no established personal or organizational connection.
 

@@ -19,11 +19,12 @@
 </table>
 </aside>
 
+
 # Vanny
 
 
 
-<p class="lead">**Vanny** is the youngest of the thirteen core members of the black operations unit [[LENDERMAIRE]], serving as a technical specialist in cyber operations, electronic warfare and logistics. Unlike conventional technical personnel who operate from secured facilities, Vanny is regularly deployed alongside LENDERMAIRE's assault elements, carrying portable jamming equipment and his signature ruggedised laptop into the field. He has an androgynous, age-ambiguous appearance and combines military practicality with streetwear in his field loadout.</p>
+**Vanny** is the youngest of the thirteen core members of the black operations unit [[LENDERMAIRE]], serving as a technical specialist in cyber operations, electronic warfare and logistics. Unlike conventional technical personnel who operate from secured facilities, Vanny is regularly deployed alongside LENDERMAIRE's assault elements, carrying portable jamming equipment and his signature ruggedised laptop into the field. He has an androgynous, age-ambiguous appearance and combines military practicality with streetwear in his field loadout.
 
 ## 1. Specialisation
 

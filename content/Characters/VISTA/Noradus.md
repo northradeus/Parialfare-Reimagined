@@ -5,28 +5,29 @@
 <tr><th>Title</th><td>Noradus "Northrad</td></tr>
 <tr><th>Subtitle</th><td>President of VISTA</td></tr>
 <tr><th>Full Name</th><td>Noradus Partenstine</td></tr>
-<tr><th>Alias</th><td>["Northrad"]</td></tr>
+<tr><th>Alias</th><td>Northrad</td></tr>
 <tr><th>Life Span</th><td>1988-Present</td></tr>
 <tr><th>Living Status</th><td>Alive</td></tr>
 <tr><th>Born</th><td>October 10th 1988</td></tr>
-<tr><th>Ethnicity</th><td>['Ironish', 'Lurkish']</td></tr>
+<tr><th>Ethnicity</th><td>Ironish, Lurkish</td></tr>
 <tr><th>Gender</th><td>Male</td></tr>
 <tr><th>Tier</th><td>1</td></tr>
 <tr><th>Role</th><td><span class="val-undefined">Undefined</span></td></tr>
-<tr><th>Factions</th><td>['VISTA', 'Ironish Task Force', 'Global Intervention Coalition']</td></tr>
-<tr><th>Nation</th><td>['Ironland', 'Lurkinsberg', 'Thaiphone']</td></tr>
+<tr><th>Factions</th><td>VISTA, Ironish Task Force, Global Intervention Coalition</td></tr>
+<tr><th>Nation</th><td>Ironland, Lurkinsberg, Thaiphone</td></tr>
 <tr><th>Political Office</th><td>Founder of VISTA</td></tr>
-<tr><th>Ideology</th><td>["Democratic", "Liberalism"]</td></tr>
-<tr><th>Armed Forces</th><td>['Ironish Task Force', 'Global Intervention Coalition', 'Anajak Forces']</td></tr>
-<tr><th>Territory</th><td>['Ironland', 'Lurkinsberg', 'Thaiphone', 'Parial Oceanic']</td></tr>
+<tr><th>Ideology</th><td>Democratic, Liberalism</td></tr>
+<tr><th>Armed Forces</th><td>Ironish Task Force, Global Intervention Coalition, Anajak Forces</td></tr>
+<tr><th>Territory</th><td>Ironland, Lurkinsberg, Thaiphone, Parial Oceanic</td></tr>
 </table>
 </aside>
+
 
 # Noradus "Northrad"
 
 
 
-<p class="lead">**Noradus Partenstine**, known as **Northrad**, is the president of [[VISTA]] and the principal architect of its institutions. He is a former special operator under [[Lurkinsberg]], and a global figure from a wealthy family who bought his way into politics.</p>
+**Noradus Partenstine**, known as **Northrad**, is the president of [[VISTA]] and the principal architect of its institutions. He is a former special operator under [[Lurkinsberg]], and a global figure from a wealthy family who bought his way into politics.
 
 He is a different individual from the thirteenth member of [[LENDERMAIRE]], [[Samsara Lykor]], who shares the designation through the [[Military naming custom]]; the two have no established personal or organizational connection.
 

@@ -6,9 +6,10 @@
 </table>
 </aside>
 
+
 # Events
 
-<p class="lead">A curated index of significant historical events.</p>
+A curated index of significant historical events.
 
 ## 2008
 - [[2008 Pocheasang Palace raid]] — The LENDERMAIRE assault on the archives.

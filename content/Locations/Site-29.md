@@ -9,11 +9,12 @@
 </table>
 </aside>
 
+
 # Site-29
 
 
 
-<p class="lead">**Site-29** is a heavily concealed, compartmentalized training installation. Operating outside official [[VISTA]] or Ai'ron oversight, the facility is designed for the psychological conditioning and specialized training of covert operatives. Its operator remains unknown, a deliberate feature of the facility's design: while its graduates can be identified and assessed, the institution that produced them cannot.</p>
+**Site-29** is a heavily concealed, compartmentalized training installation. Operating outside official [[VISTA]] or Ai'ron oversight, the facility is designed for the psychological conditioning and specialized training of covert operatives. Its operator remains unknown, a deliberate feature of the facility's design: while its graduates can be identified and assessed, the institution that produced them cannot.
 
 ## 1. Overview
 

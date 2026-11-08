@@ -24,11 +24,12 @@
 </table>
 </aside>
 
+
 # Lurkinsberg
 
 
 
-<p class="lead">**Lurkinsberg** is a wealthy, disciplined nation and a member of [[VISTA]]. It is a post-colonial power with a dominant naval tradition. The state controls major global sea lanes and maintains a powerful fleet. Its society is highly structured, and its military institutions export elite operatives and special operators to allied states and coalitions.</p>
+**Lurkinsberg** is a wealthy, disciplined nation and a member of [[VISTA]]. It is a post-colonial power with a dominant naval tradition. The state controls major global sea lanes and maintains a powerful fleet. Its society is highly structured, and its military institutions export elite operatives and special operators to allied states and coalitions.
 
 The Lurkish diaspora is extensive. Twenty-one percent of the population of the [[Ironland|Kingdom of the Ai'ron Land]] is recorded as Lurkish, reflecting the historical reach of Lurkinsberg's maritime trade networks.
 

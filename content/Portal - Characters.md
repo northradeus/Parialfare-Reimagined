@@ -6,9 +6,10 @@
 </table>
 </aside>
 
+
 # Characters
 
-<p class="lead">This is a curated index of the prominent figures operating within the Parialfare: Reimagined continuity. For the automated list of all files, see the site navigation.</p>
+This is a curated index of the prominent figures operating within the Parialfare: Reimagined continuity. For the automated list of all files, see the site navigation.
 
 ## The Insurgency
 ### LENDERMAIRE

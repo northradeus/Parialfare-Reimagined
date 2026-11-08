@@ -11,11 +11,12 @@
 </table>
 </aside>
 
+
 # Gazmo
 
 
 
-<p class="lead">**Gazmo** is a background operator of the black operations unit [[LENDERMAIRE]], specializing in biohazard weapons. He is not counted among the group's thirteen core members, and belongs to the additional background personnel who support the unit's operations, but he is deployable in combat rather than confined to a support role.</p>
+**Gazmo** is a background operator of the black operations unit [[LENDERMAIRE]], specializing in biohazard weapons. He is not counted among the group's thirteen core members, and belongs to the additional background personnel who support the unit's operations, but he is deployable in combat rather than confined to a support role.
 
 Gazmo resides with LENDERMAIRE personnel on land owned by [[Konish Kimbotin (Reimagined)]] in the southern [[Ironclad DMZ]]. Background personnel are treated as members of the household's family unit despite their exclusion from the core membership count.
 

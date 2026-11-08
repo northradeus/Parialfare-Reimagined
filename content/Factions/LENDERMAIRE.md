@@ -17,17 +17,18 @@
 <tr><th>Second In Command</th><td>Hanktonio</td></tr>
 <tr><th>Area</th><td>Ironland, Ironclad DMZ</td></tr>
 <tr><th>Garrison</th><td>Southern Ironclad</td></tr>
-<tr><th>Allies</th><td>["Konish's Group", 'CAF']</td></tr>
-<tr><th>Opponents</th><td>['Anajak Forces', 'Ironish Task Force (ITF)']</td></tr>
-<tr><th>Conflicts</th><td>['2008 Pocheasang Palace raid']</td></tr>
+<tr><th>Allies</th><td>Konish's Group, CAF</td></tr>
+<tr><th>Opponents</th><td>Anajak Forces, Ironish Task Force (ITF)</td></tr>
+<tr><th>Conflicts</th><td>2008 Pocheasang Palace raid</td></tr>
 </table>
 </aside>
+
 
 # LENDERMAIRE
 
 
 
-<p class="lead">**LENDERMAIRE** (native name: *Lendus O Mairen*) is a clandestine Cladish special operations formation active in the [[Ironclad DMZ|Ironclad]] region, operating as a black operations unit within the umbrella coalition [[Konish's Group]]. Founded in 2007 and garrisoned in southern Ironclad, the group maintains a core roster of thirteen members in addition to [[Konish Kimbotin (Reimagined)|Konish Kimbotin]], who led it operationally. Its motto is *"Let them taste steel."* It fields a modern military arsenal.</p>
+**LENDERMAIRE** (native name: *Lendus O Mairen*) is a clandestine Cladish special operations formation active in the [[Ironclad DMZ|Ironclad]] region, operating as a black operations unit within the umbrella coalition [[Konish's Group]]. Founded in 2007 and garrisoned in southern Ironclad, the group maintains a core roster of thirteen members in addition to [[Konish Kimbotin (Reimagined)|Konish Kimbotin]], who led it operationally. Its motto is *"Let them taste steel."* It fields a modern military arsenal.
 
 The group remained unknown in open sources until the [[2008 Pocheasang Palace raid]], after which its name entered public reporting through civilian identification of an emblem in recovered bodycam footage. The [[VISTA]] Intelligence Agency subsequently described it as one formation within Konish's Group, a coalition of armed formations operating with substantial autonomy rather than as a single command. VISTA could not establish Kimbotin's supreme command over the group, and the proposition remained contested.[^2]
 

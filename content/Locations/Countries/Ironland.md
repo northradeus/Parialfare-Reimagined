@@ -25,11 +25,12 @@
 </table>
 </aside>
 
+
 # Kingdom of the Ai'ron Land
 
 
 
-<p class="lead">> **Kingdom of the Ai'ron Land**</p>
+> **Kingdom of the Ai'ron Land**
 > 
 > **Desteina Reamchea O'Airon**
 > 

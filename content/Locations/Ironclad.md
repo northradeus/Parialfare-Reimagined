@@ -10,11 +10,12 @@
 </table>
 </aside>
 
+
 # Ironclad
 
 
 
-<p class="lead">**Ironclad** is an ungoverned territory between the [[Ironland|Kingdom of the Ai'ron Land]] and its neighbours. It is not a state. It has no central government, no unified security force, and no authority exercising jurisdiction across it. Competing warlords rule it. Its people are the Cladish.</p>
+**Ironclad** is an ungoverned territory between the [[Ironland|Kingdom of the Ai'ron Land]] and its neighbours. It is not a state. It has no central government, no unified security force, and no authority exercising jurisdiction across it. Competing warlords rule it. Its people are the Cladish.
 
 The territory was conquered by an empire, abandoned six years later, and left to itself for a hundred and ten years. Its people named it Ironclad themselves, after the abandonment.
 

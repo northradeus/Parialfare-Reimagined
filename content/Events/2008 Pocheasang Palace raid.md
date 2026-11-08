@@ -8,9 +8,10 @@
 <tr><th>Date</th><td>2008-08-25</td></tr>
 <tr><th>Date End</th><td>2008-08-26</td></tr>
 <tr><th>Result</th><td>LENDERMAIRE exfiltration of classified material; assailants escaped; martial law declared</td></tr>
-<tr><th>Event Type</th><td>["Military/Attack", "Political/History"]</td></tr>
+<tr><th>Event Type</th><td>Military/Attack, Political/History</td></tr>
 </table>
 </aside>
+
 
 # 2008 Pocheasang Palace raid
 
@@ -18,7 +19,7 @@
 
 
 
-<p class="lead">> **2008 Pocheasang Palace raid**</p>
+> **2008 Pocheasang Palace raid**
 >
 > **Part of the [[LENDERMAIRE]] insurgency in Ai'ron**
 >

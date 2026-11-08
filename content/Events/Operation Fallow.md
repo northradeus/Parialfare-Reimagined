@@ -3,15 +3,16 @@
 <table>
 <tr><th>Title</th><td>Operation Fallow</td></tr>
 <tr><th>Subtitle</th><td>GIC retrieval operation</td></tr>
-<tr><th>Event Type</th><td>["Intelligence/Operation", "Military/Retrieval"]</td></tr>
+<tr><th>Event Type</th><td>Intelligence/Operation, Military/Retrieval</td></tr>
 </table>
 </aside>
+
 
 # Operation Fallow
 
 
 
-<p class="lead">**Operation Fallow** was an intelligence operation of the [[Global Intervention Coalition (GIC)]], conducted after the establishment of [[Anajak Forces]], with the stated objective of retrieving a Lurkish national designated "Northrad" from the Cladish household [[LENDERMAIRE]]. It proceeded over the objection of the commanding general of Anajak Forces and concluded with the asset's return on terms the institution had not anticipated.</p>
+**Operation Fallow** was an intelligence operation of the [[Global Intervention Coalition (GIC)]], conducted after the establishment of [[Anajak Forces]], with the stated objective of retrieving a Lurkish national designated "Northrad" from the Cladish household [[LENDERMAIRE]]. It proceeded over the objection of the commanding general of Anajak Forces and concluded with the asset's return on terms the institution had not anticipated.
 
 The record does not establish the operation's date. It establishes only that it followed the establishment of Anajak Forces.
 

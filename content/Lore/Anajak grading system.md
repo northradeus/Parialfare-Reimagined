@@ -4,15 +4,16 @@
 <tr><th>Title</th><td>Anajak grading system</td></tr>
 <tr><th>Subtitle</th><td>Grading of Anajak Forces personnel</td></tr>
 <tr><th>Applies To</th><td>Anajak Forces</td></tr>
-<tr><th>Grades Observed</th><td>["S+", "S", "A+", "A"]</td></tr>
+<tr><th>Grades Observed</th><td>S+, S, A+, A</td></tr>
 </table>
 </aside>
+
 
 # Anajak grading system
 
 
 
-<p class="lead">Personnel of [[Anajak Forces]] are graded. The system is not fully documented, and its criteria, scale and authority are unestablished.</p>
+Personnel of [[Anajak Forces]] are graded. The system is not fully documented, and its criteria, scale and authority are unestablished.
 
 ## Observed grades
 

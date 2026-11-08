@@ -13,11 +13,12 @@
 </table>
 </aside>
 
+
 # Anajak Forces
 
 
 
-<p class="lead">**Anajak Forces** is a specialized task force established by the [[Global Intervention Coalition (GIC)]] and designed by [[Noradus|Northrad]]. Led by [[General Ramcher]], it is designed to combat [[LENDERMAIRE]] and other Cladish factions, and anything that disrupts the peace inside [[Ironland]] and other [[VISTA]] countries as a whole. It operates under heavy funding from Northrad and under the institutions of the GIC.</p>
+**Anajak Forces** is a specialized task force established by the [[Global Intervention Coalition (GIC)]] and designed by [[Noradus|Northrad]]. Led by [[General Ramcher]], it is designed to combat [[LENDERMAIRE]] and other Cladish factions, and anything that disrupts the peace inside [[Ironland]] and other [[VISTA]] countries as a whole. It operates under heavy funding from Northrad and under the institutions of the GIC.
 
 Its members include many highly trained assassins, members of the [[Ironish Task Force (ITF)|ITF]], and many trained individuals with skillsets in combat and warfare. Most members come from a facility or other secret organizations, and most are [[Lurkish]]. Its classified assassin core is what ITF calls "[[Alpha-01]]". See [[Alpha-01]].
 

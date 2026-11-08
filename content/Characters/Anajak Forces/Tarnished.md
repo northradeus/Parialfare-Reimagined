@@ -7,15 +7,16 @@
 <tr><th>Former Role</th><td>Special task force leader under ITF</td></tr>
 <tr><th>Unit</th><td>Anajak Forces</td></tr>
 <tr><th>Entry</th><td>Volunteer</td></tr>
-<tr><th>Soldiers</th><td>["Pich", "Kody", "Shadow"]</td></tr>
+<tr><th>Soldiers</th><td>Pich, Kody, Shadow</td></tr>
 </table>
 </aside>
+
 
 # Tarnished
 
 
 
-<p class="lead">**Tarnished** is the only recorded volunteer in [[Anajak Forces]] who did not arrive through the institution's facility pipeline. He served under the [[Ironish Task Force (ITF)|ITF]] as a special task force leader, then volunteered to join Anajak alongside his own soldiers.</p>
+**Tarnished** is the only recorded volunteer in [[Anajak Forces]] who did not arrive through the institution's facility pipeline. He served under the [[Ironish Task Force (ITF)|ITF]] as a special task force leader, then volunteered to join Anajak alongside his own soldiers.
 
 ## ITF service
 

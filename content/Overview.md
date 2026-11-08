@@ -6,9 +6,10 @@
 </table>
 </aside>
 
+
 # Parialfare: Reimagined
 
-<p class="lead">**Read this to understand the state of the world.** This is the master context file for the main continuity. It explains the geopolitical landscape, the major factions, the central conflict, and the hidden layers beneath them.</p>
+**Read this to understand the state of the world.** This is the master context file for the main continuity. It explains the geopolitical landscape, the major factions, the central conflict, and the hidden layers beneath them.
 
 ## Premise
 

@@ -13,11 +13,12 @@
 </table>
 </aside>
 
+
 # VISTA
 
 
 
-<p class="lead">**VISTA** is an intergovernmental military organisation of twelve member delegations. Under its charter the presidency casts one vote among the delegations, and a two-thirds majority — eight of twelve — is required to authorise funding and military programmes. The organisation's institutional architecture is attributed to its president, [[Noradus|Northrad]], who is described as its founder and principal architect; how and when he came to lead it is not established in the available record.</p>
+**VISTA** is an intergovernmental military organisation of twelve member delegations. Under its charter the presidency casts one vote among the delegations, and a two-thirds majority — eight of twelve — is required to authorise funding and military programmes. The organisation's institutional architecture is attributed to its president, [[Noradus|Northrad]], who is described as its founder and principal architect; how and when he came to lead it is not established in the available record.
 
 VISTA declined a request by the [[Ironland|Kingdom of the Ai'ron Land]] in September 2008 to fund a campaign into the [[Ironclad DMZ]]. Its Intelligence Agency later disclosed the existence of [[Konish's Group]], and on 4 December 2008 it established the [[Global Intervention Coalition (GIC)]].
 

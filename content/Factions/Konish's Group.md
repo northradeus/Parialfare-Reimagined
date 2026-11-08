@@ -19,11 +19,12 @@
 </table>
 </aside>
 
+
 # Konish's Group
 
 
 
-<p class="lead">**Konish's Group**, commonly referred to simply as the **Konish Group**, is a transnational Cladish umbrella coalition and unrecognized quasi-state operating primarily in the ungoverned region of [[Ironclad]]. It was founded in 2007 by the Cladish warlord [[Konish Kimbotin (Reimagined)|Konish Kimbotin]], who serves as its supreme commander. The group is a decentralized network of armed formations that operate with substantial autonomy, bound together by Kimbotin's strategic coordination and shared financial interests.[^1][^2]</p>
+**Konish's Group**, commonly referred to simply as the **Konish Group**, is a transnational Cladish umbrella coalition and unrecognized quasi-state operating primarily in the ungoverned region of [[Ironclad]]. It was founded in 2007 by the Cladish warlord [[Konish Kimbotin (Reimagined)|Konish Kimbotin]], who serves as its supreme commander. The group is a decentralized network of armed formations that operate with substantial autonomy, bound together by Kimbotin's strategic coordination and shared financial interests.[^1][^2]
 
 The organization gained global prominence following the [[2008 Pocheasang Palace raid]], an operation conducted by its black operations unit, [[LENDERMAIRE]], against the government of the [[Ironland|Kingdom of the Ai'ron Land]]. The raid resulted in the extraction of classified military archives. In public discourse Kimbotin is described as the most wanted man in the region; the characterisation is a public one rather than a formal finding by [[VISTA]].[^3] The group is known for its asymmetric warfare tactics, its use of information as a primary weapon, and its complex network of political and military contacts that extend far beyond the Ironclad DMZ.[^4]
 

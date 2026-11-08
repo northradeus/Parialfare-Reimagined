@@ -19,11 +19,12 @@
 <tr><th>Current Commander</th><td>Marshal Lopesh</td></tr>
 </table>
 </aside>
+
 # Laopanster Gendarmerie
 
 
 
-<p class="lead">The **Laopanster Gendarmerie** (Native: *Gendarmerie Laopanster*) is the national gendarmerie force of the [[Ironland|Kingdom of the Ai'ron Land]]. It is a branch of the [[Ministry of the Interior]] and is responsible for the maintenance of public order and internal security within Ai'ron. The paramilitary unit operates as a heavily armed domestic security force, distinct from the external defense mandate of the [[Royal Ironish Army]]. Its headquarters is located in [[Pocheasang]], with the unit's chain of command reporting directly to the Minister of the Interior. The Gendarmerie is under the direct supervision of a commander with the rank of [[Marshal Lopesh|Marshal]]. The current commander is [[Marshal Lopesh]].[^1][^2]</p>
+The **Laopanster Gendarmerie** (Native: *Gendarmerie Laopanster*) is the national gendarmerie force of the [[Ironland|Kingdom of the Ai'ron Land]]. It is a branch of the [[Ministry of the Interior]] and is responsible for the maintenance of public order and internal security within Ai'ron. The paramilitary unit operates as a heavily armed domestic security force, distinct from the external defense mandate of the [[Royal Ironish Army]]. Its headquarters is located in [[Pocheasang]], with the unit's chain of command reporting directly to the Minister of the Interior. The Gendarmerie is under the direct supervision of a commander with the rank of [[Marshal Lopesh|Marshal]]. The current commander is [[Marshal Lopesh]].[^1][^2]
 
 ## Duties
 

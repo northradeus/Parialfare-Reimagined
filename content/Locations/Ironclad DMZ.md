@@ -6,11 +6,12 @@
 </table>
 </aside>
 
+
 # Ironclad DMZ
 
 
 
-<p class="lead">The **Ironclad DMZ** is an ungoverned demilitarised zone between [[Ironland|Ai'ron]] and its neighbours. The territory has no central government, unified security force, or authority exercising jurisdiction across it.</p>
+The **Ironclad DMZ** is an ungoverned demilitarised zone between [[Ironland|Ai'ron]] and its neighbours. The territory has no central government, unified security force, or authority exercising jurisdiction across it.
 
 In the southern districts, armed formations exercise quasi-governmental functions — taxation, adjudication, and conscription — on a local basis. [[Konish's Group]] holds territory in the southern districts. The border city of [[New Aester]] lies between Ai'ron and the zone.
 

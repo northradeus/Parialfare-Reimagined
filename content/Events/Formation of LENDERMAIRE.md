@@ -2,15 +2,16 @@
 <h3>Formation of LENDERMAIRE</h3>
 <table>
 <tr><th>Title</th><td>Formation of LENDERMAIRE</td></tr>
-<tr><th>Event Type</th><td>["Military/Formation"]</td></tr>
+<tr><th>Event Type</th><td>Military/Formation</td></tr>
 </table>
 </aside>
+
 
 # Formation of LENDERMAIRE
 
 
 
-<p class="lead">The **formation of [[LENDERMAIRE]]** refers to how [[Konish Kimbotin (Reimagined)|Konish Kimbotin]] assembled the group, within the umbrella coalition [[Konish's Group]], by selecting its members one at a time. The group is dated to 2007 and first became public in 2008.</p>
+The **formation of [[LENDERMAIRE]]** refers to how [[Konish Kimbotin (Reimagined)|Konish Kimbotin]] assembled the group, within the umbrella coalition [[Konish's Group]], by selecting its members one at a time. The group is dated to 2007 and first became public in 2008.
 
 ## Selection
 Konish chose each member for a specific reason. His working premise is that the more unhinged a person is, the better they are at certain things. Most of the members were considered mentally unstable before they joined him.

@@ -12,11 +12,12 @@
 </table>
 </aside>
 
+
 # Pepper
 
 
 
-<p class="lead">**Pepper** is a multi-role operator of the [[Anajak Forces]] who was trained in a secret facility ([[Site-29]]) as a personal bodyguard. She holds an S+ in multitasking and an A in combat. [[VISTA]] assigned her as personal adjutant to [[Noradus|Northrad]] on the strength of her multitasking grade. She is also registered as an operator in Anajak.</p>
+**Pepper** is a multi-role operator of the [[Anajak Forces]] who was trained in a secret facility ([[Site-29]]) as a personal bodyguard. She holds an S+ in multitasking and an A in combat. [[VISTA]] assigned her as personal adjutant to [[Noradus|Northrad]] on the strength of her multitasking grade. She is also registered as an operator in Anajak.
 
 ## 1. Facility training
 

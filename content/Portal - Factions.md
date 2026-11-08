@@ -6,9 +6,10 @@
 </table>
 </aside>
 
+
 # Factions
 
-<p class="lead">A curated index of the major organisations operating in 2008.</p>
+A curated index of the major organisations operating in 2008.
 
 ## The Insurgency
 - [[Konish's Group]] — The transnational Cladish umbrella coalition.

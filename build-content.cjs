@@ -55,7 +55,9 @@ if (fs.existsSync(sourceAssets) && fs.statSync(sourceAssets).isDirectory()) {
         const srcPath = path.join(sourceAssets, file);
         if (fs.statSync(srcPath).isFile()) {
             const outName = assetName(file);
+            // Register under multiple keys so lookups succeed regardless of format
             vaultImages.set(file.toLowerCase(), outName);
+            vaultImages.set(outName.toLowerCase(), outName);
             fs.copyFileSync(srcPath, path.join(destAssets, outName));
         }
     }
@@ -213,9 +215,13 @@ function processDir(dir, outDir) {
                             continue;
                         }
 
+                        // Handle YAML array syntax first: ["a", "b"] -> a, b
+                        if (val.startsWith('[') && val.endsWith(']')) {
+                            val = val.slice(1, -1).split(',').map(s => s.trim().replace(/^["']|["']$/g, '')).join(', ');
+                        }
                         val = val.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, '$2');
                         val = val.replace(/\[\[([^\]]+)\]\]/g, '$1');
-                        val = val.replace(/^['"]|['"]$/g, '');
+                        val = val.replace(/^["']|["']$/g, '');
                         
                         let valClass = '';
                         const lowerVal = val.toLowerCase();
@@ -263,16 +269,10 @@ function processDir(dir, outDir) {
                     return match;
                 });
 
-                let firstP = true;
-                body = body.replace(/^(?!\s*#)(\s*)([^\n\r]+)/m, (match, spaces, text) => {
-                    if (firstP && text.trim().length > 0) {
-                        firstP = false;
-                        return spaces + `<p class="lead">` + text + `</p>`;
-                    }
-                    return match;
-                });
+                // Lead paragraph styling is now handled via CSS (article p:first-of-type)
+                // instead of HTML wrapping, which was breaking markdown processing.
 
-                content = infobox + body;
+                content = infobox + '\n' + body;
             }
             const rels = reverseLinks[relPath];
             if (rels && rels.length > 0) {
@@ -340,69 +340,87 @@ fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
 
 const eventData = [];
 
+function parseFile(filePath, fileName) {
+    const content = fs.readFileSync(filePath, 'utf-8');
+    const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+    let title = fileName.replace('.md', '');
+    let subtitle = '';
+    let image = '';
+    let status = '';
+    let date = '';
+    let dateEnd = '';
+    let entityType = '';
+    if (fmMatch) {
+        for (const rawLine of fmMatch[1].split('\n')) {
+            const line = rawLine.trim();
+            if (line.startsWith('title:')) title = line.substring(6).trim().replace(/['"]/g, '');
+            if (line.startsWith('subtitle:')) subtitle = line.substring(9).trim().replace(/['"]/g, '');
+            if (line.startsWith('image:')) image = parseImageField(line.substring(6));
+            if (line.startsWith('status:')) status = line.substring(7).trim().replace(/['"]/g, '');
+            if (line.startsWith('date:')) date = line.substring(5).trim().replace(/['"]/g, '');
+            if (line.startsWith('date-end:')) dateEnd = line.substring(9).trim().replace(/['"]/g, '');
+            if (line.startsWith('entity-type:')) entityType = line.substring(12).trim().replace(/['"]/g, '');
+        }
+    }
+    return { title, subtitle, image, status, date, dateEnd, entityType, fileName };
+}
+
+function collectArticles(dir, relPrefix) {
+    const entries = fs.readdirSync(dir);
+    let articles = [];
+    for (const entry of entries) {
+        const entryPath = path.join(dir, entry);
+        const stat = fs.statSync(entryPath);
+        if (stat.isDirectory()) {
+            articles = articles.concat(collectArticles(entryPath, relPrefix + entry.toLowerCase().replace(/ /g, '-') + '/'));
+        } else if (entry.endsWith('.md') && entry !== 'index.md') {
+            const data = parseFile(entryPath, entry);
+            data.relPath = relPrefix + entry.replace('.md', '').toLowerCase().replace(/ /g, '-');
+            articles.push(data);
+        }
+    }
+    return articles;
+}
+
+function renderCard(article, outDir) {
+    let imgHtml = '';
+    const mappedName = article.image ? vaultImages.get(article.image.toLowerCase()) : null;
+    if (article.image && !mappedName) console.warn(`[image] not found in vault: "${article.image}" (${article.fileName})`);
+    if (mappedName) {
+        let relPath = path.relative(outDir, destAssets).replace(/\\/g, '/');
+        if (!relPath.startsWith('.')) relPath = './' + relPath;
+        imgHtml = `<span class="card-image"><img src="${relPath}/${mappedName}" alt="${article.title}" loading="lazy"></span>`;
+    } else {
+        const initial = article.title.charAt(0).toUpperCase();
+        imgHtml = `<span class="card-image placeholder"><span class="placeholder-initial">${initial}</span></span>`;
+    }
+    const draftBadge = (article.status.toLowerCase() === 'draft') ? '<span class="draft-badge">Draft</span>' : '';
+    const href = './' + article.relPath;
+    return `<a href="${href}" class="featured-card">${imgHtml}<span class="card-content"><span class="card-title">${article.title}${draftBadge}</span><span class="card-subtitle">${article.subtitle}</span></span></a>`;
+}
+
 function generateIndices(srcDir, outDir, isRoot = false) {
     const items = fs.readdirSync(srcDir);
-    let cardsHtml = '<div class="category-grid">';
-    let hasFiles = false;
 
+    // First, recursively generate sub-folder indexes so their own pages exist
     for (const item of items) {
         const srcPath = path.join(srcDir, item);
-        const outPath = path.join(outDir, item);
         const stat = fs.statSync(srcPath);
-
         if (stat.isDirectory()) {
+            const outPath = path.join(outDir, item);
             if (!fs.existsSync(outPath)) fs.mkdirSync(outPath, { recursive: true });
             generateIndices(srcPath, outPath);
-        } else if (item.endsWith('.md') && item !== 'index.md') {
-            hasFiles = true;
-            const content = fs.readFileSync(srcPath, 'utf-8');
-            const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
-            let title = item.replace('.md', '');
-            let subtitle = '';
-            let image = '';
-            let status = '';
-            let date = '';
-            let dateEnd = '';
-            let entityType = '';
-
-            if (fmMatch) {
-                const lines = fmMatch[1].split('\n');
-                for (let line of lines) {
-                    line = line.trim();
-                    if (line.startsWith('title:')) title = line.substring(6).trim().replace(/['"]/g, '');
-                    if (line.startsWith('subtitle:')) subtitle = line.substring(9).trim().replace(/['"]/g, '');
-                    if (line.startsWith('image:')) image = parseImageField(line.substring(6));
-                    if (line.startsWith('status:')) status = line.substring(7).trim().replace(/['"]/g, '');
-                    if (line.startsWith('date:')) date = line.substring(5).trim().replace(/['"]/g, '');
-                    if (line.startsWith('date-end:')) dateEnd = line.substring(9).trim().replace(/['"]/g, '');
-                    if (line.startsWith('entity-type:')) entityType = line.substring(12).trim().replace(/['"]/g, '');
-                }
-            }
-
-            const urlPath = './' + item.replace('.md', '').toLowerCase().replace(/ /g, '-');
-            let imgHtml = '';
-            const mappedName = image ? vaultImages.get(image.toLowerCase()) : null;
-            if (image && !mappedName) console.warn(`[image] not found in vault: "${image}" (${item})`);
-
-            if (mappedName) {
-                let relPath = path.relative(outDir, destAssets).replace(/\\/g, '/');
-                if (!relPath.startsWith('.')) relPath = './' + relPath;
-                imgHtml = `<span class="card-image"><img src="${relPath}/${mappedName}" alt="${title}" loading="lazy"></span>`;
-            } else {
-                const initial = title.charAt(0).toUpperCase();
-                imgHtml = `<span class="card-image placeholder"><span class="placeholder-initial">${initial}</span></span>`;
-            }
-            
-            const draftBadge = (status.toLowerCase() === 'draft') ? '<span class="draft-badge">Draft</span>' : '';
-            cardsHtml += `<a href="${urlPath}" class="featured-card">${imgHtml}<span class="card-content"><span class="card-title">${title}${draftBadge}</span><span class="card-subtitle">${subtitle}</span></span></a>`;
-            
-            if (entityType.toLowerCase() === 'event') {
-                eventData.push({ title, url: urlPath, date, dateEnd, subtitle });
-            }
         }
     }
 
-    if (!isRoot && hasFiles) {
+    // Then collect all articles under this folder recursively for a flat grid
+    const articles = collectArticles(srcDir, '');
+
+    if (!isRoot && articles.length > 0) {
+        let cardsHtml = '<div class="category-grid">';
+        for (const a of articles) {
+            cardsHtml += renderCard(a, outDir);
+        }
         cardsHtml += '</div>';
         const folderTitle = path.basename(srcDir);
         const indexContent = `---\ntitle: ${folderTitle}\n---\n\n${cardsHtml}`;
@@ -411,6 +429,14 @@ function generateIndices(srcDir, outDir, isRoot = false) {
 }
 
 generateIndices(sourceDir, destDir, true);
+
+// --- Collect Events for Events Directory ---
+const allArticles = collectArticles(sourceDir, '');
+for (const a of allArticles) {
+    if (a.entityType.toLowerCase() === 'event') {
+        eventData.push({ title: a.title, url: './' + a.relPath, date: a.date, dateEnd: a.dateEnd, subtitle: a.subtitle });
+    }
+}
 
 // --- Events Directory ---
 function renderEventsDirectory() {

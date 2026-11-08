@@ -6,9 +6,10 @@
 </table>
 </aside>
 
+
 # Lore
 
-<p class="lead">A curated index of the systems and meta-lore governing the world.</p>
+A curated index of the systems and meta-lore governing the world.
 
 ## Systems
 - [[Anajak grading system]] — The scale by which assassins are measured.
