@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Nogo</h3>
 <table>
 <tr><th>Title</th><td>Nogo</td></tr>
@@ -19,7 +19,7 @@
 
 
 
-**Nogo** is an adult assassin of the [[Anajak Forces]], graded A+. He is [[Lurkish]]. He was raised and trained inside a secret facility ([[Site-29]]) alongside his assigned partner, [[Tanishito]], and was handpicked by the [[Ironish Task Force (ITF)]] together with her. He was also raised as a spy.
+<p class="lead">**Nogo** is an adult assassin of the [[Anajak Forces]], graded A+. He is [[Lurkish]]. He was raised and trained inside a secret facility ([[Site-29]]) alongside his assigned partner, [[Tanishito]], and was handpicked by the [[Ironish Task Force (ITF)]] together with her. He was also raised as a spy.</p>
 
 *Not to be confused with [[Nolgo (Purgatory)|Nolgo]], a Purgatory character. Nogo is a variant of that name, the two are separate entities, and no facts are shared.*
 

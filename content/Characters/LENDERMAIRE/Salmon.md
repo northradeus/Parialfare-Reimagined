@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Salmon</h3>
 <table>
 <tr><th>Title</th><td>Salmon</td></tr>
@@ -13,7 +13,7 @@
 
 
 
-**Salmon** is a member of the black operations unit [[LENDERMAIRE]], recorded in earlier material as "Hard to Kill." His origins are as a coastal guard and navy serviceman, which is the reason for his name. He survived pirates wrecking his naval ship, and multiple other cases of surviving what most cannot. He is durable and resilient, and performs well underwater.
+<p class="lead">**Salmon** is a member of the black operations unit [[LENDERMAIRE]], recorded in earlier material as "Hard to Kill." His origins are as a coastal guard and navy serviceman, which is the reason for his name. He survived pirates wrecking his naval ship, and multiple other cases of surviving what most cannot. He is durable and resilient, and performs well underwater.</p>
 
 ## Unresolved
 

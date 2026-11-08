@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Gunter</h3>
 <table>
 <tr><th>Title</th><td>Gunter</td></tr>
@@ -13,7 +13,7 @@
 
 
 
-**Gunter** is a member of the black operations unit [[LENDERMAIRE]]. His earlier roster entry records him as "Engineer & Sapper."
+<p class="lead">**Gunter** is a member of the black operations unit [[LENDERMAIRE]]. His earlier roster entry records him as "Engineer & Sapper."</p>
 
 His current role is unresolved. [[Gunter]] and [[Grunt]] are described as easily confused: one throws grenades and the other suppresses fire, and which man holds which role has not been decided. His background is unrecorded.
 

@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Tarnished</h3>
 <table>
 <tr><th>Title</th><td>Tarnished</td></tr>
@@ -15,7 +15,7 @@
 
 
 
-**Tarnished** is the only recorded volunteer in [[Anajak Forces]] who did not arrive through the institution's facility pipeline. He served under the [[Ironish Task Force (ITF)|ITF]] as a special task force leader, then volunteered to join Anajak alongside his own soldiers.
+<p class="lead">**Tarnished** is the only recorded volunteer in [[Anajak Forces]] who did not arrive through the institution's facility pipeline. He served under the [[Ironish Task Force (ITF)|ITF]] as a special task force leader, then volunteered to join Anajak alongside his own soldiers.</p>
 
 ## ITF service
 

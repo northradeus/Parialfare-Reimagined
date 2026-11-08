@@ -1,15 +1,14 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-concept">
 <h3>Portal: Events</h3>
 <table>
 <tr><th>Title</th><td>Portal: Events</td></tr>
 <tr><th>Subtitle</th><td>Index of historical records and incidents</td></tr>
-<tr><th>Concept Type</th><td>["Meta/Portal"]</td></tr>
 </table>
 </aside>
 
 # Events
 
-A curated index of significant historical events.
+<p class="lead">A curated index of significant historical events.</p>
 
 ## 2008
 - [[2008 Pocheasang Palace raid]] — The LENDERMAIRE assault on the archives.

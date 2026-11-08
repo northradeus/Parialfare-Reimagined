@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-faction">
 <h3>Konish's Group</h3>
 <img src="Assets/20240917_153834.png" alt="Konish's Group" />
 <table>
@@ -16,7 +16,6 @@
 <tr><th>Allies</th><td>LENDERMAIRE, CAF (alleged)</td></tr>
 <tr><th>Opponents</th><td>Ironish Task Force (ITF), Anajak Forces, Maire O'Mare Insurgency</td></tr>
 <tr><th>Battles</th><td>2008 Pocheasang Palace raid</td></tr>
-<tr><th>Faction Type</th><td>["Military/Coalition"]</td></tr>
 </table>
 </aside>
 
@@ -24,7 +23,7 @@
 
 
 
-**Konish's Group**, commonly referred to simply as the **Konish Group**, is a transnational Cladish umbrella coalition and unrecognized quasi-state operating primarily in the ungoverned region of [[Ironclad]]. It was founded in 2007 by the Cladish warlord [[Konish Kimbotin (Reimagined)|Konish Kimbotin]], who serves as its supreme commander. The group is a decentralized network of armed formations that operate with substantial autonomy, bound together by Kimbotin's strategic coordination and shared financial interests.[^1][^2]
+<p class="lead">**Konish's Group**, commonly referred to simply as the **Konish Group**, is a transnational Cladish umbrella coalition and unrecognized quasi-state operating primarily in the ungoverned region of [[Ironclad]]. It was founded in 2007 by the Cladish warlord [[Konish Kimbotin (Reimagined)|Konish Kimbotin]], who serves as its supreme commander. The group is a decentralized network of armed formations that operate with substantial autonomy, bound together by Kimbotin's strategic coordination and shared financial interests.[^1][^2]</p>
 
 The organization gained global prominence following the [[2008 Pocheasang Palace raid]], an operation conducted by its black operations unit, [[LENDERMAIRE]], against the government of the [[Ironland|Kingdom of the Ai'ron Land]]. The raid resulted in the extraction of classified military archives. In public discourse Kimbotin is described as the most wanted man in the region; the characterisation is a public one rather than a formal finding by [[VISTA]].[^3] The group is known for its asymmetric warfare tactics, its use of information as a primary weapon, and its complex network of political and military contacts that extend far beyond the Ironclad DMZ.[^4]
 

@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Noradus Northrad</h3>
 <img src="Assets/d8973bcf928c6bf7e6d82fe571e95669.jpg" alt="Noradus Northrad" />
 <table>
@@ -12,7 +12,7 @@
 <tr><th>Ethnicity</th><td>['Ironish', 'Lurkish']</td></tr>
 <tr><th>Gender</th><td>Male</td></tr>
 <tr><th>Tier</th><td>1</td></tr>
-<tr><th>Role</th><td>Undefined</td></tr>
+<tr><th>Role</th><td><span class="val-undefined">Undefined</span></td></tr>
 <tr><th>Factions</th><td>['VISTA', 'Ironish Task Force', 'Global Intervention Coalition']</td></tr>
 <tr><th>Nation</th><td>['Ironland', 'Lurkinsberg', 'Thaiphone']</td></tr>
 <tr><th>Political Office</th><td>Founder of VISTA</td></tr>
@@ -26,7 +26,7 @@
 
 
 
-**Noradus Partenstine**, known as **Northrad**, is the president of [[VISTA]] and the principal architect of its institutions. He is a former special operator under [[Lurkinsberg]], and a global figure from a wealthy family who bought his way into politics.
+<p class="lead">**Noradus Partenstine**, known as **Northrad**, is the president of [[VISTA]] and the principal architect of its institutions. He is a former special operator under [[Lurkinsberg]], and a global figure from a wealthy family who bought his way into politics.</p>
 
 He is a different individual from the thirteenth member of [[LENDERMAIRE]], [[Samsara Lykor]], who shares the designation through the [[Military naming custom]]; the two have no established personal or organizational connection.
 

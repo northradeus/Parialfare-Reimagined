@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Wendy</h3>
 <img src="Assets/Wendy.jpg" alt="Wendy" />
 <table>
@@ -15,7 +15,7 @@
 
 
 
-**Wendy** is a sharpshooter of the black operations unit [[LENDERMAIRE]], recorded in earlier material as "Headshooter." He developed his marksmanship through thousands of hours of airsoft rather than through military service.
+<p class="lead">**Wendy** is a sharpshooter of the black operations unit [[LENDERMAIRE]], recorded in earlier material as "Headshooter." He developed his marksmanship through thousands of hours of airsoft rather than through military service.</p>
 
 ## Background (proposed)
 

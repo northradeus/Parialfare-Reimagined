@@ -1,11 +1,10 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-location">
 <h3>Site-29</h3>
 <table>
 <tr><th>Title</th><td>Site-29</td></tr>
 <tr><th>Subtitle</th><td>Classified Training Installation</td></tr>
-<tr><th>Location Type</th><td>["Facility/Training", "Covert/Blacksite"]</td></tr>
 <tr><th>Location Type</th><td>Black site</td></tr>
-<tr><th>Operator</th><td>Unknown</td></tr>
+<tr><th>Operator</th><td><span class="val-unknown">Unknown</span></td></tr>
 <tr><th>Operational Status</th><td>Active</td></tr>
 </table>
 </aside>
@@ -14,7 +13,7 @@
 
 
 
-**Site-29** is a heavily concealed, compartmentalized training installation. Operating outside official [[VISTA]] or Ai'ron oversight, the facility is designed for the psychological conditioning and specialized training of covert operatives. Its operator remains unknown, a deliberate feature of the facility's design: while its graduates can be identified and assessed, the institution that produced them cannot.
+<p class="lead">**Site-29** is a heavily concealed, compartmentalized training installation. Operating outside official [[VISTA]] or Ai'ron oversight, the facility is designed for the psychological conditioning and specialized training of covert operatives. Its operator remains unknown, a deliberate feature of the facility's design: while its graduates can be identified and assessed, the institution that produced them cannot.</p>
 
 ## 1. Overview
 

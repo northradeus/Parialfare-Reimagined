@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Amberly</h3>
 <img src="Assets/Amberly.jpg" alt="Amberly" />
 <table>
@@ -16,7 +16,7 @@
 
 
 
-**Amberly** is the coordinator of the [[Maire O'Mare (2008)|Maire O'Mare]] insurgency in [[Ironclad]] in 2008. He is recorded as [[Cladish]] by ethnicity and identifies himself as Deckish. He is not the movement's founder, and its ideology does not depend on his survival; he holds the insurgency's separate parts in coordination rather than commanding them.
+<p class="lead">**Amberly** is the coordinator of the [[Maire O'Mare (2008)|Maire O'Mare]] insurgency in [[Ironclad]] in 2008. He is recorded as [[Cladish]] by ethnicity and identifies himself as Deckish. He is not the movement's founder, and its ideology does not depend on his survival; he holds the insurgency's separate parts in coordination rather than commanding them.</p>
 
 The public register records him as the leader of an insurgent organisation. The structural record records him as a coordinator. Both are correct, and the difference between them is the whole of his position.
 

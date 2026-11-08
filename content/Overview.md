@@ -1,15 +1,14 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-concept">
 <h3>'Parialfare: Reimagined — Overview'</h3>
 <table>
 <tr><th>Title</th><td>Parialfare: Reimagined — Overview</td></tr>
 <tr><th>Subtitle</th><td>Master context file for the Reimagined continuity</td></tr>
-<tr><th>Concept Type</th><td>["Meta/Context"]</td></tr>
 </table>
 </aside>
 
 # Parialfare: Reimagined
 
-**Read this to understand the state of the world.** This is the master context file for the main continuity. It explains the geopolitical landscape, the major factions, the central conflict, and the hidden layers beneath them.
+<p class="lead">**Read this to understand the state of the world.** This is the master context file for the main continuity. It explains the geopolitical landscape, the major factions, the central conflict, and the hidden layers beneath them.</p>
 
 ## Premise
 

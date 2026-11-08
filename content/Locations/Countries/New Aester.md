@@ -1,28 +1,27 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-country">
 <h3>New Aester</h3>
 <img src="Assets/New_Aester_Flag.png" alt="New Aester" />
 <table>
 <tr><th>Title</th><td>New Aester</td></tr>
 <tr><th>Subtitle</th><td>Corporate city-state and VISTA member</td></tr>
 <tr><th>Motto</th><td>Progress Through Innovation</td></tr>
-<tr><th>Anthem</th><td>TBD</td></tr>
+<tr><th>Anthem</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Capital</th><td>New Aester</td></tr>
 <tr><th>Largest City</th><td>New Aester</td></tr>
 <tr><th>Official Language</th><td>Ironish (de facto)</td></tr>
 <tr><th>Ethnic Groups</th><td>Mixed international (Ironish, Lurkish, Cladish, others)</td></tr>
-<tr><th>Religion</th><td>TBD</td></tr>
+<tr><th>Religion</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Demonym</th><td>Aesterian</td></tr>
 <tr><th>Government Type</th><td>Corporate Technocracy / City-State</td></tr>
 <tr><th>Head Of State</th><td>Northrad (Architect and Founder)</td></tr>
 <tr><th>Head Of Government</th><td>New Aester City Council</td></tr>
-<tr><th>Legislature</th><td>TBD</td></tr>
+<tr><th>Legislature</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Military</th><td>Ironish Task Force (ITF) (Garrison)</td></tr>
-<tr><th>Area Total</th><td>TBD</td></tr>
-<tr><th>Population Estimate</th><td>TBD</td></tr>
+<tr><th>Area Total</th><td><span class="val-tbd">TBD</span></td></tr>
+<tr><th>Population Estimate</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Borders</th><td>Ironland (North), Ironclad DMZ (South)</td></tr>
-<tr><th>Currency</th><td>TBD</td></tr>
+<tr><th>Currency</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Industries</th><td>Technology, Corporate Research, Defense Contracting</td></tr>
-<tr><th>Country Type</th><td>["City-State/Corporate"]</td></tr>
 </table>
 </aside>
 
@@ -30,7 +29,7 @@
 
 
 
-**New Aester** is a corporate city-state situated on the border between the [[Ironland|Kingdom of the Ai'ron Land]] and the [[Ironclad DMZ]]. It is a member of [[VISTA]] and operates as a heavily policed proving ground for corporate technologies. The state was built as an estate project by [[Noradus|Northrad]], who serves as its architect and founder. It is populated by a diverse, mixed-nationality citizenry drawn by the promise of a highly advanced smart city.
+<p class="lead">**New Aester** is a corporate city-state situated on the border between the [[Ironland|Kingdom of the Ai'ron Land]] and the [[Ironclad DMZ]]. It is a member of [[VISTA]] and operates as a heavily policed proving ground for corporate technologies. The state was built as an estate project by [[Noradus|Northrad]], who serves as its architect and founder. It is populated by a diverse, mixed-nationality citizenry drawn by the promise of a highly advanced smart city.</p>
 
 The country functions as a crucial strategic buffer between the established order of Ironland and the ungoverned territories of the Cladish warlords. Its outer edges are heavily militarized, garrisoned by the [[Ironish Task Force (ITF)]].
 

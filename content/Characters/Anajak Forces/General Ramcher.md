@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>General Ramcher</h3>
 <table>
 <tr><th>Title</th><td>General Ramcher</td></tr>
@@ -12,7 +12,7 @@
 
 
 
-**General Ramcher** commands [[Anajak Forces]]. The record documents the post he holds rather than the person holding it: nothing about his origin, training, grade or prior service is established, and the office is described entirely by what it does.
+<p class="lead">**General Ramcher** commands [[Anajak Forces]]. The record documents the post he holds rather than the person holding it: nothing about his origin, training, grade or prior service is established, and the office is described entirely by what it does.</p>
 
 ## Command functions
 

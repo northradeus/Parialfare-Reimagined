@@ -6,20 +6,13 @@ const sourceAssets = 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolh
 const destDir = path.join(__dirname, 'content');
 const destAssets = path.join(destDir, 'Assets');
 
-// 1. Clean destination
-if (fs.existsSync(destDir)) {
-    fs.rmSync(destDir, { recursive: true, force: true });
-}
+if (fs.existsSync(destDir)) { fs.rmSync(destDir, { recursive: true, force: true }); }
 fs.mkdirSync(destDir, { recursive: true });
 fs.mkdirSync(destAssets, { recursive: true });
-
-// 2. Copy Assets
 fs.cpSync(sourceAssets, destAssets, { recursive: true });
 
-// Ignored metadata keys
-const ignoreKeys = ['tags', 'entity-type', 'character-type', 'UID', 'continuity', 'subject', 'status', 'image', 'layout', 'aliases', 'alias'];
+const ignoreKeys = ['tags', 'entity-type', 'character-type', 'faction-type', 'location-type', 'concept-type', 'country-type', 'UID', 'continuity', 'subject', 'status', 'image', 'layout', 'aliases', 'alias'];
 
-// 3. Process markdown files
 function processDir(dir, outDir) {
     const items = fs.readdirSync(dir);
     for (const item of items) {
@@ -33,22 +26,21 @@ function processDir(dir, outDir) {
         } else if (item.endsWith('.md')) {
             let content = fs.readFileSync(fullPath, 'utf-8');
             
-            // Fix UTF-8 encoding issues from Windows
             content = content.replace(/â€“/g, '–').replace(/â€”/g, '—').replace(/â€™/g, "'").replace(/â€œ/g, '"').replace(/â€\x9d/g, '"');
+
+            // Safely strip entire Wikipedia artifact line
+            content = content.replace(/^\*?From Wikipedia, the free encyclopedia\*?\s*$/gm, '');
 
             // Remove layout block
             content = content.replace(/\n# Chronicler Infobox Layout Rules\nlayout:[\s\S]*?\n---\n/g, '\n---\n');
             
-            // Remove Wikipedia asterisks
-            content = content.replace(/\*From Wikipedia, the free encyclopedia\*/g, 'From Wikipedia, the free encyclopedia');
-            
-            // Process YAML frontmatter
             const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
             if (fmMatch) {
                 let yaml = fmMatch[1];
                 let body = content.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
                 
                 let title = '';
+                let entityType = 'concept';
                 let imgName = '';
                 let infoRows = '';
 
@@ -60,11 +52,8 @@ function processDir(dir, outDir) {
                     if (!line || line.startsWith('#')) continue;
 
                     if (inMultiline) {
-                        if (line.startsWith('  - ')) {
-                            continue;
-                        } else {
-                            inMultiline = false;
-                        }
+                        if (line.startsWith('  - ')) continue;
+                        else inMultiline = false;
                     }
 
                     const match = line.match(/^([a-zA-Z0-9_-]+):\s*(.*)/);
@@ -73,6 +62,7 @@ function processDir(dir, outDir) {
                         let val = match[2].trim();
 
                         if (key === 'title') title = val.replace(/"/g, '');
+                        if (key === 'entity-type') entityType = val.toLowerCase().replace(/['"]/g, '');
                         if (key === 'image') {
                             const imgMatch = val.match(/(?:\[\[)?([^\]\n,]+)/);
                             if (imgMatch) imgName = imgMatch[1].trim();
@@ -85,33 +75,48 @@ function processDir(dir, outDir) {
                             continue;
                         }
 
-                        // Clean formatting
                         val = val.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, '$2');
                         val = val.replace(/\[\[([^\]]+)\]\]/g, '$1');
                         val = val.replace(/^['"]|['"]$/g, '');
                         
+                        let valClass = '';
+                        const lowerVal = val.toLowerCase();
+                        if (lowerVal === 'tbd') valClass = 'val-tbd';
+                        else if (lowerVal === 'unknown') valClass = 'val-unknown';
+                        else if (lowerVal === 'none') valClass = 'val-none';
+                        else if (lowerVal === 'undefined') valClass = 'val-undefined';
+
                         if (val) {
                             const displayKey = key.replace(/-/g, ' ').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                            infoRows += `<tr><th>${displayKey}</th><td>${val}</td></tr>\n`;
+                            const valSpan = valClass ? `<span class="${valClass}">${val}</span>` : val;
+                            infoRows += `<tr><th>${displayKey}</th><td>${valSpan}</td></tr>\n`;
                         }
                     }
                 }
 
                 let infobox = '';
                 if (infoRows || imgName) {
-                    infobox = `<aside class="custom-infobox">\n`;
+                    infobox = `<aside class="custom-infobox infobox-${entityType}">\n`;
                     if (title) infobox += `<h3>${title}</h3>\n`;
                     if (imgName) infobox += `<img src="Assets/${imgName}" alt="${title}" />\n`;
                     if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
                     infobox += `</aside>\n`;
                 }
 
-                // Fix images in body
                 body = body.replace(/(<img[^>]+src=")(?!\/|http|Assets\/)([^"]+)(")/g, '$1/Assets/$2$3');
                 body = body.replace(/!\[\[([^|\]]+)\|[^\]]+\]\]/g, '![](/Assets/$1)');
                 body = body.replace(/!\[\[([^\]]+)\]\]/g, '![](/Assets/$1)');
 
-                // Reconstruct file
+                // Add lead class to the first non-header paragraph
+                let firstP = true;
+                body = body.replace(/^(?!\s*#)(\s*)([^\n\r]+)/m, (match, spaces, text) => {
+                    if (firstP && text.trim().length > 0) {
+                        firstP = false;
+                        return spaces + `<p class="lead">` + text + `</p>`;
+                    }
+                    return match;
+                });
+
                 content = infobox + body;
             }
             fs.writeFileSync(outPath, content, 'utf-8');
@@ -120,7 +125,6 @@ function processDir(dir, outDir) {
 }
 processDir(sourceDir, destDir);
 
-// 4. Create landing pages
 const indexContent = `# Welcome to Nolheim\n\nThis is the public reading room for the Parialfare: Reimagined continuity.\n\nThe year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war.\n\n## Explore the Continuity\n\n- [[Portal - Characters|Characters]]\n- [[Portal - Factions|Factions]]\n- [[Portal - Locations|Locations]]\n- [[Portal - Events|Events]]\n- [[Portal - Lore|Lore]]\n`;
 fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
 
@@ -146,4 +150,4 @@ for (const d of directories) {
     }
     fs.writeFileSync(path.join(destDir, `${d}.md`), listContent);
 }
-console.log('Content built successfully with HTML-embedded Markdown infoboxes!');
+console.log('Content built successfully with refined infoboxes, lead paragraphs, and missing value classes.');

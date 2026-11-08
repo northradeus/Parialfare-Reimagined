@@ -1,9 +1,8 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-faction">
 <h3>Global Intervention Coalition (GIC)</h3>
 <table>
 <tr><th>Title</th><td>Global Intervention Coalition (GIC)</td></tr>
 <tr><th>Subtitle</th><td>Global military organisation working with VISTA</td></tr>
-<tr><th>Faction Type</th><td>["Military/Coalition"]</td></tr>
 <tr><th>Official Name</th><td>Global Intervention Coalition</td></tr>
 <tr><th>Popular Name</th><td>"the global ITF"</td></tr>
 <tr><th>Established By</th><td>VISTA</td></tr>
@@ -19,7 +18,7 @@
 
 
 
-**Global Intervention Coalition (GIC)** is a global military organization working directly with [[VISTA]]. It was established by VISTA delegation vote on 4 December 2008, with [[Noradus|Northrad]] as its founder and architect, following the 2008 raids and the earlier [[Ironish Task Force (ITF)|ITF]]. It is a separate institution from ITF: ITF is the military that can function independently on its own, while the GIC is a different body. Most people call the GIC "the global ITF" because of ITF's massive influence; the confusing naming is intentional. The GIC established [[Anajak Forces]].
+<p class="lead">**Global Intervention Coalition (GIC)** is a global military organization working directly with [[VISTA]]. It was established by VISTA delegation vote on 4 December 2008, with [[Noradus|Northrad]] as its founder and architect, following the 2008 raids and the earlier [[Ironish Task Force (ITF)|ITF]]. It is a separate institution from ITF: ITF is the military that can function independently on its own, while the GIC is a different body. Most people call the GIC "the global ITF" because of ITF's massive influence; the confusing naming is intentional. The GIC established [[Anajak Forces]].</p>
 
 ## Institutional posture
 

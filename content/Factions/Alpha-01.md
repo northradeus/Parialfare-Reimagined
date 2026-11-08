@@ -1,9 +1,8 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-faction">
 <h3>Alpha-01</h3>
 <table>
 <tr><th>Title</th><td>Alpha-01</td></tr>
 <tr><th>Subtitle</th><td>ITF label for the classified assassin core of Anajak Forces</td></tr>
-<tr><th>Faction Type</th><td>["Military/Unit"]</td></tr>
 <tr><th>Label Of</th><td>Anajak Forces</td></tr>
 <tr><th>Label Used By</th><td>Ironish Task Force (ITF)</td></tr>
 <tr><th>Classification</th><td>Classified</td></tr>
@@ -14,7 +13,7 @@
 
 
 
-**Alpha-01** is the [[Ironish Task Force (ITF)|ITF]] label for the classified assassin core of [[Anajak Forces]]. The team's whole is named Anajak; Alpha-01 designates only its classified core, and is not a separate organisation.
+<p class="lead">**Alpha-01** is the [[Ironish Task Force (ITF)|ITF]] label for the classified assassin core of [[Anajak Forces]]. The team's whole is named Anajak; Alpha-01 designates only its classified core, and is not a separate organisation.</p>
 
 ## Unresolved
 

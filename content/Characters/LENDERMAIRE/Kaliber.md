@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Kaliber</h3>
 <table>
 <tr><th>Title</th><td>Kaliber</td></tr>
@@ -13,7 +13,7 @@
 
 
 
-**Kaliber** is the shielder of the black operations unit [[LENDERMAIRE]], recorded in earlier material as "Shield specialist." He is muted. He is a former squad member of the Ironish Special Forces, together with [[Markless]] and [[Andrew]], and has been in LENDERMAIRE since its early development.
+<p class="lead">**Kaliber** is the shielder of the black operations unit [[LENDERMAIRE]], recorded in earlier material as "Shield specialist." He is muted. He is a former squad member of the Ironish Special Forces, together with [[Markless]] and [[Andrew]], and has been in LENDERMAIRE since its early development.</p>
 
 He is the reason two other men are in the household.
 

@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Verdanski</h3>
 <table>
 <tr><th>Title</th><td>Verdanski</td></tr>
@@ -14,7 +14,7 @@
 
 
 
-**Verdanski** is an A+ member of [[Anajak Forces]], facility trained in combat. His file rests on two facts — a grade and a training origin — and the question of why he was placed in Anajak.
+<p class="lead">**Verdanski** is an A+ member of [[Anajak Forces]], facility trained in combat. His file rests on two facts — a grade and a training origin — and the question of why he was placed in Anajak.</p>
 
 ## Training and grade
 

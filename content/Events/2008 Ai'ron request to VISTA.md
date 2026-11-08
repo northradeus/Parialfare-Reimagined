@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-event">
 <h3>2008 Ai'ron request to VISTA</h3>
 <table>
 <tr><th>Title</th><td>2008 Ai'ron request to VISTA</td></tr>
@@ -14,7 +14,7 @@
 
 
 
-On 2 September 2008, approximately one week after the [[2008 Pocheasang Palace raid]], the government of the [[Ironland|Kingdom of the Ai'ron Land]] submitted a request to [[VISTA]] for the preparation and funding of military programmes in support of a full-scale campaign in the [[Ironclad DMZ]]. The request was referred to a vote of the twelve member delegations under the charter's two-thirds threshold, and failed.[^1]
+<p class="lead">On 2 September 2008, approximately one week after the [[2008 Pocheasang Palace raid]], the government of the [[Ironland|Kingdom of the Ai'ron Land]] submitted a request to [[VISTA]] for the preparation and funding of military programmes in support of a full-scale campaign in the [[Ironclad DMZ]]. The request was referred to a vote of the twelve member delegations under the charter's two-thirds threshold, and failed.[^1]</p>
 
 ## 1. Background
 

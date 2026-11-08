@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Andrew</h3>
 <img src="Assets/Andrew.png" alt="Andrew" />
 <table>
@@ -13,7 +13,7 @@
 
 
 
-**Andrew** is the assaulter of the black operations unit [[LENDERMAIRE]]. He is a former squad member of the Ironish Special Forces, together with [[Markless]] and [[Kaliber]], and has been in LENDERMAIRE since its early development.
+<p class="lead">**Andrew** is the assaulter of the black operations unit [[LENDERMAIRE]]. He is a former squad member of the Ironish Special Forces, together with [[Markless]] and [[Kaliber]], and has been in LENDERMAIRE since its early development.</p>
 
 He is the only member of the household whose place in it is contested. Where he sits on the thirteen-member roster is unconfirmed: he is not among the twelve members named earlier, and the record leaves his place unresolved. He is also the only member recorded as having come to the household for someone else.
 

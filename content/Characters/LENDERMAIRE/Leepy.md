@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Leepy</h3>
 <img src="Assets/Leepy.jpg" alt="Leepy" />
 <table>
@@ -15,7 +15,7 @@
 
 
 
-**Leepy** is the fourth member of the black operations unit [[LENDERMAIRE]] and its sniper. He is recorded as the most psychologically compromised member of the thirteen-member core. His marksmanship originates from hunting rather than military service.
+<p class="lead">**Leepy** is the fourth member of the black operations unit [[LENDERMAIRE]] and its sniper. He is recorded as the most psychologically compromised member of the thirteen-member core. His marksmanship originates from hunting rather than military service.</p>
 
 His visible personality is not his own. It was built for him.
 

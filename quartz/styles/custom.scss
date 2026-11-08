@@ -1,33 +1,50 @@
 @use "./variables.scss" as *;
 
-// Custom Infobox Styling (Chronicler Style)
+// ==========================================
+// NOLHEIM ENCYCLOPEDIA STYLES
+// ==========================================
+
+// --- LEAD PARAGRAPH (Intro Summary) ---
+p.lead {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--dark);
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+// --- INFOBOX BASE STYLES ---
 .custom-infobox {
   float: right;
-  width: 300px;
+  width: 320px;
   margin: 0 0 1.5rem 2rem;
   background-color: var(--light);
   border: 1px solid var(--lightgray);
-  border-radius: 4px;
-  padding: 12px;
+  border-radius: 6px;
+  padding: 1rem;
   font-size: 0.85rem;
   font-family: var(--bodyFont);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  clear: right;
 }
 
 .custom-infobox img {
   width: 100%;
   height: auto;
-  border-radius: 2px;
-  margin-bottom: 10px;
+  border-radius: 4px;
+  margin-bottom: 12px;
   display: block;
+  border: 1px solid var(--lightgray);
 }
 
 .custom-infobox h3 {
-  margin: 0 0 10px 0;
-  padding-bottom: 5px;
-  border-bottom: 1px solid var(--lightgray);
-  font-size: 1.1rem;
+  margin: 0 0 12px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--secondary);
+  font-size: 1.2rem;
   text-align: center;
+  color: var(--dark);
+  font-family: var(--headerFont);
 }
 
 .custom-infobox table {
@@ -38,32 +55,92 @@
 
 .custom-infobox th {
   text-align: left;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--secondary);
-  padding: 4px 8px 4px 0;
+  padding: 6px 10px 6px 0;
   vertical-align: top;
-  white-space: nowrap;
+  width: 35%;
   border-bottom: 1px solid var(--lightgray);
 }
 
 .custom-infobox td {
-  padding: 4px 0;
+  padding: 6px 0;
   vertical-align: top;
   border-bottom: 1px solid var(--lightgray);
   color: var(--darkgray);
+  line-height: 1.4;
 }
 
+// --- ARTICLE FAMILY SPECIFIC STYLES ---
+// Characters: warm, personal accent
+.infobox-character h3 { border-bottom-color: var(--secondary); }
+
+// Factions: organizational, strong authority
+.infobox-faction {
+  border-left: 4px solid var(--tertiary);
+}
+.infobox-faction h3 {
+  border-bottom-color: var(--tertiary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+// Locations: geographic, stable
+.infobox-location, .infobox-country {
+  border-top: 4px solid var(--darkgray);
+}
+
+// Events: chronological, sharp
+.infobox-event {
+  border-left: 4px solid var(--secondary);
+}
+.infobox-event th {
+  color: var(--dark);
+  font-family: monospace;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+// --- MISSING VALUES (Semantic Presentation) ---
+.val-tbd {
+  color: var(--gray);
+  font-style: italic;
+  font-size: 0.8rem;
+}
+.val-unknown {
+  color: var(--secondary);
+  font-style: italic;
+}
+.val-none {
+  color: var(--darkgray);
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+.val-undefined {
+  color: var(--text-error);
+  text-decoration: underline wavy;
+  font-weight: bold;
+}
+
+// --- RESPONSIVE / MOBILE RENDERING ---
 @media (max-width: 800px) {
   .custom-infobox {
     float: none;
     width: 100%;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 2rem 0;
+    box-sizing: border-box;
+  }
+  .custom-infobox th {
+    width: 40%;
   }
 }
 
-// General article styling
+// --- GENERAL TYPOGRAPHY ---
 article h1, article h2, article h3 {
   border-bottom: 1px solid var(--lightgray);
   padding-bottom: 0.3rem;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
+  color: var(--dark);
 }

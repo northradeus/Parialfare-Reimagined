@@ -1,15 +1,14 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-concept">
 <h3>Portal: Characters</h3>
 <table>
 <tr><th>Title</th><td>Portal: Characters</td></tr>
 <tr><th>Subtitle</th><td>Index of active and historical figures in Parialfare</td></tr>
-<tr><th>Concept Type</th><td>["Meta/Portal"]</td></tr>
 </table>
 </aside>
 
 # Characters
 
-This is a curated index of the prominent figures operating within the Parialfare: Reimagined continuity. For the automated list of all files, see the site navigation.
+<p class="lead">This is a curated index of the prominent figures operating within the Parialfare: Reimagined continuity. For the automated list of all files, see the site navigation.</p>
 
 ## The Insurgency
 ### LENDERMAIRE

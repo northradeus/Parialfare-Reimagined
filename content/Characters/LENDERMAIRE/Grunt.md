@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Grunt</h3>
 <table>
 <tr><th>Title</th><td>Grunt</td></tr>
@@ -13,7 +13,7 @@
 
 
 
-**Grunt** is a member of the black operations unit [[LENDERMAIRE]]. His earlier roster entry records him as "Nade Specialist."
+<p class="lead">**Grunt** is a member of the black operations unit [[LENDERMAIRE]]. His earlier roster entry records him as "Nade Specialist."</p>
 
 His current role is unresolved, for the same reason as [[Gunter]]'s: one of the two throws grenades and the other suppresses fire, and which man holds which role has not been decided. His background is unrecorded.
 

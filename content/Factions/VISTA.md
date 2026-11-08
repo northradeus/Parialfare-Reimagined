@@ -1,10 +1,9 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-faction">
 <h3>VISTA</h3>
 <img src="Assets/VISTA_Flag.png" alt="VISTA" />
 <table>
 <tr><th>Title</th><td>VISTA</td></tr>
 <tr><th>Subtitle</th><td>Intergovernmental military organisation of twelve member delegations</td></tr>
-<tr><th>Faction Type</th><td>["Political/Alliance", "Military/Coalition"]</td></tr>
 <tr><th>Type</th><td>Intergovernmental military organisation</td></tr>
 <tr><th>Members</th><td>Twelve member delegations</td></tr>
 <tr><th>Presidency</th><td>Northrad</td></tr>
@@ -18,7 +17,7 @@
 
 
 
-**VISTA** is an intergovernmental military organisation of twelve member delegations. Under its charter the presidency casts one vote among the delegations, and a two-thirds majority — eight of twelve — is required to authorise funding and military programmes. The organisation's institutional architecture is attributed to its president, [[Noradus|Northrad]], who is described as its founder and principal architect; how and when he came to lead it is not established in the available record.
+<p class="lead">**VISTA** is an intergovernmental military organisation of twelve member delegations. Under its charter the presidency casts one vote among the delegations, and a two-thirds majority — eight of twelve — is required to authorise funding and military programmes. The organisation's institutional architecture is attributed to its president, [[Noradus|Northrad]], who is described as its founder and principal architect; how and when he came to lead it is not established in the available record.</p>
 
 VISTA declined a request by the [[Ironland|Kingdom of the Ai'ron Land]] in September 2008 to fund a campaign into the [[Ironclad DMZ]]. Its Intelligence Agency later disclosed the existence of [[Konish's Group]], and on 4 December 2008 it established the [[Global Intervention Coalition (GIC)]].
 

@@ -1,9 +1,8 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-faction">
 <h3>Maire O'Mare</h3>
 <table>
 <tr><th>Title</th><td>Maire O'Mare</td></tr>
 <tr><th>Subtitle</th><td>The returned insurgency in Ironclad</td></tr>
-<tr><th>Faction Type</th><td>["Military/Insurgency", "Political/Nationalist"]</td></tr>
 <tr><th>Active</th><td>2008</td></tr>
 <tr><th>Region</th><td>Ironclad</td></tr>
 <tr><th>Origin</th><td>Maire O'Mare (claimed)</td></tr>
@@ -15,7 +14,7 @@
 
 
 
-**Maire O'Mare** is an insurgent group in [[Ironclad]], active in 2008. It presents itself as the modern return of the ideology of the medieval [[Maire O'Mare (Rogolfenstine)|Maire O'Mare movement]] led by [[Koilen Rogolf (Rogolfenstine)|Rogolf]].
+<p class="lead">**Maire O'Mare** is an insurgent group in [[Ironclad]], active in 2008. It presents itself as the modern return of the ideology of the medieval [[Maire O'Mare (Rogolfenstine)|Maire O'Mare movement]] led by [[Koilen Rogolf (Rogolfenstine)|Rogolf]].</p>
 
 It is not the person returning. It is the idea.
 

@@ -1,16 +1,16 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-country">
 <h3>Kingdom of the Ai'ron Land</h3>
 <img src="Assets/ChatGPT Image Nov 4- 2026- 10_50_03 PM.jpg" alt="Kingdom of the Ai'ron Land" />
 <table>
 <tr><th>Title</th><td>Kingdom of the Ai'ron Land</td></tr>
 <tr><th>Subtitle</th><td>Desteina Reamchea O'Airon</td></tr>
 <tr><th>Motto</th><td>Nations, Religion, King</td></tr>
-<tr><th>Anthem</th><td>TBD</td></tr>
+<tr><th>Anthem</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Capital</th><td>Pocheasang</td></tr>
 <tr><th>Largest City</th><td>Soveangasna</td></tr>
 <tr><th>Official Language</th><td>Ironish</td></tr>
 <tr><th>Ethnic Groups</th><td>62% Ironish, 21% Lurkish, 10% Cladish, 7% Others</td></tr>
-<tr><th>Religion</th><td>TBD</td></tr>
+<tr><th>Religion</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Demonym</th><td>Ironish / Ai'ronese</td></tr>
 <tr><th>Government Type</th><td>Constitutional Monarchy</td></tr>
 <tr><th>Monarch</th><td>King Pohea Ivynestine II</td></tr>
@@ -22,7 +22,6 @@
 <tr><th>Borders</th><td>Ironclad DMZ (South), New Aester (South)</td></tr>
 <tr><th>Currency</th><td>Mon (₥)</td></tr>
 <tr><th>Industries</th><td>Trade, Agriculture, Global Market</td></tr>
-<tr><th>Country Type</th><td>["Monarchy/Constitutional"]</td></tr>
 </table>
 </aside>
 
@@ -30,7 +29,7 @@
 
 
 
-> **Kingdom of the Ai'ron Land**
+<p class="lead">> **Kingdom of the Ai'ron Land**</p>
 > 
 > **Desteina Reamchea O'Airon**
 > 

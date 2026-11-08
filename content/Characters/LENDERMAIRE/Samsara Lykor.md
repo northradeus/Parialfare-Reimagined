@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Samsara Lykor</h3>
 <img src="Assets/Samsara.jpg" alt="Samsara Lykor" />
 <table>
@@ -26,7 +26,7 @@
 
 
 
-**Samsara Lykor** (born 1987) is a [[Lurkish]] operator and the concealed thirteenth member of [[LENDERMAIRE]]. A former [[Lurkish]] SWAT officer and marine, he is an independent operator who completes unfinished objectives and serves as the team's backup sniper. He is known publicly only by the designation "Northrad."
+<p class="lead">**Samsara Lykor** (born 1987) is a [[Lurkish]] operator and the concealed thirteenth member of [[LENDERMAIRE]]. A former [[Lurkish]] SWAT officer and marine, he is an independent operator who completes unfinished objectives and serves as the team's backup sniper. He is known publicly only by the designation "Northrad."</p>
 
 Lykor is a different individual from [[Noradus]], the president of [[VISTA]]. The two share a designation through the [[Military naming custom]] and have no established personal or organizational connection.
 

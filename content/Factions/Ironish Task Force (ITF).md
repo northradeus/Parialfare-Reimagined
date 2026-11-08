@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-faction">
 <h3>Ironish Task Force</h3>
 <img src="Assets/Ironish_20251208080609.png" alt="Ironish Task Force" />
 <table>
@@ -13,7 +13,6 @@
 <tr><th>Parent</th><td>VISTA</td></tr>
 <tr><th>Notable Contract</th><td>Inner-complex security, Pocheasang palace complex</td></tr>
 <tr><th>Notable Engagement</th><td>2008 Pocheasang Palace raid</td></tr>
-<tr><th>Faction Type</th><td>["Military/Contractor"]</td></tr>
 </table>
 </aside>
 
@@ -21,7 +20,7 @@
 
 
 
-The **Ironish Task Force (ITF)** is an Ai'ron-registered private military contractor that provides security services to state and commercial clients. The company derives its name from the Ironish ethnic population of [[Ironland|the Kingdom of the Ai'ron Land]]. The ITF is primarily known for holding the inner-complex security contract for the [[Pocheasang palace complex]], a role in which it sustained nine fatalities during the [[2008 Pocheasang Palace raid]]. Following the raid, the company's contract was suspended pending review by the [[Ministry of the Interior]].[^1][^2]
+<p class="lead">The **Ironish Task Force (ITF)** is an Ai'ron-registered private military contractor that provides security services to state and commercial clients. The company derives its name from the Ironish ethnic population of [[Ironland|the Kingdom of the Ai'ron Land]]. The ITF is primarily known for holding the inner-complex security contract for the [[Pocheasang palace complex]], a role in which it sustained nine fatalities during the [[2008 Pocheasang Palace raid]]. Following the raid, the company's contract was suspended pending review by the [[Ministry of the Interior]].[^1][^2]</p>
 
 ## History
 

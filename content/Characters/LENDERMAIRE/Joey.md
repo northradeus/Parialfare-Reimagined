@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Joey</h3>
 <img src="Assets/Joey.jpg" alt="Joey" />
 <table>
@@ -15,7 +15,7 @@
 
 
 
-**Joey** is a background member of the black operations unit [[LENDERMAIRE]], where he manages incoming resources. He is not counted among the group's thirteen core members, and belongs to the additional background personnel who support the unit's operations.
+<p class="lead">**Joey** is a background member of the black operations unit [[LENDERMAIRE]], where he manages incoming resources. He is not counted among the group's thirteen core members, and belongs to the additional background personnel who support the unit's operations.</p>
 
 Joey resides with LENDERMAIRE personnel on land owned by [[Konish Kimbotin (Reimagined)]] in the southern [[Ironclad DMZ]]. Background personnel are treated as members of the household's family unit despite their exclusion from the core membership count. He is not established as a combat-deployable operator.
 

@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-event">
 <h3>2008 Pocheasang Palace raid</h3>
 <img src="Assets/Nighttime Gendarmerie Assault.png" alt="2008 Pocheasang Palace raid" />
 <table>
@@ -18,7 +18,7 @@
 
 
 
-> **2008 Pocheasang Palace raid**
+<p class="lead">> **2008 Pocheasang Palace raid**</p>
 >
 > **Part of the [[LENDERMAIRE]] insurgency in Ai'ron**
 >

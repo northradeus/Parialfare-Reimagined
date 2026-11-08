@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Markless</h3>
 <table>
 <tr><th>Title</th><td>Markless</td></tr>
@@ -12,7 +12,7 @@
 
 
 
-**Markless** is the breacher of the black operations unit [[LENDERMAIRE]]. He is a former squad member of the Ironish Special Forces, together with [[Kaliber]] and [[Andrew]], and has been in LENDERMAIRE since its early development.
+<p class="lead">**Markless** is the breacher of the black operations unit [[LENDERMAIRE]]. He is a former squad member of the Ironish Special Forces, together with [[Kaliber]] and [[Andrew]], and has been in LENDERMAIRE since its early development.</p>
 
 His hearing is damaged. He wears dark glasses indoors and out. The household accommodates both without discussing either.
 

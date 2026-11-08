@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Medic</h3>
 <table>
 <tr><th>Title</th><td>Medic</td></tr>
@@ -13,7 +13,7 @@
 
 
 
-**Medic** is the combat medic of the black operations unit [[LENDERMAIRE]]. He served another Cladish faction before joining; which faction is not established.
+<p class="lead">**Medic** is the combat medic of the black operations unit [[LENDERMAIRE]]. He served another Cladish faction before joining; which faction is not established.</p>
 
 No personal name is recorded for him. *Medic* is a designation, not a name, and the record does not establish whether he has one, whether he uses it, or whether any member of the household has ever asked.
 

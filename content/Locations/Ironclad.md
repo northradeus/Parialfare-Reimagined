@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-location">
 <h3>Ironclad</h3>
 <table>
 <tr><th>Title</th><td>Ironclad</td></tr>
@@ -7,7 +7,6 @@
 <tr><th>Government Type</th><td>None — warlord frontier</td></tr>
 <tr><th>Demonym</th><td>Cladish</td></tr>
 <tr><th>Borders</th><td>Ironland (north), New Aester (north)</td></tr>
-<tr><th>Location Type</th><td>["Territory/Warlord Frontier", "Region/Post-Imperial"]</td></tr>
 </table>
 </aside>
 
@@ -15,7 +14,7 @@
 
 
 
-**Ironclad** is an ungoverned territory between the [[Ironland|Kingdom of the Ai'ron Land]] and its neighbours. It is not a state. It has no central government, no unified security force, and no authority exercising jurisdiction across it. Competing warlords rule it. Its people are the Cladish.
+<p class="lead">**Ironclad** is an ungoverned territory between the [[Ironland|Kingdom of the Ai'ron Land]] and its neighbours. It is not a state. It has no central government, no unified security force, and no authority exercising jurisdiction across it. Competing warlords rule it. Its people are the Cladish.</p>
 
 The territory was conquered by an empire, abandoned six years later, and left to itself for a hundred and ten years. Its people named it Ironclad themselves, after the abandonment.
 

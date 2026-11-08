@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-character">
 <h3>Hanktonio</h3>
 <img src="Assets/Hank.jpg" alt="Hanktonio" />
 <table>
@@ -14,7 +14,7 @@
 
 
 
-**Hanktonio**, also called **Hank** and known by the codename "The Second Hand," is the second-in-command of the umbrella coalition [[Konish's Group]] and of its black operations unit [[LENDERMAIRE]]. He oversees operations and maintains the coalition's network in [[Konish Kimbotin (Reimagined)|Konish Kimbotin]]'s absence, takes the lead when Kimbotin is not around, and is in part responsible for keeping the group intact.
+<p class="lead">**Hanktonio**, also called **Hank** and known by the codename "The Second Hand," is the second-in-command of the umbrella coalition [[Konish's Group]] and of its black operations unit [[LENDERMAIRE]]. He oversees operations and maintains the coalition's network in [[Konish Kimbotin (Reimagined)|Konish Kimbotin]]'s absence, takes the lead when Kimbotin is not around, and is in part responsible for keeping the group intact.</p>
 
 He holds two different posts under one title. In Konish's Group he is second to the head of a network of autonomous militias. In LENDERMAIRE he is second to the head of a household. The record does not distinguish between the two roles, and he is not recorded as finding the distinction difficult.
 

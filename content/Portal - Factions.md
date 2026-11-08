@@ -1,15 +1,14 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-concept">
 <h3>Portal: Factions</h3>
 <table>
 <tr><th>Title</th><td>Portal: Factions</td></tr>
 <tr><th>Subtitle</th><td>Index of organisations and institutions</td></tr>
-<tr><th>Concept Type</th><td>["Meta/Portal"]</td></tr>
 </table>
 </aside>
 
 # Factions
 
-A curated index of the major organisations operating in 2008.
+<p class="lead">A curated index of the major organisations operating in 2008.</p>
 
 ## The Insurgency
 - [[Konish's Group]] — The transnational Cladish umbrella coalition.

@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-faction">
 <h3>Laopanster Gendarmerie</h3>
 <img src="Assets/Laospanter Emblem.png" alt="Laopanster Gendarmerie" />
 <table>
@@ -9,7 +9,7 @@
 <tr><th>Allegiance</th><td>The Crown</td></tr>
 <tr><th>Branch</th><td>Ministry of the Interior</td></tr>
 <tr><th>Type</th><td>Paramilitary law enforcement</td></tr>
-<tr><th>Size</th><td>TBD</td></tr>
+<tr><th>Size</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Part Of</th><td>Ministry of the Interior</td></tr>
 <tr><th>Garrison</th><td>Pocheasang, Ironland</td></tr>
 <tr><th>Nickname</th><td>Laosentine</td></tr>
@@ -17,14 +17,13 @@
 <tr><th>Colors</th><td>Red, Black, and Steel</td></tr>
 <tr><th>Notable Engagement</th><td>2008 Pocheasang Palace raid</td></tr>
 <tr><th>Current Commander</th><td>Marshal Lopesh</td></tr>
-<tr><th>Faction Type</th><td>["Military/Gendarmerie"]</td></tr>
 </table>
 </aside>
 # Laopanster Gendarmerie
 
 
 
-The **Laopanster Gendarmerie** (Native: *Gendarmerie Laopanster*) is the national gendarmerie force of the [[Ironland|Kingdom of the Ai'ron Land]]. It is a branch of the [[Ministry of the Interior]] and is responsible for the maintenance of public order and internal security within Ai'ron. The paramilitary unit operates as a heavily armed domestic security force, distinct from the external defense mandate of the [[Royal Ironish Army]]. Its headquarters is located in [[Pocheasang]], with the unit's chain of command reporting directly to the Minister of the Interior. The Gendarmerie is under the direct supervision of a commander with the rank of [[Marshal Lopesh|Marshal]]. The current commander is [[Marshal Lopesh]].[^1][^2]
+<p class="lead">The **Laopanster Gendarmerie** (Native: *Gendarmerie Laopanster*) is the national gendarmerie force of the [[Ironland|Kingdom of the Ai'ron Land]]. It is a branch of the [[Ministry of the Interior]] and is responsible for the maintenance of public order and internal security within Ai'ron. The paramilitary unit operates as a heavily armed domestic security force, distinct from the external defense mandate of the [[Royal Ironish Army]]. Its headquarters is located in [[Pocheasang]], with the unit's chain of command reporting directly to the Minister of the Interior. The Gendarmerie is under the direct supervision of a commander with the rank of [[Marshal Lopesh|Marshal]]. The current commander is [[Marshal Lopesh]].[^1][^2]</p>
 
 ## Duties
 

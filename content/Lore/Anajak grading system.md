@@ -1,4 +1,4 @@
-<aside class="custom-infobox">
+<aside class="custom-infobox infobox-concept">
 <h3>Anajak grading system</h3>
 <table>
 <tr><th>Title</th><td>Anajak grading system</td></tr>
@@ -12,7 +12,7 @@
 
 
 
-Personnel of [[Anajak Forces]] are graded. The system is not fully documented, and its criteria, scale and authority are unestablished.
+<p class="lead">Personnel of [[Anajak Forces]] are graded. The system is not fully documented, and its criteria, scale and authority are unestablished.</p>
 
 ## Observed grades
 
