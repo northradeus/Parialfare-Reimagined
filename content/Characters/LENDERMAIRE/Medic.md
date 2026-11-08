@@ -14,11 +14,11 @@
 
 
 
-**Medic** is the combat medic of the black operations unit [[LENDERMAIRE]]. He served another Cladish faction before joining; which faction is not established.
+**Medic** is the combat medic of the black operations unit [LENDERMAIRE](factions/lendermaire). He served another Cladish faction before joining; which faction is not established.
 
 No personal name is recorded for him. *Medic* is a designation, not a name, and the record does not establish whether he has one, whether he uses it, or whether any member of the household has ever asked.
 
-He is the only member of the household recorded as having been inside another faction, and the only one whose past did not end with his leaving it. It ended when [[Konish's Group]] absorbed it.
+He is the only member of the household recorded as having been inside another faction, and the only one whose past did not end with his leaving it. It ended when [Konish's Group](factions/konish's-group) absorbed it.
 
 ## 1. The faction
 
@@ -70,6 +70,6 @@ The household reads this, if it reads it at all, as habit. The record does not d
 
 ## See Also
 
-* [[LENDERMAIRE]]
-* [[Konish Kimbotin (Reimagined)]]
-* [[Konish's Group]]
+* [LENDERMAIRE](factions/lendermaire)
+* [Konish Kimbotin (Reimagined)](characters/lendermaire/konish-kimbotin-(reimagined))
+* [Konish's Group](factions/konish's-group)

@@ -13,7 +13,7 @@
 
 
 
-**Markless** is the breacher of the black operations unit [[LENDERMAIRE]]. He is a former squad member of the Ironish Special Forces, together with [[Kaliber]] and [[Andrew]], and has been in LENDERMAIRE since its early development.
+**Markless** is the breacher of the black operations unit [LENDERMAIRE](factions/lendermaire). He is a former squad member of the Ironish Special Forces, together with [Kaliber](characters/lendermaire/kaliber) and [Andrew](characters/lendermaire/andrew), and has been in LENDERMAIRE since its early development.
 
 His hearing is damaged. He wears dark glasses indoors and out. The household accommodates both without discussing either.
 
@@ -27,11 +27,11 @@ He retained the ability to breach. He can still place a charge and make a hole. 
 
 ## 2. The discharge
 
-The Ironish Special Forces retired him on the same ground they retired [[Kaliber]].
+The Ironish Special Forces retired him on the same ground they retired [Kaliber](characters/lendermaire/kaliber).
 
 The assessment acknowledged his competence and did not dispute his record. It found him unfit for active duty because he could not reliably receive communication under fire. A breacher who cannot hear an order, a warning, or a call to withdraw is a hazard to the men behind him.
 
-Two members of his former squad were retired or released on identical reasoning. The institution applied one standard and produced two strays. The third man, [[Andrew]], did not receive the same finding and was not retired with them.
+Two members of his former squad were retired or released on identical reasoning. The institution applied one standard and produced two strays. The third man, [Andrew](characters/lendermaire/andrew), did not receive the same finding and was not retired with them.
 
 ## 3. The glasses
 
@@ -45,7 +45,7 @@ The household does not discuss his hearing, and he does not ask for accommodatio
 
 It is recorded that members position themselves so that he can see their mouths, speak from his better side, and gesture across a room rather than call to him. In conversation the house draws closer than it would with anyone else. None of this is described as a system or taught to newcomers, and no member is recorded explaining it.
 
-The result is that [[Kaliber]], who cannot speak, and Markless, who cannot reliably hear, share a working language with the household that neither of them was given and that outsiders are not taught.
+The result is that [Kaliber](characters/lendermaire/kaliber), who cannot speak, and Markless, who cannot reliably hear, share a working language with the household that neither of them was given and that outsiders are not taught.
 
 ## Unresolved
 
@@ -57,7 +57,7 @@ The result is that [[Kaliber]], who cannot speak, and Markless, who cannot relia
 
 ## See Also
 
-* [[LENDERMAIRE]]
-* [[Kaliber]]
-* [[Andrew]]
-* [[Ironish Task Force (ITF)]]
+* [LENDERMAIRE](factions/lendermaire)
+* [Kaliber](characters/lendermaire/kaliber)
+* [Andrew](characters/lendermaire/andrew)
+* [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))

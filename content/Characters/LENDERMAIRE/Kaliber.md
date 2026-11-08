@@ -14,13 +14,13 @@
 
 
 
-**Kaliber** is the shielder of the black operations unit [[LENDERMAIRE]], recorded in earlier material as "Shield specialist." He is muted. He is a former squad member of the Ironish Special Forces, together with [[Markless]] and [[Andrew]], and has been in LENDERMAIRE since its early development.
+**Kaliber** is the shielder of the black operations unit [LENDERMAIRE](factions/lendermaire), recorded in earlier material as "Shield specialist." He is muted. He is a former squad member of the Ironish Special Forces, together with [Markless](characters/lendermaire/markless) and [Andrew](characters/lendermaire/andrew), and has been in LENDERMAIRE since its early development.
 
 He is the reason two other men are in the household.
 
 ## 1. The injury
 
-Kaliber's voice was lost to physical injury while he served with the Ironish Special Forces, in the action that brought [[Markless]] and [[Andrew]] out alive. The record does not describe the engagement, the weapon, or the wound. It establishes only that the damage was to the throat, that it was sustained protecting his squad, and that it did not heal into anything usable.
+Kaliber's voice was lost to physical injury while he served with the Ironish Special Forces, in the action that brought [Markless](characters/lendermaire/markless) and [Andrew](characters/lendermaire/andrew) out alive. The record does not describe the engagement, the weapon, or the wound. It establishes only that the damage was to the throat, that it was sustained protecting his squad, and that it did not heal into anything usable.
 
 He retained his physical capability. He remained strong enough to carry a shield and to hold a line. He lost the ability to speak.
 
@@ -36,7 +36,7 @@ He was retired with the record of a competent soldier and no place to put it. Th
 
 ## 3. The followers
 
-[[Markless]] and [[Andrew]] left the Ironish Special Forces after him.
+[Markless](characters/lendermaire/markless) and [Andrew](characters/lendermaire/andrew) left the Ironish Special Forces after him.
 
 The record does not describe the circumstances of their leaving, and does not establish whether they were discharged, resigned, or released alongside him. What it establishes is that all three arrived in LENDERMAIRE together, early in its development, and that they came because of him.
 
@@ -48,7 +48,7 @@ LENDERMAIRE did not attempt to restore his voice. It did not send him to a speci
 
 Instead the unit built a language with him. The record describes an established nonverbal system of communication, understood by every member of the household and not taught to outsiders. It does not describe the system itself, its vocabulary, or how it was assembled.
 
-In the household he speaks, in the only sense that matters to them, and to anyone who joins the house without the language he is silent. See [[Andrew]] and the chair by the door.
+In the household he speaks, in the only sense that matters to them, and to anyone who joins the house without the language he is silent. See [Andrew](characters/lendermaire/andrew) and the chair by the door.
 
 ## Unresolved
 
@@ -61,7 +61,7 @@ In the household he speaks, in the only sense that matters to them, and to anyon
 
 ## See Also
 
-* [[LENDERMAIRE]]
-* [[Markless]]
-* [[Andrew]]
-* [[Ironish Task Force (ITF)]]
+* [LENDERMAIRE](factions/lendermaire)
+* [Markless](characters/lendermaire/markless)
+* [Andrew](characters/lendermaire/andrew)
+* [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))

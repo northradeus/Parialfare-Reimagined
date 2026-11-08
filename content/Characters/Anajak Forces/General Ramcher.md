@@ -13,7 +13,7 @@
 
 
 
-**General Ramcher** commands [[Anajak Forces]]. The record documents the post he holds rather than the person holding it: nothing about his origin, training, grade or prior service is established, and the office is described entirely by what it does.
+**General Ramcher** commands [Anajak Forces](factions/anajak-forces). The record documents the post he holds rather than the person holding it: nothing about his origin, training, grade or prior service is established, and the office is described entirely by what it does.
 
 ## Command functions
 
@@ -23,7 +23,7 @@ No subordinate commander is named, and no second-in-command is recorded. Whether
 
 ## Chain of authority
 
-Anajak was established by the [[Global Intervention Coalition (GIC)]] and designed by [[Noradus|Northrad]], who funds it heavily. Ramcher commands the force those institutions created. Whether he answers to the GIC, to Northrad personally, or to both, and where his authority ends and theirs begins, is not established.
+Anajak was established by the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) and designed by [Northrad](characters/vista/noradus), who funds it heavily. Ramcher commands the force those institutions created. Whether he answers to the GIC, to Northrad personally, or to both, and where his authority ends and theirs begins, is not established.
 
 He is also not recorded as belonging to any of Anajak's three recruitment pipelines — facility-raised, volunteer, or leveraged. Whether he was graded at all is unknown.
 
@@ -36,6 +36,6 @@ He is also not recorded as belonging to any of Anajak's three recruitment pipeli
 
 ## See Also
 
-* [[Anajak Forces]]
-* [[Global Intervention Coalition (GIC)]]
-* [[Noradus]]
+* [Anajak Forces](factions/anajak-forces)
+* [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic))
+* [Noradus](characters/vista/noradus)

@@ -14,36 +14,36 @@ This is a curated index of the prominent figures operating within the Parialfare
 ## The Insurgency
 ### LENDERMAIRE
 The thirteen-member black operations unit. They are a shared household, bound by psychological deviation and one man's mentorship.
-- [[Konish Kimbotin (Reimagined)|Konish Kimbotin]] — Supreme Warlord of Konish's Group.
-- [[Hanktonio]] — The Second Hand.
-- [[Samsara Lykor]] — The concealed thirteenth member.
-- [[Andrew]] — Assaulter; former Ironish Special Forces.
-- [[Kaliber]] — Shield specialist; mute.
-- [[Markless]] — Breacher; hearing damaged.
-- [[Leepy]] — Sniper; psychologically compromised.
-- [[Vanny]] — Cyber and electronic warfare.
-- [[Medic]] — Combat medic.
-- [[Salmon]] — Shock trooper.
-- [[Wendy]] — Sharpshooter.
-- [[Grunt]] — Nade specialist.
-- [[Gunter]] — Engineer & Sapper.
-- [[Joey]] — Logistics.
-- [[Bizmo]] — Background fabrication.
-- [[Gazmo]] — Background biohazards.
+- [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined)) — Supreme Warlord of Konish's Group.
+- [Hanktonio](characters/lendermaire/hanktonio) — The Second Hand.
+- [Samsara Lykor](characters/lendermaire/samsara-lykor) — The concealed thirteenth member.
+- [Andrew](characters/lendermaire/andrew) — Assaulter; former Ironish Special Forces.
+- [Kaliber](characters/lendermaire/kaliber) — Shield specialist; mute.
+- [Markless](characters/lendermaire/markless) — Breacher; hearing damaged.
+- [Leepy](characters/lendermaire/leepy) — Sniper; psychologically compromised.
+- [Vanny](characters/lendermaire/vanny) — Cyber and electronic warfare.
+- [Medic](characters/lendermaire/medic) — Combat medic.
+- [Salmon](characters/lendermaire/salmon) — Shock trooper.
+- [Wendy](characters/lendermaire/wendy) — Sharpshooter.
+- [Grunt](characters/lendermaire/grunt) — Nade specialist.
+- [Gunter](characters/lendermaire/gunter) — Engineer & Sapper.
+- [Joey](characters/lendermaire/joey) — Logistics.
+- [Bizmo](characters/lendermaire/bizmo) — Background fabrication.
+- [Gazmo](characters/lendermaire/gazmo) — Background biohazards.
 
 ## The Institutional Order
 ### VISTA
 The intergovernmental military organisation holding the region together.
-- [[Noradus|Northrad]] — President of VISTA.
-- [[Pepper]] — Personal adjutant to Northrad.
+- [Northrad](characters/vista/noradus) — President of VISTA.
+- [Pepper](characters/anajak-forces/pepper) — Personal adjutant to Northrad.
 
 ### Anajak Forces
 The task force created to counter LENDERMAIRE.
-- [[General Ramcher]] — Commander.
-- [[Tanishito]] — S-grade assassin.
-- [[Nogo]] — A+ grade assassin.
-- [[Tarnished]] — Volunteer.
-- [[Verdanski]] — A+ operative.
+- [General Ramcher](characters/anajak-forces/general-ramcher) — Commander.
+- [Tanishito](characters/anajak-forces/tanishito) — S-grade assassin.
+- [Nogo](characters/anajak-forces/nogo) — A+ grade assassin.
+- [Tarnished](characters/anajak-forces/tarnished) — Volunteer.
+- [Verdanski](characters/anajak-forces/verdanski) — A+ operative.
 
 ## Other Factions
-- [[Amberly]] — Coordinator of the Maire O'Mare insurgency.
+- [Amberly](characters/maire-o'mare/amberly) — Coordinator of the Maire O'Mare insurgency.

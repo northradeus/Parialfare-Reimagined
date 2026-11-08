@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-country">
 <h3>New Aester</h3>
-<img src="../../assets/new_aester_flag.png" alt="New Aester" />
+<img src="assets/new_aester_flag.png" alt="New Aester" />
 <table>
 <tr><th>Title</th><td>New Aester</td></tr>
 <tr><th>Subtitle</th><td>Corporate city-state and VISTA member</td></tr>
@@ -30,9 +30,9 @@
 
 
 
-**New Aester** is a corporate city-state situated on the border between the [[Ironland|Kingdom of the Ai'ron Land]] and the [[Ironclad DMZ]]. It is a member of [[VISTA]] and operates as a heavily policed proving ground for corporate technologies. The state was built as an estate project by [[Noradus|Northrad]], who serves as its architect and founder. It is populated by a diverse, mixed-nationality citizenry drawn by the promise of a highly advanced smart city.
+**New Aester** is a corporate city-state situated on the border between the [Kingdom of the Ai'ron Land](locations/countries/ironland) and the [Ironclad DMZ](locations/ironclad-dmz). It is a member of [VISTA](factions/vista) and operates as a heavily policed proving ground for corporate technologies. The state was built as an estate project by [Northrad](characters/vista/noradus), who serves as its architect and founder. It is populated by a diverse, mixed-nationality citizenry drawn by the promise of a highly advanced smart city.
 
-The country functions as a crucial strategic buffer between the established order of Ironland and the ungoverned territories of the Cladish warlords. Its outer edges are heavily militarized, garrisoned by the [[Ironish Task Force (ITF)]].
+The country functions as a crucial strategic buffer between the established order of Ironland and the ungoverned territories of the Cladish warlords. Its outer edges are heavily militarized, garrisoned by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)).
 
 ## 1. The Corporate Experiment
 
@@ -48,7 +48,7 @@ New Aester is governed as a corporate technocracy. While Northrad is the archite
 
 The country is physically divided. The interior comprises the polished infrastructure of the corporate experiment, featuring advanced smart-city technologies. The outer edge is described as brutalist.
 
-The [[Ironish Task Force (ITF)]] resides and deploys from New Aester. Its forces are pushed out to the brutalist edges of the city, where they guard the wall that separates the interior from the DMZ.
+The [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) resides and deploys from New Aester. Its forces are pushed out to the brutalist edges of the city, where they guard the wall that separates the interior from the DMZ.
 
 ## 4. Demographics
 
@@ -72,11 +72,11 @@ During the events of 2008, Northrad declined a full-scale invasion of the Ironcl
 
 ## See Also
 
-- [[Ironland]]
-- [[Ironclad DMZ]]
-- [[Ironish Task Force (ITF)]]
-- [[VISTA]]
-- [[Noradus|Northrad]]
+- [Ironland](locations/countries/ironland)
+- [Ironclad DMZ](locations/ironclad-dmz)
+- [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))
+- [VISTA](factions/vista)
+- [Northrad](characters/vista/noradus)
 
 ## References
 

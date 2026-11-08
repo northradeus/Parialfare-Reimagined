@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Gazmo</h3>
-<img src="../../assets/gazmo.jpg" alt="Gazmo" />
+<img src="assets/gazmo.jpg" alt="Gazmo" />
 <table>
 <tr><th>Title</th><td>Gazmo</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE background operator, biohazard weapons</td></tr>
@@ -16,9 +16,9 @@
 
 
 
-**Gazmo** is a background operator of the black operations unit [[LENDERMAIRE]], specializing in biohazard weapons. He is not counted among the group's thirteen core members, and belongs to the additional background personnel who support the unit's operations, but he is deployable in combat rather than confined to a support role.
+**Gazmo** is a background operator of the black operations unit [LENDERMAIRE](factions/lendermaire), specializing in biohazard weapons. He is not counted among the group's thirteen core members, and belongs to the additional background personnel who support the unit's operations, but he is deployable in combat rather than confined to a support role.
 
-Gazmo resides with LENDERMAIRE personnel on land owned by [[Konish Kimbotin (Reimagined)]] in the southern [[Ironclad DMZ]]. Background personnel are treated as members of the household's family unit despite their exclusion from the core membership count.
+Gazmo resides with LENDERMAIRE personnel on land owned by [Konish Kimbotin (Reimagined)](characters/lendermaire/konish-kimbotin-(reimagined)) in the southern [Ironclad DMZ](locations/ironclad-dmz). Background personnel are treated as members of the household's family unit despite their exclusion from the core membership count.
 
 ## Specialisation
 
@@ -34,7 +34,7 @@ These proposals do not establish a particular biological agent or weapon design.
 
 ## Combat Deployment
 
-Gazmo is deployable in combat. This distinguishes him from [[Bizmo]], whose assignment is workshop-only, and [[Joey]], whose established role concerns logistics and incoming resources.
+Gazmo is deployable in combat. This distinguishes him from [Bizmo](characters/lendermaire/bizmo), whose assignment is workshop-only, and [Joey](characters/lendermaire/joey), whose established role concerns logistics and incoming resources.
 
 His precise combat assignment is not recorded. No specific operation, deployment location, or combat engagement is established.
 
@@ -73,9 +73,9 @@ His position within LENDERMAIRE's operational hierarchy is not documented beyond
 
 ## See Also
 
-* [[LENDERMAIRE]]
-* [[Konish's Group]]
-* [[Konish Kimbotin (Reimagined)]]
-* [[Bizmo]]
-* [[Joey]]
-* [[Ironclad DMZ]]
+* [LENDERMAIRE](factions/lendermaire)
+* [Konish's Group](factions/konish's-group)
+* [Konish Kimbotin (Reimagined)](characters/lendermaire/konish-kimbotin-(reimagined))
+* [Bizmo](characters/lendermaire/bizmo)
+* [Joey](characters/lendermaire/joey)
+* [Ironclad DMZ](locations/ironclad-dmz)

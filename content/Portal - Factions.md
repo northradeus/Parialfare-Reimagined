@@ -12,14 +12,14 @@
 A curated index of the major organisations operating in 2008.
 
 ## The Insurgency
-- [[Konish's Group]] — The transnational Cladish umbrella coalition.
-- [[LENDERMAIRE]] — Konish's black operations unit.
-- [[Maire O'Mare (2008)]] — The returned insurgency.
+- [Konish's Group](factions/konish's-group) — The transnational Cladish umbrella coalition.
+- [LENDERMAIRE](factions/lendermaire) — Konish's black operations unit.
+- [Maire O'Mare (2008)](factions/maire-o'mare-(2008)) — The returned insurgency.
 
 ## The Institutional Order
-- [[VISTA]] — The intergovernmental military organisation.
-- [[Global Intervention Coalition (GIC)]] — VISTA's military arm.
-- [[Anajak Forces]] — The task force fighting the insurgency.
-- [[Ironish Task Force (ITF)]] — The private military contractor.
-- [[Laopanster Gendarmerie]] — Ironland's national gendarmerie.
-- [[Alpha-01]] — The ITF label for Anajak's assassin core.
+- [VISTA](factions/vista) — The intergovernmental military organisation.
+- [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) — VISTA's military arm.
+- [Anajak Forces](factions/anajak-forces) — The task force fighting the insurgency.
+- [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) — The private military contractor.
+- [Laopanster Gendarmerie](factions/laopanster-gendarmerie) — Ironland's national gendarmerie.
+- [Alpha-01](factions/alpha-01) — The ITF label for Anajak's assassin core.

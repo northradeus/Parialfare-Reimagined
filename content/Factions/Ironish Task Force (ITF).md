@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-faction">
 <h3>Ironish Task Force</h3>
-<img src="../assets/ironish-task-force-emblem.png" alt="Ironish Task Force" />
+<img src="assets/ironish-task-force-emblem.png" alt="Ironish Task Force" />
 <table>
 <tr><th>Title</th><td>Ironish Task Force</td></tr>
 <tr><th>Subtitle</th><td>Private military contractor</td></tr>
@@ -21,19 +21,19 @@
 
 
 
-The **Ironish Task Force (ITF)** is an Ai'ron-registered private military contractor that provides security services to state and commercial clients. The company derives its name from the Ironish ethnic population of [[Ironland|the Kingdom of the Ai'ron Land]]. The ITF is primarily known for holding the inner-complex security contract for the [[Pocheasang palace complex]], a role in which it sustained nine fatalities during the [[2008 Pocheasang Palace raid]]. Following the raid, the company's contract was suspended pending review by the [[Ministry of the Interior]].[^1][^2]
+The **Ironish Task Force (ITF)** is an Ai'ron-registered private military contractor that provides security services to state and commercial clients. The company derives its name from the Ironish ethnic population of [the Kingdom of the Ai'ron Land](locations/countries/ironland). The ITF is primarily known for holding the inner-complex security contract for the Pocheasang palace complex, a role in which it sustained nine fatalities during the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid). Following the raid, the company's contract was suspended pending review by the Ministry of the Interior.[^1][^2]
 
 ## History
 
 ### Formation and Early Contracts
 
-The Ironish Task Force was established as a private security firm operating within Ai'ron, providing static protection and access control services to government facilities and corporate clients. The company expanded its operations through renewable services contracts with the Ministry of the Interior, eventually securing the inner-complex security contract for the Pocheasang palace complex. Under this contract, the ITF held responsibility for the inner administrative wings and the archival corridor, while the [[Laopanster Gendarmerie]] maintained public-order jurisdiction over the outer perimeter and gatehouse.[^1][^3]
+The Ironish Task Force was established as a private security firm operating within Ai'ron, providing static protection and access control services to government facilities and corporate clients. The company expanded its operations through renewable services contracts with the Ministry of the Interior, eventually securing the inner-complex security contract for the Pocheasang palace complex. Under this contract, the ITF held responsibility for the inner administrative wings and the archival corridor, while the [Laopanster Gendarmerie](factions/laopanster-gendarmerie) maintained public-order jurisdiction over the outer perimeter and gatehouse.[^1][^3]
 
 ### Pocheasang Contract and the 2008 Raid
 
 By the late 2000s, the ITF's presence at the Pocheasang complex was governed by a contract specifying static protection and access control rather than mobile defence. The contract schedule required a minimum manning level for the inner-complex complement.
 
-During the [[2008 Pocheasang Palace raid]], ITF elements engaged the [[LENDERMAIRE]] assault force in the central wing from approximately 19:00 to 21:00 on 25 August. The majority of the company's casualties occurred in this interval, as defending personnel attempted to hold the archival corridor without means of requesting reinforcement, owing to signal-jamming devices deployed by the assailants. Nine ITF personnel were killed in action.[^2][^3]
+During the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid), ITF elements engaged the [LENDERMAIRE](factions/lendermaire) assault force in the central wing from approximately 19:00 to 21:00 on 25 August. The majority of the company's casualties occurred in this interval, as defending personnel attempted to hold the archival corridor without means of requesting reinforcement, owing to signal-jamming devices deployed by the assailants. Nine ITF personnel were killed in action.[^2][^3]
 
 The 2009 General Staff Inquiry found that the inner-complex complement stood below the level specified in the contract schedule on the night of the raid. The company disputed that its manning levels were inadequate, while the inquiry further identified the contractor's rules of engagement—which required Gendarmerie authorisation for the use of heavy weapons inside the perimeter—as a critical vulnerability during the engagement.[^2][^4]
 
@@ -51,9 +51,9 @@ The ITF provides security management and static protection services, primarily t
 
 ## Organization
 
-The ITF operates under a corporate structure, with a site director responsible for contract performance at each facility. The company's Pocheasang deployment was headed by an ITF Site Director, who coordinated defensive protocols with the Laopanster Gendarmerie detachment. The company is registered in Ai'ron and maintains its headquarters in [[Pocheasang]].[^1]
+The ITF operates under a corporate structure, with a site director responsible for contract performance at each facility. The company's Pocheasang deployment was headed by an ITF Site Director, who coordinated defensive protocols with the Laopanster Gendarmerie detachment. The company is registered in Ai'ron and maintains its headquarters in [Pocheasang](locations/pocheasang).[^1]
 
-ITF personnel also serve in [[Anajak Forces]], and the ITF handpicked the assassins [[Tanishito]] and [[Nogo]] for service. ITF's influence is extensive: the [[Global Intervention Coalition (GIC)]] is popularly called "the global ITF" because of it, though the two are separate institutions and the naming confusion is intentional.
+ITF personnel also serve in [Anajak Forces](factions/anajak-forces), and the ITF handpicked the assassins [Tanishito](characters/anajak-forces/tanishito) and [Nogo](characters/anajak-forces/nogo) for service. ITF's influence is extensive: the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) is popularly called "the global ITF" because of it, though the two are separate institutions and the naming confusion is intentional.
 
 ## Controversies and Inquiries
 
@@ -61,14 +61,14 @@ The ITF's performance during the 2008 raid was subject to scrutiny by the Genera
 
 ## See Also
 
-*   [[Laopanster Gendarmerie]]
-*   [[Ministry of the Interior]]
-*   [[Pocheasang palace complex]]
-*   [[2008 Pocheasang Palace raid]]
-*   [[Royal Ironish Army]]
-*   [[Anajak Forces]]
-*   [[Alpha-01]]
-*   [[Global Intervention Coalition (GIC)]]
+*   [Laopanster Gendarmerie](factions/laopanster-gendarmerie)
+*   Ministry of the Interior
+*   Pocheasang palace complex
+*   [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid)
+*   Royal Ironish Army
+*   [Anajak Forces](factions/anajak-forces)
+*   [Alpha-01](factions/alpha-01)
+*   [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic))
 
 ## References
 
@@ -82,7 +82,7 @@ The ITF's performance during the 2008 raid was subject to scrutiny by the Genera
 <div class="rel-group">
 <h3>Associated Characters</h3>
 <ul>
-<li><a href="../characters/vista/noradus">Noradus "Northrad</a></li>
+<li><a href="/characters/vista/noradus">Noradus "Northrad</a></li>
 </ul>
 </div>
 </section>

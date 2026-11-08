@@ -18,17 +18,17 @@
 
 
 
-**Anajak Forces** is a specialized task force established by the [[Global Intervention Coalition (GIC)]] and designed by [[Noradus|Northrad]]. Led by [[General Ramcher]], it is designed to combat [[LENDERMAIRE]] and other Cladish factions, and anything that disrupts the peace inside [[Ironland]] and other [[VISTA]] countries as a whole. It operates under heavy funding from Northrad and under the institutions of the GIC.
+**Anajak Forces** is a specialized task force established by the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) and designed by [Northrad](characters/vista/noradus). Led by [General Ramcher](characters/anajak-forces/general-ramcher), it is designed to combat [LENDERMAIRE](factions/lendermaire) and other Cladish factions, and anything that disrupts the peace inside [Ironland](locations/countries/ironland) and other [VISTA](factions/vista) countries as a whole. It operates under heavy funding from Northrad and under the institutions of the GIC.
 
-Its members include many highly trained assassins, members of the [[Ironish Task Force (ITF)|ITF]], and many trained individuals with skillsets in combat and warfare. Most members come from a facility or other secret organizations, and most are [[Lurkish]]. Its classified assassin core is what ITF calls "[[Alpha-01]]". See [[Alpha-01]].
+Its members include many highly trained assassins, members of the [ITF](factions/ironish-task-force-(itf)), and many trained individuals with skillsets in combat and warfare. Most members come from a facility or other secret organizations, and most are Lurkish. Its classified assassin core is what ITF calls "[Alpha-01](factions/alpha-01)". See [Alpha-01](factions/alpha-01).
 
 ## The mirrored answer
 
 Anajak is the second half of a mirrored structure. Every institution on the institutional side answers a counterpart on the insurgency side.
 
-The [[Global Intervention Coalition (GIC)]] answers [[Konish's Group]]. Both are umbrella bodies: a coalition of generals answering a coalition of militias.
+The [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) answers [Konish's Group](factions/konish's-group). Both are umbrella bodies: a coalition of generals answering a coalition of militias.
 
-Anajak answers [[LENDERMAIRE]]. Both are the sharp point of their umbrella: the task force and the black operations unit.
+Anajak answers [LENDERMAIRE](factions/lendermaire). Both are the sharp point of their umbrella: the task force and the black operations unit.
 
 The two answers are built in opposite ways. LENDERMAIRE is thirteen men in a shared household, selected for psychological deviation, held together by one man's mentorship. Anajak is a graded pipeline of facility-raised assassins, institutional and impersonal. The household is answered by the facility; the father figure is answered by the grading scale.
 
@@ -42,9 +42,9 @@ The record does not state whether this symmetry was intentional.
 
 ## See Also
 
-* [[Global Intervention Coalition (GIC)]]
-* [[Alpha-01]]
-* [[General Ramcher]]
-* [[Ironish Task Force (ITF)]]
-* [[LENDERMAIRE]]
-* [[Noradus]]
+* [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic))
+* [Alpha-01](factions/alpha-01)
+* [General Ramcher](characters/anajak-forces/general-ramcher)
+* [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))
+* [LENDERMAIRE](factions/lendermaire)
+* [Noradus](characters/vista/noradus)

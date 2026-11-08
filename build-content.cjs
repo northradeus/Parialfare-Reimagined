@@ -142,18 +142,28 @@ function renderRelatedEntities(currentSlug, rels) {
     for (const r of rels) { if (grouped[r.field]) grouped[r.field].push(r); }
     const labels = { factions: 'Associated Characters', part_of: 'Sub-Organizations', location: 'Related Events' };
     let html = '\n\n<section class="related-entities">\n<h2>Related Entities</h2>\n';
-    const fromDir = path.dirname(currentSlug);
     for (const field of ['factions', 'part_of', 'location']) {
         if (grouped[field].length === 0) continue;
         html += `<div class="rel-group">\n<h3>${labels[field]}</h3>\n<ul>\n`;
         for (const r of grouped[field]) {
-            const relHref = path.relative(fromDir, r.slug).replace(/\\/g, '/');
-            html += `<li><a href="${relHref}">${r.title}</a></li>\n`;
+            html += `<li><a href="/${r.slug}">${r.title}</a></li>\n`;
         }
         html += '</ul>\n</div>\n';
     }
     html += '</section>\n';
     return html;
+}
+
+function resolveWikilinks(text) {
+    // Handles all three forms: [[Foo]], [[Foo|Bar]], [[Foo\|Bar]]
+    // Group 1 = target, Group 2 = optional alias (with or without escaped pipe)
+    return text.replace(/\[\[([^\]|\\]+?)(?:\\?\|([^\]]+))?\]\]/g, (match, target, alias) => {
+        if (!target) return match;
+        const slug = resolvers[normalizeKey(target.trim())];
+        const display = (alias || target).trim();
+        if (!slug) return display;
+        return `[${display}](${slug})`;
+    });
 }
 
 function processDir(dir, outDir) {
@@ -244,16 +254,13 @@ function processDir(dir, outDir) {
                     if (title) infobox += `<h3>${title}</h3>\n`;
                     if (imgName) {
                         const mappedName = vaultImages.get(imgName.toLowerCase()) || assetName(imgName);
-                        let relPath = path.relative(outDir, destAssets).replace(/\\/g, '/');
-                        if (!relPath.startsWith('.')) relPath = './' + relPath;
-                        infobox += `<img src="${relPath}/${mappedName}" alt="${title}" />\n`;
+                        infobox += `<img src="assets/${mappedName}" alt="${title}" />\n`;
                     }
                     if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
                     infobox += `</aside>\n`;
                 }
 
-                let relAssetsPath = path.relative(outDir, destAssets).replace(/\\/g, '/');
-                if (!relAssetsPath.startsWith('.')) relAssetsPath = './' + relAssetsPath;
+                const relAssetsPath = 'assets';
 
                 body = body.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
                     const imgName = rawInner.split('|')[0].trim();
@@ -268,6 +275,8 @@ function processDir(dir, outDir) {
                     if (mapped) return `${p1}${relAssetsPath}/${mapped}${p3}`;
                     return match;
                 });
+
+                body = resolveWikilinks(body);
 
                 // Lead paragraph styling is now handled via CSS (article p:first-of-type)
                 // instead of HTML wrapping, which was breaking markdown processing.
@@ -324,7 +333,7 @@ Once you understand the factions, you can explore the individuals who drive the 
 
 <div class="portal-grid"><a href="#" class="portal-button" onclick="const h=JSON.parse(sessionStorage.getItem('randomHistory')||'[]');fetch('random-index.json').then(r=>r.json()).then(idx=>{let pool=idx.filter(u=>!h.includes(u));if(!pool.length){h.length=0;pool=idx;}const p=pool[Math.floor(Math.random()*pool.length)];h.push(p);if(h.length>10)h.shift();sessionStorage.setItem('randomHistory',JSON.stringify(h));window.location.href=p;});return false;">Surprise Me</a></div>
 `;
-fs.writeFileSync(path.join(destDir, 'Start-Here.md'), startHereContent);
+fs.writeFileSync(path.join(destDir, 'Start-Here.md'), resolveWikilinks(startHereContent));
 
 function featuredMedia(fileName, altText) {
     const mappedName = vaultImages.get(fileName.toLowerCase());
@@ -387,16 +396,13 @@ function renderCard(article, outDir) {
     const mappedName = article.image ? vaultImages.get(article.image.toLowerCase()) : null;
     if (article.image && !mappedName) console.warn(`[image] not found in vault: "${article.image}" (${article.fileName})`);
     if (mappedName) {
-        let relPath = path.relative(outDir, destAssets).replace(/\\/g, '/');
-        if (!relPath.startsWith('.')) relPath = './' + relPath;
-        imgHtml = `<span class="card-image"><img src="${relPath}/${mappedName}" alt="${article.title}" loading="lazy"></span>`;
+        imgHtml = `<span class="card-image"><img src="assets/${mappedName}" alt="${article.title}" loading="lazy"></span>`;
     } else {
         const initial = article.title.charAt(0).toUpperCase();
         imgHtml = `<span class="card-image placeholder"><span class="placeholder-initial">${initial}</span></span>`;
     }
     const draftBadge = (article.status.toLowerCase() === 'draft') ? '<span class="draft-badge">Draft</span>' : '';
-    const href = './' + article.relPath;
-    return `<a href="${href}" class="featured-card">${imgHtml}<span class="card-content"><span class="card-title">${article.title}${draftBadge}</span><span class="card-subtitle">${article.subtitle}</span></span></a>`;
+    return `<a href="${article.relPath}" class="featured-card">${imgHtml}<span class="card-content"><span class="card-title">${article.title}${draftBadge}</span><span class="card-subtitle">${article.subtitle}</span></span></a>`;
 }
 
 function generateIndices(srcDir, outDir, isRoot = false) {
@@ -414,7 +420,9 @@ function generateIndices(srcDir, outDir, isRoot = false) {
     }
 
     // Then collect all articles under this folder recursively for a flat grid
-    const articles = collectArticles(srcDir, '');
+    // Prefix must be content-root-relative so card links resolve correctly under absolute mode
+    const relPrefix = path.relative(destDir, outDir).replace(/\\/g, '/');
+    const articles = collectArticles(srcDir, relPrefix ? relPrefix + '/' : '');
 
     if (!isRoot && articles.length > 0) {
         let cardsHtml = '<div class="category-grid">';

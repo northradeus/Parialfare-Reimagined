@@ -13,16 +13,16 @@
 
 
 
-Personnel of [[Anajak Forces]] are graded. The system is not fully documented, and its criteria, scale and authority are unestablished.
+Personnel of [Anajak Forces](factions/anajak-forces) are graded. The system is not fully documented, and its criteria, scale and authority are unestablished.
 
 ## Observed grades
 
 Grades seen in the record so far are **S+, S, A+ and A**.
 
-* [[Tanishito]] — S-grade assassin.
-* [[Nogo]] — A+ grade assassin.
-* [[Pepper]] — S+ at multitasking, A tier in combat.
-* [[Verdanski]] — A+.
+* [Tanishito](characters/anajak-forces/tanishito) — S-grade assassin.
+* [Nogo](characters/anajak-forces/nogo) — A+ grade assassin.
+* [Pepper](characters/anajak-forces/pepper) — S+ at multitasking, A tier in combat.
+* [Verdanski](characters/anajak-forces/verdanski) — A+.
 
 Because Pepper carries different grades for different skills, per-skill grading appears to exist alongside overall ranks. This is a reading of the data, not a stated rule.
 
@@ -35,5 +35,5 @@ Because Pepper carries different grades for different skills, per-skill grading 
 
 ## See Also
 
-* [[Anajak Forces]]
-* [[Alpha-01]]
+* [Anajak Forces](factions/anajak-forces)
+* [Alpha-01](factions/alpha-01)

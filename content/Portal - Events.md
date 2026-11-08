@@ -12,7 +12,7 @@
 A curated index of significant historical events.
 
 ## 2008
-- [[2008 Pocheasang Palace raid]] — The LENDERMAIRE assault on the archives.
-- [[2008 Ai'ron request to VISTA]] — The failed vote to fund the war.
-- [[Formation of LENDERMAIRE]] — How Konish built the household.
-- [[Operation Fallow]] — The GIC's retrieval operation.
+- [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid) — The LENDERMAIRE assault on the archives.
+- [2008 Ai'ron request to VISTA](events/2008-ai'ron-request-to-vista) — The failed vote to fund the war.
+- [Formation of LENDERMAIRE](events/formation-of-lendermaire) — How Konish built the household.
+- [Operation Fallow](events/operation-fallow) — The GIC's retrieval operation.

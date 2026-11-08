@@ -16,13 +16,13 @@
 
 
 
-**Tarnished** is the only recorded volunteer in [[Anajak Forces]] who did not arrive through the institution's facility pipeline. He served under the [[Ironish Task Force (ITF)|ITF]] as a special task force leader, then volunteered to join Anajak alongside his own soldiers.
+**Tarnished** is the only recorded volunteer in [Anajak Forces](factions/anajak-forces) who did not arrive through the institution's facility pipeline. He served under the [ITF](factions/ironish-task-force-(itf)) as a special task force leader, then volunteered to join Anajak alongside his own soldiers.
 
 ## ITF service
 
-Tarnished led a special task force within the ITF before his transfer. The ITF is a private military contractor and a separate institution from the [[Global Intervention Coalition (GIC)]] that established Anajak — but its personnel also serve inside Anajak, and it handpicked at least two of Anajak's assassins. Tarnished's path is the inverse: he left the contractor's structure to join the force the contractor supplies.
+Tarnished led a special task force within the ITF before his transfer. The ITF is a private military contractor and a separate institution from the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) that established Anajak — but its personnel also serve inside Anajak, and it handpicked at least two of Anajak's assassins. Tarnished's path is the inverse: he left the contractor's structure to join the force the contractor supplies.
 
-He is explicitly not the ITF commander established as part of [[Alpha-01]]. No link between the two men is established, and the similarity of their positions is the only thing they share.
+He is explicitly not the ITF commander established as part of [Alpha-01](factions/alpha-01). No link between the two men is established, and the similarity of their positions is the only thing they share.
 
 ## The volunteer transfer
 
@@ -45,7 +45,7 @@ Whether the soldiers volunteered individually or followed Tarnished as his comma
 
 ## See Also
 
-* [[Anajak Forces]]
-* [[Ironish Task Force (ITF)]]
-* [[Alpha-01]]
-* [[Anajak grading system]]
+* [Anajak Forces](factions/anajak-forces)
+* [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))
+* [Alpha-01](factions/alpha-01)
+* [Anajak grading system](lore/anajak-grading-system)

@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Tanishito</h3>
-<img src="../../assets/tanishito.jpg" alt="Tanishito" />
+<img src="assets/tanishito.jpg" alt="Tanishito" />
 <table>
 <tr><th>Title</th><td>Tanishito</td></tr>
 <tr><th>Subtitle</th><td>Anajak Forces assassin</td></tr>
@@ -20,7 +20,7 @@
 
 
 
-**Tanishito** is an adult assassin of the [[Anajak Forces]], graded S. She is [[Lurkish]]. She was raised and trained inside a secret facility ([[Site-29]]) and was handpicked by the [[Ironish Task Force (ITF)]] together with her partner, [[Nogo]]. She was also raised as a spy.
+**Tanishito** is an adult assassin of the [Anajak Forces](factions/anajak-forces), graded S. She is Lurkish. She was raised and trained inside a secret facility ([Site-29](locations/site-29)) and was handpicked by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) together with her partner, [Nogo](characters/anajak-forces/nogo). She was also raised as a spy.
 
 Her recorded description is pale skin and smooth, silky silver hair. This description is shared almost word for word with Nogo's, and the two records do not separate them by appearance.
 
@@ -42,18 +42,18 @@ The partnership with Nogo was assigned, and the closeness between them is a tact
 
 | Party | Knows closeness is a tactic |
 |-------|------------------------------|
-| [[Ironish Task Force (ITF)]] | Yes |
-| [[Noradus\|Northrad]] | No |
+| [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) | Yes |
+| [Northrad](characters/vista/noradus) | No |
 
 ## 4. Reputation
 
 ITF soldiers who have met Anajak forces talk about her repeatedly, and her appearance is what stands out most. They call her "Ghost" because of her ethereal appearance. This is a rumor reported among ITF soldiers. Its origin is not verified and it is not an official designation.
 
-She has met [[Pepper]] once, in person.
+She has met [Pepper](characters/anajak-forces/pepper) once, in person.
 
 ## Unresolved
 
-- **Facility:** confirm [[Site-29]] is the facility.
+- **Facility:** confirm [Site-29](locations/site-29) is the facility.
 - **Background:** anything beyond the biography line.
 - **Northrad's interest:** whether the crush is current canon or an older draft, and how she regards him.
 - **ITF relationship:** whether the ITF selected her from the facility, bought her through it, or has some other arrangement.
@@ -62,17 +62,17 @@ She has met [[Pepper]] once, in person.
 
 ## Depiction
 
-Her recruitment from a Pocheasang strip club, and her failed attempt to use the closeness tactic on [[Samsara Lykor]] during the drive to the extraction point, are dramatised in [[The Lot]]. The scene is narrative, not record.
+Her recruitment from a Pocheasang strip club, and her failed attempt to use the closeness tactic on [Samsara Lykor](characters/lendermaire/samsara-lykor) during the drive to the extraction point, are dramatised in The Lot. The scene is narrative, not record.
 
-The fullest reading of her interior life — the first place she was given one rather than a specification — is the reference draft of [[Operation Fallow — Episode]]. It dramatises her insertion, her absorption into the household, and her inability to tell a genuine feeling from a superior performance. It is a production draft, not canon, and its plot is provisional. Its characterisation is the most complete thing written about her.
+The fullest reading of her interior life — the first place she was given one rather than a specification — is the reference draft of Operation Fallow — Episode. It dramatises her insertion, her absorption into the household, and her inability to tell a genuine feeling from a superior performance. It is a production draft, not canon, and its plot is provisional. Its characterisation is the most complete thing written about her.
 
 ## See Also
 
-* [[The Lot]]
+* The Lot
 
-* [[Nogo]]
-* [[Pepper]]
-* [[Anajak Forces]]
-* [[Site-29]]
-* [[Ironish Task Force (ITF)]]
-* [[Noradus]]
+* [Nogo](characters/anajak-forces/nogo)
+* [Pepper](characters/anajak-forces/pepper)
+* [Anajak Forces](factions/anajak-forces)
+* [Site-29](locations/site-29)
+* [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))
+* [Noradus](characters/vista/noradus)

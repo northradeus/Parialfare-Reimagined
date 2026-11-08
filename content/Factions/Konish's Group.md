@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-faction">
 <h3>Konish's Group</h3>
-<img src="../assets/konishs-group-emblem.png" alt="Konish's Group" />
+<img src="assets/konishs-group-emblem.png" alt="Konish's Group" />
 <table>
 <tr><th>Title</th><td>Konish's Group</td></tr>
 <tr><th>Subtitle</th><td>Transnational Cladish umbrella coalition</td></tr>
@@ -24,9 +24,9 @@
 
 
 
-**Konish's Group**, commonly referred to simply as the **Konish Group**, is a transnational Cladish umbrella coalition and unrecognized quasi-state operating primarily in the ungoverned region of [[Ironclad]]. It was founded in 2007 by the Cladish warlord [[Konish Kimbotin (Reimagined)|Konish Kimbotin]], who serves as its supreme commander. The group is a decentralized network of armed formations that operate with substantial autonomy, bound together by Kimbotin's strategic coordination and shared financial interests.[^1][^2]
+**Konish's Group**, commonly referred to simply as the **Konish Group**, is a transnational Cladish umbrella coalition and unrecognized quasi-state operating primarily in the ungoverned region of [Ironclad](locations/ironclad). It was founded in 2007 by the Cladish warlord [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined)), who serves as its supreme commander. The group is a decentralized network of armed formations that operate with substantial autonomy, bound together by Kimbotin's strategic coordination and shared financial interests.[^1][^2]
 
-The organization gained global prominence following the [[2008 Pocheasang Palace raid]], an operation conducted by its black operations unit, [[LENDERMAIRE]], against the government of the [[Ironland|Kingdom of the Ai'ron Land]]. The raid resulted in the extraction of classified military archives. In public discourse Kimbotin is described as the most wanted man in the region; the characterisation is a public one rather than a formal finding by [[VISTA]].[^3] The group is known for its asymmetric warfare tactics, its use of information as a primary weapon, and its complex network of political and military contacts that extend far beyond the Ironclad DMZ.[^4]
+The organization gained global prominence following the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid), an operation conducted by its black operations unit, [LENDERMAIRE](factions/lendermaire), against the government of the [Kingdom of the Ai'ron Land](locations/countries/ironland). The raid resulted in the extraction of classified military archives. In public discourse Kimbotin is described as the most wanted man in the region; the characterisation is a public one rather than a formal finding by [VISTA](factions/vista).[^3] The group is known for its asymmetric warfare tactics, its use of information as a primary weapon, and its complex network of political and military contacts that extend far beyond the Ironclad DMZ.[^4]
 
 ## 1. Name
 
@@ -42,23 +42,23 @@ The group's primary strategic objective is the acquisition and control of inform
 
 ### 2.2 Governance
 
-The group functions as a decentralized umbrella organization. While Kimbotin serves as the Supreme Warlord, the constituent militias that make up the Konish Group operate with substantial autonomy, managing their own local territories, taxation, and conscription within the Ironclad DMZ.[^2] The coalition provides a degree of mutual defense and shared intelligence, allowing smaller warlords to pool resources against external threats like the [[Ironish Task Force (ITF)]] or [[Anajak Forces]].[^1]
+The group functions as a decentralized umbrella organization. While Kimbotin serves as the Supreme Warlord, the constituent militias that make up the Konish Group operate with substantial autonomy, managing their own local territories, taxation, and conscription within the Ironclad DMZ.[^2] The coalition provides a degree of mutual defense and shared intelligence, allowing smaller warlords to pool resources against external threats like the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) or [Anajak Forces](factions/anajak-forces).[^1]
 
 ## 3. Organisation and Governance
 
 ### 3.1 Leadership
 
-Konish Kimbotin is the founder, supreme commander, and central figure of the organization. His authority within the group is absolute, though his overall control over the wider coalition of warlords remains contested by intelligence analysts.[^2] [[Hanktonio]] serves as his second-in-command, overseeing operations and maintaining the network in Kimbotin's absence. The group's inner circle includes the thirteen members of [[LENDERMAIRE]], who act as Kimbotin's personal black operations force.[^4]
+Konish Kimbotin is the founder, supreme commander, and central figure of the organization. His authority within the group is absolute, though his overall control over the wider coalition of warlords remains contested by intelligence analysts.[^2] [Hanktonio](characters/lendermaire/hanktonio) serves as his second-in-command, overseeing operations and maintaining the network in Kimbotin's absence. The group's inner circle includes the thirteen members of [LENDERMAIRE](factions/lendermaire), who act as Kimbotin's personal black operations force.[^4]
 
 ### 3.2 Military and Finances
 
 The Konish Group commands a substantial military force, reportedly possessing aerial capabilities and multiple anti-aircraft systems, as evidenced by repeated failures by opposing forces to conduct aerial surveillance over their territory.[^3]
 
-The coalition is primarily funded through the capture and reuse of military equipment from the [[Ironish Task Force (ITF)]] and the taxation of local populations in the territories it controls. Additionally, the group has been linked to raids on corporate entities and government buildings, with the proceeds funding frontline operations.[^1][^4] The full scope of its financial network remains unknown to international observers.
+The coalition is primarily funded through the capture and reuse of military equipment from the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) and the taxation of local populations in the territories it controls. Additionally, the group has been linked to raids on corporate entities and government buildings, with the proceeds funding frontline operations.[^1][^4] The full scope of its financial network remains unknown to international observers.
 
 ## 4. Territorial Claims
 
-Konish's Group does not claim a formal, unified state. Its territorial holdings are limited to the southern districts of the [[Ironclad DMZ]], a region without a central government or unified security force. The group's influence, however, extends far beyond this territory through its network of contacts and its ability to project force via [[LENDERMAIRE]]. The group has been reported to move personnel and materials in and out of the [[Ironland|Kingdom of the Ai'ron Land]] with relative ease, exploiting the porous borders of the DMZ.[^2]
+Konish's Group does not claim a formal, unified state. Its territorial holdings are limited to the southern districts of the [Ironclad DMZ](locations/ironclad-dmz), a region without a central government or unified security force. The group's influence, however, extends far beyond this territory through its network of contacts and its ability to project force via [LENDERMAIRE](factions/lendermaire). The group has been reported to move personnel and materials in and out of the [Kingdom of the Ai'ron Land](locations/countries/ironland) with relative ease, exploiting the porous borders of the DMZ.[^2]
 
 ## 5. Designation as a destabilizing organization
 
@@ -67,29 +67,29 @@ Konish's Group does not claim a formal, unified state. Its territorial holdings 
 | Organisation | Date | Body | References |
 | :--- | :--- | :--- | :--- |
 | **Multinational organisations** | | | |
-| [[VISTA]] | 16 September 2008 | [[VISTA]] General Secretariat | [^2] |
+| [VISTA](factions/vista) | 16 September 2008 | [VISTA](factions/vista) General Secretariat | [^2] |
 | **Nations** | | | |
-| [[Ironland\|Kingdom of the Ai'ron Land]] | 28 August 2008 | [[Ministry of the Interior]] | [^3] |
-| [[New Aester]] | 5 September 2008 | New Aester City Council | [^5] |
-| [[Lurkinsberg]] | 10 October 2008 | Lurkish Military Institutions | |
+| [Kingdom of the Ai'ron Land](locations/countries/ironland) | 28 August 2008 | Ministry of the Interior | [^3] |
+| [New Aester](locations/countries/new-aester) | 5 September 2008 | New Aester City Council | [^5] |
+| [Lurkinsberg](locations/countries/lurkinsberg) | 10 October 2008 | Lurkish Military Institutions | |
 
 ## 6. Relations
 
-*   **[[LENDERMAIRE]]:** The group's primary black operations unit. The relationship is described as symbiotic; the group provides funding and resources, while LENDERMAIRE provides specialized capabilities and intelligence.
-*   **[[Ironish Task Force (ITF)]]:** A primary adversary. The ITF regards the Konish Group as a major threat and has engaged in repeated skirmishes with its militias. The group frequently targets ITF supply lines and bases for equipment.[^1]
-*   **[[Laopanster Gendarmerie]]:** The Ai'ron paramilitary force that suffered casualties during the 2008 raid. The group remains a high-priority target for Ai'ron security forces.
-*   **[[Anajak Forces]]:** A military task force founded by [[Noradus|Northrad]] specifically to counter the Konish Group, LENDERMAIRE, and other Cladish factions.
-*   **[[Maire O'Mare (2008)|Maire O'Mare]]:** A rival insurgent group. The Konish Group views the Maire O'Mare insurgency as an unpredictable threat and a primary target for destruction.
-*   **[[Cladish Armed Forces|CAF]]:** Unconfirmed intercepts suggest a possible connection between the Konish Group and the CAF, with ITF intelligence hypothesizing that Kimbotin is attempting to unify the region's militias under this banner.[^1]
-*   **[[VISTA]]:** The intergovernmental organization possesses limited intelligence on the Konish Group and has designated it a destabilizing threat to regional peace.
+*   **[LENDERMAIRE](factions/lendermaire):** The group's primary black operations unit. The relationship is described as symbiotic; the group provides funding and resources, while LENDERMAIRE provides specialized capabilities and intelligence.
+*   **[Ironish Task Force (ITF)](factions/ironish-task-force-(itf)):** A primary adversary. The ITF regards the Konish Group as a major threat and has engaged in repeated skirmishes with its militias. The group frequently targets ITF supply lines and bases for equipment.[^1]
+*   **[Laopanster Gendarmerie](factions/laopanster-gendarmerie):** The Ai'ron paramilitary force that suffered casualties during the 2008 raid. The group remains a high-priority target for Ai'ron security forces.
+*   **[Anajak Forces](factions/anajak-forces):** A military task force founded by [Northrad](characters/vista/noradus) specifically to counter the Konish Group, LENDERMAIRE, and other Cladish factions.
+*   **[Maire O'Mare](factions/maire-o'mare-(2008)):** A rival insurgent group. The Konish Group views the Maire O'Mare insurgency as an unpredictable threat and a primary target for destruction.
+*   **CAF:** Unconfirmed intercepts suggest a possible connection between the Konish Group and the CAF, with ITF intelligence hypothesizing that Kimbotin is attempting to unify the region's militias under this banner.[^1]
+*   **[VISTA](factions/vista):** The intergovernmental organization possesses limited intelligence on the Konish Group and has designated it a destabilizing threat to regional peace.
 
 ## 7. See Also
 
-*   [[Konish Kimbotin (Reimagined)|Konish Kimbotin]]
-*   [[LENDERMAIRE]]
-*   [[2008 Pocheasang Palace raid]]
-*   [[Ironclad DMZ]]
-*   [[Anajak Forces]]
+*   [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined))
+*   [LENDERMAIRE](factions/lendermaire)
+*   [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid)
+*   [Ironclad DMZ](locations/ironclad-dmz)
+*   [Anajak Forces](factions/anajak-forces)
 
 ## 8. References
 
@@ -105,14 +105,14 @@ Konish's Group does not claim a formal, unified state. Its territorial holdings 
 <div class="rel-group">
 <h3>Associated Characters</h3>
 <ul>
-<li><a href="../characters/lendermaire/hanktonio">Hanktonio</a></li>
-<li><a href="../characters/lendermaire/konish-kimbotin-(reimagined)">Konish Kimbotin</a></li>
+<li><a href="/characters/lendermaire/hanktonio">Hanktonio</a></li>
+<li><a href="/characters/lendermaire/konish-kimbotin-(reimagined)">Konish Kimbotin</a></li>
 </ul>
 </div>
 <div class="rel-group">
 <h3>Sub-Organizations</h3>
 <ul>
-<li><a href="lendermaire">LENDERMAIRE</a></li>
+<li><a href="/factions/lendermaire">LENDERMAIRE</a></li>
 </ul>
 </div>
 </section>

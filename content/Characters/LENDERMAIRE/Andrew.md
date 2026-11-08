@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Andrew</h3>
-<img src="../../assets/andrew.png" alt="Andrew" />
+<img src="assets/andrew.png" alt="Andrew" />
 <table>
 <tr><th>Title</th><td>Andrew</td></tr>
 <tr><th>Subtitle</th><td>Assaulter of LENDERMAIRE</td></tr>
@@ -14,13 +14,13 @@
 
 
 
-**Andrew** is the assaulter of the black operations unit [[LENDERMAIRE]]. He is a former squad member of the Ironish Special Forces, together with [[Markless]] and [[Kaliber]], and has been in LENDERMAIRE since its early development.
+**Andrew** is the assaulter of the black operations unit [LENDERMAIRE](factions/lendermaire). He is a former squad member of the Ironish Special Forces, together with [Markless](characters/lendermaire/markless) and [Kaliber](characters/lendermaire/kaliber), and has been in LENDERMAIRE since its early development.
 
 He is the only member of the household whose place in it is contested. Where he sits on the thirteen-member roster is unconfirmed: he is not among the twelve members named earlier, and the record leaves his place unresolved. He is also the only member recorded as having come to the household for someone else.
 
 ## 1. The squad
 
-Andrew served in the Ironish Special Forces alongside [[Markless]] and [[Kaliber]]. All three left that unit and all three are recorded in LENDERMAIRE from its early development.
+Andrew served in the Ironish Special Forces alongside [Markless](characters/lendermaire/markless) and [Kaliber](characters/lendermaire/kaliber). All three left that unit and all three are recorded in LENDERMAIRE from its early development.
 
 Kaliber and Markless are counted among the core membership. Andrew is not. The record does not establish why his place remains contested while theirs do not.
 
@@ -34,7 +34,7 @@ None of the three is confirmed. The record does not indicate which is true, or w
 
 ## 3. The conditioning
 
-Andrew is recorded as knowing what [[Konish Kimbotin (Reimagined)|Konish Kimbotin]] does to the members of the household, and as understanding it.
+Andrew is recorded as knowing what [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined)) does to the members of the household, and as understanding it.
 
 Konish is recorded as having convinced him. The record does not state what was said, or what argument was made. This is the only instance in which Konish is recorded as having argued for a member rather than simply selecting one, and the content of that argument is not established.
 
@@ -55,7 +55,7 @@ The position is also the seat nearest the exit, and the seat nearest his two for
 - **His own account:** Why he came, and what he left, are not established.
 ## See Also
 
-* [[LENDERMAIRE]]
-* [[Markless]]
-* [[Kaliber]]
-* [[Ironish Task Force (ITF)]]
+* [LENDERMAIRE](factions/lendermaire)
+* [Markless](characters/lendermaire/markless)
+* [Kaliber](characters/lendermaire/kaliber)
+* [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))

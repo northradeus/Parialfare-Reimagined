@@ -12,14 +12,14 @@
 A curated index of the geographic entities in the region.
 
 ## Sovereign States
-- [[Ironland]] — The Kingdom of the Ai'ron Land.
-- [[Lurkinsberg]] — The post-colonial naval power.
-- [[New Aester]] — The corporate city-state.
+- [Ironland](locations/countries/ironland) — The Kingdom of the Ai'ron Land.
+- [Lurkinsberg](locations/countries/lurkinsberg) — The post-colonial naval power.
+- [New Aester](locations/countries/new-aester) — The corporate city-state.
 
 ## The Frontier
-- [[Ironclad]] — The post-imperial warlord frontier.
-- [[Ironclad DMZ]] — The ungoverned demilitarised zone.
+- [Ironclad](locations/ironclad) — The post-imperial warlord frontier.
+- [Ironclad DMZ](locations/ironclad-dmz) — The ungoverned demilitarised zone.
 
 ## Cities & Sites
-- [[Pocheasang]] — Capital of Ironland.
-- [[Site-29]] — The classified training installation.
+- [Pocheasang](locations/pocheasang) — Capital of Ironland.
+- [Site-29](locations/site-29) — The classified training installation.

@@ -14,7 +14,7 @@
 
 
 
-**Salmon** is a member of the black operations unit [[LENDERMAIRE]], recorded in earlier material as "Hard to Kill." His origins are as a coastal guard and navy serviceman, which is the reason for his name. He survived pirates wrecking his naval ship, and multiple other cases of surviving what most cannot. He is durable and resilient, and performs well underwater.
+**Salmon** is a member of the black operations unit [LENDERMAIRE](factions/lendermaire), recorded in earlier material as "Hard to Kill." His origins are as a coastal guard and navy serviceman, which is the reason for his name. He survived pirates wrecking his naval ship, and multiple other cases of surviving what most cannot. He is durable and resilient, and performs well underwater.
 
 ## Unresolved
 
@@ -23,6 +23,6 @@
 
 ## See Also
 
-* [[LENDERMAIRE]]
-* [[Konish's Group]]
-* [[Konish Kimbotin (Reimagined)]]
+* [LENDERMAIRE](factions/lendermaire)
+* [Konish's Group](factions/konish's-group)
+* [Konish Kimbotin (Reimagined)](characters/lendermaire/konish-kimbotin-(reimagined))

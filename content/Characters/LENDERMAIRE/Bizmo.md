@@ -16,7 +16,7 @@
 
 
 
-**Bizmo** is a background operator of the black operations unit [[LENDERMAIRE]], responsible for 3D printing and the engineering of unconventional gadgets, accessories, and equipment designed for warfare. He is not counted among the group's thirteen core members, and works from the workshop rather than deploying in the field. He is an outsider to the group's core membership, and was recruited through a connection to [[Vanny]], with whom he collaborates on hardware projects. Vanny's field is cyber operations, electronic warfare, and logistics; the division of responsibility between the two is maintained on a project basis.
+**Bizmo** is a background operator of the black operations unit [LENDERMAIRE](factions/lendermaire), responsible for 3D printing and the engineering of unconventional gadgets, accessories, and equipment designed for warfare. He is not counted among the group's thirteen core members, and works from the workshop rather than deploying in the field. He is an outsider to the group's core membership, and was recruited through a connection to [Vanny](characters/lendermaire/vanny), with whom he collaborates on hardware projects. Vanny's field is cyber operations, electronic warfare, and logistics; the division of responsibility between the two is maintained on a project basis.
 
 ## Specialisation
 
@@ -40,7 +40,7 @@ The two collaborate on hardware projects. The exact division of responsibility i
 
 ## Household Assignment
 
-Bizmo resides with LENDERMAIRE personnel on land owned by [[Konish Kimbotin (Reimagined)]] in the southern [[Ironclad DMZ]]. He is a background operator and is not included among the thirteen core members. Background personnel are treated as members of the household's family unit despite their exclusion from the core membership count.
+Bizmo resides with LENDERMAIRE personnel on land owned by [Konish Kimbotin (Reimagined)](characters/lendermaire/konish-kimbotin-(reimagined)) in the southern [Ironclad DMZ](locations/ironclad-dmz). He is a background operator and is not included among the thirteen core members. Background personnel are treated as members of the household's family unit despite their exclusion from the core membership count.
 
 His daily schedule and domestic responsibilities are not recorded.
 
@@ -67,10 +67,10 @@ His relationship to LENDERMAIRE's operational command structure is not documente
 
 ## See Also
 
-* [[LENDERMAIRE]]
-* [[Konish's Group]]
-* [[Konish Kimbotin (Reimagined)]]
-* [[Vanny]]
-* [[Joey]]
-* [[Gazmo]]
-* [[Ironclad DMZ]]
+* [LENDERMAIRE](factions/lendermaire)
+* [Konish's Group](factions/konish's-group)
+* [Konish Kimbotin (Reimagined)](characters/lendermaire/konish-kimbotin-(reimagined))
+* [Vanny](characters/lendermaire/vanny)
+* [Joey](characters/lendermaire/joey)
+* [Gazmo](characters/lendermaire/gazmo)
+* [Ironclad DMZ](locations/ironclad-dmz)

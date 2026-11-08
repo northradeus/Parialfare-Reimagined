@@ -14,9 +14,9 @@
 
 
 
-**Grunt** is a member of the black operations unit [[LENDERMAIRE]]. His earlier roster entry records him as "Nade Specialist."
+**Grunt** is a member of the black operations unit [LENDERMAIRE](factions/lendermaire). His earlier roster entry records him as "Nade Specialist."
 
-His current role is unresolved, for the same reason as [[Gunter]]'s: one of the two throws grenades and the other suppresses fire, and which man holds which role has not been decided. His background is unrecorded.
+His current role is unresolved, for the same reason as [Gunter](characters/lendermaire/gunter)'s: one of the two throws grenades and the other suppresses fire, and which man holds which role has not been decided. His background is unrecorded.
 
 ## Unresolved
 
@@ -24,5 +24,5 @@ His current role is unresolved, for the same reason as [[Gunter]]'s: one of the 
 
 ## See Also
 
-* [[LENDERMAIRE]]
-* [[Gunter]]
+* [LENDERMAIRE](factions/lendermaire)
+* [Gunter](characters/lendermaire/gunter)

@@ -14,7 +14,7 @@
 
 
 
-**Site-29** is a heavily concealed, compartmentalized training installation. Operating outside official [[VISTA]] or Ai'ron oversight, the facility is designed for the psychological conditioning and specialized training of covert operatives. Its operator remains unknown, a deliberate feature of the facility's design: while its graduates can be identified and assessed, the institution that produced them cannot.
+**Site-29** is a heavily concealed, compartmentalized training installation. Operating outside official [VISTA](factions/vista) or Ai'ron oversight, the facility is designed for the psychological conditioning and specialized training of covert operatives. Its operator remains unknown, a deliberate feature of the facility's design: while its graduates can be identified and assessed, the institution that produced them cannot.
 
 ## 1. Overview
 
@@ -22,19 +22,19 @@ Site-29 operates as a black site. It houses extensive facilities for psychologic
 
 ## 2. Structure and Compartmentalization
 
-The facility is defined by extreme compartmentalization. Operatives are raised and trained in isolated groups, and are intentionally kept separate unless a specific operational requirement dictates otherwise. This doctrine ensures that subjects like [[Tanishito]], [[Nogo]], and [[Pepper]] do not share a collective history or overlapping social bonds.
+The facility is defined by extreme compartmentalization. Operatives are raised and trained in isolated groups, and are intentionally kept separate unless a specific operational requirement dictates otherwise. This doctrine ensures that subjects like [Tanishito](characters/anajak-forces/tanishito), [Nogo](characters/anajak-forces/nogo), and [Pepper](characters/anajak-forces/pepper) do not share a collective history or overlapping social bonds.
 
 ## 3. Training and Grading
 
 The facility employs a strict grading system, evaluating subjects on specialized metrics. Grades range from standard combat readiness to extreme psychological aptitude.
 
-* [[Tanishito]] received a final evaluation grade of S.
-* [[Nogo]] received a final evaluation grade of A+.
-* [[Pepper]] received an S+ in multitasking and an A in combat.
+* [Tanishito](characters/anajak-forces/tanishito) received a final evaluation grade of S.
+* [Nogo](characters/anajak-forces/nogo) received a final evaluation grade of A+.
+* [Pepper](characters/anajak-forces/pepper) received an S+ in multitasking and an A in combat.
 
 ## 4. Outside Contracts
 
-Site-29 accepts highly specific requisitions from aligned state actors, such as [[VISTA]]. The facility's authority and chain of command remain heavily concealed, even from the clients it serves.
+Site-29 accepts highly specific requisitions from aligned state actors, such as [VISTA](factions/vista). The facility's authority and chain of command remain heavily concealed, even from the clients it serves.
 
 ## 5. Open Record
 
@@ -44,8 +44,8 @@ Site-29 accepts highly specific requisitions from aligned state actors, such as 
 
 ## 6. See Also
 
-* [[Tanishito]]
-* [[Nogo]]
-* [[Pepper]]
-* [[Ironish Task Force (ITF)]]
-* [[VISTA]]
+* [Tanishito](characters/anajak-forces/tanishito)
+* [Nogo](characters/anajak-forces/nogo)
+* [Pepper](characters/anajak-forces/pepper)
+* [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))
+* [VISTA](factions/vista)

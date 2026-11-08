@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Noradus Northrad</h3>
-<img src="../../assets/d8973bcf928c6bf7e6d82fe571e95669.jpg" alt="Noradus Northrad" />
+<img src="assets/d8973bcf928c6bf7e6d82fe571e95669.jpg" alt="Noradus Northrad" />
 <table>
 <tr><th>Title</th><td>Noradus "Northrad</td></tr>
 <tr><th>Subtitle</th><td>President of VISTA</td></tr>
@@ -27,9 +27,9 @@
 
 
 
-**Noradus Partenstine**, known as **Northrad**, is the president of [[VISTA]] and the principal architect of its institutions. He is a former special operator under [[Lurkinsberg]], and a global figure from a wealthy family who bought his way into politics.
+**Noradus Partenstine**, known as **Northrad**, is the president of [VISTA](factions/vista) and the principal architect of its institutions. He is a former special operator under [Lurkinsberg](locations/countries/lurkinsberg), and a global figure from a wealthy family who bought his way into politics.
 
-He is a different individual from the thirteenth member of [[LENDERMAIRE]], [[Samsara Lykor]], who shares the designation through the [[Military naming custom]]; the two have no established personal or organizational connection.
+He is a different individual from the thirteenth member of [LENDERMAIRE](factions/lendermaire), [Samsara Lykor](characters/lendermaire/samsara-lykor), who shares the designation through the Military naming custom; the two have no established personal or organizational connection.
 
 ## Identity
 
@@ -37,21 +37,21 @@ He is a different individual from the thirteenth member of [[LENDERMAIRE]], [[Sa
 - **Born:** 10 October 1988.
 - **Age:** 21, from October 2009 to October 2010. He was 19 at the time of the 2008 Pocheasang Palace raid.
 - **Office:** President of VISTA.
-- **Adjutant:** [[Pepper]], assigned by VISTA.
+- **Adjutant:** [Pepper](characters/anajak-forces/pepper), assigned by VISTA.
 
 ## The presidency in 2008
 
 In 2008 Northrad held the VISTA presidency. VISTA was then an organization of twelve member delegations that authorized funding by a two-thirds majority. In his role the presidency was one vote among the delegations, and he acted through his office.
 
-After the [[2008 Pocheasang Palace raid]], the Kingdom of Ai'ron asked VISTA to fund military programmes for a campaign in the [[Ironclad]] DMZ. The presidency was among the four votes against, and the request failed by six votes to four, with two abstentions. His office stated that VISTA's instruments did not provide for funding offensive operations by a member into a stabilisation area, and that authorization would require amending the charter.
+After the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid), the Kingdom of Ai'ron asked VISTA to fund military programmes for a campaign in the [Ironclad](locations/ironclad) DMZ. The presidency was among the four votes against, and the request failed by six votes to four, with two abstentions. His office stated that VISTA's instruments did not provide for funding offensive operations by a member into a stabilisation area, and that authorization would require amending the charter.
 
-VISTA established the [[Global Intervention Coalition (GIC)]] on 4 December 2008. The record from 2008 shows no wider personal role. His other holdings, described below, are undated.
+VISTA established the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) on 4 December 2008. The record from 2008 shows no wider personal role. His other holdings, described below, are undated.
 
 ## Institutional holdings
 
-Northrad's interests run through politics, the military and classified projects. His work at [[VISTA]] covers political structures, government institutions, military organizations, intelligence, logistics, economic infrastructure and public services. He is the founder and architect of the [[Global Intervention Coalition (GIC)]], which VISTA established in December 2008; it operates under VISTA rather than as his personal military organization, and its military decisions belong to its generals. The GIC in turn established [[Anajak Forces]], which Northrad also designed and funds heavily. He founded [[Anajak Forces]] and funds it heavily, and maintains [[Alpha-01]], an elite team he has classified personally.
+Northrad's interests run through politics, the military and classified projects. His work at [VISTA](factions/vista) covers political structures, government institutions, military organizations, intelligence, logistics, economic infrastructure and public services. He is the founder and architect of the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)), which VISTA established in December 2008; it operates under VISTA rather than as his personal military organization, and its military decisions belong to its generals. The GIC in turn established [Anajak Forces](factions/anajak-forces), which Northrad also designed and funds heavily. He founded [Anajak Forces](factions/anajak-forces) and funds it heavily, and maintains [Alpha-01](factions/alpha-01), an elite team he has classified personally.
 
-His relationship with the [[Ironish Task Force (ITF)|ITF]] is more direct than these institutional ties. During the Ironland coup he funded ITF well enough that it now takes his orders, effectively buying a private army; the date of the coup is unresolved, and in August 2008 ITF was still contracted to the Kingdom of Ai'ron. His estates project — the ambition to build the largest complex of estates, and the reason he wants to annex Ironclad through ITF — produced [[New Aester]].
+His relationship with the [ITF](factions/ironish-task-force-(itf)) is more direct than these institutional ties. During the Ironland coup he funded ITF well enough that it now takes his orders, effectively buying a private army; the date of the coup is unresolved, and in August 2008 ITF was still contracted to the Kingdom of Ai'ron. His estates project — the ambition to build the largest complex of estates, and the reason he wants to annex Ironclad through ITF — produced [New Aester](locations/countries/new-aester).
 
 Other world leaders regard him as the ideal world leader. He does not brag about it, and many credit him with engineering the world economy.
 
@@ -81,21 +81,21 @@ She reformulates his informal directions into professional language and supports
 
 ## Relationships
 
-### [[VISTA]]
+### [VISTA](factions/vista)
 He is its president and architect. His relationship with its founding members is unresolved.
 
-### [[Pepper]]
+### [Pepper](characters/anajak-forces/pepper)
 Assigned adjutant and caretaker (see above).
 
-### [[Tanishito]]
-Many earlier drafts show him with a crush on Tanishito, an adult S-grade assassin of [[Anajak Forces]]. Whether this is current canon is unresolved.
+### [Tanishito](characters/anajak-forces/tanishito)
+Many earlier drafts show him with a crush on Tanishito, an adult S-grade assassin of [Anajak Forces](factions/anajak-forces). Whether this is current canon is unresolved.
 
-### [[Samsara Lykor|Lykor]]
+### [Lykor](characters/lendermaire/samsara-lykor)
 No established connection. The shared name comes from the naming custom.
 
 ## Unresolved
 
-- **When he became president:** how and when he came to lead [[VISTA]].
+- **When he became president:** how and when he came to lead [VISTA](factions/vista).
 - **Special operator past:** a service history that fits his years.
 - **Pepper:** whether she still serves as adjutant.
 - **Dates:** the Ironland coup, when ITF began taking his orders, and the founding of Anajak and Alpha-01.
@@ -105,10 +105,10 @@ No established connection. The shared name comes from the naming custom.
 
 ## See Also
 
-* [[VISTA]]
-* [[Global Intervention Coalition (GIC)]]
-* [[Anajak Forces]]
-* [[Ironish Task Force (ITF)]]
-* [[Samsara Lykor]]
-* [[2008 Pocheasang Palace raid]]
-* [[2008 Ai'ron request to VISTA]]
+* [VISTA](factions/vista)
+* [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic))
+* [Anajak Forces](factions/anajak-forces)
+* [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))
+* [Samsara Lykor](characters/lendermaire/samsara-lykor)
+* [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid)
+* [2008 Ai'ron request to VISTA](events/2008-ai'ron-request-to-vista)

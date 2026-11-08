@@ -12,7 +12,7 @@
 
 
 
-**Operation Fallow** was an intelligence operation of the [[Global Intervention Coalition (GIC)]], conducted after the establishment of [[Anajak Forces]], with the stated objective of retrieving a Lurkish national designated "Northrad" from the Cladish household [[LENDERMAIRE]]. It proceeded over the objection of the commanding general of Anajak Forces and concluded with the asset's return on terms the institution had not anticipated.
+**Operation Fallow** was an intelligence operation of the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)), conducted after the establishment of [Anajak Forces](factions/anajak-forces), with the stated objective of retrieving a Lurkish national designated "Northrad" from the Cladish household [LENDERMAIRE](factions/lendermaire). It proceeded over the objection of the commanding general of Anajak Forces and concluded with the asset's return on terms the institution had not anticipated.
 
 The record does not establish the operation's date. It establishes only that it followed the establishment of Anajak Forces.
 
@@ -20,9 +20,9 @@ The record does not establish the operation's date. It establishes only that it 
 
 The operation originated in a documentary cross-reference rather than in field intelligence.
 
-The [[Ironish Task Force (ITF)]] maintains a recruitment list of Lurkish military personnel assessed as suitable for contractor employment. The designation "Northrad" appears on that list as a former marine and SWAT officer with a record of exceptional service.
+The [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) maintains a recruitment list of Lurkish military personnel assessed as suitable for contractor employment. The designation "Northrad" appears on that list as a former marine and SWAT officer with a record of exceptional service.
 
-Separately, the GIC held records pertaining to a Pocheasang establishment with known ties to [[Konish's Group]]. Those records identified an individual by the same designation as having worked as security at the establishment before his disappearance from public record.
+Separately, the GIC held records pertaining to a Pocheasang establishment with known ties to [Konish's Group](factions/konish's-group). Those records identified an individual by the same designation as having worked as security at the establishment before his disappearance from public record.
 
 The two documents were compared. The individual on the ITF list and the individual at the club were assessed as the same person. Because the establishment's ownership had established links to Konish's Group, the assessment concluded that the individual had entered the household.
 
@@ -36,7 +36,7 @@ The assessment did not account for the possibility that he had chosen to remain.
 
 ## 3. The asset
 
-The operation was assigned to [[Tanishito]], an S-grade operative of Anajak Forces, facility-raised and trained for intelligence work as well as for the assassin role under which she is listed.
+The operation was assigned to [Tanishito](characters/anajak-forces/tanishito), an S-grade operative of Anajak Forces, facility-raised and trained for intelligence work as well as for the assassin role under which she is listed.
 
 Her cover was constructed as follows: Lurkish nationality; a military background consistent with her actual training; a documented record of instability and debt sufficient to explain a search for work in a dangerous district; and placement as a bartender at the same establishment whose records had produced the original identification.
 
@@ -48,7 +48,7 @@ The stated objective was contact and retrieval: to make contact with the asset a
 
 The operation carried no extraction window. The asset was to remain in place until contact was made and the objective resolved by other means.
 
-General [[General Ramcher|Ramcher]], commanding Anajak Forces, objected. The record establishes that he required two answers before authorising an insertion: the origin of the report concerning the asset's partner, and a defined procedure for the event that the operative could not be reached. Neither answer is recorded as having been provided.
+General [Ramcher](characters/anajak-forces/general-ramcher), commanding Anajak Forces, objected. The record establishes that he required two answers before authorising an insertion: the origin of the report concerning the asset's partner, and a defined procedure for the event that the operative could not be reached. Neither answer is recorded as having been provided.
 
 The operation proceeded over his objection. The record does not establish who authorised it, and does not describe the authority under which it was conducted.
 
@@ -80,10 +80,10 @@ General Ramcher read the report. The record does not describe his response. It e
 
 ## See Also
 
-- [[Anajak Forces]]
-- [[Global Intervention Coalition (GIC)]]
-- [[Tanishito]]
-- [[Samsara Lykor]]
-- [[LENDERMAIRE]]
-- [[General Ramcher]]
-- [[Ironish Task Force (ITF)]]
+- [Anajak Forces](factions/anajak-forces)
+- [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic))
+- [Tanishito](characters/anajak-forces/tanishito)
+- [Samsara Lykor](characters/lendermaire/samsara-lykor)
+- [LENDERMAIRE](factions/lendermaire)
+- [General Ramcher](characters/anajak-forces/general-ramcher)
+- [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))

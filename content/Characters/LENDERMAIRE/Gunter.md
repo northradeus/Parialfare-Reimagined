@@ -14,9 +14,9 @@
 
 
 
-**Gunter** is a member of the black operations unit [[LENDERMAIRE]]. His earlier roster entry records him as "Engineer & Sapper."
+**Gunter** is a member of the black operations unit [LENDERMAIRE](factions/lendermaire). His earlier roster entry records him as "Engineer & Sapper."
 
-His current role is unresolved. [[Gunter]] and [[Grunt]] are described as easily confused: one throws grenades and the other suppresses fire, and which man holds which role has not been decided. His background is unrecorded.
+His current role is unresolved. [Gunter](characters/lendermaire/gunter) and [Grunt](characters/lendermaire/grunt) are described as easily confused: one throws grenades and the other suppresses fire, and which man holds which role has not been decided. His background is unrecorded.
 
 ## Unresolved
 
@@ -24,5 +24,5 @@ His current role is unresolved. [[Gunter]] and [[Grunt]] are described as easily
 
 ## See Also
 
-* [[LENDERMAIRE]]
-* [[Grunt]]
+* [LENDERMAIRE](factions/lendermaire)
+* [Grunt](characters/lendermaire/grunt)

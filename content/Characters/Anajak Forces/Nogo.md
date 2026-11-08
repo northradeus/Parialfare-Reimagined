@@ -20,9 +20,9 @@
 
 
 
-**Nogo** is an adult assassin of the [[Anajak Forces]], graded A+. He is [[Lurkish]]. He was raised and trained inside a secret facility ([[Site-29]]) alongside his assigned partner, [[Tanishito]], and was handpicked by the [[Ironish Task Force (ITF)]] together with her. He was also raised as a spy.
+**Nogo** is an adult assassin of the [Anajak Forces](factions/anajak-forces), graded A+. He is Lurkish. He was raised and trained inside a secret facility ([Site-29](locations/site-29)) alongside his assigned partner, [Tanishito](characters/anajak-forces/tanishito), and was handpicked by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) together with her. He was also raised as a spy.
 
-*Not to be confused with [[Nolgo (Purgatory)|Nolgo]], a Purgatory character. Nogo is a variant of that name, the two are separate entities, and no facts are shared.*
+*Not to be confused with Nolgo, a Purgatory character. Nogo is a variant of that name, the two are separate entities, and no facts are shared.*
 
 His recorded description matches Tanishito's. It is kept in her article and not repeated here.
 
@@ -38,7 +38,7 @@ The record holds no intake record, no training milestones and no personal detail
 
 The facility assigned him as Tanishito's partner, and he was raised alongside her. The two were handpicked by ITF in the same action.
 
-The closeness between them is a tactic. [[Ironish Task Force (ITF)]] knows this and [[Noradus|Northrad]] does not (see Tanishito's record).
+The closeness between them is a tactic. [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) knows this and [Northrad](characters/vista/noradus) does not (see Tanishito's record).
 
 The archives hold no entry on him that is not stated in relation to Tanishito. ITF accounts of Anajak, as recorded, mention Tanishito and not Nogo.
 
@@ -50,13 +50,13 @@ The archives hold no entry on him that is not stated in relation to Tanishito. I
 
 ## Depiction
 
-The reference draft of [[Operation Fallow — Episode]] is the only production piece that shows him beside [[Tanishito]]. It depicts the closeness between them as something he performs perfectly and reads nothing into, and her return to him as a silence he does not notice. The draft is not canon. What it establishes about him is a reading, not a record: that a man trained to know where his partner is standing may not be trained to see what has changed in her.
+The reference draft of Operation Fallow — Episode is the only production piece that shows him beside [Tanishito](characters/anajak-forces/tanishito). It depicts the closeness between them as something he performs perfectly and reads nothing into, and her return to him as a silence he does not notice. The draft is not canon. What it establishes about him is a reading, not a record: that a man trained to know where his partner is standing may not be trained to see what has changed in her.
 
 ## See Also
 
-* [[Tanishito]]
-* [[Operation Fallow — Episode]]
-* [[Pepper]]
-* [[Anajak Forces]]
-* [[Site-29]]
-* [[Nolgo (Purgatory)|Nolgo]] (disambiguation only)
+* [Tanishito](characters/anajak-forces/tanishito)
+* Operation Fallow — Episode
+* [Pepper](characters/anajak-forces/pepper)
+* [Anajak Forces](factions/anajak-forces)
+* [Site-29](locations/site-29)
+* Nolgo (disambiguation only)
