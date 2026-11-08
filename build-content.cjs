@@ -63,6 +63,97 @@ if (fs.existsSync(sourceAssets) && fs.statSync(sourceAssets).isDirectory()) {
 
 const ignoreKeys = ['tags', 'entity-type', 'character-type', 'faction-type', 'location-type', 'concept-type', 'country-type', 'UID', 'continuity', 'subject', 'status', 'image', 'layout', 'aliases', 'alias'];
 
+const articlePaths = [];
+
+// --- Stage 3: Related Entities Pre-Scan ---
+const resolvers = {};
+const articlesForRelations = [];
+const reverseLinks = {};
+
+function normalizeKey(str) {
+    return str.toLowerCase().replace(/['']/g, "'").replace(/\s+/g, ' ').trim();
+}
+
+function extractWikilinkTargets(val) {
+    const targets = [];
+    const regex = /\[\[([^\]|]+)/g;
+    let match;
+    while ((match = regex.exec(val)) !== null) {
+        targets.push(match[1].trim());
+    }
+    return targets;
+}
+
+function preScanRelations(dir) {
+    const items = fs.readdirSync(dir);
+    for (const item of items) {
+        const fullPath = path.join(dir, item);
+        const stat = fs.statSync(fullPath);
+        if (stat.isDirectory()) {
+            preScanRelations(fullPath);
+        } else if (item.endsWith('.md') && item !== 'index.md') {
+            const content = fs.readFileSync(fullPath, 'utf-8');
+            const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+            if (!fmMatch) continue;
+            const relOutPath = path.relative(sourceDir, fullPath).replace(/\\/g, '/').replace('.md', '').toLowerCase().replace(/ /g, '-');
+            let title = item.replace('.md', '');
+            const fields = { factions: [], part_of: [], location: [] };
+            for (const line of fmMatch[1].split('\n')) {
+                const trimmed = line.trim();
+                if (trimmed.startsWith('title:')) {
+                    title = trimmed.substring(6).trim().replace(/^['"]|['"]$/g, '');
+                }
+                for (const field of ['factions', 'part_of', 'location']) {
+                    if (trimmed.startsWith(field + ':')) {
+                        const val = trimmed.substring(field.length + 1).trim();
+                        fields[field] = extractWikilinkTargets(val);
+                    }
+                }
+            }
+            articlesForRelations.push({ slug: relOutPath, title, fields });
+            const titleKey = normalizeKey(title);
+            const fileNameKey = normalizeKey(item.replace('.md', ''));
+            if (titleKey && !resolvers[titleKey]) resolvers[titleKey] = relOutPath;
+            if (fileNameKey && !resolvers[fileNameKey]) resolvers[fileNameKey] = relOutPath;
+        }
+    }
+}
+
+preScanRelations(sourceDir);
+
+for (const article of articlesForRelations) {
+    for (const field of ['factions', 'part_of', 'location']) {
+        for (const target of article.fields[field]) {
+            const targetSlug = resolvers[normalizeKey(target)];
+            if (!targetSlug || targetSlug === article.slug) continue;
+            if (!reverseLinks[targetSlug]) reverseLinks[targetSlug] = [];
+            if (reverseLinks[targetSlug].some(r => r.slug === article.slug && r.field === field)) continue;
+            reverseLinks[targetSlug].push({ title: article.title, slug: article.slug, field });
+        }
+    }
+}
+
+console.log(`[relations] Indexed ${articlesForRelations.length} articles, built reverse links for ${Object.keys(reverseLinks).length} targets.`);
+
+function renderRelatedEntities(currentSlug, rels) {
+    const grouped = { factions: [], part_of: [], location: [] };
+    for (const r of rels) { if (grouped[r.field]) grouped[r.field].push(r); }
+    const labels = { factions: 'Associated Characters', part_of: 'Sub-Organizations', location: 'Related Events' };
+    let html = '\n\n<section class="related-entities">\n<h2>Related Entities</h2>\n';
+    const fromDir = path.dirname(currentSlug);
+    for (const field of ['factions', 'part_of', 'location']) {
+        if (grouped[field].length === 0) continue;
+        html += `<div class="rel-group">\n<h3>${labels[field]}</h3>\n<ul>\n`;
+        for (const r of grouped[field]) {
+            const relHref = path.relative(fromDir, r.slug).replace(/\\/g, '/');
+            html += `<li><a href="${relHref}">${r.title}</a></li>\n`;
+        }
+        html += '</ul>\n</div>\n';
+    }
+    html += '</section>\n';
+    return html;
+}
+
 function processDir(dir, outDir) {
     const items = fs.readdirSync(dir);
     for (const item of items) {
@@ -74,6 +165,10 @@ function processDir(dir, outDir) {
             fs.mkdirSync(outPath, { recursive: true });
             processDir(fullPath, outPath);
         } else if (item.endsWith('.md')) {
+            // Record article path for Random Article
+            const relPath = path.relative(destDir, outPath).replace(/\\/g, '/').replace('.md', '').toLowerCase().replace(/ /g, '-');
+            articlePaths.push(relPath);
+
             let content = fs.readFileSync(fullPath, 'utf-8');
             
             content = content.replace(/â€“/g, '–').replace(/â€”/g, '—').replace(/â€™/g, "'").replace(/â€œ/g, '"').replace(/â€\x9d/g, '"');
@@ -179,11 +274,57 @@ function processDir(dir, outDir) {
 
                 content = infobox + body;
             }
+            const rels = reverseLinks[relPath];
+            if (rels && rels.length > 0) {
+                content += renderRelatedEntities(relPath, rels);
+            }
             fs.writeFileSync(outPath, content, 'utf-8');
         }
     }
 }
 processDir(sourceDir, destDir);
+
+// --- Random Article Index ---
+fs.writeFileSync(path.join(destDir, 'random-index.json'), JSON.stringify(articlePaths, null, 2));
+
+// --- Start Here Page ---
+const startHereContent = `---
+title: Start Here
+---
+
+# Start Here
+
+Welcome to Nolheim. If you are new to this world, the amount of information can be overwhelming. This page is designed to guide you through the most important concepts and conflicts, starting from the broadest picture and narrowing down to specific people and organizations.
+
+## 1. Understand the World
+
+Before diving into the politics, it helps to understand the geography and the forces that shaped it.
+
+*   **[[Ironland|Kingdom of the Ai'ron Land]]**: The established, constitutional monarchy that serves as the anchor of the region.
+*   **[[Ironclad]]**: The ungoverned frontier. This is not a state, but a demilitarized zone ruled by competing warlords.
+*   **[[VISTA]]**: The intergovernmental military organization that binds the region together, though often through deadlock.
+
+## 2. Understand the Conflict
+
+The year is 2008, and the region is on the brink of war. At the heart of the conflict is a clash between an institutional order and a decentralized insurgency.
+
+*   **[[Konish Kimbotin (Reimagined)|Konish Kimbotin]]**: The Cladish warlord who leads the insurgency.
+*   **[[Konish's Group]]**: The coalition of autonomous militias that Kimbotin has united.
+*   **[[LENDERMAIRE]]**: The black operations unit that serves as Kimbotin's most dangerous weapon.
+
+## 3. Explore the People
+
+Once you understand the factions, you can explore the individuals who drive the story forward.
+
+*   **[[Samsara Lykor]]**: The concealed thirteenth member of LENDERMAIRE, a man torn between his past and his loyalty.
+*   **[[Noradus|Northrad]]**: The President of VISTA and the architect of the institutions that oppose Kimbotin.
+*   **[[2008 Pocheasang Palace raid]]**: The event that sparked the modern conflict.
+
+---
+
+<div class="portal-grid"><a href="#" class="portal-button" onclick="const h=JSON.parse(sessionStorage.getItem('randomHistory')||'[]');fetch('random-index.json').then(r=>r.json()).then(idx=>{let pool=idx.filter(u=>!h.includes(u));if(!pool.length){h.length=0;pool=idx;}const p=pool[Math.floor(Math.random()*pool.length)];h.push(p);if(h.length>10)h.shift();sessionStorage.setItem('randomHistory',JSON.stringify(h));window.location.href=p;});return false;">Surprise Me</a></div>
+`;
+fs.writeFileSync(path.join(destDir, 'Start-Here.md'), startHereContent);
 
 function featuredMedia(fileName, altText) {
     const mappedName = vaultImages.get(fileName.toLowerCase());
@@ -194,8 +335,10 @@ function featuredMedia(fileName, altText) {
     return `<span class="card-image"><img src="assets/${mappedName}" alt="${altText}" loading="lazy"></span>`;
 }
 
-const indexContent = `---\ntitle: Nolheim\n---\n<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div><h2 class="home-section-title">Featured Records</h2><div class="featured-grid"><a href="characters/lendermaire/konish-kimbotin-(reimagined)" class="featured-card">${featuredMedia("konish.jpg", "Konish Kimbotin")}<span class="card-content"><span class="card-title">Konish Kimbotin</span><span class="card-subtitle">Supreme Warlord of the Cladish insurgency.</span></span></a><a href="characters/lendermaire/samsara-lykor" class="featured-card">${featuredMedia("samsara.jpg", "Samsara Lykor")}<span class="card-content"><span class="card-title">Samsara Lykor</span><span class="card-subtitle">The concealed thirteenth member of LENDERMAIRE.</span></span></a><a href="events/2008-pocheasang-palace-raid" class="featured-card">${featuredMedia("nighttime-gendarmerie-assault.png", "Event")}<span class="card-content"><span class="card-title">2008 Pocheasang Palace Raid</span><span class="card-subtitle">The foundational act of the modern insurgency.</span></span></a></div><h2 class="home-section-title">Explore the Archive</h2><div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div>`;
+const indexContent = `---\ntitle: Nolheim\n---\n<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div><h2 class="home-section-title">Featured Records</h2><div class="featured-grid"><a href="characters/lendermaire/konish-kimbotin-(reimagined)" class="featured-card">${featuredMedia("konish.jpg", "Konish Kimbotin")}<span class="card-content"><span class="card-title">Konish Kimbotin</span><span class="card-subtitle">Supreme Warlord of the Cladish insurgency.</span></span></a><a href="characters/lendermaire/samsara-lykor" class="featured-card">${featuredMedia("samsara.jpg", "Samsara Lykor")}<span class="card-content"><span class="card-title">Samsara Lykor</span><span class="card-subtitle">The concealed thirteenth member of LENDERMAIRE.</span></span></a><a href="events/2008-pocheasang-palace-raid" class="featured-card">${featuredMedia("nighttime-gendarmerie-assault.png", "Event")}<span class="card-content"><span class="card-title">2008 Pocheasang Palace Raid</span><span class="card-subtitle">The foundational act of the modern insurgency.</span></span></a></div><h2 class="home-section-title">Explore the Archive</h2><div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div><h2 class="home-section-title">Not sure where to start?</h2><div class="portal-grid"><a href="start-here" class="portal-button">Start Here</a><a href="#" class="portal-button" onclick="const h=JSON.parse(sessionStorage.getItem('randomHistory')||'[]');fetch('random-index.json').then(r=>r.json()).then(idx=>{let pool=idx.filter(u=>!h.includes(u));if(!pool.length){h.length=0;pool=idx;}const p=pool[Math.floor(Math.random()*pool.length)];h.push(p);if(h.length>10)h.shift();sessionStorage.setItem('randomHistory',JSON.stringify(h));window.location.href=p;});return false;">Random Article</a></div>`;
 fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
+
+const eventData = [];
 
 function generateIndices(srcDir, outDir, isRoot = false) {
     const items = fs.readdirSync(srcDir);
@@ -217,6 +360,10 @@ function generateIndices(srcDir, outDir, isRoot = false) {
             let title = item.replace('.md', '');
             let subtitle = '';
             let image = '';
+            let status = '';
+            let date = '';
+            let dateEnd = '';
+            let entityType = '';
 
             if (fmMatch) {
                 const lines = fmMatch[1].split('\n');
@@ -225,6 +372,10 @@ function generateIndices(srcDir, outDir, isRoot = false) {
                     if (line.startsWith('title:')) title = line.substring(6).trim().replace(/['"]/g, '');
                     if (line.startsWith('subtitle:')) subtitle = line.substring(9).trim().replace(/['"]/g, '');
                     if (line.startsWith('image:')) image = parseImageField(line.substring(6));
+                    if (line.startsWith('status:')) status = line.substring(7).trim().replace(/['"]/g, '');
+                    if (line.startsWith('date:')) date = line.substring(5).trim().replace(/['"]/g, '');
+                    if (line.startsWith('date-end:')) dateEnd = line.substring(9).trim().replace(/['"]/g, '');
+                    if (line.startsWith('entity-type:')) entityType = line.substring(12).trim().replace(/['"]/g, '');
                 }
             }
 
@@ -241,7 +392,13 @@ function generateIndices(srcDir, outDir, isRoot = false) {
                 const initial = title.charAt(0).toUpperCase();
                 imgHtml = `<span class="card-image placeholder"><span class="placeholder-initial">${initial}</span></span>`;
             }
-            cardsHtml += `<a href="${urlPath}" class="featured-card">${imgHtml}<span class="card-content"><span class="card-title">${title}</span><span class="card-subtitle">${subtitle}</span></span></a>`;
+            
+            const draftBadge = (status.toLowerCase() === 'draft') ? '<span class="draft-badge">Draft</span>' : '';
+            cardsHtml += `<a href="${urlPath}" class="featured-card">${imgHtml}<span class="card-content"><span class="card-title">${title}${draftBadge}</span><span class="card-subtitle">${subtitle}</span></span></a>`;
+            
+            if (entityType.toLowerCase() === 'event') {
+                eventData.push({ title, url: urlPath, date, dateEnd, subtitle });
+            }
         }
     }
 
@@ -254,6 +411,50 @@ function generateIndices(srcDir, outDir, isRoot = false) {
 }
 
 generateIndices(sourceDir, destDir, true);
+
+// --- Events Directory ---
+function renderEventsDirectory() {
+    const dated = eventData.filter(e => e.date);
+    const undated = eventData.filter(e => !e.date);
+
+    dated.sort((a, b) => a.date.localeCompare(b.date));
+    undated.sort((a, b) => a.title.localeCompare(b.title));
+
+    let html = '---\ntitle: Events Directory\n---\n\n# Events Directory\n\nA chronological listing of all recorded historical events in the Nolheim archive.\n\n';
+
+    html += '## Dated Events\n\n';
+    if (dated.length === 0) {
+        html += '*No dated events recorded.*\n';
+    } else {
+        for (const e of dated) {
+            let dateDisplay = e.date;
+            if (e.dateEnd) dateDisplay += ' – ' + e.dateEnd;
+            html += `<div class="event-entry">\n`;
+            html += `<div class="event-date">${dateDisplay}</div>\n`;
+            html += `<div class="event-info"><a href="${e.url}" class="event-link">${e.title}</a>`;
+            if (e.subtitle) html += `<span class="event-subtitle">${e.subtitle}</span>`;
+            html += `</div>\n</div>\n\n`;
+        }
+    }
+
+    html += '\n## Undated Events\n\n';
+    if (undated.length === 0) {
+        html += '*No undated events recorded.*\n';
+    } else {
+        for (const e of undated) {
+            html += `<div class="event-entry">\n`;
+            html += `<div class="event-date">Date not recorded</div>\n`;
+            html += `<div class="event-info"><a href="${e.url}" class="event-link">${e.title}</a>`;
+            if (e.subtitle) html += `<span class="event-subtitle">${e.subtitle}</span>`;
+            html += `</div>\n</div>\n\n`;
+        }
+    }
+
+    return html;
+}
+
+fs.writeFileSync(path.join(destDir, 'Events-Directory.md'), renderEventsDirectory());
+console.log(`[events] Generated Events Directory with ${eventData.length} entries.`);
 
 // Replace the published content only after the complete generation succeeds.
 if (fs.existsSync(backupDir)) {

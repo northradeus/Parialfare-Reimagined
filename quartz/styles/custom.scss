@@ -193,6 +193,67 @@ td {
   }
 }
 
+// --- RELATED ENTITIES SECTION ---
+.related-entities {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--lightgray);
+}
+
+.related-entities h2 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 0.25rem;
+}
+
+.related-entities .rel-group {
+  margin-bottom: 1rem;
+}
+
+.related-entities h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--gray);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.related-entities ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.related-entities li {
+  margin: 0;
+}
+
+.related-entities li a {
+  display: inline-block;
+  padding: 0.35rem 0.7rem;
+  background: var(--lightgray);
+  border: 1px solid var(--gray);
+  border-radius: 3px;
+  font-size: 0.85rem;
+  color: var(--dark);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.related-entities li a:hover {
+  background: var(--secondary);
+  color: var(--light);
+  border-color: var(--secondary);
+  text-decoration: none;
+}
+
 // ==========================================
 // HOMEPAGE STYLES
 // ==========================================
@@ -415,5 +476,66 @@ h2.folder-title + p + ul {
   .featured-grid,
   .category-grid {
     grid-template-columns: 1fr;
+  }
+}
+
+// --- DRAFT BADGE ---
+.draft-badge {
+  display: inline-block;
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.4rem;
+  font-size: 0.65rem;
+  font-family: var(--codeFont);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--secondary);
+  background: transparent;
+  border: 1px solid var(--secondary);
+  border-radius: 2px;
+  vertical-align: middle;
+  opacity: 0.7;
+}
+
+// --- EVENTS DIRECTORY ---
+.event-entry {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.event-date {
+  flex: 0 0 140px;
+  font-family: var(--codeFont);
+  font-size: 0.8rem;
+  color: var(--secondary);
+  padding-top: 0.1rem;
+}
+
+.event-info {
+  flex: 1;
+}
+
+.event-link {
+  font-weight: 600;
+  color: var(--dark);
+  font-size: 0.95rem;
+}
+
+.event-subtitle {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-top: 0.15rem;
+}
+
+@media (max-width: 600px) {
+  .event-entry {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .event-date {
+    flex: none;
   }
 }

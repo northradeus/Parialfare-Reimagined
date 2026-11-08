@@ -131,3 +131,14 @@ The population of Ai'ron is approximately 37 million. The ethnic composition is 
 [^7]: General Staff Inquiry (Ai'ron), *Report into the Events of 25–26 August 2008* (Pocheasang, 2009).
 [^8]: VISTA General Secretariat, *Request of the Kingdom of Ai'ron for Programme Funding: Documentation* (registry file, 2008).
 [^9]: Parliamentary Record (Ai'ron), *Standing Orders of the Chamber* (2004).
+
+
+<section class="related-entities">
+<h2>Related Entities</h2>
+<div class="rel-group">
+<h3>Related Events</h3>
+<ul>
+<li><a href="../../events/2008-pocheasang-palace-raid">2008 Pocheasang Palace raid</a></li>
+</ul>
+</div>
+</section>

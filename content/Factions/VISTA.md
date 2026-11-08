@@ -87,3 +87,20 @@ VISTA retains limited intelligence on Konish's forces. No VISTA or GIC operation
 [^2]: Ministry of the Interior (Ai'ron), *Statement on the Events of 25–26 August 2008* (Pocheasang: Crown Printing Office, 2008).
 [^3]: VISTA Intelligence Agency, *Findings on LENDERMAIRE and Associated Structures* (16 September 2008; summary release).
 [^4]: VISTA, *Instrument Establishing the Global Intervention Coalition* (4 December 2008).
+
+
+<section class="related-entities">
+<h2>Related Entities</h2>
+<div class="rel-group">
+<h3>Associated Characters</h3>
+<ul>
+<li><a href="../characters/vista/noradus">Noradus "Northrad</a></li>
+</ul>
+</div>
+<div class="rel-group">
+<h3>Related Events</h3>
+<ul>
+<li><a href="../events/2008-ai'ron-request-to-vista">2008 Ai'ron request to VISTA</a></li>
+</ul>
+</div>
+</section>

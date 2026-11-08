@@ -98,3 +98,20 @@ Konish's Group does not claim a formal, unified state. Its territorial holdings 
 [^4]: *The Kestrel*, "Nine Hours in the Palace," 4 September 2008.
 [^5]: New Aester City Council, *Resolution 44-B: Designation of Regional Threats* (2008).
 [^6]: Valdenne Ministry of Justice, *Annual Report on Transnational Criminal Organizations* (2008).
+
+<section class="related-entities">
+<h2>Related Entities</h2>
+<div class="rel-group">
+<h3>Associated Characters</h3>
+<ul>
+<li><a href="../characters/lendermaire/hanktonio">Hanktonio</a></li>
+<li><a href="../characters/lendermaire/konish-kimbotin-(reimagined)">Konish Kimbotin</a></li>
+</ul>
+</div>
+<div class="rel-group">
+<h3>Sub-Organizations</h3>
+<ul>
+<li><a href="lendermaire">LENDERMAIRE</a></li>
+</ul>
+</div>
+</section>

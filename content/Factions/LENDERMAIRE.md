@@ -171,3 +171,15 @@ Open-source intelligence and [[VISTA]] reports contain several inconsistencies r
 [^3]: *The Kestrel*, "Nine Hours in the Palace," 4 September 2008.
 [^4]: Orbet, T., "Proxy Attribution and the LENDERMAIRE Network," *Journal of Internal Conflict* 41, no. 3 (2015): 301–329.
 [^5]: *Continental Wire*, "Post-Office Attack Leaves Archives Breached," 26 August 2008.
+
+<section class="related-entities">
+<h2>Related Entities</h2>
+<div class="rel-group">
+<h3>Associated Characters</h3>
+<ul>
+<li><a href="../characters/lendermaire/hanktonio">Hanktonio</a></li>
+<li><a href="../characters/lendermaire/konish-kimbotin-(reimagined)">Konish Kimbotin</a></li>
+<li><a href="../characters/lendermaire/samsara-lykor">Samsara Lykor</a></li>
+</ul>
+</div>
+</section>

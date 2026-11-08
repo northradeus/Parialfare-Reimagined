@@ -45,3 +45,14 @@ The GIC is the institutional answer to [[Konish's Group]]. Both are umbrella coa
 * [[Ironish Task Force (ITF)]]
 * [[Anajak Forces]]
 * [[Noradus]]
+
+
+<section class="related-entities">
+<h2>Related Entities</h2>
+<div class="rel-group">
+<h3>Associated Characters</h3>
+<ul>
+<li><a href="../characters/vista/noradus">Noradus "Northrad</a></li>
+</ul>
+</div>
+</section>

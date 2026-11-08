@@ -75,3 +75,13 @@ The ITF's performance during the 2008 raid was subject to scrutiny by the Genera
 [^2]: General Staff Inquiry (Ai'ron), *Report into the Events of 25–26 August 2008* (Pocheasang, 2009).
 [^3]: Ministry of the Interior (Ai'ron), *Statement on the Events of 25–26 August 2008* (Pocheasang: Crown Printing Office, 2008).
 [^4]: Laopanster Gendarmerie, *After-Action Review: Perimeter Security, Pocheasang Complex* (internal review, 2008; declassified 2016).
+
+<section class="related-entities">
+<h2>Related Entities</h2>
+<div class="rel-group">
+<h3>Associated Characters</h3>
+<ul>
+<li><a href="../characters/vista/noradus">Noradus "Northrad</a></li>
+</ul>
+</div>
+</section>
