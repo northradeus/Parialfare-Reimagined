@@ -1,6 +1,6 @@
 configuration:
   pageTitle: Nolheim
-  pageTitleSuffix: " — Parialfare: Reimagined"
+  pageTitleSuffix: " — Parialfare: Reimagined · by Chhum Pichthyachhanan"
   enableSPA: true
   enablePopovers: true
   analytics:
@@ -169,6 +169,7 @@ plugins:
     options:
       links:
         "Reading Room": "./"
+        "Author: Chhum Pichthyachhanan": "https://northradeus.github.io/Parialfare-Reimagined/"
     layout:
       position: footer
       priority: 50

@@ -9,7 +9,7 @@ echo.
 
 cd /d "%~dp0"
 
-echo [1/4] Building content from vault...
+echo [1/5] Building content from vault...
 call node build-content.cjs
 if %ERRORLEVEL% NEQ 0 (
     echo ERROR: Build failed. Check output above.
@@ -17,7 +17,15 @@ if %ERRORLEVEL% NEQ 0 (
 )
 echo.
 
-echo [2/4] Pushing to GitHub...
+echo [2/5] Fixing git case-sensitivity for assets...
+git config core.ignorecase false
+if exist "content\assets" (
+    git rm -r --cached content/assets >nul 2>nul
+    git add content/assets
+)
+echo.
+
+echo [3/5] Committing and pushing to GitHub...
 call npx quartz sync
 if %ERRORLEVEL% NEQ 0 (
     echo ERROR: Push failed. Check internet or git credentials.
@@ -25,7 +33,7 @@ if %ERRORLEVEL% NEQ 0 (
 )
 echo.
 
-echo [3/4] Waiting for GitHub Actions to deploy...
+echo [4/5] Waiting for GitHub Actions to deploy...
 echo (This takes 1-2 minutes. Do not close this window.)
 echo.
 
@@ -48,7 +56,7 @@ if %ERRORLEVEL% NEQ 0 (
 
 :deploy_check_skipped
 echo.
-echo [4/4] Deployment complete.
+echo [5/5] Deployment complete.
 echo =========================================
 echo SUCCESS: Site is live at:
 echo   https://northradeus.github.io/Parialfare-Reimagined/

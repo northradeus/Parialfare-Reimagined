@@ -280,6 +280,16 @@ td {
   margin-top: 1rem;
 }
 
+.hero-author {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--gray);
+  font-weight: 400;
+  font-family: var(--codeFont);
+  font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
 .hero-lead {
   max-width: 800px;
   margin: 2rem auto;
