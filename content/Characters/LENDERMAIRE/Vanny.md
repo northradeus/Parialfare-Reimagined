@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Vanny</h3>
-<img src="Assets/Vanni.jpg" alt="Vanny" />
+<img src="../../assets/vanni.jpg, "vanny"" alt="Vanny" />
 <table>
 <tr><th>Title</th><td>Vanny</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE core member; cyber and electronic warfare specialist</td></tr>

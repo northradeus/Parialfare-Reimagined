@@ -4,12 +4,40 @@ const path = require('path');
 const sourceDir = 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Continuities\\Parialfare - Reimagined';
 const sourceAssets = 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Assets\\Images';
 const destDir = path.join(__dirname, 'content');
-const destAssets = path.join(destDir, 'Assets');
+const destAssets = path.join(destDir, 'assets');
 
 if (fs.existsSync(destDir)) { fs.rmSync(destDir, { recursive: true, force: true }); }
 fs.mkdirSync(destDir, { recursive: true });
 fs.mkdirSync(destAssets, { recursive: true });
-fs.cpSync(sourceAssets, destAssets, { recursive: true });
+
+const assetName = (name) => {
+    const ext = path.extname(name).toLowerCase();
+    const base = path.basename(name, path.extname(name))
+        .normalize('NFKD')
+        .toLowerCase()
+        .trim()
+        .replace(/\s+/g, '-')
+        .replace(/[^a-z0-9_-]/g, '');
+    return base + ext;
+};
+
+function parseImageField(raw) {
+    const m = raw.match(/\[\[([^\]|]+)/)
+           || raw.match(/^\s*["']?([^"'\n,]+)/);
+    return m ? path.basename(m[1].trim()) : '';
+}
+
+const vaultImages = new Map();
+if (fs.existsSync(sourceAssets)) {
+    for (const file of fs.readdirSync(sourceAssets)) {
+        const srcPath = path.join(sourceAssets, file);
+        if (fs.statSync(srcPath).isFile()) {
+            const outName = assetName(file);
+            vaultImages.set(file.toLowerCase(), outName);
+            fs.copyFileSync(srcPath, path.join(destAssets, outName));
+        }
+    }
+}
 
 const ignoreKeys = ['tags', 'entity-type', 'character-type', 'faction-type', 'location-type', 'concept-type', 'country-type', 'UID', 'continuity', 'subject', 'status', 'image', 'layout', 'aliases', 'alias'];
 
@@ -27,11 +55,7 @@ function processDir(dir, outDir) {
             let content = fs.readFileSync(fullPath, 'utf-8');
             
             content = content.replace(/â€“/g, '–').replace(/â€”/g, '—').replace(/â€™/g, "'").replace(/â€œ/g, '"').replace(/â€\x9d/g, '"');
-
-            // Safely strip entire Wikipedia artifact line
             content = content.replace(/^\*?From Wikipedia, the free encyclopedia\*?\s*$/gm, '');
-
-            // Remove layout block
             content = content.replace(/\n# Chronicler Infobox Layout Rules\nlayout:[\s\S]*?\n---\n/g, '\n---\n');
             
             const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
@@ -63,10 +87,7 @@ function processDir(dir, outDir) {
 
                         if (key === 'title') title = val.replace(/"/g, '');
                         if (key === 'entity-type') entityType = val.toLowerCase().replace(/['"]/g, '');
-                        if (key === 'image') {
-                            const imgMatch = val.match(/(?:\[\[)?([^\]\n,]+)/);
-                            if (imgMatch) imgName = imgMatch[1].trim();
-                        }
+                        if (key === 'image') imgName = parseImageField(val);
 
                         if (ignoreKeys.includes(key)) continue;
 
@@ -98,16 +119,33 @@ function processDir(dir, outDir) {
                 if (infoRows || imgName) {
                     infobox = `<aside class="custom-infobox infobox-${entityType}">\n`;
                     if (title) infobox += `<h3>${title}</h3>\n`;
-                    if (imgName) infobox += `<img src="Assets/${imgName}" alt="${title}" />\n`;
+                    if (imgName) {
+                        const mappedName = vaultImages.get(imgName.toLowerCase()) || assetName(imgName);
+                        let relPath = path.relative(outDir, destAssets).replace(/\\/g, '/');
+                        if (!relPath.startsWith('.')) relPath = './' + relPath;
+                        infobox += `<img src="${relPath}/${mappedName}" alt="${title}" />\n`;
+                    }
                     if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
                     infobox += `</aside>\n`;
                 }
 
-                body = body.replace(/(<img[^>]+src=")(?!\/|http|Assets\/)([^"]+)(")/g, '$1/Assets/$2$3');
-                body = body.replace(/!\[\[([^|\]]+)\|[^\]]+\]\]/g, '![](/Assets/$1)');
-                body = body.replace(/!\[\[([^\]]+)\]\]/g, '![](/Assets/$1)');
+                let relAssetsPath = path.relative(outDir, destAssets).replace(/\\/g, '/');
+                if (!relAssetsPath.startsWith('.')) relAssetsPath = './' + relAssetsPath;
 
-                // Add lead class to the first non-header paragraph
+                body = body.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
+                    const imgName = rawInner.split('|')[0].trim();
+                    const mapped = vaultImages.get(imgName.toLowerCase());
+                    if (mapped) return `![${imgName}](${relAssetsPath}/${mapped})`;
+                    return match;
+                });
+
+                body = body.replace(/(<img[^>]+src=")(?!\/|http|data:)([^"]+)(")/g, (match, p1, srcAttr, p3) => {
+                    const imgName = srcAttr.split('/').pop().trim();
+                    const mapped = vaultImages.get(imgName.toLowerCase());
+                    if (mapped) return `${p1}${relAssetsPath}/${mapped}${p3}`;
+                    return match;
+                });
+
                 let firstP = true;
                 body = body.replace(/^(?!\s*#)(\s*)([^\n\r]+)/m, (match, spaces, text) => {
                     if (firstP && text.trim().length > 0) {
@@ -125,29 +163,64 @@ function processDir(dir, outDir) {
 }
 processDir(sourceDir, destDir);
 
-const indexContent = `---\ntitle: Nolheim\n---\n<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div><h2 class="home-section-title">Featured Records</h2><div class="featured-grid"><a href="characters/lendermaire/konish-kimbotin-(reimagined)" class="featured-card"><img src="assets/konish.jpg" class="card-image" alt="Konish Kimbotin" /><div class="card-content"><h3>Konish Kimbotin</h3><p>Supreme Warlord of the Cladish insurgency.</p></div></a><a href="characters/lendermaire/samsara-lykor" class="featured-card"><img src="assets/samsara.jpg" class="card-image" alt="Samsara Lykor" /><div class="card-content"><h3>Samsara Lykor</h3><p>The concealed thirteenth member of LENDERMAIRE.</p></div></a><a href="events/2008-pocheasang-palace-raid" class="featured-card"><img src="assets/nighttime gendarmerie assault.png" class="card-image" alt="Event" /><div class="card-content"><h3>2008 Pocheasang Palace Raid</h3><p>The foundational act of the modern insurgency.</p></div></a></div><h2 class="home-section-title">Explore the Archive</h2><div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div>`;
+const indexContent = `---\ntitle: Nolheim\n---\n<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div><h2 class="home-section-title">Featured Records</h2><div class="featured-grid"><a href="characters/lendermaire/konish-kimbotin-(reimagined)" class="featured-card"><span class="card-image"><img src="assets/konish.jpg" alt="Konish Kimbotin" loading="lazy"></span><span class="card-content"><span class="card-title">Konish Kimbotin</span><span class="card-subtitle">Supreme Warlord of the Cladish insurgency.</span></span></a><a href="characters/lendermaire/samsara-lykor" class="featured-card"><span class="card-image"><img src="assets/samsara.jpg" alt="Samsara Lykor" loading="lazy"></span><span class="card-content"><span class="card-title">Samsara Lykor</span><span class="card-subtitle">The concealed thirteenth member of LENDERMAIRE.</span></span></a><a href="events/2008-pocheasang-palace-raid" class="featured-card"><span class="card-image"><img src="assets/nighttime-gendarmerie-assault.png" alt="Event" loading="lazy"></span><span class="card-content"><span class="card-title">2008 Pocheasang Palace Raid</span><span class="card-subtitle">The foundational act of the modern insurgency.</span></span></a></div><h2 class="home-section-title">Explore the Archive</h2><div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div>`;
 fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
 
-const directories = ['Characters', 'Factions', 'Locations', 'Events', 'Lore'];
-for (const d of directories) {
-    let files = [];
-    function scanForMd(dir) {
-        if (!fs.existsSync(dir)) return;
-        const items = fs.readdirSync(dir);
-        for (const item of items) {
-            const fullPath = path.join(dir, item);
-            if (fs.statSync(fullPath).isDirectory()) {
-                scanForMd(fullPath);
-            } else if (item.endsWith('.md')) {
-                files.push(item.replace('.md', ''));
+function generateIndices(srcDir, outDir, isRoot = false) {
+    const items = fs.readdirSync(srcDir);
+    let cardsHtml = '<div class="category-grid">';
+    let hasFiles = false;
+
+    for (const item of items) {
+        const srcPath = path.join(srcDir, item);
+        const outPath = path.join(outDir, item);
+        const stat = fs.statSync(srcPath);
+
+        if (stat.isDirectory()) {
+            if (!fs.existsSync(outPath)) fs.mkdirSync(outPath, { recursive: true });
+            generateIndices(srcPath, outPath);
+        } else if (item.endsWith('.md') && item !== 'index.md') {
+            hasFiles = true;
+            const content = fs.readFileSync(srcPath, 'utf-8');
+            const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+            let title = item.replace('.md', '');
+            let subtitle = '';
+            let image = '';
+
+            if (fmMatch) {
+                const lines = fmMatch[1].split('\n');
+                for (let line of lines) {
+                    line = line.trim();
+                    if (line.startsWith('title:')) title = line.substring(6).trim().replace(/['"]/g, '');
+                    if (line.startsWith('subtitle:')) subtitle = line.substring(9).trim().replace(/['"]/g, '');
+                    if (line.startsWith('image:')) image = parseImageField(line.substring(6));
+                }
             }
+
+            const urlPath = './' + item.replace('.md', '').toLowerCase().replace(/ /g, '-');
+            let imgHtml = '';
+            const mappedName = image ? vaultImages.get(image.toLowerCase()) : null;
+            if (image && !mappedName) console.warn(`[image] not found in vault: "${image}" (${item})`);
+
+            if (mappedName) {
+                let relPath = path.relative(outDir, destAssets).replace(/\\/g, '/');
+                if (!relPath.startsWith('.')) relPath = './' + relPath;
+                imgHtml = `<span class="card-image"><img src="${relPath}/${mappedName}" alt="${title}" loading="lazy"></span>`;
+            } else {
+                const initial = title.charAt(0).toUpperCase();
+                imgHtml = `<span class="card-image placeholder"><span class="placeholder-initial">${initial}</span></span>`;
+            }
+            cardsHtml += `<a href="${urlPath}" class="featured-card">${imgHtml}<span class="card-content"><span class="card-title">${title}</span><span class="card-subtitle">${subtitle}</span></span></a>`;
         }
     }
-    scanForMd(path.join(destDir, d));
-    let listContent = `# ${d}\n\n`;
-    for (const f of files) {
-        listContent += `- [[${f}]]\n`;
+
+    if (!isRoot && hasFiles) {
+        cardsHtml += '</div>';
+        const folderTitle = path.basename(srcDir);
+        const indexContent = `---\ntitle: ${folderTitle}\n---\n\n${cardsHtml}`;
+        fs.writeFileSync(path.join(outDir, 'index.md'), indexContent);
     }
-    fs.writeFileSync(path.join(destDir, `${d}.md`), listContent);
 }
-console.log('Content built successfully with refined infoboxes, lead paragraphs, and missing value classes.');
+
+generateIndices(sourceDir, destDir, true);
+console.log('Content built successfully with normalized assets and grid layouts.');

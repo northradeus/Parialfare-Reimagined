@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-country">
 <h3>New Aester</h3>
-<img src="Assets/New_Aester_Flag.png" alt="New Aester" />
+<img src="../../assets/new_aester_flag.png, "flag"" alt="New Aester" />
 <table>
 <tr><th>Title</th><td>New Aester</td></tr>
 <tr><th>Subtitle</th><td>Corporate city-state and VISTA member</td></tr>

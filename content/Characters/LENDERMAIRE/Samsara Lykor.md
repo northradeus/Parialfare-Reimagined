@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Samsara Lykor</h3>
-<img src="Assets/Samsara.jpg" alt="Samsara Lykor" />
+<img src="../../assets/samsara.jpg" alt="Samsara Lykor" />
 <table>
 <tr><th>Title</th><td>Samsara Lykor</td></tr>
 <tr><th>Subtitle</th><td>Lurkish operator, the concealed thirteenth member of LENDERMAIRE</td></tr>
@@ -86,8 +86,8 @@ This is a key difference between Lykor and the other twelve members: he has an a
 LENDERMAIRE maintains thirteen core members in addition to [[Konish Kimbotin (Reimagined)|Konish Kimbotin]]. It is publicly known that the unit has thirteen; it is not publicly known who the thirteenth is. The seat is associated publicly only with the designation "Northrad," and the identity of its holder remains a point of speculation and internal tension.
 
 <div class="gallery landscape">
-  ![](/Assets/6ae9db7ab81dbdf9d07b2b3828ee1075.jpg)
-  ![](/Assets/7627c16fb641174b1fd4e1c9851d3222.jpg)
+  ![[6ae9db7ab81dbdf9d07b2b3828ee1075.jpg]]
+  ![[7627c16fb641174b1fd4e1c9851d3222.jpg]]
 </div>
 
 The thirteenth member is deployed alone because he is considered more dangerous when operating independently. The assignment is not recorded as a punishment or a sign of distrust; it is recorded as an acknowledgement of his operational strengths. His principal responsibility is to finish what LENDERMAIRE leaves unfinished. The precise operational meaning of "finishing the job" is not established.

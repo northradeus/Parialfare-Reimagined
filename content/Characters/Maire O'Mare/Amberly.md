@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Amberly</h3>
-<img src="Assets/Amberly.jpg" alt="Amberly" />
+<img src="../../assets/amberly.jpg" alt="Amberly" />
 <table>
 <tr><th>Title</th><td>Amberly</td></tr>
 <tr><th>Subtitle</th><td>Coordinator of the Maire O'Mare insurgency</td></tr>

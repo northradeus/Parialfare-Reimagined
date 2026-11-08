@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Joey</h3>
-<img src="Assets/Joey.jpg" alt="Joey" />
+<img src="../../assets/joey.jpg" alt="Joey" />
 <table>
 <tr><th>Title</th><td>Joey</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE background member, logistics</td></tr>

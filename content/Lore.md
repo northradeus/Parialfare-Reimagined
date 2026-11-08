@@ -1,3 +1,0 @@
-# Lore
-
-- [[Anajak grading system]]

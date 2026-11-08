@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Gazmo</h3>
-<img src="Assets/Gazmo.jpg" alt="Gazmo" />
+<img src="../../assets/gazmo.jpg" alt="Gazmo" />
 <table>
 <tr><th>Title</th><td>Gazmo</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE background operator, biohazard weapons</td></tr>

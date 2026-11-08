@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Noradus Northrad</h3>
-<img src="Assets/d8973bcf928c6bf7e6d82fe571e95669.jpg" alt="Noradus Northrad" />
+<img src="../../assets/d8973bcf928c6bf7e6d82fe571e95669.jpg" alt="Noradus Northrad" />
 <table>
 <tr><th>Title</th><td>Noradus "Northrad</td></tr>
 <tr><th>Subtitle</th><td>President of VISTA</td></tr>

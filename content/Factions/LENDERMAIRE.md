@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-faction">
 <h3>LENDERMAIRE</h3>
-<img src="Assets/LENDERMAIRE.jpg" alt="LENDERMAIRE" />
+<img src="../assets/lendermaire.jpg" alt="LENDERMAIRE" />
 <table>
 <tr><th>Title</th><td>LENDERMAIRE</td></tr>
 <tr><th>Subtitle</th><td>Cladish insurgent special operations group</td></tr>

@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-faction">
 <h3>Ironish Task Force</h3>
-<img src="Assets/Ironish Task Force Emblem.png" alt="Ironish Task Force" />
+<img src="../assets/ironish-task-force-emblem.png, emblem" alt="Ironish Task Force" />
 <table>
 <tr><th>Title</th><td>Ironish Task Force</td></tr>
 <tr><th>Subtitle</th><td>Private military contractor</td></tr>

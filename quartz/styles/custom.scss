@@ -255,61 +255,100 @@ td {
   margin-bottom: 4rem;
 }
 
-.featured-card {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid var(--gray);
-  background-color: var(--lightgray);
-  text-decoration: none !important;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+// ==========================================
+// CATEGORY & CARD GRIDS (Claude's Defensive Layout)
+// ==========================================
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0;
+
+  > p { display: contents; }
+  > br, > p:empty { display: none; }
+
+  a.featured-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    background: var(--lightgray);
+    color: var(--darkgray);
+    border: 1px solid var(--gray);
+    text-decoration: none !important;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      border-color: var(--secondary);
+    }
+  }
+
+  .card-image {
+    display: block;
+    aspect-ratio: 4 / 5;
+    overflow: hidden;
+    background: var(--light);
+    border-bottom: 1px solid var(--gray);
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    &.placeholder {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--light) 0%, var(--lightgray) 100%);
+      color: var(--gray);
+      font-family: var(--headerFont);
+      font-size: 4rem;
+      font-weight: 700;
+      opacity: 0.4;
+    }
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1rem;
+  }
+
+  .card-title {
+    font-family: var(--headerFont);
+    font-weight: 700;
+    color: var(--secondary);
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  .card-subtitle {
+    font-size: 0.85rem;
+    color: var(--gray);
+  }
 }
 
-.featured-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.3);
-  border-color: var(--secondary);
+// --- HOMEPAGE HERO GRID (Reuses .featured-card layout) ---
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
 }
 
-.card-image {
-  width: 100%;
-  height: 220px;
-  object-fit: cover;
-  object-position: top center;
-  border-bottom: 1px solid var(--gray);
-  display: block;
-}
-
-.event-placeholder {
-  background-color: var(--lightgray);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondary);
-  font-family: var(--codeFont);
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  border-bottom: 1px solid var(--gray);
-}
-
-.card-content {
-  padding: 1.5rem;
-}
-
-.card-content h3 {
-  margin: 0 0 0.5rem 0;
-  font-size: 1.2rem;
-  color: var(--secondary);
-  text-transform: none;
-  letter-spacing: normal;
-}
-
-.card-content p {
-  margin: 0;
-  font-size: 0.9rem;
-  color: var(--darkgray);
-  line-height: 1.5;
-}
-
+// --- PORTAL BUTTONS ---
 .portal-grid {
   display: flex;
   flex-wrap: wrap;
@@ -329,10 +368,21 @@ td {
   font-size: 0.85rem;
   transition: all 0.2s ease;
   text-decoration: none !important;
+
+  &:hover {
+    background-color: var(--secondary);
+    color: var(--light);
+    border-color: var(--secondary);
+  }
 }
 
-.portal-button:hover {
-  background-color: var(--secondary);
-  color: var(--light);
-  border-color: var(--secondary);
+// --- HIDE QUARTZ DEFAULT FOLDER LIST ---
+.page-listing {
+  display: none !important;
+}
+.folder-content .page-listing {
+  display: none !important;
+}
+h2.folder-title + p + ul {
+  display: none !important;
 }

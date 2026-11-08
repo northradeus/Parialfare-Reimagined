@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Wendy</h3>
-<img src="Assets/Wendy.jpg" alt="Wendy" />
+<img src="../../assets/wendy.jpg" alt="Wendy" />
 <table>
 <tr><th>Title</th><td>Wendy</td></tr>
 <tr><th>Subtitle</th><td>Sharpshooter of LENDERMAIRE</td></tr>

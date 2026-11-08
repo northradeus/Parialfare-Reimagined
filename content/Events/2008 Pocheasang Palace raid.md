@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-event">
 <h3>2008 Pocheasang Palace raid</h3>
-<img src="Assets/Nighttime Gendarmerie Assault.png" alt="2008 Pocheasang Palace raid" />
+<img src="../assets/nighttime-gendarmerie-assault.png, "nighttime"" alt="2008 Pocheasang Palace raid" />
 <table>
 <tr><th>Title</th><td>2008 Pocheasang Palace raid</td></tr>
 <tr><th>Subtitle</th><td>25–26 August 2008</td></tr>
@@ -41,7 +41,7 @@ The Kingdom of Ai'ron was a constitutional monarchy and a major regional power, 
 The complex occupied an elevated site in central Pocheasang, bounded by a perimeter wall, an outer gatehouse, and three interior administrative wings. A postal administration annex adjoined the eastern boundary and shared the eastern gatehouse approach; this adjacency was later identified as the source of the "Post-Office" misnomer.[^6][^8] The archival vault occupied the sub-level of the central wing, accessible through a single controlled corridor.[^8]
 
 <figure style="margin: 1em 0; width: 100%;">
-  ![](/Assets/Rainy Government Complex with Custom Flags.png)
+  ![Rainy Government Complex with Custom Flags.png](../assets/rainy-government-complex-with-custom-flags.png)
   <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; color: var(--color-text-secondary);">
     The Pocheasang palace complex, viewed from the eastern gatehouse approach.
   </figcaption>
@@ -105,7 +105,7 @@ Footage from three body-worn cameras carried by the assailants was recovered by 
 
 The footage showed an emblem on the assailants' equipment that had no prior reference in open sources.[^26] Publication on 3 September 2008 preceded the public naming of any organisation by seven days; official statements in that interval referred only to "unidentified assailants."[^1][^6][^26]
 
-![](/Assets/Bodycam Battle in the Grand Atrium.png)
+![Bodycam Battle in the Grand Atrium.png](../assets/bodycam-battle-in-the-grand-atrium.png)
 
 ## 4. Casualties and Aftermath
 

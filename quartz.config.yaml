@@ -53,7 +53,7 @@ plugins:
   - source: "@quartz-community/obsidian-flavored-markdown"
     enabled: true
     options:
-      enableInHtmlEmbed: true
+      enableInHtmlEmbed: false
       enableCheckbox: true
     order: 30
   - source: "@quartz-community/github-flavored-markdown"

@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Tanishito</h3>
-<img src="Assets/Tanishito.jpg" alt="Tanishito" />
+<img src="../../assets/tanishito.jpg" alt="Tanishito" />
 <table>
 <tr><th>Title</th><td>Tanishito</td></tr>
 <tr><th>Subtitle</th><td>Anajak Forces assassin</td></tr>
