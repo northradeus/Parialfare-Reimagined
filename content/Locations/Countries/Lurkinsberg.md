@@ -3,23 +3,23 @@
 <table>
 <tr><th>Title</th><td>Lurkinsberg</td></tr>
 <tr><th>Subtitle</th><td>Post-colonial naval power and VISTA member</td></tr>
-<tr><th>Motto</th><td>TBD</td></tr>
-<tr><th>Anthem</th><td>TBD</td></tr>
-<tr><th>Capital</th><td>TBD</td></tr>
-<tr><th>Largest City</th><td>TBD</td></tr>
+<tr><th>Motto</th><td>Unrecorded</td></tr>
+<tr><th>Anthem</th><td>Unrecorded</td></tr>
+<tr><th>Capital</th><td>Unrecorded</td></tr>
+<tr><th>Largest City</th><td>Unrecorded</td></tr>
 <tr><th>Official Language</th><td>Lurkish</td></tr>
 <tr><th>Ethnic Groups</th><td>Lurkish (majority)</td></tr>
-<tr><th>Religion</th><td>TBD</td></tr>
+<tr><th>Religion</th><td>Unrecorded</td></tr>
 <tr><th>Demonym</th><td>Lurkish</td></tr>
-<tr><th>Government Type</th><td>TBD (Post-Colonial Republic)</td></tr>
-<tr><th>Head Of State</th><td>TBD</td></tr>
-<tr><th>Head Of Government</th><td>TBD</td></tr>
-<tr><th>Legislature</th><td>TBD</td></tr>
+<tr><th>Government Type</th><td>Unrecorded (Post-Colonial Republic)</td></tr>
+<tr><th>Head Of State</th><td>Unrecorded</td></tr>
+<tr><th>Head Of Government</th><td>Unrecorded</td></tr>
+<tr><th>Legislature</th><td>Unrecorded</td></tr>
 <tr><th>Military</th><td>Lurkish Navy, Lurkish Military Institutions</td></tr>
-<tr><th>Area Total</th><td>TBD</td></tr>
-<tr><th>Population Estimate</th><td>TBD</td></tr>
-<tr><th>Borders</th><td>TBD (Maritime borders dominant)</td></tr>
-<tr><th>Currency</th><td>TBD</td></tr>
+<tr><th>Area Total</th><td>Unrecorded</td></tr>
+<tr><th>Population Estimate</th><td>Unrecorded</td></tr>
+<tr><th>Borders</th><td>Unrecorded (Maritime borders dominant)</td></tr>
+<tr><th>Currency</th><td>Unrecorded</td></tr>
 <tr><th>Industries</th><td>Naval trade, shipping, global market</td></tr>
 <tr><th>Country Type</th><td>["Naval Power", "Post-Colonial"]</td></tr>
 </table>
@@ -27,7 +27,7 @@
 
 # Lurkinsberg
 
-From Wikipedia, the free encyclopedia
+
 
 **Lurkinsberg** is a wealthy, disciplined nation and a member of [[VISTA]]. It is a post-colonial power with a dominant naval tradition. The state controls major global sea lanes and maintains a powerful fleet. Its society is highly structured, and its military institutions export elite operatives and special operators to allied states and coalitions.
 

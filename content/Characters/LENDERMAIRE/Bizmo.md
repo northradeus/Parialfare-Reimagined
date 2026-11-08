@@ -13,7 +13,7 @@
 
 # Bizmo
 
-From Wikipedia, the free encyclopedia
+
 
 **Bizmo** is a background operator of the black operations unit [[LENDERMAIRE]], responsible for 3D printing and the engineering of unconventional gadgets, accessories, and equipment designed for warfare. He is not counted among the group's thirteen core members, and works from the workshop rather than deploying in the field. He is an outsider to the group's core membership, and was recruited through a connection to [[Vanny]], with whom he collaborates on hardware projects. Vanny's field is cyber operations, electronic warfare, and logistics; the division of responsibility between the two is maintained on a project basis.
 

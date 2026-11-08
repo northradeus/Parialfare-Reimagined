@@ -22,7 +22,7 @@
 
 # Konish's Group
 
-From Wikipedia, the free encyclopedia
+
 
 **Konish's Group**, commonly referred to simply as the **Konish Group**, is a transnational Cladish umbrella coalition and unrecognized quasi-state operating primarily in the ungoverned region of [[Ironclad]]. It was founded in 2007 by the Cladish warlord [[Konish Kimbotin (Reimagined)|Konish Kimbotin]], who serves as its supreme commander. The group is a decentralized network of armed formations that operate with substantial autonomy, bound together by Kimbotin's strategic coordination and shared financial interests.[^1][^2]
 
@@ -62,50 +62,16 @@ Konish's Group does not claim a formal, unified state. Its territorial holdings 
 
 ## 5. Designation as a destabilizing organization
 
-<p style="font-style: italic; font-size: 0.9em; color: var(--color-text-secondary);">See also: <a href="#">List of designated destabilizing groups</a> and <a href="#">Information warfare</a></p>
+*See also: List of designated destabilizing groups and Information warfare*
 
-<table style="width: 100%; border-collapse: collapse; font-size: 0.9em; margin-bottom: 20px; border: 1px solid var(--color-border-primary); color: var(--color-text-primary);">
-  <thead>
-    <tr style="background-color: var(--color-background-tertiary); text-align: left; border-bottom: 1px solid var(--color-border-primary);">
-      <th style="padding: 10px; width: 25%; font-weight: bold;">Organisation</th>
-      <th style="padding: 10px; width: 25%; font-weight: bold;">Date</th>
-      <th style="padding: 10px; width: 35%; font-weight: bold;">Body</th>
-      <th style="padding: 10px; width: 15%; font-weight: bold;">References</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr style="background-color: var(--color-background-tertiary); text-align: center; font-weight: bold; border-bottom: 1px solid var(--color-border-primary);">
-      <td colspan="4" style="padding: 8px;">Multinational organisations</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-primary);">
-      <td style="padding: 10px;"><img src="/Assets/VISTA_Flag.png" style="height: 1.2em; vertical-align: middle; margin-right: 8px;"> [[VISTA]]</td>
-      <td style="padding: 10px;">16 September 2008</td>
-      <td style="padding: 10px;">[[VISTA]] General Secretariat</td>
-      <td style="padding: 10px;">[^2]</td>
-    </tr>
-    <tr style="background-color: var(--color-background-tertiary); text-align: center; font-weight: bold; border-bottom: 1px solid var(--color-border-primary);">
-      <td colspan="4" style="padding: 8px;">Nations</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-primary);">
-      <td style="padding: 10px;"><img src="/Assets/ChatGPT Image Nov 4- 2026- 10_50_03 PM.jpg"style="height: 1.2em; vertical-align: middle; margin-right: 8px;"> [[Ironland|Kingdom of the Ai'ron Land]]</td>
-      <td style="padding: 10px;">28 August 2008</td>
-      <td style="padding: 10px;">[[Ministry of the Interior]]</td>
-      <td style="padding: 10px;">[^3]</td>
-    </tr>
-    <tr style="border-bottom: 1px solid var(--color-border-primary);">
-      <td style="padding: 10px;"><img src="/Assets/New_Aester_Flag.png" style="height: 1.2em; vertical-align: middle; margin-right: 8px;"> [[New Aester]]</td>
-      <td style="padding: 10px;">5 September 2008</td>
-      <td style="padding: 10px;">New Aester City Council</td>
-      <td style="padding: 10px;">[^5]</td>
-    </tr>
-     <tr style="border-bottom: 1px solid var(--color-border-primary);">
-      <td style="padding: 10px;"><img src="/Assets/New_Aester_Flag.png" style="height: 1.2em; vertical-align: middle; margin-right: 8px;"> [[Lurkinsberg]]</td>
-      <td style="padding: 10px;">10 October 2008</td>
-      <td style="padding: 10px;">Lurkish Military Institutions</td>
-      <td style="padding: 10px;"></td>
-    </tr>
-  </tbody>
-</table>
+| Organisation | Date | Body | References |
+| :--- | :--- | :--- | :--- |
+| **Multinational organisations** | | | |
+| [[VISTA]] | 16 September 2008 | [[VISTA]] General Secretariat | [^2] |
+| **Nations** | | | |
+| [[Ironland\|Kingdom of the Ai'ron Land]] | 28 August 2008 | [[Ministry of the Interior]] | [^3] |
+| [[New Aester]] | 5 September 2008 | New Aester City Council | [^5] |
+| [[Lurkinsberg]] | 10 October 2008 | Lurkish Military Institutions | |
 
 ## 6. Relations
 

@@ -11,7 +11,7 @@
 
 # Kaliber
 
-From Wikipedia, the free encyclopedia
+
 
 **Kaliber** is the shielder of the black operations unit [[LENDERMAIRE]], recorded in earlier material as "Shield specialist." He is muted. He is a former squad member of the Ironish Special Forces, together with [[Markless]] and [[Andrew]], and has been in LENDERMAIRE since its early development.
 

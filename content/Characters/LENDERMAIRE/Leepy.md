@@ -13,7 +13,7 @@
 
 # Leepy
 
-From Wikipedia, the free encyclopedia
+
 
 **Leepy** is the fourth member of the black operations unit [[LENDERMAIRE]] and its sniper. He is recorded as the most psychologically compromised member of the thirteen-member core. His marksmanship originates from hunting rather than military service.
 

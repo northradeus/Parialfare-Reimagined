@@ -28,7 +28,7 @@
 
 # Kingdom of the Ai'ron Land
 
-From Wikipedia, the free encyclopedia
+
 
 > **Kingdom of the Ai'ron Land**
 > 

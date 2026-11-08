@@ -11,7 +11,7 @@
 
 # Grunt
 
-From Wikipedia, the free encyclopedia
+
 
 **Grunt** is a member of the black operations unit [[LENDERMAIRE]]. His earlier roster entry records him as "Nade Specialist."
 

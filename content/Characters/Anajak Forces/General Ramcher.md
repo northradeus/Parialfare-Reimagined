@@ -10,7 +10,7 @@
 
 # General Ramcher
 
-From Wikipedia, the free encyclopedia
+
 
 **General Ramcher** commands [[Anajak Forces]]. The record documents the post he holds rather than the person holding it: nothing about his origin, training, grade or prior service is established, and the office is described entirely by what it does.
 

@@ -24,7 +24,7 @@
 
 # Noradus "Northrad"
 
-From Wikipedia, the free encyclopedia
+
 
 **Noradus Partenstine**, known as **Northrad**, is the president of [[VISTA]] and the principal architect of its institutions. He is a former special operator under [[Lurkinsberg]], and a global figure from a wealthy family who bought his way into politics.
 

@@ -10,7 +10,7 @@
 
 # Markless
 
-From Wikipedia, the free encyclopedia
+
 
 **Markless** is the breacher of the black operations unit [[LENDERMAIRE]]. He is a former squad member of the Ironish Special Forces, together with [[Kaliber]] and [[Andrew]], and has been in LENDERMAIRE since its early development.
 

@@ -9,7 +9,7 @@
 
 # Pocheasang
 
-From Wikipedia, the free encyclopedia
+
 
 **Pocheasang** is the capital of the [[Ironland|Kingdom of the Ai'ron Land]] and the seat of the Crown. The city contains the [[Pocheasang palace complex]], the seat of government and the location of the consolidated Ai'ron national archives. The [[Ironish Task Force (ITF)]] maintains its headquarters in Pocheasang and held the inner-complex security contract for the palace complex.
 

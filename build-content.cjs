@@ -121,7 +121,7 @@ function processDir(dir, outDir) {
 processDir(sourceDir, destDir);
 
 // 4. Create landing pages
-const indexContent = `# Welcome to Nolheim\n\nThis is the public reading room for the Parialfare: Reimagined continuity.\n\n## Explore the Continuity\n\n- [[Characters]]\n- [[Factions]]\n- [[Locations]]\n- [[Events]]\n- [[Lore]]\n`;
+const indexContent = `# Welcome to Nolheim\n\nThis is the public reading room for the Parialfare: Reimagined continuity.\n\nThe year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war.\n\n## Explore the Continuity\n\n- [[Portal - Characters|Characters]]\n- [[Portal - Factions|Factions]]\n- [[Portal - Locations|Locations]]\n- [[Portal - Events|Events]]\n- [[Portal - Lore|Lore]]\n`;
 fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
 
 const directories = ['Characters', 'Factions', 'Locations', 'Events', 'Lore'];

@@ -28,7 +28,7 @@
 
 # New Aester
 
-From Wikipedia, the free encyclopedia
+
 
 **New Aester** is a corporate city-state situated on the border between the [[Ironland|Kingdom of the Ai'ron Land]] and the [[Ironclad DMZ]]. It is a member of [[VISTA]] and operates as a heavily policed proving ground for corporate technologies. The state was built as an estate project by [[Noradus|Northrad]], who serves as its architect and founder. It is populated by a diverse, mixed-nationality citizenry drawn by the promise of a highly advanced smart city.
 

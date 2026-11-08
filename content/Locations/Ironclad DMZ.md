@@ -9,7 +9,7 @@
 
 # Ironclad DMZ
 
-From Wikipedia, the free encyclopedia
+
 
 The **Ironclad DMZ** is an ungoverned demilitarised zone between [[Ironland|Ai'ron]] and its neighbours. The territory has no central government, unified security force, or authority exercising jurisdiction across it.
 

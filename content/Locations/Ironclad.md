@@ -13,7 +13,7 @@
 
 # Ironclad
 
-From Wikipedia, the free encyclopedia
+
 
 **Ironclad** is an ungoverned territory between the [[Ironland|Kingdom of the Ai'ron Land]] and its neighbours. It is not a state. It has no central government, no unified security force, and no authority exercising jurisdiction across it. Competing warlords rule it. Its people are the Cladish.
 

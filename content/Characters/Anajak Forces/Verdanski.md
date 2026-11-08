@@ -12,7 +12,7 @@
 
 # Verdanski
 
-From Wikipedia, the free encyclopedia
+
 
 **Verdanski** is an A+ member of [[Anajak Forces]], facility trained in combat. His file rests on two facts — a grade and a training origin — and the question of why he was placed in Anajak.
 

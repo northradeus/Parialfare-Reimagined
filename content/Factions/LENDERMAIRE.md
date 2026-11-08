@@ -26,7 +26,7 @@
 
 # LENDERMAIRE
 
-From Wikipedia, the free encyclopedia
+
 
 **LENDERMAIRE** (native name: *Lendus O Mairen*) is a clandestine Cladish special operations formation active in the [[Ironclad DMZ|Ironclad]] region, operating as a black operations unit within the umbrella coalition [[Konish's Group]]. Founded in 2007 and garrisoned in southern Ironclad, the group maintains a core roster of thirteen members in addition to [[Konish Kimbotin (Reimagined)|Konish Kimbotin]], who led it operationally. Its motto is *"Let them taste steel."* It fields a modern military arsenal.
 

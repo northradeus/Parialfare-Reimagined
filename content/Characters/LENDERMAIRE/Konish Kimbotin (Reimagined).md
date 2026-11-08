@@ -22,7 +22,7 @@
 
 # Konish Kimbotin
 
-From Wikipedia, the free encyclopedia
+
 
 **Konish Kimbotin** (born September 12, 1978) is a [[Cladish]] warlord and political figure operating in the ungoverned region of [[Ironclad]]. He is the founder and supreme commander of the umbrella coalition [[Konish's Group]] and its black operations unit, [[LENDERMAIRE]].[^1] Kimbotin is widely regarded as one of the most powerful warlords in the Ironclad region, and the [[2008 Pocheasang Palace raid]] is widely cited as the foundational source of his intelligence network.
 

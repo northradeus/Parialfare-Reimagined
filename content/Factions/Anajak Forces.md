@@ -16,7 +16,7 @@
 
 # Anajak Forces
 
-From Wikipedia, the free encyclopedia
+
 
 **Anajak Forces** is a specialized task force established by the [[Global Intervention Coalition (GIC)]] and designed by [[Noradus|Northrad]]. Led by [[General Ramcher]], it is designed to combat [[LENDERMAIRE]] and other Cladish factions, and anything that disrupts the peace inside [[Ironland]] and other [[VISTA]] countries as a whole. It operates under heavy funding from Northrad and under the institutions of the GIC.
 

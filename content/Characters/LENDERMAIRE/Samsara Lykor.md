@@ -24,7 +24,7 @@
 
 # Samsara Lykor
 
-From Wikipedia, the free encyclopedia
+
 
 **Samsara Lykor** (born 1987) is a [[Lurkish]] operator and the concealed thirteenth member of [[LENDERMAIRE]]. A former [[Lurkish]] SWAT officer and marine, he is an independent operator who completes unfinished objectives and serves as the team's backup sniper. He is known publicly only by the designation "Northrad."
 

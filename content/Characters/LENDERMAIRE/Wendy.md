@@ -13,7 +13,7 @@
 
 # Wendy
 
-From Wikipedia, the free encyclopedia
+
 
 **Wendy** is a sharpshooter of the black operations unit [[LENDERMAIRE]], recorded in earlier material as "Headshooter." He developed his marksmanship through thousands of hours of airsoft rather than through military service.
 

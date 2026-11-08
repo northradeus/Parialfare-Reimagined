@@ -10,7 +10,7 @@
 
 # Anajak grading system
 
-From Wikipedia, the free encyclopedia
+
 
 Personnel of [[Anajak Forces]] are graded. The system is not fully documented, and its criteria, scale and authority are unestablished.
 

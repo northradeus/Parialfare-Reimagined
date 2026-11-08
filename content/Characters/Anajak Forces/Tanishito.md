@@ -17,7 +17,7 @@
 
 # Tanishito
 
-From Wikipedia, the free encyclopedia
+
 
 **Tanishito** is an adult assassin of the [[Anajak Forces]], graded S. She is [[Lurkish]]. She was raised and trained inside a secret facility ([[Site-29]]) and was handpicked by the [[Ironish Task Force (ITF)]] together with her partner, [[Nogo]]. She was also raised as a spy.
 

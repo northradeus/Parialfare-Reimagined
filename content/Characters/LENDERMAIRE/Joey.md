@@ -13,7 +13,7 @@
 
 # Joey
 
-From Wikipedia, the free encyclopedia
+
 
 **Joey** is a background member of the black operations unit [[LENDERMAIRE]], where he manages incoming resources. He is not counted among the group's thirteen core members, and belongs to the additional background personnel who support the unit's operations.
 

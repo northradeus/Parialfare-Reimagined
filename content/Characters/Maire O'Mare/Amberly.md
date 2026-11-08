@@ -14,7 +14,7 @@
 
 # Amberly
 
-From Wikipedia, the free encyclopedia
+
 
 **Amberly** is the coordinator of the [[Maire O'Mare (2008)|Maire O'Mare]] insurgency in [[Ironclad]] in 2008. He is recorded as [[Cladish]] by ethnicity and identifies himself as Deckish. He is not the movement's founder, and its ideology does not depend on his survival; he holds the insurgency's separate parts in coordination rather than commanding them.
 

@@ -11,7 +11,7 @@
 
 # Gunter
 
-From Wikipedia, the free encyclopedia
+
 
 **Gunter** is a member of the black operations unit [[LENDERMAIRE]]. His earlier roster entry records him as "Engineer & Sapper."
 

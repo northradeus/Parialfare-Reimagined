@@ -11,7 +11,7 @@
 
 # Andrew
 
-From Wikipedia, the free encyclopedia
+
 
 **Andrew** is the assaulter of the black operations unit [[LENDERMAIRE]]. He is a former squad member of the Ironish Special Forces, together with [[Markless]] and [[Kaliber]], and has been in LENDERMAIRE since its early development.
 

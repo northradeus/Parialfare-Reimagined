@@ -8,7 +8,7 @@
 
 # Formation of LENDERMAIRE
 
-From Wikipedia, the free encyclopedia
+
 
 The **formation of [[LENDERMAIRE]]** refers to how [[Konish Kimbotin (Reimagined)|Konish Kimbotin]] assembled the group, within the umbrella coalition [[Konish's Group]], by selecting its members one at a time. The group is dated to 2007 and first became public in 2008.
 

@@ -12,7 +12,7 @@
 
 # Alpha-01
 
-From Wikipedia, the free encyclopedia
+
 
 **Alpha-01** is the [[Ironish Task Force (ITF)|ITF]] label for the classified assassin core of [[Anajak Forces]]. The team's whole is named Anajak; Alpha-01 designates only its classified core, and is not a separate organisation.
 

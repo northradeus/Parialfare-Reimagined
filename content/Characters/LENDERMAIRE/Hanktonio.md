@@ -12,7 +12,7 @@
 
 # Hanktonio
 
-From Wikipedia, the free encyclopedia
+
 
 **Hanktonio**, also called **Hank** and known by the codename "The Second Hand," is the second-in-command of the umbrella coalition [[Konish's Group]] and of its black operations unit [[LENDERMAIRE]]. He oversees operations and maintains the coalition's network in [[Konish Kimbotin (Reimagined)|Konish Kimbotin]]'s absence, takes the lead when Kimbotin is not around, and is in part responsible for keeping the group intact.
 

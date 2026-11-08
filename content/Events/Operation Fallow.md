@@ -9,7 +9,7 @@
 
 # Operation Fallow
 
-From Wikipedia, the free encyclopedia
+
 
 **Operation Fallow** was an intelligence operation of the [[Global Intervention Coalition (GIC)]], conducted after the establishment of [[Anajak Forces]], with the stated objective of retrieving a Lurkish national designated "Northrad" from the Cladish household [[LENDERMAIRE]]. It proceeded over the objection of the commanding general of Anajak Forces and concluded with the asset's return on terms the institution had not anticipated.
 

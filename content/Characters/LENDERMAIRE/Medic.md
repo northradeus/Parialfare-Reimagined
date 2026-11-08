@@ -11,7 +11,7 @@
 
 # Medic
 
-From Wikipedia, the free encyclopedia
+
 
 **Medic** is the combat medic of the black operations unit [[LENDERMAIRE]]. He served another Cladish faction before joining; which faction is not established.
 

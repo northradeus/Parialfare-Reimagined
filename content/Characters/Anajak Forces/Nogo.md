@@ -17,7 +17,7 @@
 
 # Nogo
 
-From Wikipedia, the free encyclopedia
+
 
 **Nogo** is an adult assassin of the [[Anajak Forces]], graded A+. He is [[Lurkish]]. He was raised and trained inside a secret facility ([[Site-29]]) alongside his assigned partner, [[Tanishito]], and was handpicked by the [[Ironish Task Force (ITF)]] together with her. He was also raised as a spy.
 

@@ -16,7 +16,7 @@
 
 # VISTA
 
-From Wikipedia, the free encyclopedia
+
 
 **VISTA** is an intergovernmental military organisation of twelve member delegations. Under its charter the presidency casts one vote among the delegations, and a two-thirds majority — eight of twelve — is required to authorise funding and military programmes. The organisation's institutional architecture is attributed to its president, [[Noradus|Northrad]], who is described as its founder and principal architect; how and when he came to lead it is not established in the available record.
 

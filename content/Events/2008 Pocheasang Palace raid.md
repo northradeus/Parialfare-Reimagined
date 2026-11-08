@@ -16,7 +16,7 @@
 
 
 
-From Wikipedia, the free encyclopedia
+
 
 > **2008 Pocheasang Palace raid**
 >

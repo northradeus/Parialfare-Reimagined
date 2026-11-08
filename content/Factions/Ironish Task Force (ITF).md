@@ -19,7 +19,7 @@
 
 # Ironish Task Force
 
-From Wikipedia, the free encyclopedia
+
 
 The **Ironish Task Force (ITF)** is an Ai'ron-registered private military contractor that provides security services to state and commercial clients. The company derives its name from the Ironish ethnic population of [[Ironland|the Kingdom of the Ai'ron Land]]. The ITF is primarily known for holding the inner-complex security contract for the [[Pocheasang palace complex]], a role in which it sustained nine fatalities during the [[2008 Pocheasang Palace raid]]. Following the raid, the company's contract was suspended pending review by the [[Ministry of the Interior]].[^1][^2]
 

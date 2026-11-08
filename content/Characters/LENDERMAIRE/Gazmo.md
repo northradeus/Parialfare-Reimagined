@@ -13,7 +13,7 @@
 
 # Gazmo
 
-From Wikipedia, the free encyclopedia
+
 
 **Gazmo** is a background operator of the black operations unit [[LENDERMAIRE]], specializing in biohazard weapons. He is not counted among the group's thirteen core members, and belongs to the additional background personnel who support the unit's operations, but he is deployable in combat rather than confined to a support role.
 
