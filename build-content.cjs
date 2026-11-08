@@ -9,6 +9,7 @@ const destAssets = path.join(destDir, 'assets');
 if (fs.existsSync(destDir)) { fs.rmSync(destDir, { recursive: true, force: true }); }
 fs.mkdirSync(destDir, { recursive: true });
 fs.mkdirSync(destAssets, { recursive: true });
+fs.writeFileSync(path.join(destDir, '.nojekyll'), '');
 
 const assetName = (name) => {
     const ext = path.extname(name).toLowerCase();
