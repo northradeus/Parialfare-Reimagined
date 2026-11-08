@@ -1,0 +1,149 @@
+const fs = require('fs');
+const path = require('path');
+
+const sourceDir = 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Continuities\\Parialfare - Reimagined';
+const sourceAssets = 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Assets';
+const destDir = path.join(__dirname, 'content');
+const destAssets = path.join(destDir, 'Assets');
+
+// 1. Clean destination
+if (fs.existsSync(destDir)) {
+    fs.rmSync(destDir, { recursive: true, force: true });
+}
+fs.mkdirSync(destDir, { recursive: true });
+fs.mkdirSync(destAssets, { recursive: true });
+
+// 2. Copy Assets
+fs.cpSync(sourceAssets, destAssets, { recursive: true });
+
+// Ignored metadata keys
+const ignoreKeys = ['tags', 'entity-type', 'character-type', 'UID', 'continuity', 'subject', 'status', 'image', 'layout', 'aliases', 'alias'];
+
+// 3. Process markdown files
+function processDir(dir, outDir) {
+    const items = fs.readdirSync(dir);
+    for (const item of items) {
+        const fullPath = path.join(dir, item);
+        const outPath = path.join(outDir, item);
+        const stat = fs.statSync(fullPath);
+        
+        if (stat.isDirectory()) {
+            fs.mkdirSync(outPath, { recursive: true });
+            processDir(fullPath, outPath);
+        } else if (item.endsWith('.md')) {
+            let content = fs.readFileSync(fullPath, 'utf-8');
+            
+            // Fix UTF-8 encoding issues from Windows
+            content = content.replace(/â€“/g, '–').replace(/â€”/g, '—').replace(/â€™/g, "'").replace(/â€œ/g, '"').replace(/â€\x9d/g, '"');
+
+            // Remove layout block
+            content = content.replace(/\n# Chronicler Infobox Layout Rules\nlayout:[\s\S]*?\n---\n/g, '\n---\n');
+            
+            // Remove Wikipedia asterisks
+            content = content.replace(/\*From Wikipedia, the free encyclopedia\*/g, 'From Wikipedia, the free encyclopedia');
+            
+            // Process YAML frontmatter
+            const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
+            if (fmMatch) {
+                let yaml = fmMatch[1];
+                let body = content.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
+                
+                let title = '';
+                let imgName = '';
+                let infoRows = '';
+
+                const lines = yaml.split('\n');
+                let inMultiline = false;
+
+                for (let line of lines) {
+                    line = line.trimEnd();
+                    if (!line || line.startsWith('#')) continue;
+
+                    if (inMultiline) {
+                        if (line.startsWith('  - ')) {
+                            continue;
+                        } else {
+                            inMultiline = false;
+                        }
+                    }
+
+                    const match = line.match(/^([a-zA-Z0-9_-]+):\s*(.*)/);
+                    if (match) {
+                        const key = match[1];
+                        let val = match[2].trim();
+
+                        if (key === 'title') title = val.replace(/"/g, '');
+                        if (key === 'image') {
+                            const imgMatch = val.match(/(?:\[\[)?([^\]\n,]+)/);
+                            if (imgMatch) imgName = imgMatch[1].trim();
+                        }
+
+                        if (ignoreKeys.includes(key)) continue;
+
+                        if (val === '|') {
+                            inMultiline = true;
+                            continue;
+                        }
+
+                        // Clean formatting
+                        val = val.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, '$2');
+                        val = val.replace(/\[\[([^\]]+)\]\]/g, '$1');
+                        val = val.replace(/^['"]|['"]$/g, '');
+                        
+                        if (val) {
+                            const displayKey = key.replace(/-/g, ' ').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                            infoRows += `<tr><th>${displayKey}</th><td>${val}</td></tr>\n`;
+                        }
+                    }
+                }
+
+                let infobox = '';
+                if (infoRows || imgName) {
+                    infobox = `<aside class="custom-infobox">\n`;
+                    if (title) infobox += `<h3>${title}</h3>\n`;
+                    if (imgName) infobox += `<img src="Assets/${imgName}" alt="${title}" />\n`;
+                    if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
+                    infobox += `</aside>\n`;
+                }
+
+                // Fix images in body
+                body = body.replace(/(<img[^>]+src=")(?!\/|http|Assets\/)([^"]+)(")/g, '$1/Assets/$2$3');
+                body = body.replace(/!\[\[([^|\]]+)\|[^\]]+\]\]/g, '![](/Assets/$1)');
+                body = body.replace(/!\[\[([^\]]+)\]\]/g, '![](/Assets/$1)');
+
+                // Reconstruct file
+                content = infobox + body;
+            }
+            fs.writeFileSync(outPath, content, 'utf-8');
+        }
+    }
+}
+processDir(sourceDir, destDir);
+
+// 4. Create landing pages
+const indexContent = `# Welcome to Nolheim\n\nThis is the public reading room for the Parialfare: Reimagined continuity.\n\n## Explore the Continuity\n\n- [[Characters]]\n- [[Factions]]\n- [[Locations]]\n- [[Events]]\n- [[Lore]]\n`;
+fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
+
+const directories = ['Characters', 'Factions', 'Locations', 'Events', 'Lore'];
+for (const d of directories) {
+    let files = [];
+    function scanForMd(dir) {
+        if (!fs.existsSync(dir)) return;
+        const items = fs.readdirSync(dir);
+        for (const item of items) {
+            const fullPath = path.join(dir, item);
+            if (fs.statSync(fullPath).isDirectory()) {
+                scanForMd(fullPath);
+            } else if (item.endsWith('.md')) {
+                files.push(item.replace('.md', ''));
+            }
+        }
+    }
+    scanForMd(path.join(destDir, d));
+    let listContent = `# ${d}\n\n`;
+    for (const f of files) {
+        listContent += `- [[${f}]]\n`;
+    }
+    fs.writeFileSync(path.join(destDir, `${d}.md`), listContent);
+}
+console.log('Content built successfully with HTML-embedded Markdown infoboxes!');

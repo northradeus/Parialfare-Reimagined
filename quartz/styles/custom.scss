@@ -1,3 +1,69 @@
 @use "./variables.scss" as *;
 
-// put your custom CSS here!
+// Custom Infobox Styling (Chronicler Style)
+.custom-infobox {
+  float: right;
+  width: 300px;
+  margin: 0 0 1.5rem 2rem;
+  background-color: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 0.85rem;
+  font-family: var(--bodyFont);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.custom-infobox img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.custom-infobox h3 {
+  margin: 0 0 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--lightgray);
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.custom-infobox table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+}
+
+.custom-infobox th {
+  text-align: left;
+  font-weight: bold;
+  color: var(--secondary);
+  padding: 4px 8px 4px 0;
+  vertical-align: top;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--lightgray);
+}
+
+.custom-infobox td {
+  padding: 4px 0;
+  vertical-align: top;
+  border-bottom: 1px solid var(--lightgray);
+  color: var(--darkgray);
+}
+
+@media (max-width: 800px) {
+  .custom-infobox {
+    float: none;
+    width: 100%;
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+// General article styling
+article h1, article h2, article h3 {
+  border-bottom: 1px solid var(--lightgray);
+  padding-bottom: 0.3rem;
+  margin-top: 2rem;
+}
