@@ -21,7 +21,7 @@ The world of 2008 is split between a fragile established order and an ungoverned
 
 **[Ironland](locations/countries/ironland)** (the Kingdom of the Ai'ron Land) is the established order. It is a constitutional monarchy with a population of 37 million, bordering the sea to the north and the frontier to the south. Its capital is [Pocheasang](locations/pocheasang). It is a member of [VISTA](factions/vista). The Crown retains supreme military authority, but day-to-day governance is split between the King and an elected Prime Minister.
 
-**[Ironclad](locations/ironclad)** is the frontier. It is not a state. It is a vast, ungoverned demilitarised zone (the [Ironclad DMZ](locations/ironclad-dmz)) ruled by competing warlords. There is no central government, no unified security force, and no rule of law beyond what local armed formations enforce. It is a haven for insurgencies, black markets, and displaced military assets.
+**[Ironclad](locations/countries/ironclad)** is the frontier. It is not a state. It is a vast, ungoverned demilitarised zone (the [Ironclad DMZ](locations/ironclad-dmz)) ruled by competing warlords. There is no central government, no unified security force, and no rule of law beyond what local armed formations enforce. It is a haven for insurgencies, black markets, and displaced military assets.
 
 **[New Aester](locations/countries/new-aester)** sits on the border between them. It is a corporate city-state and an estate project built by Northrad, positioned directly between Ironland and the DMZ. It is a VISTA member and a crucial strategic buffer, populated by a mixed international citizenry under the watchful eye of the ITF.
 

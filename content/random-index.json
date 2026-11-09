@@ -36,11 +36,11 @@
   "factions/lendermaire",
   "factions/maire-o'mare-(2008)",
   "factions/vista",
+  "locations/countries/ironclad",
   "locations/countries/ironland",
   "locations/countries/lurkinsberg",
   "locations/countries/new-aester",
   "locations/ironclad-dmz",
-  "locations/ironclad",
   "locations/pocheasang",
   "locations/site-29",
   "lore/anajak-grading-system",
@@ -49,5 +49,6 @@
   "portal---events",
   "portal---factions",
   "portal---locations",
-  "portal---lore"
+  "portal---lore",
+  "update-log"
 ]

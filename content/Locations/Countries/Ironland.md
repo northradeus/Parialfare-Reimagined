@@ -82,7 +82,7 @@ Ai'ron is characterized by a warm, coastal climate. Its geography features lush 
 
 ### 3.2 Borders
 
-The country is bounded to the south by [New Aester](locations/countries/new-aester), a city-state situated directly between Ai'ron and the DMZ, and by the ungoverned territory of [Ironclad](locations/ironclad) itself. The remainder of the country is flanked by the sea, which supports its global trade economy.[^1]
+The country is bounded to the south by [New Aester](locations/countries/new-aester), a city-state situated directly between Ai'ron and the DMZ, and by the ungoverned territory of [Ironclad](locations/countries/ironclad) itself. The remainder of the country is flanked by the sea, which supports its global trade economy.[^1]
 
 ## 4. Politics and Government
 

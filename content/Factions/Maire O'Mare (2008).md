@@ -15,7 +15,7 @@
 
 
 
-**Maire O'Mare** is an insurgent group in [Ironclad](locations/ironclad), active in 2008. It presents itself as the modern return of the ideology of the medieval Maire O'Mare movement led by Rogolf.
+**Maire O'Mare** is an insurgent group in [Ironclad](locations/countries/ironclad), active in 2008. It presents itself as the modern return of the ideology of the medieval Maire O'Mare movement led by Rogolf.
 
 It is not the person returning. It is the idea.
 
@@ -53,5 +53,5 @@ The distinction matters. Konish can absorb rival warlords, men who want land or 
 - [Amberly](characters/maire-o'mare/amberly)
 - [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined))
 - [Konish's Group](factions/konish's-group)
-- [Ironclad](locations/ironclad)
+- [Ironclad](locations/countries/ironclad)
 - Koilen Rogolf

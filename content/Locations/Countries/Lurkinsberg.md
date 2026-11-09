@@ -51,7 +51,7 @@ The Lurkish military institutions designated [Konish's Group](factions/konish's-
 
 ## 4. The Cladish Question
 
-Lurkinsberg regards the [Cladish](locations/ironclad) as a heavily militarized people. The state holds a wary respect for Cladish combat capabilities, recognizing their martial skill, while simultaneously viewing them as a source of regional instability.
+Lurkinsberg regards the [Cladish](locations/countries/ironclad) as a heavily militarized people. The state holds a wary respect for Cladish combat capabilities, recognizing their martial skill, while simultaneously viewing them as a source of regional instability.
 
 The designation of Konish's Group was driven by the need to maintain order in the sea lanes and trade routes, rather than by a fear of Cladish expansion.
 

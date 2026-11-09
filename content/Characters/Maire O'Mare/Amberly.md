@@ -17,7 +17,7 @@
 
 
 
-**Amberly** is the coordinator of the [Maire O'Mare](factions/maire-o'mare-(2008)) insurgency in [Ironclad](locations/ironclad) in 2008. He is recorded as Cladish by ethnicity and identifies himself as Deckish. He is not the movement's founder, and its ideology does not depend on his survival; he holds the insurgency's separate parts in coordination rather than commanding them.
+**Amberly** is the coordinator of the [Maire O'Mare](factions/maire-o'mare-(2008)) insurgency in [Ironclad](locations/countries/ironclad) in 2008. He is recorded as Cladish by ethnicity and identifies himself as Deckish. He is not the movement's founder, and its ideology does not depend on his survival; he holds the insurgency's separate parts in coordination rather than commanding them.
 
 The public register records him as the leader of an insurgent organisation. The structural record records him as a coordinator. Both are correct, and the difference between them is the whole of his position.
 
@@ -83,7 +83,7 @@ Whether the two have ever met is not recorded.
 * Maire O'Mare (the medieval movement)
 * [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined))
 * [Konish's Group](factions/konish's-group)
-* [Ironclad](locations/ironclad)
+* [Ironclad](locations/countries/ironclad)
 * Koilen Rogolf
 * Deck Empire
 * Cladish

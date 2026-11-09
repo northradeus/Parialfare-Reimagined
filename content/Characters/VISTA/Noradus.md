@@ -43,7 +43,7 @@ He is a different individual from the thirteenth member of [LENDERMAIRE](faction
 
 In 2008 Northrad held the VISTA presidency. VISTA was then an organization of twelve member delegations that authorized funding by a two-thirds majority. In his role the presidency was one vote among the delegations, and he acted through his office.
 
-After the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid), the Kingdom of Ai'ron asked VISTA to fund military programmes for a campaign in the [Ironclad](locations/ironclad) DMZ. The presidency was among the four votes against, and the request failed by six votes to four, with two abstentions. His office stated that VISTA's instruments did not provide for funding offensive operations by a member into a stabilisation area, and that authorization would require amending the charter.
+After the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid), the Kingdom of Ai'ron asked VISTA to fund military programmes for a campaign in the [Ironclad](locations/countries/ironclad) DMZ. The presidency was among the four votes against, and the request failed by six votes to four, with two abstentions. His office stated that VISTA's instruments did not provide for funding offensive operations by a member into a stabilisation area, and that authorization would require amending the charter.
 
 VISTA established the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) on 4 December 2008. The record from 2008 shows no wider personal role. His other holdings, described below, are undated.
 

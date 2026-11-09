@@ -11,7 +11,7 @@ Welcome to Nolheim. If you are new to this world, the amount of information can 
 Before diving into the politics, it helps to understand the geography and the forces that shaped it.
 
 *   **[Kingdom of the Ai'ron Land](locations/countries/ironland)**: The established, constitutional monarchy that serves as the anchor of the region.
-*   **[Ironclad](locations/ironclad)**: The ungoverned frontier. This is not a state, but a demilitarized zone ruled by competing warlords.
+*   **[Ironclad](locations/countries/ironclad)**: The ungoverned frontier. This is not a state, but a demilitarized zone ruled by competing warlords.
 *   **[VISTA](factions/vista)**: The intergovernmental military organization that binds the region together, though often through deadlock.
 
 ## 2. Understand the Conflict

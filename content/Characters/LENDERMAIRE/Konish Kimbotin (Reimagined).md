@@ -25,7 +25,7 @@
 
 
 
-**Konish Kimbotin** (born September 12, 1978) is a Cladish warlord and political figure operating in the ungoverned region of [Ironclad](locations/ironclad). He is the founder and supreme commander of the umbrella coalition [Konish's Group](factions/konish's-group) and its black operations unit, [LENDERMAIRE](factions/lendermaire).[^1] Kimbotin is widely regarded as one of the most powerful warlords in the Ironclad region, and the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid) is widely cited as the foundational source of his intelligence network.
+**Konish Kimbotin** (born September 12, 1978) is a Cladish warlord and political figure operating in the ungoverned region of [Ironclad](locations/countries/ironclad). He is the founder and supreme commander of the umbrella coalition [Konish's Group](factions/konish's-group) and its black operations unit, [LENDERMAIRE](factions/lendermaire).[^1] Kimbotin is widely regarded as one of the most powerful warlords in the Ironclad region, and the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid) is widely cited as the foundational source of his intelligence network.
 
 Kimbotin maintains an extensive network of political and military contacts both within and outside Ironland, which he uses to fund and equip his operations. The [VISTA](factions/vista) Intelligence Agency assesses that his primary strategic weapon is information, leveraging classified materials obtained during the 2008 raid to expand his influence.[^4]
 
@@ -84,7 +84,7 @@ His relationship with the thirteenth member — the one man in the household he 
 *   [Konish's Group](factions/konish's-group)
 *   [LENDERMAIRE](factions/lendermaire)
 *   [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid)
-*   [Ironclad](locations/ironclad)
+*   [Ironclad](locations/countries/ironclad)
 
 ## References
 

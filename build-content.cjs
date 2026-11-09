@@ -5,7 +5,7 @@ const path = require('path');
 //   NOLHEIM_SOURCE_DIR="C:/path/to/Parialfare - Reimagined"
 //   NOLHEIM_ASSETS_DIR="C:/path/to/Images"
 const sourceDir = process.env.NOLHEIM_SOURCE_DIR
-    || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Continuities\\Parialfare - Reimagined';
+    || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Publish\\Parialfare - Reimagined';
 const sourceAssets = process.env.NOLHEIM_ASSETS_DIR
     || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Assets\\Images';
 const finalDir = path.join(__dirname, 'content');
@@ -352,7 +352,18 @@ function featuredMedia(fileName, altText) {
 }
 
 const indexContent = `---\ntitle: Nolheim\ndescription: "The Independent Encyclopedia of Parialfare: Reimagined — covert operations, warlords, and black-site facilities in the year 2008."\nsocialImage: og-image.png\n---\n<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-author">Created by <a href="https://northrad.carrd.co/" target="_blank" rel="noopener">CHHUM PICHTHYACHHANAN</a></p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div><h2 class="home-section-title">Featured Records</h2><div class="featured-grid"><a href="characters/lendermaire/konish-kimbotin-(reimagined)" class="featured-card">${featuredMedia("konish.jpg", "Konish Kimbotin")}<span class="card-content"><span class="card-title">Konish Kimbotin</span><span class="card-subtitle">Supreme Warlord of the Cladish insurgency.</span></span></a><a href="characters/lendermaire/samsara-lykor" class="featured-card">${featuredMedia("samsara.jpg", "Samsara Lykor")}<span class="card-content"><span class="card-title">Samsara Lykor</span><span class="card-subtitle">The concealed thirteenth member of LENDERMAIRE.</span></span></a><a href="events/2008-pocheasang-palace-raid" class="featured-card">${featuredMedia("nighttime-gendarmerie-assault.png", "Event")}<span class="card-content"><span class="card-title">2008 Pocheasang Palace Raid</span><span class="card-subtitle">The foundational act of the modern insurgency.</span></span></a></div><h2 class="home-section-title">Explore the Archive</h2><div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div><h2 class="home-section-title">Not sure where to start?</h2><div class="portal-grid"><a href="start-here" class="portal-button">Start Here</a><a href="#" class="portal-button" onclick="const h=JSON.parse(sessionStorage.getItem('randomHistory')||'[]');fetch('random-index.json').then(r=>r.json()).then(idx=>{let pool=idx.filter(u=>!h.includes(u));if(!pool.length){h.length=0;pool=idx;}const p=pool[Math.floor(Math.random()*pool.length)];h.push(p);if(h.length>10)h.shift();sessionStorage.setItem('randomHistory',JSON.stringify(h));window.location.href=p;});return false;">Random Article</a></div>`;
-fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
+// Reorder homepage: Explore the Archive before Featured Records.
+// Anchored on the three section headings so the swap is stable across edits.
+const _featuredMarker = '<h2 class="home-section-title">Featured Records</h2>';
+const _exploreMarker = '<h2 class="home-section-title">Explore the Archive</h2>';
+const _notSureMarker = '<h2 class="home-section-title">Not sure where to start?</h2>';
+const _fIdx = indexContent.indexOf(_featuredMarker);
+const _eIdx = indexContent.indexOf(_exploreMarker);
+const _nIdx = indexContent.indexOf(_notSureMarker);
+const _reordered = (_fIdx >= 0 && _eIdx >= 0 && _nIdx >= 0 && _fIdx < _eIdx && _eIdx < _nIdx)
+    ? indexContent.slice(0, _fIdx) + indexContent.slice(_eIdx, _nIdx) + indexContent.slice(_fIdx, _eIdx) + indexContent.slice(_nIdx)
+    : indexContent;
+fs.writeFileSync(path.join(destDir, 'index.md'), _reordered);
 
 const eventData = [];
 

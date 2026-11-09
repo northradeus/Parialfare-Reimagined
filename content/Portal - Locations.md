@@ -17,7 +17,7 @@ A curated index of the geographic entities in the region.
 - [New Aester](locations/countries/new-aester) — The corporate city-state.
 
 ## The Frontier
-- [Ironclad](locations/ironclad) — The post-imperial warlord frontier.
+- [Ironclad](locations/countries/ironclad) — The post-imperial warlord frontier.
 - [Ironclad DMZ](locations/ironclad-dmz) — The ungoverned demilitarised zone.
 
 ## Cities & Sites

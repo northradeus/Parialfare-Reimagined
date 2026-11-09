@@ -169,6 +169,7 @@ plugins:
     options:
       links:
         "Reading Room": "./"
+        "Update Log": "./update-log"
         "Author: Chhum Pichthyachhanan": "https://northrad.carrd.co/"
     layout:
       position: footer
