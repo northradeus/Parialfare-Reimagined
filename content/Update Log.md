@@ -12,6 +12,10 @@
 
 This page records changes to the encyclopedia. Entries appear newest first. Version numbers correspond to the internal publication register and have no in-universe meaning.
 
+## v005 — 10 November 2026
+
+Visual records have been expanded for **Konish Kimbotin** and **Noradus**. Konish's dossier now includes a three-part visual gallery covering recovered entry footage from the 2008 Pocheasang raid, field photography from southern Ironclad, and an equipment assessment sheet. Noradus's record has been updated with a new primary portrait alongside archival imagery of the VISTA president in his office with his adjutant, Pepper.
+
 ## v004 — 9 November 2026
 
 New records have been added to the archive for **Takahashi** ("Sahara"), a Thaiphonese strike fighter pilot transferred into Anajak Forces by General Ramcher, and **Pich**, an Encorean close-combat specialist and field interpreter serving in Tarnished's detachment.

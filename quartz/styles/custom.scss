@@ -547,3 +547,55 @@ h2.folder-title + p + ul {
     flex: none;
   }
 }
+
+// --- CHRONICLER GALLERIES ---
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+  clear: both;
+
+  figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background: var(--lightgray);
+    border: 1px solid var(--gray);
+    padding: 0.4rem;
+    box-sizing: border-box;
+  }
+
+  img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: top center;
+    display: block;
+    margin: 0;
+    border: 1px solid var(--gray);
+  }
+
+  &.portrait img {
+    height: 260px;
+  }
+
+  &.landscape img {
+    height: 190px;
+  }
+
+  &.small {
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    img { height: 150px; }
+  }
+
+  figcaption {
+    margin-top: 0.4rem;
+    font-size: 0.78rem;
+    color: var(--darkgray);
+    text-align: center;
+    font-style: italic;
+    line-height: 1.35;
+  }
+}
+

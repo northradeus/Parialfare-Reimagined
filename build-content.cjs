@@ -364,6 +364,15 @@ function processDir(dir, outDir) {
 
                 const relAssetsPath = 'assets';
 
+                body = body.replace(/(<div\s+class="[^"]*\b(?:gallery|carousel)\b[^"]*"[^>]*>[\s\S]*?<\/div>|<figure\b[^>]*>[\s\S]*?<\/figure>)/g, (block) => {
+                    return block.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
+                        const imgName = rawInner.split('|')[0].trim();
+                        const mapped = vaultImages.get(imgName.toLowerCase());
+                        if (mapped) return `<img src="${relAssetsPath}/${mapped}" alt="${imgName}" loading="lazy" />`;
+                        return match;
+                    });
+                });
+
                 body = body.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
                     const imgName = rawInner.split('|')[0].trim();
                     const mapped = vaultImages.get(imgName.toLowerCase());

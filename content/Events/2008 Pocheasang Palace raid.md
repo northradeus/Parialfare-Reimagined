@@ -42,7 +42,7 @@ The Kingdom of Ai'ron was a constitutional monarchy and a major regional power, 
 The complex occupied an elevated site in central Pocheasang, bounded by a perimeter wall, an outer gatehouse, and three interior administrative wings. A postal administration annex adjoined the eastern boundary and shared the eastern gatehouse approach; this adjacency was later identified as the source of the "Post-Office" misnomer.[^6][^8] The archival vault occupied the sub-level of the central wing, accessible through a single controlled corridor.[^8]
 
 <figure style="margin: 1em 0; width: 100%;">
-  ![Rainy Government Complex with Custom Flags.png](assets/rainy-government-complex-with-custom-flags.png)
+  <img src="assets/rainy-government-complex-with-custom-flags.png" alt="Rainy Government Complex with Custom Flags.png" loading="lazy" />
   <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; color: var(--color-text-secondary);">
     The Pocheasang palace complex, viewed from the eastern gatehouse approach.
   </figcaption>

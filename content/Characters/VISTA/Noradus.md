@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Noradus Northrad</h3>
-<img src="assets/d8973bcf928c6bf7e6d82fe571e95669.jpg" alt="Noradus Northrad" />
+<img src="assets/naradus.png" alt="Noradus Northrad" />
 <table>
 <tr><th>Title</th><td>Noradus "Northrad</td></tr>
 <tr><th>Subtitle</th><td>President of <a href="/factions/vista">VISTA</a></td></tr>
@@ -76,6 +76,17 @@ In private he is intellectually active, enjoying discussions, debates and compli
 ## Pepper
 
 Pepper is Northrad's personal adjutant. VISTA assigned her and Northrad did not select her; the organization considers the post necessary because of his age, his workload and the experience gap between him and many senior officials.
+
+<div class="gallery landscape">
+  <figure>
+    <img src="assets/noradus-concept.png" alt="Noradus Concept.png" loading="lazy" />
+    <figcaption>Northrad before the VISTA emblem</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/noradus-office.png" alt="Noradus Office.png" loading="lazy" />
+    <figcaption>Northrad in his office with his adjutant, Pepper</figcaption>
+  </figure>
+</div>
 
 She reformulates his informal directions into professional language and supports formal interactions with officials and institutional leaders. She accompanies him in official and private activities and coordinates parts of his schedule, watches his physical condition and signs of fatigue or mental exhaustion, and intervenes when he needs rest. Their relationship is professional with personal familiarity: they get along, it is not a parental or intimate dynamic, and she plays a caretaker role in some situations. They use designated codes for discreet intervention or communication; the codes and their meanings are undefined.
 

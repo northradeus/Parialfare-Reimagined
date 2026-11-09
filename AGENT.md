@@ -10,7 +10,7 @@ The agent is restricted to these directories:
 
 ## Core Promotion Workflow (The Golden Path)
 1. **Edit**: Make changes to source files in `Nolheim/Continuities/`. Do not manually copy or edit files in `Nolheim/Publish/`.
-2. **Request**: Create `quartz-site/Promote-Request.json` with the file list, `log_summary`, and `site_log`.
+2. **Request**: Create `quartz-site/Promote-Request.json` with the file list, `log_summary`, and `site_log`. (The Creator can also do this without an agent via [4] Publish Pages in `Nolheim.bat`, which runs `publish-picker.cjs`.)
 3. **Promote**: Run `Promote.bat` (or select [4] in `Nolheim.bat`). This copies the files from `Continuities/` to `Publish/`, creates a new snapshot in `Archives/Publish snapshots/`, and appends to the logs.
 4. **Deploy**: Run `Update-Wiki.bat` (or select [5] in `Nolheim.bat`) to build the `content/` directory and push to GitHub.
 

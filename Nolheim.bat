@@ -22,7 +22,7 @@ echo.
 echo    [1] Start Bridge         (new window - agent server)
 echo    [2] Test Local           (new window - serve on :8080)
 echo    [3] Staging Preview      (preview changes without promoting)
-echo    [4] Promote              (apply pending request)
+echo    [4] Publish Pages        (choose pages, write a note, go live)
 echo    [5] Deploy               (build + push to GitHub Pages)
 echo    [6] Open Vault folder
 echo    [7] Open Quartz folder
@@ -85,26 +85,48 @@ call "%~dp0Preview.bat"
 echo.
 echo ----------------------------------------------------------------
 echo   Preview session ended.
-echo   (Changes are staged. Run [4] Promote to make them official.)
+echo   (Nothing has gone live. Use [4] Publish Pages when ready.)
 echo ----------------------------------------------------------------
 pause >nul
 goto MENU
 
 :DO_PROMOTE
-if not exist "%~dp0Promote-Request.json" (
-    echo.
-    echo No Promote-Request.json found. Ask the agent to write one first.
-    echo.
-    pause
-    goto MENU
-)
 echo.
-echo Running Promote.bat...
+if not exist "%~dp0Promote-Request.json" goto PROMOTE_PICK
+echo   A publish package prepared by the agent is already waiting.
+set "USEREQ="
+set /p "USEREQ=  Use it? (Y = use it, N = choose pages yourself): "
+if /i "!USEREQ!"=="Y" goto PROMOTE_RUN
+
+:PROMOTE_PICK
+node "%~dp0publish-picker.cjs" prepare
+if errorlevel 1 goto PROMOTE_STOP
+start "" /wait notepad "%~dp0private\Publish-Picker.txt"
+node "%~dp0publish-picker.cjs" finish
+if errorlevel 1 goto PROMOTE_STOP
+
+:PROMOTE_RUN
 echo.
 call "%~dp0Promote.bat"
+if errorlevel 1 goto PROMOTE_STOP
+echo.
+set "DODEPLOY="
+set /p "DODEPLOY=  Publish to the website now? (Y/N): "
+if /i "!DODEPLOY!"=="Y" (
+    echo.
+    call "%~dp0Update-Wiki.bat"
+)
 echo.
 echo ----------------------------------------------------------------
-echo   Promotion finished.
+echo   Done. Press any key to return to the menu.
+echo ----------------------------------------------------------------
+pause >nul
+goto MENU
+
+:PROMOTE_STOP
+echo.
+echo ----------------------------------------------------------------
+echo   Press any key to return to the menu.
 echo ----------------------------------------------------------------
 pause >nul
 goto MENU

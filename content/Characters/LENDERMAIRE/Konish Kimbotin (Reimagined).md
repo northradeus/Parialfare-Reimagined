@@ -45,6 +45,21 @@ Kimbotin is the founder and supreme commander of the umbrella coalition [Konish'
 
 Kimbotin's operational doctrine is highly unconventional. He is known for recruiting individuals who have been marginalized or rejected by other factions, a process he refers to as "fixing." Once recruited, these individuals are assigned specific operational codenames and roles within his organization. His leadership philosophy centers on the belief that eccentricity and non-traditional psychological profiles can be leveraged as strategic strengths in asymmetric warfare.[^4]
 
+<div class="gallery portrait">
+  <figure>
+    <img src="assets/konish-breaching.jpg" alt="Konish Breaching.jpg" loading="lazy" />
+    <figcaption>Entry footage, Operation Sparta (2008)</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/konish-forest.jpg" alt="Konish Forest.jpg" loading="lazy" />
+    <figcaption>Field operations in southern Ironclad</figcaption>
+  </figure>
+  <figure>
+    <img src="assets/konish-concept.png" alt="Konish Concept.png" loading="lazy" />
+    <figcaption>Operational profile and equipment assessment</figcaption>
+  </figure>
+</div>
+
 Kimbotin is a staunch opponent of the [Maire O'Mare](factions/maire-o'mare-(2008)) Insurgency, a faction whose ideology he perceives as extreme and capable of outlasting his own coalition. He has prioritized the destruction of this group over its absorption into Konish Group.[^1]
 
 ## Military capabilities
