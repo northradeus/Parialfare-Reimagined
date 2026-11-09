@@ -5,7 +5,7 @@
 <tr><th>Title</th><td>Wendy</td></tr>
 <tr><th>Subtitle</th><td>Sharpshooter of LENDERMAIRE</td></tr>
 <tr><th>Gender</th><td>Male</td></tr>
-<tr><th>Unit</th><td>LENDERMAIRE</td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Earlier Role</th><td>Headshooter</td></tr>
 <tr><th>Skill Origin</th><td>Thousands of hours of airsoft</td></tr>
 </table>

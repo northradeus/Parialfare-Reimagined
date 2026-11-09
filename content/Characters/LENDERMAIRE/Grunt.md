@@ -3,9 +3,9 @@
 <table>
 <tr><th>Title</th><td>Grunt</td></tr>
 <tr><th>Subtitle</th><td>Member of LENDERMAIRE; role unresolved</td></tr>
-<tr><th>Unit</th><td>LENDERMAIRE</td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Earlier Role</th><td>Nade Specialist</td></tr>
-<tr><th>Role Status</th><td>Unresolved; see Gunter</td></tr>
+<tr><th>Role Status</th><td>Unresolved; see <a href="/characters/lendermaire/gunter">Gunter</a></td></tr>
 </table>
 </aside>
 

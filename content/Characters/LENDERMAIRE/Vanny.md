@@ -8,8 +8,8 @@
 <tr><th>Born</th><td>c. 1989–1990</td></tr>
 <tr><th>Gender Presentation</th><td>Androgynous</td></tr>
 <tr><th>Ethnicity</th><td>Thaiphonese (proposed)</td></tr>
-<tr><th>Unit</th><td>LENDERMAIRE</td></tr>
-<tr><th>Organisation</th><td>Konish's Group</td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Organisation</th><td><a href="/factions/konish's-group">Konish's Group</a></td></tr>
 <tr><th>Specialty</th><td>Cyber operations; electronic warfare; logistics</td></tr>
 <tr><th>Combat Status</th><td>Active combatant</td></tr>
 <tr><th>Primary Firearm</th><td>Compact assault rifle</td></tr>

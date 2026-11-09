@@ -12,6 +12,12 @@
 
 This page records changes to the encyclopedia. Entries appear newest first. Version numbers correspond to the internal publication register and have no in-universe meaning.
 
+## v004 — 9 November 2026
+
+New records have been added to the archive for **Takahashi** ("Sahara"), a Thaiphonese strike fighter pilot transferred into Anajak Forces by General Ramcher, and **Pich**, an Encorean close-combat specialist and field interpreter serving in Tarnished's detachment.
+
+Across the Anajak Forces records, the heritage of **Tanishito** and **Nogo** is now recorded as mixed Thaiphonese and Lurkish, while **Verdanski** is recorded as of rare mixed Cladish and Thaiphonese descent. In addition, the **LENDERMAIRE** household roster has been updated to retire the former Verdansk entry and include Bizmo among its associated personnel, and cross-references across the Anajak Forces roster have been unified.
+
 ## v003 — 9 November 2026
 
 Minor grammatical and stylistic corrections were applied to the records of Noradus, Tanishito, and Grunt to ensure consistency with the vault's institutional formatting standards. Additionally, the record for Salmon was significantly expanded and updated.

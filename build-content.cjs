@@ -1,10 +1,11 @@
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 
 // Override these paths on another machine with:
 //   NOLHEIM_SOURCE_DIR="C:/path/to/Parialfare - Reimagined"
 //   NOLHEIM_ASSETS_DIR="C:/path/to/Images"
-const sourceDir = process.env.NOLHEIM_SOURCE_DIR
+let sourceDir = process.env.NOLHEIM_SOURCE_DIR
     || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Publish\\Parialfare - Reimagined';
 const sourceAssets = process.env.NOLHEIM_ASSETS_DIR
     || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Assets\\Images';
@@ -49,7 +50,7 @@ function validatePublishIntegrity() {
                 const entryRel = rel ? rel + '/' + entry : entry;
                 const stat = fs.statSync(entryFull);
                 if (stat.isDirectory()) stack.push(entryRel);
-                else result.set(entryRel, stat.size);
+                else result.set(entryRel, crypto.createHash('sha256').update(fs.readFileSync(entryFull)).digest('hex'));
             }
         }
         return result;
@@ -57,9 +58,9 @@ function validatePublishIntegrity() {
     const current = walk(publishRoot);
     const snapshot = walk(latestSnapDir);
     const diffs = [];
-    for (const [rel, size] of current) {
+    for (const [rel, hash] of current) {
         if (!snapshot.has(rel)) diffs.push(rel + ' (added since snapshot)');
-        else if (snapshot.get(rel) !== size) diffs.push(rel + ' (changed since snapshot)');
+        else if (snapshot.get(rel) !== hash) diffs.push(rel + ' (changed since snapshot)');
     }
     for (const rel of snapshot.keys()) if (!current.has(rel)) diffs.push(rel + ' (removed since snapshot)');
     if (diffs.length === 0) return;
@@ -75,6 +76,33 @@ function validatePublishIntegrity() {
 }
 
 validatePublishIntegrity();
+
+const previewOverlayDir = path.join(__dirname, '.publish-preview');
+if (fs.existsSync(previewOverlayDir)) {
+    fs.rmSync(previewOverlayDir, { recursive: true, force: true });
+}
+const promoteReqPath = path.join(__dirname, 'Promote-Request.json');
+if (process.env.NOLHEIM_FORCE_BUILD === '1' && fs.existsSync(promoteReqPath)) {
+    try {
+        const req = JSON.parse(fs.readFileSync(promoteReqPath, 'utf-8'));
+        const continuitiesDir = path.join(path.dirname(path.dirname(sourceDir)), 'Continuities', path.basename(sourceDir));
+        if (Array.isArray(req.files) && req.files.length > 0 && fs.existsSync(continuitiesDir)) {
+            fs.cpSync(sourceDir, previewOverlayDir, { recursive: true });
+            for (const rel of req.files) {
+                const srcFile = path.join(continuitiesDir, rel);
+                const dstFile = path.join(previewOverlayDir, rel);
+                if (fs.existsSync(srcFile)) {
+                    fs.mkdirSync(path.dirname(dstFile), { recursive: true });
+                    fs.copyFileSync(srcFile, dstFile);
+                }
+            }
+            console.log(`[preview] Overlaying ${req.files.length} pending promotion file(s) from Continuities.`);
+            sourceDir = previewOverlayDir;
+        }
+    } catch (e) {
+        console.warn('[preview] Could not apply Promote-Request.json overlay: ' + e.message);
+    }
+}
 
 if (fs.existsSync(destDir)) {
     fs.rmSync(destDir, { recursive: true, force: true });
@@ -212,15 +240,31 @@ function renderRelatedEntities(currentSlug, rels) {
     return html;
 }
 
-function resolveWikilinks(text) {
+function resolveWikilinks(text, contextFile = '') {
     // Handles all three forms: [[Foo]], [[Foo|Bar]], [[Foo\|Bar]]
     // Group 1 = target, Group 2 = optional alias (with or without escaped pipe)
     return text.replace(/\[\[([^\]|\\]+?)(?:\\?\|([^\]]+))?\]\]/g, (match, target, alias) => {
         if (!target) return match;
         const slug = resolvers[normalizeKey(target.trim())];
         const display = (alias || target).trim();
-        if (!slug) return display;
+        if (!slug) {
+            if (contextFile) console.warn(`[wikilink] unresolved target "${target.trim()}" in ${contextFile}`);
+            return display;
+        }
         return `[${display}](${slug})`;
+    });
+}
+
+function resolveInfoboxWikilinks(text, contextFile = '') {
+    return text.replace(/\[\[([^\]|\\]+?)(?:\\?\|([^\]]+))?\]\]/g, (match, target, alias) => {
+        if (!target) return match;
+        const slug = resolvers[normalizeKey(target.trim())];
+        const display = (alias || target).trim();
+        if (!slug) {
+            if (contextFile) console.warn(`[wikilink] unresolved target "${target.trim()}" in ${contextFile} (infobox)`);
+            return display;
+        }
+        return `<a href="/${slug}">${display}</a>`;
     });
 }
 
@@ -284,11 +328,9 @@ function processDir(dir, outDir) {
                         }
 
                         // Handle YAML array syntax first: ["a", "b"] -> a, b
-                        if (val.startsWith('[') && val.endsWith(']')) {
+                        if (val.startsWith('[') && !val.startsWith('[[') && val.endsWith(']')) {
                             val = val.slice(1, -1).split(',').map(s => s.trim().replace(/^["']|["']$/g, '')).join(', ');
                         }
-                        val = val.replace(/\[\[([^|\]]+)\|([^\]]+)\]\]/g, '$2');
-                        val = val.replace(/\[\[([^\]]+)\]\]/g, '$1');
                         val = val.replace(/^["']|["']$/g, '');
                         
                         let valClass = '';
@@ -297,6 +339,8 @@ function processDir(dir, outDir) {
                         else if (lowerVal === 'unknown') valClass = 'val-unknown';
                         else if (lowerVal === 'none') valClass = 'val-none';
                         else if (lowerVal === 'undefined') valClass = 'val-undefined';
+
+                        val = resolveInfoboxWikilinks(val, item);
 
                         if (val) {
                             const displayKey = key.replace(/-/g, ' ').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
@@ -334,7 +378,7 @@ function processDir(dir, outDir) {
                     return match;
                 });
 
-                body = resolveWikilinks(body);
+                body = resolveWikilinks(body, item);
 
                 // Lead paragraph styling is now handled via CSS (article p:first-of-type)
                 // instead of HTML wrapping, which was breaking markdown processing.
@@ -516,11 +560,49 @@ for (const a of allArticles) {
 }
 
 // --- Events Directory ---
+function parseChronologicalDate(raw) {
+    if (!raw) return null;
+    const s = String(raw).trim();
+    const iso = s.match(/^(-?\d{1,4})(?:-(\d{1,2}))?(?:-(\d{1,2}))?$/);
+    if (iso) {
+        return [parseInt(iso[1], 10), iso[2] ? parseInt(iso[2], 10) : 1, iso[3] ? parseInt(iso[3], 10) : 1];
+    }
+    const cent = s.match(/(\d{1,2})(?:st|nd|rd|th)\s*(?:[–-]\s*\d{1,2}(?:st|nd|rd|th)\s*)?centur/i);
+    if (cent) {
+        return [(parseInt(cent[1], 10) - 1) * 100, 1, 1];
+    }
+    const months = {
+        jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6,
+        jul: 7, aug: 8, sep: 9, oct: 10, nov: 11, dec: 12
+    };
+    const yearMatch = s.match(/\b(\d{3,4})\b/);
+    if (yearMatch) {
+        const year = parseInt(yearMatch[1], 10);
+        let month = 1;
+        for (const [mKey, mVal] of Object.entries(months)) {
+            if (new RegExp('\\b' + mKey, 'i').test(s)) { month = mVal; break; }
+        }
+        const dayMatch = s.replace(yearMatch[0], '').match(/\b([12]?\d|3[01])\b/);
+        const day = dayMatch ? parseInt(dayMatch[1], 10) : 1;
+        return [year, month, day];
+    }
+    return null;
+}
+
 function renderEventsDirectory() {
     const dated = eventData.filter(e => e.date);
     const undated = eventData.filter(e => !e.date);
 
-    dated.sort((a, b) => a.date.localeCompare(b.date));
+    dated.sort((a, b) => {
+        const pa = parseChronologicalDate(a.date);
+        const pb = parseChronologicalDate(b.date);
+        if (pa && pb) {
+            if (pa[0] !== pb[0]) return pa[0] - pb[0];
+            if (pa[1] !== pb[1]) return pa[1] - pb[1];
+            if (pa[2] !== pb[2]) return pa[2] - pb[2];
+        }
+        return a.date.localeCompare(b.date);
+    });
     undated.sort((a, b) => a.title.localeCompare(b.title));
 
     let html = '---\ntitle: Events Directory\n---\n\n# Events Directory\n\nA chronological listing of all recorded historical events in the Nolheim archive.\n\n';
@@ -576,6 +658,10 @@ try {
         fs.renameSync(backupDir, finalDir);
     }
     throw error;
+}
+
+if (fs.existsSync(previewOverlayDir)) {
+    fs.rmSync(previewOverlayDir, { recursive: true, force: true });
 }
 
 console.log('Content built successfully with normalized assets and grid layouts.');

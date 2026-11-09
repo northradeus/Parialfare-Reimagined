@@ -2,49 +2,80 @@
 <h3>Anajak Forces</h3>
 <table>
 <tr><th>Title</th><td>Anajak Forces</td></tr>
-<tr><th>Subtitle</th><td>Task force of the Global Intervention Coalition</td></tr>
-<tr><th>Established By</th><td>Global Intervention Coalition (GIC)</td></tr>
-<tr><th>Designed By</th><td>Northrad</td></tr>
-<tr><th>Commander</th><td>General Ramcher</td></tr>
-<tr><th>Parent</th><td>Global Intervention Coalition (GIC)</td></tr>
-<tr><th>Purpose</th><td>Counterpart to LENDERMAIRE, and a response to other Cladish factions and disruptions to peace in Ironland and other VISTA countries</td></tr>
-<tr><th>Funding</th><td>Heavy funding from Northrad, under GIC institutions</td></tr>
-<tr><th>Membership</th><td>Highly trained assassins, ITF members, and trained combat and warfare specialists</td></tr>
+<tr><th>Subtitle</th><td>Deniable task force of the Global Intervention Coalition</td></tr>
+<tr><th>Active</th><td>2008–present</td></tr>
+<tr><th>Established By</th><td><a href="/factions/global-intervention-coalition-(gic)">Global Intervention Coalition (GIC)</a></td></tr>
+<tr><th>Designed By</th><td><a href="/characters/vista/noradus">Northrad</a></td></tr>
+<tr><th>Commander</th><td><a href="/characters/anajak-forces/general-ramcher">General Ramcher</a></td></tr>
+<tr><th>Parent</th><td><a href="/factions/global-intervention-coalition-(gic)">Global Intervention Coalition (GIC)</a></td></tr>
+<tr><th>True Allegiance</th><td><a href="/characters/vista/noradus">Northrad</a> (personal control)</td></tr>
+<tr><th>Purpose</th><td>Deniable operations, counter-insurgency, and disruption of Cladish factions (publicly framed as peacekeeping in <a href="/locations/countries/ironland">Ironland</a> and <a href="/factions/vista">VISTA</a> countries)</td></tr>
+<tr><th>Funding</th><td>Heavy, direct funding from <a href="/characters/vista/noradus">Northrad</a>, routed through GIC institutions</td></tr>
+<tr><th>Membership</th><td>Facility-raised assassins (mostly Lurkish), <a href="/factions/ironish-task-force-(itf)">Ironish Task Force (ITF)</a> detachments, and specialized seconded personnel (e.g., Encorean Royal Army)</td></tr>
 </table>
 </aside>
 
 
 # Anajak Forces
 
+**Anajak Forces** is a specialized, deniable task force operating under the institutional umbrella of the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)). Designed by [Northrad](characters/vista/noradus) during his tenure as [VISTA](factions/vista) president and placed under the field command of [General Ramcher](characters/anajak-forces/general-ramcher), the unit is heavily funded by Northrad's office. While publicly framed as a peacekeeping and counter-insurgency force designed to combat [LENDERMAIRE](factions/lendermaire) and other Cladish factions disrupting stability in [Ironland](locations/countries/ironland) and allied VISTA nations, its true purpose is the execution of classified, deniable operations that answer directly to Northrad.
 
+## Composition and Structure
 
-**Anajak Forces** is a specialized task force established by the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) and designed by [Northrad](characters/vista/noradus). Led by [General Ramcher](characters/anajak-forces/general-ramcher), it is designed to combat [LENDERMAIRE](factions/lendermaire) and other Cladish factions, and anything that disrupts the peace inside [Ironland](locations/countries/ironland) and other [VISTA](factions/vista) countries as a whole. It operates under heavy funding from Northrad and under the institutions of the GIC.
+Anajak's roster is a multinational, multi-tiered apparatus. Its core consists of highly trained, facility-raised assassins, the majority of whom are of Lurkish ethnicity. This classified assassin core is referred to internally by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) as "[Alpha-01](factions/alpha-01)". See [Alpha-01](factions/alpha-01).
 
-Its members include many highly trained assassins, members of the [ITF](factions/ironish-task-force-(itf)), and many trained individuals with skillsets in combat and warfare. Most members come from a facility or other secret organizations, and most are Lurkish. Its classified assassin core is what ITF calls "[Alpha-01](factions/alpha-01)". See [Alpha-01](factions/alpha-01).
+Surrounding this core are specialized detachments and seconded personnel. This includes ITF soldiers (such as [Tarnished](characters/anajak-forces/tarnished)'s squad), specialized operators from the Encorean Royal Army such as [Pich](characters/anajak-forces/pich), and the Thaiphonese fighter pilot [Takahashi](characters/anajak-forces/takahashi) ("Sahara"), whom [General Ramcher](characters/anajak-forces/general-ramcher) brought in from the inactive GIC roster to fly air support. These seconded personnel serve critical functional niches—from close air support to field-level linguistic and cultural interpretation—bridging the gaps between Lurkish command structures and local operational realities.
 
-## The mirrored answer
+## The Mirrored Answer
 
-Anajak is the second half of a mirrored structure. Every institution on the institutional side answers a counterpart on the insurgency side.
+Anajak is the second half of a mirrored structural dynamic. Every institution on the institutional side answers a counterpart on the insurgency side.
 
 The [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) answers [Konish's Group](factions/konish's-group). Both are umbrella bodies: a coalition of generals answering a coalition of militias.
 
-Anajak answers [LENDERMAIRE](factions/lendermaire). Both are the sharp point of their umbrella: the task force and the black operations unit.
+Anajak answers [LENDERMAIRE](factions/lendermaire). Both are the sharp point of their respective umbrellas: the institutional task force and the insurgent black operations unit.
 
-The two answers are built in opposite ways. LENDERMAIRE is thirteen men in a shared household, selected for psychological deviation, held together by one man's mentorship. Anajak is a graded pipeline of facility-raised assassins, institutional and impersonal. The household is answered by the facility; the father figure is answered by the grading scale.
+The two answers are built in opposite ways. LENDERMAIRE is thirteen men in a shared household, selected for psychological deviation, held together by one man's mentorship. Anajak is a graded pipeline of facility-raised assassins and seconded specialists, institutional and impersonal. The household is answered by the facility; the father figure is answered by the grading scale.
 
-The record does not state whether this symmetry was intentional.
+The record does not state whether this symmetry was intentional, or merely a byproduct of opposing doctrines.
+
+## The Name "Anajak"
+
+The designation "Anajak" is an Encorean word. Its adoption traces back to a clandestine side deal negotiated between General Northrad and Encorean representatives during a public VISTA presidential visit to the Kingdom of Encore. The agreement facilitated the placement of Encorean Royal Army personnel into GIC structures and deniable units.
+
+During these negotiations, an Encorean liaison offered "Anajak" as a suggested operational designation. Northrad, who does not speak Encorean, adopted the term without knowledge of its semantic meaning, finding it suitably martial and distinct. The name's origin is traceable through the public record of the visit, while the side deal itself remains deniable.
+
+Among the Encorean contingent within Anajak, the meaning of the word is known but not publicly discussed. It functions as a quiet piece of institutional trivia—a layer of reclamation embedded within a Lurkish-funded, Northrad-commanded structure.
 
 ## Unresolved
 
-- **Public knowledge:** whether Anajak is publicly known, while Alpha-01 stays classified.
-- **Facility origins:** whether the facility-raised members come from one facility or several.
-- **Name:** the meaning or origin of the name "Anajak".
+- **Facility origins:** Whether the facility-raised core members are drawn from a single, centralized GIC facility or a decentralized network of allied institutions.
+- **Public perception:** The extent to which the general public distinguishes between the public-facing "Anajak Forces" and the classified "[Alpha-01](factions/alpha-01)" core, though ITF soldiers already suspect the existence of a GIC secret task force.
 
 ## See Also
 
-* [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic))
-* [Alpha-01](factions/alpha-01)
-* [General Ramcher](characters/anajak-forces/general-ramcher)
-* [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))
-* [LENDERMAIRE](factions/lendermaire)
-* [Noradus](characters/vista/noradus)
+- [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic))
+- [Alpha-01](factions/alpha-01)
+- [General Ramcher](characters/anajak-forces/general-ramcher)
+- [Northrad](characters/vista/noradus)
+- [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))
+- [LENDERMAIRE](factions/lendermaire)
+- [Pich](characters/anajak-forces/pich)
+- [Takahashi](characters/anajak-forces/takahashi)
+
+
+<section class="related-entities">
+<h2>Related Entities</h2>
+<div class="rel-group">
+<h3>Associated Characters</h3>
+<ul>
+<li><a href="/characters/anajak-forces/general-ramcher">General Ramcher</a></li>
+<li><a href="/characters/anajak-forces/nogo">Nogo</a></li>
+<li><a href="/characters/anajak-forces/pepper">Pepper</a></li>
+<li><a href="/characters/anajak-forces/pich">Pich</a></li>
+<li><a href="/characters/anajak-forces/takahashi">Takahashi</a></li>
+<li><a href="/characters/anajak-forces/tanishito">Tanishito</a></li>
+<li><a href="/characters/anajak-forces/tarnished">Tarnished</a></li>
+<li><a href="/characters/anajak-forces/verdanski">Verdanski</a></li>
+</ul>
+</div>
+</section>

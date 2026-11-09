@@ -7,19 +7,19 @@
 <tr><th>Native Name</th><td>Lendus O Mairen</td></tr>
 <tr><th>Motto</th><td>"Let them taste steel."</td></tr>
 <tr><th>Active</th><td>2007–present</td></tr>
-<tr><th>Allegiance</th><td>Konish Kimbotin</td></tr>
-<tr><th>Part Of</th><td>Konish's Group</td></tr>
+<tr><th>Allegiance</th><td><a href="/characters/lendermaire/konish-kimbotin-(reimagined)">Konish Kimbotin</a></td></tr>
+<tr><th>Part Of</th><td><a href="/factions/konish's-group">Konish's Group</a></td></tr>
 <tr><th>Type</th><td>Insurgency</td></tr>
 <tr><th>Role</th><td>Black operations</td></tr>
 <tr><th>Size</th><td>13 core members</td></tr>
-<tr><th>Commander</th><td>Konish Kimbotin</td></tr>
+<tr><th>Commander</th><td><a href="/characters/lendermaire/konish-kimbotin-(reimagined)">Konish Kimbotin</a></td></tr>
 <tr><th>Leader Title</th><td>Supreme Warlord</td></tr>
-<tr><th>Second In Command</th><td>Hanktonio</td></tr>
-<tr><th>Area</th><td>Ironland, Ironclad DMZ</td></tr>
-<tr><th>Garrison</th><td>Southern Ironclad</td></tr>
-<tr><th>Allies</th><td>Konish's Group, CAF</td></tr>
-<tr><th>Opponents</th><td>Anajak Forces, Ironish Task Force (ITF)</td></tr>
-<tr><th>Conflicts</th><td>2008 Pocheasang Palace raid</td></tr>
+<tr><th>Second In Command</th><td><a href="/characters/lendermaire/hanktonio">Hanktonio</a></td></tr>
+<tr><th>Area</th><td><a href="/locations/countries/ironland">Ironland</a>, <a href="/locations/ironclad-dmz">Ironclad DMZ</a></td></tr>
+<tr><th>Garrison</th><td>Southern <a href="/locations/countries/ironclad">Ironclad</a></td></tr>
+<tr><th>Allies</th><td><a href="/factions/konish's-group">Konish's Group</a>, CAF</td></tr>
+<tr><th>Opponents</th><td><a href="/factions/anajak-forces">Anajak Forces</a>, <a href="/factions/ironish-task-force-(itf)">Ironish Task Force (ITF)</a></td></tr>
+<tr><th>Conflicts</th><td><a href="/events/2008-pocheasang-palace-raid">2008 Pocheasang Palace raid</a></td></tr>
 </table>
 </aside>
 
@@ -28,7 +28,7 @@
 
 
 
-**LENDERMAIRE** (native name: *Lendus O Mairen*) is a clandestine Cladish special operations formation active in the [Ironclad](locations/ironclad-dmz) region, operating as a black operations unit within the umbrella coalition [Konish's Group](factions/konish's-group). Founded in 2007 and garrisoned in southern Ironclad, the group maintains a core roster of thirteen members in addition to [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined)), who led it operationally. Its motto is *"Let them taste steel."* It fields a modern military arsenal.
+**LENDERMAIRE** (native name: *Lendus O Mairen*) is a clandestine Cladish special operations formation active in the [Ironclad](locations/ironclad-dmz) region, operating as a black operations unit within the umbrella coalition [Konish's Group](factions/konish's-group). Founded in 2007 and garrisoned in southern Ironclad, the group maintains a core roster of thirteen members in addition to [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined)), who led it operationally. Its motto is *"Let them taste steel."* It fields a modern militiary arsenal.
 
 The group remained unknown in open sources until the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid), after which its name entered public reporting through civilian identification of an emblem in recovered bodycam footage. The [VISTA](factions/vista) Intelligence Agency subsequently described it as one formation within Konish's Group, a coalition of armed formations operating with substantial autonomy rather than as a single command. VISTA could not establish Kimbotin's supreme command over the group, and the proposition remained contested.[^2]
 
@@ -59,7 +59,6 @@ The group consists of thirteen core members under Kimbotin, supported by additio
 | [Markless](characters/lendermaire/markless) | Breacher | Former Ironish Special Forces |
 | [Andrew](characters/lendermaire/andrew) | Assaulter | Former Ironish Special Forces. Place among the thirteen unconfirmed |
 | [Medic](characters/lendermaire/medic) | Combat Medic | Previously served another Cladish faction |
-| Verdansk | Tunnel Crawler | Sewage & Tunnel specialist. Current status unconfirmed |
 | [Salmon](characters/lendermaire/salmon) | Shock Trooper | Former coast guard and navy |
 | [Gunter](characters/lendermaire/gunter) | Engineer & Sapper | Role split with Grunt unresolved |
 | [Lykor](characters/lendermaire/samsara-lykor) | Cleanup, backup sniper | Thirteenth member. Identity concealed from the public |
@@ -67,6 +66,7 @@ The group consists of thirteen core members under Kimbotin, supported by additio
 **Additional Personnel:**
 *   [Joey](characters/lendermaire/joey): A background member who manages incoming resources. Not counted among the core thirteen.
 *   [Gazmo](characters/lendermaire/gazmo): A background member specializing in biohazard weapons. Not counted among the core thirteen, but deployable in combat.
+*   [Bizmo](characters/lendermaire/bizmo): A background member specializing in 3D printing and unconventional field fabrication. Not counted among the core thirteen.
 *   Further background members, whose number is not established.
 
 ## 4. Internal dynamics

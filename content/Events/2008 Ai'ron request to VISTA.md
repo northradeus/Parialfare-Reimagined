@@ -5,7 +5,7 @@
 <tr><th>Subtitle</th><td>2 September 2008</td></tr>
 <tr><th>Event Type</th><td>Political/Diplomatic, Military/Funding</td></tr>
 <tr><th>Date</th><td>2008-09-02</td></tr>
-<tr><th>Location</th><td>VISTA</td></tr>
+<tr><th>Location</th><td><a href="/factions/vista">VISTA</a></td></tr>
 <tr><th>Result</th><td>Request failed for want of a two-thirds majority</td></tr>
 </table>
 </aside>

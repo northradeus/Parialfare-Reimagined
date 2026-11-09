@@ -4,7 +4,7 @@
 <tr><th>Title</th><td>Maire O'Mare</td></tr>
 <tr><th>Subtitle</th><td>The returned insurgency in Ironclad</td></tr>
 <tr><th>Active</th><td>2008</td></tr>
-<tr><th>Region</th><td>Ironclad</td></tr>
+<tr><th>Region</th><td><a href="/locations/countries/ironclad">Ironclad</a></td></tr>
 <tr><th>Origin</th><td>Maire O'Mare (claimed)</td></tr>
 <tr><th>Relation To Konish</th><td>Chaotic; sometimes allied, frequently hostile</td></tr>
 </table>

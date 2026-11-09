@@ -44,6 +44,8 @@ The task force created to counter LENDERMAIRE.
 - [Nogo](characters/anajak-forces/nogo) — A+ grade assassin.
 - [Tarnished](characters/anajak-forces/tarnished) — Volunteer.
 - [Verdanski](characters/anajak-forces/verdanski) — A+ operative.
+- [Pich](characters/anajak-forces/pich) — Encorean close-combat specialist and field interpreter.
+- [Takahashi](characters/anajak-forces/takahashi) — Thaiphonese fighter pilot ("Sahara").
 
 ## Other Factions
 - [Amberly](characters/maire-o'mare/amberly) — Coordinator of the Maire O'Mare insurgency.

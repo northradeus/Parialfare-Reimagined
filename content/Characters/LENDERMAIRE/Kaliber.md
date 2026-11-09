@@ -4,7 +4,7 @@
 <table>
 <tr><th>Title</th><td>Kaliber</td></tr>
 <tr><th>Subtitle</th><td>Shield specialist of LENDERMAIRE</td></tr>
-<tr><th>Unit</th><td>LENDERMAIRE</td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Former Unit</th><td>Ironish Special Forces</td></tr>
 <tr><th>Condition</th><td>Muted</td></tr>
 </table>

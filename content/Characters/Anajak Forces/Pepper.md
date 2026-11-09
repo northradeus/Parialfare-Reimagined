@@ -4,11 +4,11 @@
 <tr><th>Title</th><td>Pepper</td></tr>
 <tr><th>Subtitle</th><td>Anajak Forces operator; adjutant to the president of VISTA</td></tr>
 <tr><th>Role</th><td>Operator (multi-role)</td></tr>
-<tr><th>Affiliation</th><td>Anajak Forces</td></tr>
-<tr><th>Adjutant Post</th><td>Personal adjutant to Northrad (currency contested)</td></tr>
+<tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a>, <a href="/factions/vista">VISTA</a></td></tr>
+<tr><th>Adjutant Post</th><td>Personal adjutant to <a href="/characters/vista/noradus">Northrad</a> (currency contested)</td></tr>
 <tr><th>Grade</th><td>S+ (multitasking), A (combat)</td></tr>
 <tr><th>Pipeline</th><td>Facility-raised</td></tr>
-<tr><th>Origin</th><td>Site-29</td></tr>
+<tr><th>Origin</th><td><a href="/locations/site-29">Site-29</a></td></tr>
 </table>
 </aside>
 

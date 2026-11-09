@@ -4,7 +4,7 @@
 <table>
 <tr><th>Title</th><td>Leepy</td></tr>
 <tr><th>Subtitle</th><td>Sniper of LENDERMAIRE</td></tr>
-<tr><th>Unit</th><td>LENDERMAIRE</td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Roster Position</th><td>Fourth</td></tr>
 <tr><th>Specialty</th><td>Reconnaissance and sniping</td></tr>
 <tr><th>Marksmanship Origin</th><td>Hunting</td></tr>

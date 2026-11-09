@@ -5,12 +5,12 @@
 <tr><th>Subtitle</th><td>Global military organisation working with VISTA</td></tr>
 <tr><th>Official Name</th><td>Global Intervention Coalition</td></tr>
 <tr><th>Popular Name</th><td>"the global ITF"</td></tr>
-<tr><th>Established By</th><td>VISTA</td></tr>
-<tr><th>Architect</th><td>Northrad</td></tr>
+<tr><th>Established By</th><td><a href="/factions/vista">VISTA</a></td></tr>
+<tr><th>Architect</th><td><a href="/characters/vista/noradus">Northrad</a></td></tr>
 <tr><th>Established</th><td>4 December 2008</td></tr>
 <tr><th>Relationship To Vista</th><td>Works directly with VISTA</td></tr>
-<tr><th>Separate From</th><td>Ironish Task Force (ITF)</td></tr>
-<tr><th>Established Body</th><td>Anajak Forces</td></tr>
+<tr><th>Separate From</th><td><a href="/factions/ironish-task-force-(itf)">Ironish Task Force (ITF)</a></td></tr>
+<tr><th>Established Body</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
 </table>
 </aside>
 
@@ -53,6 +53,8 @@ The GIC is the institutional answer to [Konish's Group](factions/konish's-group)
 <div class="rel-group">
 <h3>Associated Characters</h3>
 <ul>
+<li><a href="/characters/anajak-forces/general-ramcher">General Ramcher</a></li>
+<li><a href="/characters/anajak-forces/takahashi">Takahashi</a></li>
 <li><a href="/characters/vista/noradus">Noradus "Northrad</a></li>
 </ul>
 </div>

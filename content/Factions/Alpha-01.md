@@ -3,8 +3,8 @@
 <table>
 <tr><th>Title</th><td>Alpha-01</td></tr>
 <tr><th>Subtitle</th><td>ITF label for the classified assassin core of Anajak Forces</td></tr>
-<tr><th>Label Of</th><td>Anajak Forces</td></tr>
-<tr><th>Label Used By</th><td>Ironish Task Force (ITF)</td></tr>
+<tr><th>Label Of</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
+<tr><th>Label Used By</th><td><a href="/factions/ironish-task-force-(itf)">Ironish Task Force (ITF)</a></td></tr>
 <tr><th>Classification</th><td>Classified</td></tr>
 </table>
 </aside>

@@ -6,10 +6,10 @@
 <tr><th>Subtitle</th><td>Intergovernmental military organisation of twelve member delegations</td></tr>
 <tr><th>Type</th><td>Intergovernmental military organisation</td></tr>
 <tr><th>Members</th><td>Twelve member delegations</td></tr>
-<tr><th>Presidency</th><td>Northrad</td></tr>
+<tr><th>Presidency</th><td><a href="/characters/vista/noradus">Northrad</a></td></tr>
 <tr><th>Decision Threshold</th><td>Two-thirds (eight of twelve) for funding and military programmes</td></tr>
 <tr><th>Organs</th><td>Presidency; General Secretariat; Intelligence Agency; delegations in assembly</td></tr>
-<tr><th>Established Body</th><td>Global Intervention Coalition (GIC)</td></tr>
+<tr><th>Established Body</th><td><a href="/factions/global-intervention-coalition-(gic)">Global Intervention Coalition (GIC)</a></td></tr>
 </table>
 </aside>
 
@@ -95,6 +95,7 @@ VISTA retains limited intelligence on Konish's forces. No VISTA or GIC operation
 <div class="rel-group">
 <h3>Associated Characters</h3>
 <ul>
+<li><a href="/characters/anajak-forces/pepper">Pepper</a></li>
 <li><a href="/characters/vista/noradus">Noradus "Northrad</a></li>
 </ul>
 </div>

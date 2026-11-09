@@ -4,7 +4,7 @@
 <table>
 <tr><th>Title</th><td>Joey</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE background member, logistics</td></tr>
-<tr><th>Unit</th><td>LENDERMAIRE</td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Tier</th><td>Background personnel</td></tr>
 <tr><th>Specialty</th><td>Logistics and incoming resources</td></tr>
 <tr><th>Unit Role</th><td>Background member; manages incoming resources</td></tr>

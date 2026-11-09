@@ -7,7 +7,7 @@
 <tr><th>Ethnicity</th><td>Cladish</td></tr>
 <tr><th>Self Identified</th><td>Deckish</td></tr>
 <tr><th>Gender</th><td>Male</td></tr>
-<tr><th>Affiliation</th><td>Maire O'Mare</td></tr>
+<tr><th>Affiliation</th><td><a href="/factions/maire-o'mare-(2008)">Maire O'Mare</a></td></tr>
 <tr><th>Role</th><td>Coordinator</td></tr>
 </table>
 </aside>

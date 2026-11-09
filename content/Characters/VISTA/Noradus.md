@@ -3,7 +3,7 @@
 <img src="assets/d8973bcf928c6bf7e6d82fe571e95669.jpg" alt="Noradus Northrad" />
 <table>
 <tr><th>Title</th><td>Noradus "Northrad</td></tr>
-<tr><th>Subtitle</th><td>President of VISTA</td></tr>
+<tr><th>Subtitle</th><td>President of <a href="/factions/vista">VISTA</a></td></tr>
 <tr><th>Full Name</th><td>Noradus Partenstine</td></tr>
 <tr><th>Alias</th><td>Northrad</td></tr>
 <tr><th>Life Span</th><td>1988-Present</td></tr>
@@ -13,12 +13,12 @@
 <tr><th>Gender</th><td>Male</td></tr>
 <tr><th>Tier</th><td>1</td></tr>
 <tr><th>Role</th><td><span class="val-undefined">Undefined</span></td></tr>
-<tr><th>Factions</th><td>VISTA, Ironish Task Force, Global Intervention Coalition</td></tr>
-<tr><th>Nation</th><td>Ironland, Lurkinsberg, Thaiphone</td></tr>
-<tr><th>Political Office</th><td>Founder of VISTA</td></tr>
+<tr><th>Factions</th><td><a href="/factions/vista">VISTA</a>, <a href="/factions/ironish-task-force-(itf)">Ironish Task Force</a>, <a href="/factions/global-intervention-coalition-(gic)">Global Intervention Coalition</a></td></tr>
+<tr><th>Nation</th><td><a href="/locations/countries/ironland">Ironland</a>, <a href="/locations/countries/lurkinsberg">Lurkinsberg</a>, Thaiphone</td></tr>
+<tr><th>Political Office</th><td>Founder of <a href="/factions/vista">VISTA</a></td></tr>
 <tr><th>Ideology</th><td>Democratic, Liberalism</td></tr>
-<tr><th>Armed Forces</th><td>Ironish Task Force, Global Intervention Coalition, Anajak Forces</td></tr>
-<tr><th>Territory</th><td>Ironland, Lurkinsberg, Thaiphone, Parial Oceanic</td></tr>
+<tr><th>Armed Forces</th><td><a href="/factions/ironish-task-force-(itf)">Ironish Task Force</a>, <a href="/factions/global-intervention-coalition-(gic)">Global Intervention Coalition</a>, <a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
+<tr><th>Territory</th><td><a href="/locations/countries/ironland">Ironland</a>, <a href="/locations/countries/lurkinsberg">Lurkinsberg</a>, Thaiphone, Parial Oceanic</td></tr>
 </table>
 </aside>
 

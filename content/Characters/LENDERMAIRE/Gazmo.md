@@ -4,7 +4,7 @@
 <table>
 <tr><th>Title</th><td>Gazmo</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE background operator, biohazard weapons</td></tr>
-<tr><th>Unit</th><td>LENDERMAIRE</td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Tier</th><td>Background personnel</td></tr>
 <tr><th>Specialty</th><td>Biohazard weapons</td></tr>
 <tr><th>Unit Role</th><td>Background operator; deployable in combat</td></tr>

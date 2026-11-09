@@ -6,7 +6,7 @@
 <tr><th>Subtitle</th><td>Desteina Reamchea O'Airon</td></tr>
 <tr><th>Motto</th><td>Nations, Religion, King</td></tr>
 <tr><th>Anthem</th><td><span class="val-tbd">TBD</span></td></tr>
-<tr><th>Capital</th><td>Pocheasang</td></tr>
+<tr><th>Capital</th><td><a href="/locations/pocheasang">Pocheasang</a></td></tr>
 <tr><th>Largest City</th><td>Soveangasna</td></tr>
 <tr><th>Official Language</th><td>Ironish</td></tr>
 <tr><th>Ethnic Groups</th><td>62% Ironish, 21% Lurkish, 10% Cladish, 7% Others</td></tr>
@@ -19,7 +19,7 @@
 <tr><th>Military</th><td>Royal Ironish Army</td></tr>
 <tr><th>Area Total</th><td>450,000 km²</td></tr>
 <tr><th>Population Estimate</th><td>37,000,000 (2007)</td></tr>
-<tr><th>Borders</th><td>Ironclad DMZ (South), New Aester (South)</td></tr>
+<tr><th>Borders</th><td><a href="/locations/ironclad-dmz">Ironclad DMZ</a> (South), <a href="/locations/countries/new-aester">New Aester</a> (South)</td></tr>
 <tr><th>Currency</th><td>Mon (₥)</td></tr>
 <tr><th>Industries</th><td>Trade, Agriculture, Global Market</td></tr>
 </table>

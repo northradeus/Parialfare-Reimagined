@@ -4,10 +4,10 @@
 <table>
 <tr><th>Title</th><td>2008 Pocheasang Palace raid</td></tr>
 <tr><th>Subtitle</th><td>25–26 August 2008</td></tr>
-<tr><th>Location</th><td>Ironland</td></tr>
+<tr><th>Location</th><td><a href="/locations/countries/ironland">Ironland</a></td></tr>
 <tr><th>Date</th><td>2008-08-25</td></tr>
 <tr><th>Date End</th><td>2008-08-26</td></tr>
-<tr><th>Result</th><td>LENDERMAIRE exfiltration of classified material; assailants escaped; martial law declared</td></tr>
+<tr><th>Result</th><td><a href="/factions/lendermaire">LENDERMAIRE</a> exfiltration of classified material; assailants escaped; martial law declared</td></tr>
 <tr><th>Event Type</th><td>Military/Attack, Political/History</td></tr>
 </table>
 </aside>

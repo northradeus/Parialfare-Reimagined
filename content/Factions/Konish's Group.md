@@ -5,17 +5,17 @@
 <tr><th>Title</th><td>Konish's Group</td></tr>
 <tr><th>Subtitle</th><td>Transnational Cladish umbrella coalition</td></tr>
 <tr><th>Also Known As</th><td>Konish Group</td></tr>
-<tr><th>Founder</th><td>Konish Kimbotin</td></tr>
+<tr><th>Founder</th><td><a href="/characters/lendermaire/konish-kimbotin-(reimagined)">Konish Kimbotin</a></td></tr>
 <tr><th>Dates Of Operation</th><td>2007–present</td></tr>
-<tr><th>Headquarters</th><td>Southern Ironclad (De facto)</td></tr>
-<tr><th>Active Regions</th><td>Ironclad DMZ, Kingdom of the Ai'ron Land</td></tr>
+<tr><th>Headquarters</th><td>Southern <a href="/locations/countries/ironclad">Ironclad</a> (De facto)</td></tr>
+<tr><th>Active Regions</th><td><a href="/locations/ironclad-dmz">Ironclad DMZ</a>, <a href="/locations/countries/ironland">Kingdom of the Ai'ron Land</a></td></tr>
 <tr><th>Ideology</th><td>Cladish Nationalism, Warlordism, Information Warfare</td></tr>
 <tr><th>Slogan</th><td>"Let them taste steel."</td></tr>
 <tr><th>Size</th><td>Multiple autonomous militias (Estimated)</td></tr>
 <tr><th>Part Of</th><td>Independent coalition</td></tr>
-<tr><th>Allies</th><td>LENDERMAIRE, CAF (alleged)</td></tr>
-<tr><th>Opponents</th><td>Ironish Task Force (ITF), Anajak Forces, Maire O'Mare Insurgency</td></tr>
-<tr><th>Battles</th><td>2008 Pocheasang Palace raid</td></tr>
+<tr><th>Allies</th><td><a href="/factions/lendermaire">LENDERMAIRE</a>, CAF (alleged)</td></tr>
+<tr><th>Opponents</th><td><a href="/factions/ironish-task-force-(itf)">Ironish Task Force (ITF)</a>, <a href="/factions/anajak-forces">Anajak Forces</a>, <a href="/factions/maire-o'mare-(2008)">Maire O'Mare</a> Insurgency</td></tr>
+<tr><th>Battles</th><td><a href="/events/2008-pocheasang-palace-raid">2008 Pocheasang Palace raid</a></td></tr>
 </table>
 </aside>
 

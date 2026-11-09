@@ -27,6 +27,7 @@ echo    [5] Deploy               (build + push to GitHub Pages)
 echo    [6] Open Vault folder
 echo    [7] Open Quartz folder
 echo    [8] Open Website
+echo    [9] Drift Check          (see unpromoted changes in Continuities)
 echo.
 echo    [0] Exit
 echo.
@@ -40,6 +41,7 @@ if "%CHOICE%"=="5" goto DO_DEPLOY
 if "%CHOICE%"=="6" goto DO_VAULT
 if "%CHOICE%"=="7" goto DO_QUARTZ
 if "%CHOICE%"=="8" goto DO_WEB
+if "%CHOICE%"=="9" goto DO_DRIFT
 if "%CHOICE%"=="0" goto EXIT
 goto MENU
 
@@ -54,9 +56,14 @@ for /f "tokens=*" %%L in ('netstat -ano 2^>nul ^| findstr /c:":3456 " ^| findstr
 )
 set "PENDING=no"
 if exist "%~dp0Promote-Request.json" set "PENDING=YES"
+set "DRIFT_STATUS=checking..."
+for /f "tokens=*" %%D in ('node "%~dp0drift-check.cjs" --summary 2^>nul') do (
+    set "DRIFT_STATUS=%%D"
+)
 echo ----------------------------------------------------------------
 echo   Version:       !VERSION!
 echo   Bridge:        !BRIDGE_STATUS!
+echo   Unpromoted:    !DRIFT_STATUS!
 echo   Pending:       !PENDING!
 echo   Vault:         %VAULT_DIR%
 echo ----------------------------------------------------------------
@@ -124,6 +131,15 @@ goto MENU
 
 :DO_WEB
 start "" "%WEBSITE%"
+goto MENU
+
+:DO_DRIFT
+echo.
+node "%~dp0drift-check.cjs"
+echo ----------------------------------------------------------------
+echo   Press any key to return to the menu.
+echo ----------------------------------------------------------------
+pause >nul
 goto MENU
 
 :EXIT

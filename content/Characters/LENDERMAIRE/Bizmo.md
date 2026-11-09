@@ -3,11 +3,11 @@
 <table>
 <tr><th>Title</th><td>Bizmo</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE background operator, field fabrication</td></tr>
-<tr><th>Unit</th><td>LENDERMAIRE</td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Tier</th><td>Background personnel</td></tr>
 <tr><th>Specialty</th><td>3D printing and unconventional field fabrication</td></tr>
 <tr><th>Unit Role</th><td>Background operator; workshop-only, not deployable</td></tr>
-<tr><th>Collaborator</th><td>Vanny</td></tr>
+<tr><th>Collaborator</th><td><a href="/characters/lendermaire/vanny">Vanny</a></td></tr>
 </table>
 </aside>
 

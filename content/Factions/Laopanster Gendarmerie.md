@@ -5,17 +5,17 @@
 <tr><th>Title</th><td>Laopanster Gendarmerie</td></tr>
 <tr><th>Subtitle</th><td>National gendarmerie force of the Kingdom of the Ai'ron Land</td></tr>
 <tr><th>Active</th><td>2001–present</td></tr>
-<tr><th>Country</th><td>Kingdom of the Ai'ron Land</td></tr>
+<tr><th>Country</th><td><a href="/locations/countries/ironland">Kingdom of the Ai'ron Land</a></td></tr>
 <tr><th>Allegiance</th><td>The Crown</td></tr>
 <tr><th>Branch</th><td>Ministry of the Interior</td></tr>
 <tr><th>Type</th><td>Paramilitary law enforcement</td></tr>
 <tr><th>Size</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Part Of</th><td>Ministry of the Interior</td></tr>
-<tr><th>Garrison</th><td>Pocheasang, Ironland</td></tr>
+<tr><th>Garrison</th><td><a href="/locations/pocheasang">Pocheasang</a>, <a href="/locations/countries/ironland">Ironland</a></td></tr>
 <tr><th>Nickname</th><td>Laosentine</td></tr>
 <tr><th>Motto</th><td>"Let them taste steel, therefore we are Ironish!"</td></tr>
 <tr><th>Colors</th><td>Red, Black, and Steel</td></tr>
-<tr><th>Notable Engagement</th><td>2008 Pocheasang Palace raid</td></tr>
+<tr><th>Notable Engagement</th><td><a href="/events/2008-pocheasang-palace-raid">2008 Pocheasang Palace raid</a></td></tr>
 <tr><th>Current Commander</th><td>Marshal Lopesh</td></tr>
 </table>
 </aside>

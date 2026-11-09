@@ -6,7 +6,7 @@
 <tr><th>Governance</th><td>Ungoverned</td></tr>
 <tr><th>Government Type</th><td>None — warlord frontier</td></tr>
 <tr><th>Demonym</th><td>Cladish</td></tr>
-<tr><th>Borders</th><td>Ironland (north), New Aester (north)</td></tr>
+<tr><th>Borders</th><td><a href="/locations/countries/ironland">Ironland</a> (north), <a href="/locations/countries/new-aester">New Aester</a> (north)</td></tr>
 </table>
 </aside>
 

@@ -3,7 +3,7 @@
 <img src="assets/samsara.jpg" alt="Samsara Lykor" />
 <table>
 <tr><th>Title</th><td>Samsara Lykor</td></tr>
-<tr><th>Subtitle</th><td>Lurkish operator, the concealed thirteenth member of LENDERMAIRE</td></tr>
+<tr><th>Subtitle</th><td>Lurkish operator, the concealed thirteenth member of <a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Full Name</th><td>Samsara Lykor</td></tr>
 <tr><th>Life Span</th><td>1987-Present</td></tr>
 <tr><th>Living Status</th><td>Alive</td></tr>
@@ -11,11 +11,11 @@
 <tr><th>Ethnicity</th><td>Lurkish</td></tr>
 <tr><th>Gender</th><td>Male</td></tr>
 <tr><th>Tier</th><td>3</td></tr>
-<tr><th>Factions</th><td>LENDERMAIRE, Lurkish Army</td></tr>
-<tr><th>Nation</th><td>Lurkinsberg, Ironclad</td></tr>
+<tr><th>Factions</th><td><a href="/factions/lendermaire">LENDERMAIRE</a>, Lurkish Army</td></tr>
+<tr><th>Nation</th><td><a href="/locations/countries/lurkinsberg">Lurkinsberg</a>, <a href="/locations/countries/ironclad">Ironclad</a></td></tr>
 <tr><th>Codename</th><td>Northrad</td></tr>
 <tr><th>Specialty</th><td>Cleanup, backup sniper</td></tr>
-<tr><th>Unit Role</th><td>The 13th of LENDERMAIRE</td></tr>
+<tr><th>Unit Role</th><td>The 13th of <a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Weapons</th><td>SMG, Sniper Rifle</td></tr>
 <tr><th>Fighting Style</th><td>Solo, finishes unfinished objectives</td></tr>
 <tr><th>Training Origin</th><td>Lurkish Marine Training</td></tr>

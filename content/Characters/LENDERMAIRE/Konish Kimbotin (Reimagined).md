@@ -10,13 +10,13 @@
 <tr><th>Current Status</th><td>Alive</td></tr>
 <tr><th>Ethnicity</th><td>Cladish</td></tr>
 <tr><th>Gender</th><td>Male</td></tr>
-<tr><th>Factions</th><td>Konish's Group, LENDERMAIRE</td></tr>
-<tr><th>Nation</th><td>Ironclad</td></tr>
-<tr><th>Territory</th><td>Southern Ironclad</td></tr>
+<tr><th>Factions</th><td><a href="/factions/konish's-group">Konish's Group</a>, <a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Nation</th><td><a href="/locations/countries/ironclad">Ironclad</a></td></tr>
+<tr><th>Territory</th><td>Southern <a href="/locations/countries/ironclad">Ironclad</a></td></tr>
 <tr><th>Rank</th><td>Supreme Warlord</td></tr>
 <tr><th>Occupation</th><td>Warlord, Political Figure</td></tr>
 <tr><th>Known For</th><td>Founding Konish Group and LENDERMAIRE; 2008 Pocheasang Palace raid</td></tr>
-<tr><th>Battles</th><td>2008 Pocheasang Palace raid</td></tr>
+<tr><th>Battles</th><td><a href="/events/2008-pocheasang-palace-raid">2008 Pocheasang Palace raid</a></td></tr>
 </table>
 </aside>
 

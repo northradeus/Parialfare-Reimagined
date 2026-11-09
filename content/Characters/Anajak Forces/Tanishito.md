@@ -5,13 +5,13 @@
 <tr><th>Title</th><td>Tanishito</td></tr>
 <tr><th>Subtitle</th><td>Anajak Forces assassin</td></tr>
 <tr><th>Role</th><td>Assassin</td></tr>
-<tr><th>Affiliation</th><td>Anajak Forces</td></tr>
+<tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
 <tr><th>Grade</th><td>S (final entry only)</td></tr>
-<tr><th>Ethnicity</th><td>Lurkish</td></tr>
+<tr><th>Ethnicity</th><td>Thaiphonese and <a href="/locations/countries/lurkinsberg">Lurkish</a></td></tr>
 <tr><th>Age</th><td>Adult (exact age not recorded)</td></tr>
 <tr><th>Pipeline</th><td>Facility-raised</td></tr>
-<tr><th>Origin</th><td>Site-29</td></tr>
-<tr><th>Partner</th><td>Nogo</td></tr>
+<tr><th>Origin</th><td><a href="/locations/site-29">Site-29</a></td></tr>
+<tr><th>Partner</th><td><a href="/characters/anajak-forces/nogo">Nogo</a></td></tr>
 </table>
 </aside>
 
@@ -20,9 +20,9 @@
 
 
 
-**Tanishito** is an adult assassin of the [Anajak Forces](factions/anajak-forces), graded S. She is Lurkish. She was raised and trained inside a secret facility ([Site-29](locations/site-29)) and was handpicked by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) together with her partner, [Nogo](characters/anajak-forces/nogo). She was also raised as a spy.
+**Tanishito** is an adult assassin of the [Anajak Forces](factions/anajak-forces), graded S. She is of mixed Thaiphonese and [Lurkish](locations/countries/lurkinsberg) heritage. She was raised and trained inside a secret facility ([Site-29](locations/site-29)) and was handpicked by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) together with her partner, [Nogo](characters/anajak-forces/nogo). She was also raised as a spy.
 
-Her recorded description is pale skin and smooth, silky silver hair. This description is shared almost word for word with Nogo's, and the two records do not separate them by appearance.
+Her recorded description is pale skin and smooth, silky silver hair, a distinctive appearance attributed to her mixed Thaiphonese and Lurkish parentage. This description is shared almost word for word with Nogo's, and the two records do not separate them by appearance.
 
 ## 1. Facility record
 

@@ -7,12 +7,12 @@
 <tr><th>Company Type</th><td>Private</td></tr>
 <tr><th>Industry</th><td>Private security services contractor</td></tr>
 <tr><th>Founded</th><td>1998</td></tr>
-<tr><th>Headquarters</th><td>Pocheasang, Ironland</td></tr>
-<tr><th>Area Served</th><td>Kingdom of the Ai'ron Land</td></tr>
+<tr><th>Headquarters</th><td><a href="/locations/pocheasang">Pocheasang</a>, <a href="/locations/countries/ironland">Ironland</a></td></tr>
+<tr><th>Area Served</th><td><a href="/locations/countries/ironland">Kingdom of the Ai'ron Land</a></td></tr>
 <tr><th>Services</th><td>Static protection, access control, close-quarter security</td></tr>
-<tr><th>Parent</th><td>VISTA</td></tr>
+<tr><th>Parent</th><td><a href="/factions/vista">VISTA</a></td></tr>
 <tr><th>Notable Contract</th><td>Inner-complex security, Pocheasang palace complex</td></tr>
-<tr><th>Notable Engagement</th><td>2008 Pocheasang Palace raid</td></tr>
+<tr><th>Notable Engagement</th><td><a href="/events/2008-pocheasang-palace-raid">2008 Pocheasang Palace raid</a></td></tr>
 </table>
 </aside>
 

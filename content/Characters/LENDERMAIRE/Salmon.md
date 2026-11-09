@@ -5,7 +5,7 @@
 <tr><th>Title</th><td>Salarean "Salmon</td></tr>
 <tr><th>Subtitle</th><td>Shock trooper of LENDERMAIRE; Lurkish naval veteran</td></tr>
 <tr><th>Ethnicity</th><td>Lurkish</td></tr>
-<tr><th>Unit</th><td>LENDERMAIRE</td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Former Unit</th><td>Lurkish Navy</td></tr>
 <tr><th>Earlier Role</th><td>Hard to Kill</td></tr>
 <tr><th>Background</th><td>Coastal guard and navy</td></tr>

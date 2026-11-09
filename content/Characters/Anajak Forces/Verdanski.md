@@ -3,44 +3,40 @@
 <img src="assets/verdanski.png" alt="Verdanski" />
 <table>
 <tr><th>Title</th><td>Verdanski</td></tr>
-<tr><th>Subtitle</th><td>A+ facility-trained member of Anajak Forces</td></tr>
+<tr><th>Subtitle</th><td>A+ facility-trained operative of Anajak Forces</td></tr>
 <tr><th>Codename</th><td>Verdanski</td></tr>
+<tr><th>Ethnicity</th><td>Cladish and Thaiphonese</td></tr>
 <tr><th>Grade</th><td>A+</td></tr>
 <tr><th>Training</th><td>Facility trained in combat</td></tr>
-<tr><th>Unit</th><td>Anajak Forces</td></tr>
+<tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
+<tr><th>Role</th><td>Unestablished</td></tr>
 </table>
 </aside>
 
 
 # Verdanski
 
+**Verdanski** is an A+ operative of [Anajak Forces](factions/anajak-forces), facility-trained in combat. He is of mixed Cladish and Thaiphonese heritage, an uncommon lineage within a task force whose core membership is predominantly [Lurkish](locations/countries/lurkinsberg).
 
+## 1. Heritage and training
 
-**Verdanski** is an A+ member of [Anajak Forces](factions/anajak-forces), facility trained in combat. His file rests on two facts — a grade and a training origin — and the question of why he was placed in Anajak.
+Verdanski is recorded as both Cladish and Thaiphonese, a rare combination in the region. How an individual of partly Cladish descent entered an institutional facility pipeline designed to counter Cladish insurgent formations is not established in the record.
 
-## Training and grade
+He was trained in combat by a facility and graded **A+**. Which facility trained him—whether [Site-29](locations/site-29) or another installation—is not recorded, nor is his age or prior service.
 
-He was trained in combat by a facility and graded **A+**. Which facility is not established, nor is his age, ethnicity or any prior service.
+## 2. Role within Anajak
 
-## Placement
-
-No in-universe reason for Verdanski's placement in Anajak is recorded. The only explanation attached to him is an out-of-universe one: earlier drafts of the character were Lurkish, and that earlier characterization is why he was made part of a force whose members are mostly Lurkish.
-
-If that earlier characterization no longer holds, nothing recorded now accounts for his presence in the force.
-
-## Relation to Verdansk
-
-Verdanski is a separate entity from Verdansk of [LENDERMAIRE](factions/lendermaire). Whether the two are variants is unresolved, and no facts are shared between them.
+Although Verdanski holds an A+ combat grade and is registered on the [Anajak Forces](factions/anajak-forces) roster, his specific operational specialty and battlefield role within the task force are not established.
 
 ## Unresolved
 
-- **Variant status:** whether he is a variant of LENDERMAIRE's Verdansk.
-- **Placement reason:** the only explanation for his presence in Anajak is out-of-universe.
-- **Background:** unestablished.
+- **Operational role:** his specific function and position within Anajak Forces remain unestablished.
+- **Recruitment and intake:** how a Cladish-Thaiphonese operative entered the facility pipeline and was placed into Anajak.
+- **Facility of origin:** which facility trained and graded him.
+- **Background:** age, personal history, and any prior service before Anajak.
 
 ## See Also
 
 * [Anajak Forces](factions/anajak-forces)
-* Verdansk
-* [LENDERMAIRE](factions/lendermaire)
+* Cladish
 * [Anajak grading system](lore/anajak-grading-system)

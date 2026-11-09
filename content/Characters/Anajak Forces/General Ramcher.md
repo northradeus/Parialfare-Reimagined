@@ -4,7 +4,7 @@
 <tr><th>Title</th><td>General Ramcher</td></tr>
 <tr><th>Subtitle</th><td>Commander of Anajak Forces</td></tr>
 <tr><th>Rank</th><td>General</td></tr>
-<tr><th>Command</th><td>Anajak Forces</td></tr>
+<tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a>, <a href="/factions/global-intervention-coalition-(gic)">Global Intervention Coalition (GIC)</a></td></tr>
 </table>
 </aside>
 
@@ -17,7 +17,7 @@
 
 ## Command functions
 
-The commander of Anajak organises missions, coordinates air strikes, calls reinforcements, and directs where the force will deploy. Taken together these describe a post that sits at the junction of planning, air support and movement — the authority to commit the force, rather than to fight alongside it.
+The commander of Anajak organises missions, coordinates air strikes, calls reinforcements, and directs where the force will deploy. Taken together these describe a post that sits at the junction of planning, air support and movement — the authority to commit the force, rather than to fight alongside it. To provide the task force's strike aviation, Ramcher transferred the Thaiphonese fighter pilot [Takahashi](characters/anajak-forces/takahashi) ("Sahara") into Anajak from the inactive [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) roster.
 
 No subordinate commander is named, and no second-in-command is recorded. Whether Ramcher is the sole authority between Anajak's political sponsors and its operators is unresolved.
 
@@ -39,3 +39,4 @@ He is also not recorded as belonging to any of Anajak's three recruitment pipeli
 * [Anajak Forces](factions/anajak-forces)
 * [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic))
 * [Noradus](characters/vista/noradus)
+* [Takahashi](characters/anajak-forces/takahashi)

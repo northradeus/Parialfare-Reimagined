@@ -5,10 +5,10 @@
 <tr><th>Title</th><td>Tarnished</td></tr>
 <tr><th>Subtitle</th><td>Former ITF special task force leader, volunteer of Anajak Forces</td></tr>
 <tr><th>Codename</th><td>Tarnished</td></tr>
-<tr><th>Former Role</th><td>Special task force leader under ITF</td></tr>
-<tr><th>Unit</th><td>Anajak Forces</td></tr>
+<tr><th>Former Role</th><td>Special task force leader under <a href="/factions/ironish-task-force-(itf)">ITF</a></td></tr>
+<tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
 <tr><th>Entry</th><td>Volunteer</td></tr>
-<tr><th>Soldiers</th><td>Pich, Kody, Shadow</td></tr>
+<tr><th>Soldiers</th><td><a href="/characters/anajak-forces/pich">Pich</a>, Kody, Shadow</td></tr>
 </table>
 </aside>
 
@@ -33,7 +33,7 @@ No grade is recorded for him. Whether a volunteer entering with a retinue is gra
 
 ## His soldiers
 
-He volunteered alongside Pich, Kody, Shadow, and many more. The three named are recorded only as his; nothing about their roles, grades or backgrounds is established, and the remainder of the group is unnumbered.
+He volunteered alongside [Pich](characters/anajak-forces/pich), Kody, Shadow, and many more. Pich is recorded as an Encorean close-combat specialist and field interpreter seconded from the Encorean Royal Army; Kody and Shadow are recorded only by name, and the remainder of the group is unnumbered.
 
 Whether the soldiers volunteered individually or followed Tarnished as his command is not stated. The distinction matters: a following is a faction inside the force, while individual volunteers are simply recruits who arrived together.
 
@@ -48,5 +48,6 @@ Whether the soldiers volunteered individually or followed Tarnished as his comma
 
 * [Anajak Forces](factions/anajak-forces)
 * [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))
+* [Pich](characters/anajak-forces/pich)
 * [Alpha-01](factions/alpha-01)
 * [Anajak grading system](lore/anajak-grading-system)

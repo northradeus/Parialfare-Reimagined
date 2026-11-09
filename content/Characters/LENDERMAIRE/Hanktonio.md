@@ -5,7 +5,7 @@
 <tr><th>Title</th><td>Hanktonio</td></tr>
 <tr><th>Subtitle</th><td>Second-in-command of Konish's Group and LENDERMAIRE</td></tr>
 <tr><th>Codename</th><td>The Second Hand</td></tr>
-<tr><th>Factions</th><td>Konish's Group, LENDERMAIRE</td></tr>
+<tr><th>Factions</th><td><a href="/factions/konish's-group">Konish's Group</a>, <a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Rank</th><td>Second-in-command</td></tr>
 </table>
 </aside>

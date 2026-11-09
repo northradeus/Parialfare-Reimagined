@@ -3,7 +3,7 @@
 <table>
 <tr><th>Title</th><td>Anajak grading system</td></tr>
 <tr><th>Subtitle</th><td>Grading of Anajak Forces personnel</td></tr>
-<tr><th>Applies To</th><td>Anajak Forces</td></tr>
+<tr><th>Applies To</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
 <tr><th>Grades Observed</th><td>S+, S, A+, A</td></tr>
 </table>
 </aside>

@@ -5,7 +5,7 @@
 <tr><th>Title</th><td>Medic</td></tr>
 <tr><th>Subtitle</th><td>Combat medic of LENDERMAIRE</td></tr>
 <tr><th>Ethnicity</th><td>Cladish</td></tr>
-<tr><th>Unit</th><td>LENDERMAIRE</td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Prior Allegiance</th><td>Another Cladish faction</td></tr>
 </table>
 </aside>

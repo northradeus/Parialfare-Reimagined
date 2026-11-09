@@ -13,13 +13,13 @@
 <tr><th>Religion</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Demonym</th><td>Aesterian</td></tr>
 <tr><th>Government Type</th><td>Corporate Technocracy / City-State</td></tr>
-<tr><th>Head Of State</th><td>Northrad (Architect and Founder)</td></tr>
+<tr><th>Head Of State</th><td><a href="/characters/vista/noradus">Northrad</a> (Architect and Founder)</td></tr>
 <tr><th>Head Of Government</th><td>New Aester City Council</td></tr>
 <tr><th>Legislature</th><td><span class="val-tbd">TBD</span></td></tr>
-<tr><th>Military</th><td>Ironish Task Force (ITF) (Garrison)</td></tr>
+<tr><th>Military</th><td><a href="/factions/ironish-task-force-(itf)">Ironish Task Force (ITF)</a> (Garrison)</td></tr>
 <tr><th>Area Total</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Population Estimate</th><td><span class="val-tbd">TBD</span></td></tr>
-<tr><th>Borders</th><td>Ironland (North), Ironclad DMZ (South)</td></tr>
+<tr><th>Borders</th><td><a href="/locations/countries/ironland">Ironland</a> (North), <a href="/locations/ironclad-dmz">Ironclad DMZ</a> (South)</td></tr>
 <tr><th>Currency</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Industries</th><td>Technology, Corporate Research, Defense Contracting</td></tr>
 </table>

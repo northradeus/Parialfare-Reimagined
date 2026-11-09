@@ -5,13 +5,13 @@
 <tr><th>Subtitle</th><td>Anajak Forces assassin</td></tr>
 <tr><th>Variant Of</th><td>Nolgo</td></tr>
 <tr><th>Role</th><td>Assassin</td></tr>
-<tr><th>Affiliation</th><td>Anajak Forces</td></tr>
+<tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
 <tr><th>Grade</th><td>A+ (final entry only)</td></tr>
-<tr><th>Ethnicity</th><td>Lurkish</td></tr>
+<tr><th>Ethnicity</th><td>Thaiphonese and <a href="/locations/countries/lurkinsberg">Lurkish</a></td></tr>
 <tr><th>Age</th><td>Adult (exact age not recorded)</td></tr>
 <tr><th>Pipeline</th><td>Facility-raised</td></tr>
-<tr><th>Origin</th><td>Site-29</td></tr>
-<tr><th>Partner</th><td>Tanishito</td></tr>
+<tr><th>Origin</th><td><a href="/locations/site-29">Site-29</a></td></tr>
+<tr><th>Partner</th><td><a href="/characters/anajak-forces/tanishito">Tanishito</a></td></tr>
 </table>
 </aside>
 
@@ -20,11 +20,11 @@
 
 
 
-**Nogo** is an adult assassin of the [Anajak Forces](factions/anajak-forces), graded A+. He is Lurkish. He was raised and trained inside a secret facility ([Site-29](locations/site-29)) alongside his assigned partner, [Tanishito](characters/anajak-forces/tanishito), and was handpicked by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) together with her. He was also raised as a spy.
+**Nogo** is an adult assassin of the [Anajak Forces](factions/anajak-forces), graded A+. Like [Tanishito](characters/anajak-forces/tanishito), he is of mixed Thaiphonese and [Lurkish](locations/countries/lurkinsberg) heritage. He was raised and trained inside a secret facility ([Site-29](locations/site-29)) alongside his assigned partner, Tanishito, and was handpicked by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) together with her. He was also raised as a spy.
 
 *Not to be confused with Nolgo, a Purgatory character. Nogo is a variant of that name, the two are separate entities, and no facts are shared.*
 
-His recorded description matches Tanishito's. It is kept in her article and not repeated here.
+His recorded description matches Tanishito's and reflects the same mixed Thaiphonese and Lurkish heritage. It is kept in her article and not repeated here.
 
 ## 1. Facility record
 
