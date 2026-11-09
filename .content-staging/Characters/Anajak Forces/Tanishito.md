@@ -55,7 +55,7 @@ She has met [Pepper](characters/anajak-forces/pepper) once, in person.
 
 - **Facility:** confirm [Site-29](locations/site-29) is the facility.
 - **Background:** anything beyond the biography line.
-- **Northrad's interest:** whether the crush is current canon or an older draft, and how she regards him.
+- **Northrad's interest:** whether this personal interest is current canon or an older draft, and how she regards him.
 - **ITF relationship:** whether the ITF selected her from the facility, bought her through it, or has some other arrangement.
 - **Alpha-01 membership:** whether she is in the classified core. Never stated.
 - **The 'Ghost' rumor:** whether she knows she is called this, and whether Anajak uses the name.

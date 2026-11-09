@@ -21,11 +21,12 @@ echo ================================================================
 echo.
 echo    [1] Start Bridge         (new window - agent server)
 echo    [2] Test Local           (new window - serve on :8080)
-echo    [3] Promote              (apply pending request)
-echo    [4] Deploy               (build + push to GitHub Pages)
-echo    [5] Open Vault folder
-echo    [6] Open Quartz folder
-echo    [7] Open Website
+echo    [3] Staging Preview      (preview changes without promoting)
+echo    [4] Promote              (apply pending request)
+echo    [5] Deploy               (build + push to GitHub Pages)
+echo    [6] Open Vault folder
+echo    [7] Open Quartz folder
+echo    [8] Open Website
 echo.
 echo    [0] Exit
 echo.
@@ -33,11 +34,12 @@ set "CHOICE="
 set /p "CHOICE=Select: "
 if "%CHOICE%"=="1" goto DO_BRIDGE
 if "%CHOICE%"=="2" goto DO_TESTLOCAL
-if "%CHOICE%"=="3" goto DO_PROMOTE
-if "%CHOICE%"=="4" goto DO_DEPLOY
-if "%CHOICE%"=="5" goto DO_VAULT
-if "%CHOICE%"=="6" goto DO_QUARTZ
-if "%CHOICE%"=="7" goto DO_WEB
+if "%CHOICE%"=="3" goto DO_PREVIEW
+if "%CHOICE%"=="4" goto DO_PROMOTE
+if "%CHOICE%"=="5" goto DO_DEPLOY
+if "%CHOICE%"=="6" goto DO_VAULT
+if "%CHOICE%"=="7" goto DO_QUARTZ
+if "%CHOICE%"=="8" goto DO_WEB
 if "%CHOICE%"=="0" goto EXIT
 goto MENU
 
@@ -66,6 +68,19 @@ goto MENU
 
 :DO_TESTLOCAL
 start "Nolheim Test Local" cmd /k "%~dp0Test-Local.bat"
+goto MENU
+
+:DO_PREVIEW
+echo.
+echo Running Staging Preview...
+echo.
+call "%~dp0Preview.bat"
+echo.
+echo ----------------------------------------------------------------
+echo   Preview session ended.
+echo   (Changes are staged. Run [4] Promote to make them official.)
+echo ----------------------------------------------------------------
+pause >nul
 goto MENU
 
 :DO_PROMOTE

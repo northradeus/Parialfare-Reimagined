@@ -88,7 +88,7 @@ He is its president and architect. His relationship with its founding members is
 Assigned adjutant and caretaker (see above).
 
 ### [Tanishito](characters/anajak-forces/tanishito)
-Whether Northrad's personal interest in Tanishito, an adult S-grade assassin of [Anajak Forces](factions/anajak-forces), is unresolved.
+The nature of Northrad's personal interest in Tanishito, an adult S-grade assassin of [Anajak Forces](factions/anajak-forces), is unresolved.
 
 ### [Lykor](characters/lendermaire/samsara-lykor)
 No established connection. The shared name comes from the naming custom.

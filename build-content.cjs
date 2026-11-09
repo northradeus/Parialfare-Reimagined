@@ -25,6 +25,57 @@ if (!fs.existsSync(sourceAssets) || !fs.statSync(sourceAssets).isDirectory()) {
     console.warn('[assets] Continuing without copied image assets.');
 }
 
+// Integrity check: Publish/ must match the latest snapshot.
+function validatePublishIntegrity() {
+    const publishRoot = path.dirname(sourceDir);
+    const vaultRoot = path.dirname(publishRoot);
+    const snapshotsDir = path.join(vaultRoot, 'Archives', 'Publish snapshots');
+    if (!fs.existsSync(snapshotsDir)) return;
+    const snaps = fs.readdirSync(snapshotsDir).filter(e => /^v\d{3}-/.test(e)).sort().reverse();
+    if (snaps.length === 0) return;
+    const latestSnapName = snaps[0];
+    const latestSnapDir = path.join(snapshotsDir, latestSnapName);
+    function walk(dir) {
+        const result = new Map();
+        if (!fs.existsSync(dir)) return result;
+        const stack = [''];
+        while (stack.length) {
+            const rel = stack.pop();
+            const full = path.join(dir, rel);
+            let entries;
+            try { entries = fs.readdirSync(full); } catch (e) { continue; }
+            for (const entry of entries) {
+                const entryFull = path.join(full, entry);
+                const entryRel = rel ? rel + '/' + entry : entry;
+                const stat = fs.statSync(entryFull);
+                if (stat.isDirectory()) stack.push(entryRel);
+                else result.set(entryRel, stat.size);
+            }
+        }
+        return result;
+    }
+    const current = walk(publishRoot);
+    const snapshot = walk(latestSnapDir);
+    const diffs = [];
+    for (const [rel, size] of current) {
+        if (!snapshot.has(rel)) diffs.push(rel + ' (added since snapshot)');
+        else if (snapshot.get(rel) !== size) diffs.push(rel + ' (changed since snapshot)');
+    }
+    for (const rel of snapshot.keys()) if (!current.has(rel)) diffs.push(rel + ' (removed since snapshot)');
+    if (diffs.length === 0) return;
+    if (process.env.NOLHEIM_FORCE_BUILD === '1') {
+        console.warn('[integrity] WARNING: Publish/ differs from ' + latestSnapName + '. Bypassing (NOLHEIM_FORCE_BUILD=1).');
+        for (const d of diffs) console.warn('  ' + d);
+        return;
+    }
+    console.error('[integrity] ERROR: Publish/ differs from latest snapshot ' + latestSnapName + ':');
+    for (const d of diffs) console.error('  ' + d);
+    console.error('[integrity] Use Promote.bat, or set NOLHEIM_FORCE_BUILD=1 to bypass.');
+    process.exit(1);
+}
+
+validatePublishIntegrity();
+
 if (fs.existsSync(destDir)) {
     fs.rmSync(destDir, { recursive: true, force: true });
 }

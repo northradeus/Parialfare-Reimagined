@@ -9,7 +9,7 @@ const SNAPSHOTS_DIR = path.join(VAULT_ROOT, 'Archives', 'Publish snapshots');
 const VAULT_LOG = path.join(PUBLISH_ROOT, 'LOG.md');
 const SITE_LOG = path.join(PUBLISH_DIR, 'Update Log.md');
 const REQUEST = path.join(__dirname, 'Promote-Request.json');
-const SNAPSHOT_THRESHOLD = 3;
+const SNAPSHOT_THRESHOLD = 1;
 
 function fail(msg) {
     console.error('');
@@ -109,7 +109,7 @@ function main() {
     const snapDir = path.join(SNAPSHOTS_DIR, snapshotName);
     const snapshotStatus = willSnapshot ? (snapshotName + ' (created)') : 'skipped (below threshold)';
 
-    const vaultEntry = '\n## ' + version + ' - ' + dateISO + '\n\n**Snapshot:** ' + snapshotStatus + '\n**Files: ' + req.files.length + '**\n**Site log:** ' + version + ' published.\n\n' + req.log_summary.trim() + '\n';
+    const vaultEntry = '\n## ' + version + ' — ' + dateISO + '\n\n**Snapshot:** ' + snapshotStatus + '\n**Files: ' + req.files.length + '**\n**Site log:** ' + version + ' published.\n\n' + req.log_summary.trim() + '\n';
     let logContent = fs.readFileSync(VAULT_LOG, 'utf-8');
     const sepMatch = logContent.match(/\n---\n/);
     if (!sepMatch) fail('Vault log has no --- separator');
@@ -118,7 +118,7 @@ function main() {
     fs.writeFileSync(VAULT_LOG, logContent);
     console.log('  log       ' + version + ' prepended to Publish/LOG.md');
 
-    const siteEntry = '## ' + version + ' - ' + dateReadable + '\n\n' + req.site_log.trim() + '\n\n';
+    const siteEntry = '## ' + version + ' \u2014 ' + dateReadable + '\n\n' + req.site_log.trim() + '\n\n';
     let siteContent = fs.readFileSync(SITE_LOG, 'utf-8');
     const firstV = siteContent.match(/^## v\d{3}/m);
     if (!firstV) fail('Site log has no ## vNNN heading to insert before');
