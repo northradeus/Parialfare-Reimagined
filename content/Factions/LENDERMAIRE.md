@@ -161,8 +161,7 @@ Open-source intelligence and [VISTA](factions/vista) reports contain several inc
 *   [Formation of LENDERMAIRE](events/formation-of-lendermaire)
 *   [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid)
 *   [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined))
-*   [Lykor](characters/lendermaire/samsara-lykor)
-*   [Thirteenth Member of LENDERMAIRE](characters/lendermaire/samsara-lykor)
+*   [Lykor (Thirteenth Member)](characters/lendermaire/samsara-lykor)
 *   [Konish's Group](factions/konish's-group)
 
 ## 11. References

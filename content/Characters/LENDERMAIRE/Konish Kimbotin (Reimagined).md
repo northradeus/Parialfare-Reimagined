@@ -51,7 +51,7 @@ Kimbotin is a staunch opponent of the [Maire O'Mare](factions/maire-o'mare-(2008
 
 Kimbotin commands a substantial military force in Ironclad. Intelligence reports indicate his forces possess aerial capabilities and multiple anti-aircraft systems, evidenced by the failure of opposing forces to conduct aerial flyovers of his territory.[^3]
 
-Unconfirmed intercepts of Konish Group communications have referenced the Cladish Armed Forces (CAF), leading ITF intelligence to hypothesize that Kimbotin is attempting to unify the region's disparate militias under a single command structure.[^1] VISTA maintains limited intelligence regarding the full extent of his military assets.
+Unconfirmed intercepts of Konish's Group communications have referenced the Cladish Armed Forces (CAF), leading ITF intelligence to hypothesize that Kimbotin is attempting to unify the region's disparate militias under a single command structure.[^1] VISTA maintains limited intelligence regarding the full extent of his military assets.
 
 ## Political posture
 

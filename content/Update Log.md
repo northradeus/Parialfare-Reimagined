@@ -12,6 +12,10 @@
 
 This page records changes to the encyclopedia. Entries appear newest first. Version numbers correspond to the internal publication register and have no in-universe meaning.
 
+## v002 - 9 November 2026
+
+Small corrections to three articles. The name of Konish's Group is now written consistently across the archive. A note in Noradus's relationship with Tanishito has been reworded for clarity. A duplicate reference in LENDERMAIRE's cross-reference list has been merged.
+
 ## v001 — 9 November 2026
 
 The encyclopedia opens. Nothing here is a change to the record — this is where the record begins.
