@@ -21,5 +21,6 @@ A curated index of the geographic entities in the region.
 - [Ironclad DMZ](locations/ironclad-dmz) — The ungoverned demilitarised zone.
 
 ## Cities & Sites
+- [Area-31](locations/area-31) — Brutalist citadel and air base in Shaiken.
 - [Pocheasang](locations/pocheasang) — Capital of Ironland.
 - [Site-29](locations/site-29) — The classified training installation.

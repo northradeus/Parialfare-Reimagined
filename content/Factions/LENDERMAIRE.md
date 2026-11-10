@@ -59,7 +59,7 @@ The group consists of thirteen core members under Kimbotin, supported by additio
 | [Markless](characters/lendermaire/markless) | Breacher | Former Ironish Special Forces |
 | [Andrew](characters/lendermaire/andrew) | Assaulter | Former Ironish Special Forces. Place among the thirteen unconfirmed |
 | [Medic](characters/lendermaire/medic) | Combat Medic | Previously served another Cladish faction |
-| [Salmon](characters/lendermaire/salmon) | Shock Trooper | Former coast guard and navy |
+| [Salmon](characters/lendermaire/salmon) | Shock Trooper | Former coast guard and navy; killed in action by [Sahara](characters/anajak-forces/takahashi) |
 | [Gunter](characters/lendermaire/gunter) | Engineer & Sapper | Role split with Grunt unresolved |
 | [Lykor](characters/lendermaire/samsara-lykor) | Cleanup, backup sniper | Thirteenth member. Identity concealed from the public |
 

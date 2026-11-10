@@ -4,13 +4,14 @@
 <table>
 <tr><th>Title</th><td>Konish's Group</td></tr>
 <tr><th>Subtitle</th><td>Transnational Cladish umbrella coalition</td></tr>
-<tr><th>Also Known As</th><td>Konish Group</td></tr>
+<tr><th>Also Known As</th><td>Konish Group, Konisharic Reign</td></tr>
 <tr><th>Founder</th><td><a href="/characters/lendermaire/konish-kimbotin-(reimagined)">Konish Kimbotin</a></td></tr>
 <tr><th>Dates Of Operation</th><td>2007–present</td></tr>
 <tr><th>Headquarters</th><td>Southern <a href="/locations/countries/ironclad">Ironclad</a> (De facto)</td></tr>
 <tr><th>Active Regions</th><td><a href="/locations/ironclad-dmz">Ironclad DMZ</a>, <a href="/locations/countries/ironland">Kingdom of the Ai'ron Land</a></td></tr>
 <tr><th>Ideology</th><td>Cladish Nationalism, Warlordism, Information Warfare</td></tr>
 <tr><th>Slogan</th><td>"Let them taste steel."</td></tr>
+<tr><th>Current Status</th><td>Active (designated a destabilizing threat by <a href="/factions/vista">VISTA</a>)</td></tr>
 <tr><th>Size</th><td>Multiple autonomous militias (Estimated)</td></tr>
 <tr><th>Part Of</th><td>Independent coalition</td></tr>
 <tr><th>Allies</th><td><a href="/factions/lendermaire">LENDERMAIRE</a>, CAF (alleged)</td></tr>
@@ -30,7 +31,9 @@ The organization gained global prominence following the [2008 Pocheasang Palace 
 
 ## 1. Name
 
-The organization is most commonly referred to in English as **Konish's Group** or the **Konish Group**. Within its internal communications and among its constituent militias, it is often referred to simply as "the Group" or by the name of its leader. It has no formal native name distinct from this identifier. Unlike a traditional state or military junta, the group does not claim a specific geographic title, operating instead as a networked coalition.[^2]
+The organization is most commonly referred to in English as **Konish's Group** or the **Konish Group**. Within its internal communications and among its constituent militias, it is often referred to simply as "the Group" or by the name of its leader. It has no formal native name distinct from this identifier. Unlike a traditional state or military junta, the group does not claim a specific geographic title in public declarations, operating instead as a networked coalition.[^2]
+
+In the official vocabulary of the [Kingdom of Ai'ron](locations/countries/ironland), state communiqués, legislative debates, and gendarmerie intelligence designate the coalition and its territorial domain as the **"Konisharic Reign"**. In line with Ai'ron's adjectival naming customs, the term is employed by state institutions to characterize the warlord's control as a despotic, ambient regional condition rather than recognizing the existence of a sovereign Cladish state.
 
 ## 2. Purpose and Strategy
 
@@ -44,6 +47,12 @@ The group's primary strategic objective is the acquisition and control of inform
 
 The group functions as a decentralized umbrella organization. While Kimbotin serves as the Supreme Warlord, the constituent militias that make up the Konish Group operate with substantial autonomy, managing their own local territories, taxation, and conscription within the Ironclad DMZ.[^2] The coalition provides a degree of mutual defense and shared intelligence, allowing smaller warlords to pool resources against external threats like the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) or [Anajak Forces](factions/anajak-forces).[^1]
 
+### 2.3 The Protected Society and Internal State
+
+While external intelligence bodies classify Konish's Group merely as an opportunistic network of autonomous warlords, the organization functions internally as a self-sustaining society and covert proto-state. Beneath the frontline military umbrella, the Group administers civic, logistical, and judicial institutions that answer directly to Kimbotin.
+
+In the deep southern districts of Ironclad, the coalition acts as a protective shield for thriving, settled civilian populations. These communities remain undocumented by outside powers: international media, academic researchers, and [VISTA](factions/vista) observers cannot access the interior without breaching the heavily militarized perimeter maintained by Konish's forces.
+
 ## 3. Organisation and Governance
 
 ### 3.1 Leadership
@@ -56,9 +65,19 @@ The Konish Group commands a substantial military force, reportedly possessing ae
 
 The coalition is primarily funded through the capture and reuse of military equipment from the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) and the taxation of local populations in the territories it controls. Additionally, the group has been linked to raids on corporate entities and government buildings, with the proceeds funding frontline operations.[^1][^4] The full scope of its financial network remains unknown to international observers.
 
-## 4. Territorial Claims
+## 4. Territorial Claims and Fortifications
 
-Konish's Group does not claim a formal, unified state. Its territorial holdings are limited to the southern districts of the [Ironclad DMZ](locations/ironclad-dmz), a region without a central government or unified security force. The group's influence, however, extends far beyond this territory through its network of contacts and its ability to project force via [LENDERMAIRE](factions/lendermaire). The group has been reported to move personnel and materials in and out of the [Kingdom of the Ai'ron Land](locations/countries/ironland) with relative ease, exploiting the porous borders of the DMZ.[^2]
+Konish's Group does not claim a formal, recognized nation-state in international forums, but exercises de facto sovereign control over the southern and central districts of the [Ironclad DMZ](locations/ironclad-dmz).
+
+### 4.1 Area-31 (Shaiken)
+
+The group's northern perimeter along the border with [New Aester](locations/countries/new-aester) is anchored by **Area-31**, occupying the historic redoubt of Shaiken. Area-31 is the most technologically advanced and heavily fortified installation across all of Konish's Group holdings.
+
+Constructed on the scale of a small city with monolithic brutalist concrete architecture, Area-31 houses the densest concentration of anti-aircraft missile systems in the region, establishing a high-density air-defense umbrella that accounts for repeated foreign surveillance failures.[^3] The facility also contains hardened deployment hangars and runways for the coalition's secret supersonic fighter jets. The defensive mass and air-superiority capabilities of Area-31 represent the primary strategic obstacle that delayed New Aester's planned Southern Frontier Expansion.
+
+### 4.2 The Southern Interior
+
+Beyond Area-31 and the frontline trench networks lies the sheltered southern interior, where civilian settlements and municipal governance operate under Kimbotin's central authority. The Group has been reported to move personnel and materials in and out of the [Kingdom of the Ai'ron Land](locations/countries/ironland) with relative ease, exploiting the porous borders of the DMZ while keeping the southern civilian core inaccessible to external reconnaissance.[^2]
 
 ## 5. Designation as a destabilizing organization
 

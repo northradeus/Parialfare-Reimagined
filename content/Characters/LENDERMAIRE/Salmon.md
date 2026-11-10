@@ -4,7 +4,8 @@
 <table>
 <tr><th>Title</th><td>Salarean "Salmon</td></tr>
 <tr><th>Subtitle</th><td>Shock trooper of LENDERMAIRE; Lurkish naval veteran</td></tr>
-<tr><th>Ethnicity</th><td>Lurkish</td></tr>
+<tr><th>Ethnicity</th><td><a href="/locations/countries/lurkinsberg">Lurkish</a></td></tr>
+<tr><th>Living Status</th><td>Killed in action (airstrike by <a href="/characters/anajak-forces/takahashi">Sahara</a>)</td></tr>
 <tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Former Unit</th><td>Lurkish Navy</td></tr>
 <tr><th>Earlier Role</th><td>Hard to Kill</td></tr>
@@ -60,16 +61,25 @@ Salmon's physical resilience is recorded and is the origin of his earlier epithe
 
 Salmon is listed in the household as a shock trooper. When the stories are not being told, he is recorded on the household's night watch. The record does not state whether any member has discussed the stories outside Salmon's presence. It does not state whether Kimbotin has been present for a telling.
 
+## 6. Death
+
+Salmon is killed in action during a post-2008 engagement by an airstrike flown by the [Anajak Forces](factions/anajak-forces) strike pilot [Takahashi](characters/anajak-forces/takahashi) (codename **"Sahara"**). He is the first confirmed fatality among LENDERMAIRE's thirteen core members.
+
+The record notes the coincidence of the two names without attributing intent to either side: the sailor who took the name of the fish held by Lurkish naval tradition to be a bad omen, and who was recorded in early material as "Hard to Kill," was killed from the air by a pilot operating under the Lurkish word for a giant sea bird.
+
+At the time of his death, his administrative pairing in the Lurkish Navy remains *unmatched*, and his inquiries into the fate of his ship-brother Kalmon end without a recorded answer. Within the household, the four Lurkish naval stories cease with his death, leaving [Lykor](characters/lendermaire/samsara-lykor) as the only remaining Lurkish member under the roof.
+
 ## Unresolved
 
+- **The airstrike:** the date, location, and operation in which Takahashi's strike killed him.
 - **The sinking:** the location, circumstances, and cause of the sinking that left Salmon the sole survivor of his ship.
-- **Kalmon's status:** whether the ship-brother is alive. Salmon has stated, on at least one recorded occasion, that he does not accept the Navy's finding. What happened to Kalmon beyond his loss at sea is not recorded.
+- **Kalmon's status:** whether the ship-brother is alive. Salmon stated, on at least one recorded occasion, that he did not accept the Navy's finding. What happened to Kalmon beyond his loss at sea is not recorded.
 - **What Salmon witnessed:** whether he was on watch at the time of the sinking, and what he saw. Not recorded.
 - **The reassignment:** whether Salmon declined the offer formally or never responded.
 - **The name:** when he adopted the *-mon* suffix, and when Salmon replaced Salarean in the record.
 - **The recruitment:** how Kimbotin found Salmon, and why he chose him.
-- **The inquiries:** what answers Salmon has received, and how the published lists reach the household.
-- **The audience:** whether Kimbotin has been present for any telling of the stories.
+- **The inquiries:** what answers Salmon received before his death, and how the published lists reached the household.
+- **The audience:** whether Kimbotin was ever present for a telling of the stories.
 
 ## See Also
 
@@ -77,3 +87,5 @@ Salmon is listed in the household as a shock trooper. When the stories are not b
 * [Konish's Group](factions/konish's-group)
 * [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined))
 * [Samsara Lykor](characters/lendermaire/samsara-lykor)
+* [Takahashi](characters/anajak-forces/takahashi)
+* [Anajak Forces](factions/anajak-forces)

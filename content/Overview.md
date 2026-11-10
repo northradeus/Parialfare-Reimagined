@@ -39,7 +39,7 @@ The world of 2008 is split between a fragile established order and an ungoverned
 
 **[Ironish Task Force (ITF)](factions/ironish-task-force-(itf))** is a private military contractor founded in 1998, headquartered in Pocheasang. It was originally contracted for static defense and close-quarter security, but during a recent coup, Northrad funded it heavily enough that it now answers largely to him. It effectively serves as his private army, guarding the brutalist edges of New Aester.
 
-The two sides mirror each other. The [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) answers [Konish's Group](factions/konish's-group) — one coalition meeting another. Beneath them, [Anajak Forces](factions/anajak-forces) answers [LENDERMAIRE](factions/lendermaire) — the task force meeting the black operations unit. Every institution has its counterpart across the line.
+The two sides mirror each other. The [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) mirrors [Konish's Group](factions/konish's-group) — one coalition meeting another. Beneath them, [Anajak Forces](factions/anajak-forces) mirrors [LENDERMAIRE](factions/lendermaire) — the task force meeting the black operations unit. Every institution has its counterpart across the line.
 
 ### The Insurgency
 

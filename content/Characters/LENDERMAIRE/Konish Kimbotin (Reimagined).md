@@ -3,12 +3,13 @@
 <img src="assets/konish.jpg" alt="Konish Kimbotin" />
 <table>
 <tr><th>Title</th><td>Konish Kimbotin</td></tr>
-<tr><th>Subtitle</th><td>Cladish warlord and founder of Konish Group</td></tr>
+<tr><th>Subtitle</th><td>Cladish-Jen warlord and founder of Konish Group</td></tr>
 <tr><th>Full Name</th><td>Konish Kimbotin</td></tr>
+<tr><th>Native Name</th><td>Kon 'aishen Kimbo 'shin</td></tr>
 <tr><th>Born</th><td>September 12, 1978</td></tr>
 <tr><th>Age</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Current Status</th><td>Alive</td></tr>
-<tr><th>Ethnicity</th><td>Cladish</td></tr>
+<tr><th>Ethnicity</th><td>Cladish, Jen</td></tr>
 <tr><th>Gender</th><td>Male</td></tr>
 <tr><th>Factions</th><td><a href="/factions/konish's-group">Konish's Group</a>, <a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Nation</th><td><a href="/locations/countries/ironclad">Ironclad</a></td></tr>
@@ -25,9 +26,24 @@
 
 
 
-**Konish Kimbotin** (born September 12, 1978) is a Cladish warlord and political figure operating in the ungoverned region of [Ironclad](locations/countries/ironclad). He is the founder and supreme commander of the umbrella coalition [Konish's Group](factions/konish's-group) and its black operations unit, [LENDERMAIRE](factions/lendermaire).[^1] Kimbotin is widely regarded as one of the most powerful warlords in the Ironclad region, and the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid) is widely cited as the foundational source of his intelligence network.
+**Konish Kimbotin** (native Cladish: *Kon 'aishen Kimbo 'shin*; shorthand alias pronounced *Knish*; born September 12, 1978) is a Cladish-Jen warlord and political figure operating in the ungoverned region of [Ironclad](locations/countries/ironclad). He is the founder and supreme commander of the umbrella coalition [Konish's Group](factions/konish's-group) and its black operations unit, [LENDERMAIRE](factions/lendermaire).[^1] Kimbotin is widely regarded as one of the most powerful warlords in the Ironclad region, and the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid) is widely cited as the foundational source of his intelligence network.
 
 Kimbotin maintains an extensive network of political and military contacts both within and outside Ironland, which he uses to fund and equip his operations. The [VISTA](factions/vista) Intelligence Agency assesses that his primary strategic weapon is information, leveraging classified materials obtained during the 2008 raid to expand his influence.[^4]
+
+## Heritage and appearance
+
+Kimbotin is of mixed Cladish and Jen descent (Cladish-Jen). His physical features reflect this dual ancestry, combining the sharp facial bone structure characteristic of the Dekish with the amber eyes and faint ginger hair associated with the Jennies. In combat and public appearances, his face is typically obscured by a combat balaclava, and he is identified in field intelligence by his dark, fur-collared Supreme Coat.
+
+External historical records compiled by Ai'ron and [VISTA](factions/vista) institutions widely treated the Jennies as having been extinguished during the Balthazar Era. The persistence of Jen lineage within the southern [Ironclad](locations/countries/ironclad) DMZ reflects the survival of traditions and ethnic groups absorbed during the era of the Deck Empire, which remained largely unrecorded due to the hazardous, ungoverned nature of the frontier.
+
+### Nomenclature and linguistic variants
+
+The warlord's name carries distinct pronunciations and grammatical forms across the region's linguistic communities:
+
+*   **Cladish ceremonial form:** In formal Cladish military phrasing, his full name is pronounced *Kon 'aishen Kimbo 'shin*.
+*   **Cladish vernacular alias:** Among frontline militias and in tactical radio transmissions, his commonly used alias *"Konish"* elides the vowel, pronounced colloquially as *"Knish"*.
+*   **Jen / Cantonese rendering (Contested):** Coastal and southern trade records frequently transcribe his patronymic into Cantonese phonology as *Kam Bou-tin Gwun-si*, associated with the traditional character compound 金寶田 冠仕 (*"Metal-Land Supreme Knight"*), or phonetically as *O-lik-si* (柯力仕). Intelligence analysts dispute whether this represents an ancestral name preserved by Jen clans or an external transcription used by regional merchants.
+*   **Ironish adjectival designation (*Konisharic*):** In the Kingdom of Ai'ron, political and administrative naming traditions modify significant adversarial figures—such as the imperial aggrandizement of Rogolf into *Rogolfenstine* or the Lurkish regional adaptation of [Noradus](characters/vista/noradus) into *Noradanski*. In Kimbotin's case, official state discourse declines to grant him a sovereign personal noun, instead converting his name into the adjective *Konisharic*. Ai'ron government and gendarmerie documentation routinely designates the insurgency as the "Konisharic threat" or "Konisharic elements," categorizing his movement as an ambient regional condition rather than a peer state authority.
 
 ## Background and rise to power
 
@@ -88,6 +104,10 @@ Various intelligence bodies have attributed several unconfirmed activities to Ki
 ## Legacy and assessment
 
 Kimbotin is widely regarded as one of the most powerful warlords in the Ironclad region.[^1] The specific end-goal of his political movement remains unclear to international observers; intelligence assessments indicate that his objectives are closely aligned with the survival and expansion of LENDERMAIRE.[^4]
+
+## Disputed
+
+- **Cantonese pronunciation and orthography:** Intercepts from southern ports record Kimbotin's patronymic under the Cantonese reading *Kam Bou-tin Gwun-si* (金寶田 冠仕). Whether this represents an authentic Jen self-designation or an external transcription used by coastal trading networks remains unverified in intelligence holdings.
 
 ## Depiction
 

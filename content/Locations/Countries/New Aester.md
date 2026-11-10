@@ -60,7 +60,9 @@ The ITF is recorded as viewing the resident population as naive, soft, and unawa
 
 New Aester sits directly between Ironland and the Ironclad DMZ. It does not touch the DMZ itself.
 
-During the events of 2008, Northrad declined a full-scale invasion of the Ironclad DMZ because open war would put New Aester on the frontline. The country has plans to expand across the South Ironclad Region.
+During the events of 2008, Northrad declined a full-scale invasion of the Ironclad DMZ because open war would put New Aester on the frontline. While the city-state maintains formal plans for a Southern Frontier Expansion to annex the South Ironclad Region, forward operations remain permanently stalled. 
+
+Directly across the southern border lies [Area-31](locations/area-31) in Shaiken—a city-scale brutalist citadel garrisoned by [Konish's Group](factions/konish's-group). Area-31 maintains the densest integrated anti-aircraft missile umbrella in the region along with deployable supersonic interceptor wings ("The Sun"). The risk of catastrophic retaliation against corporate infrastructure and [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) armored columns has kept New Aester's forces pinned behind their own brutalist perimeter walls, freezing the southern frontier in an armed standoff.
 
 ## Unresolved
 
@@ -72,6 +74,7 @@ During the events of 2008, Northrad declined a full-scale invasion of the Ironcl
 
 ## See Also
 
+- [Area-31](locations/area-31)
 - [Ironland](locations/countries/ironland)
 - [Ironclad DMZ](locations/ironclad-dmz)
 - [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))

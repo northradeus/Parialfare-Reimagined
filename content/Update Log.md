@@ -12,6 +12,16 @@
 
 This page records changes to the encyclopedia. Entries appear newest first. Version numbers correspond to the internal publication register and have no in-universe meaning.
 
+## v006 — 10 November 2026
+
+This major expansion brings extensive new intelligence across the southern theatre, the Ironclad frontier, and the Kingdom of Ai'ron.
+
+Dossiers for **Konish Kimbotin**, **Konish's Group**, and the **Ironclad DMZ** have been substantially deepened. The records establish Kimbotin's mixed Cladish-Jen lineage, his ceremonial Cladish name (*Kon 'aishen Kimbo 'shin*), his front-line alias (*"Knish"*), and the Kingdom of Ai'ron's official adjectival delegitimization (*"Konisharic"* / *"Konisharic Reign"*). Internally, Konish's Group is now documented as a functioning proto-state protecting an unmapped, hidden civilian civilization in the southern interior.
+
+Anchoring the northern perimeter opposite New Aester, the brutalist redoubt of **Area-31 (Shaiken)** is now fully documented alongside new architectural concept art. Operating city-scale reinforced concrete bastions, a dense integrated air-defense umbrella, and subterranean hangars housing supersonic interceptors (*"The Sun"*), Area-31 represents the primary operational barrier that halted New Aester's planned Southern Frontier Expansion. In turn, **New Aester** and **Ironland** have been updated to reflect the armed standoff and Ai'ron's formal onomastic traditions (*-enstine*, *-anski*, and *-aric*), with **Noradus** cross-referenced under his administrative exonym *Noradanski*.
+
+Additionally, historical casualty logs have been reconciled following Anajak Forces counter-insurgency sorties, confirming the death in action of LENDERMAIRE shock trooper **Salmon** by the pilot **Takahashi** ("Sahara"), and portal directories across the continuity have been standardized with strict frontmatter compliance.
+
 ## v005 — 10 November 2026
 
 Visual records have been expanded for **Konish Kimbotin** and **Noradus**. Konish's dossier now includes a three-part visual gallery covering recovered entry footage from the 2008 Pocheasang raid, field photography from southern Ironclad, and an equipment assessment sheet. Noradus's record has been updated with a new primary portrait alongside archival imagery of the VISTA president in his office with his adjutant, Pepper.

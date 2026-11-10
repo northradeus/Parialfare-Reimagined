@@ -52,6 +52,14 @@ The modern state was established following the 1730 Ai'ross Revolution, a milita
 
 The native name for the country is *Desteina Reamchea O'Airon*, which translates roughly to "Sovereign Kingdom of the Iron People". The English exonym *Ironland* derives from the Ironish ethnic majority, though the official English diplomatic title is the *Kingdom of the Ai'ron Land*.[^6] 
 
+### 1.1 Onomastic Conventions and Linguistic Policy
+
+The Ironish language and Ai'ron administrative practice observe distinct onomastic traditions for classifying individuals, ethnic lineages, and hostile leaders in official state registers:
+
+*   **The Patronymic/Dynastic *-enstine*:** A traditional Ironish suffix denoting established lineage, notable standing, or association with the ruling order (exemplified by the reigning Ivynestine royal house, and applied to prominent historical and political figures such as *Rogolf → Rogolfenstine* and *Partenstine*).
+*   **The Lurkish *-anski* Suffix:** Individuals of Lurkish descent are systematically recorded in Ai'ron administrative documents with the *-anski* ending (*Noradus → Noradanski*), an administrative convention also reflected in military personnel registers (such as General [Verdanski](characters/anajak-forces/verdanski)).
+*   **Adjectival Delegitimization (*-aric*):** In state communiqués and legal registers, the Crown deliberately refuses to grant sovereign or substantive nomenclature to hostile warlords and insurgent leaders. Rather than recognizing a leader as an individual head of state, the bureaucracy converts their name into an adjectival descriptor (*Konish → Konisharic*). Their authority and forces are thereby categorized as ideological or destabilizing conditions rather than a recognized government—officially catalogued as *"Konisharic elements"* or the *"Konisharic Reign"*.
+
 ## 2. History
 
 ### 2.1 The founding (late medieval)

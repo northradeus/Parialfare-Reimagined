@@ -5,7 +5,7 @@
 <tr><th>Title</th><td>Noradus "Northrad</td></tr>
 <tr><th>Subtitle</th><td>President of <a href="/factions/vista">VISTA</a></td></tr>
 <tr><th>Full Name</th><td>Noradus Partenstine</td></tr>
-<tr><th>Alias</th><td>Northrad</td></tr>
+<tr><th>Alias</th><td>Northrad, Noradanski</td></tr>
 <tr><th>Life Span</th><td>1988-Present</td></tr>
 <tr><th>Living Status</th><td>Alive</td></tr>
 <tr><th>Born</th><td>October 10th 1988</td></tr>
@@ -34,6 +34,7 @@ He is a different individual from the thirteenth member of [LENDERMAIRE](faction
 ## Identity
 
 - **Real name:** Noradus Partenstine. People prefer to call him Northrad because he is a former special operator.
+- **Administrative exonym:** *Noradanski*. In official [Ai'ron](locations/countries/ironland) state records, he is classified under the kingdom's Lurkish onomastic convention with the *-anski* suffix owing to his [Lurkish](locations/countries/lurkinsberg) heritage.
 - **Born:** 10 October 1988.
 - **Age:** 21, from October 2009 to October 2010. He was 19 at the time of the 2008 Pocheasang Palace raid.
 - **Office:** President of VISTA.

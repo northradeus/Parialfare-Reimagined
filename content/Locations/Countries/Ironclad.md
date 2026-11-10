@@ -43,6 +43,12 @@ The Cladish adopted the word *Ironclad* after the abandonment, as a badge of sur
 
 The territory has been isolated for a hundred and ten years. No external power has governed it since 1898. What occurred within it during that period is not recorded.
 
+### 1.5 Survival of absorbed populations
+
+Outside institutions historically recorded thirty-two percent of the region's ethnic groups as extinguished or fully assimilated by the Deck Empire and the subsequent Balthazar Era, notably including the Jennies.
+
+In the interior of Ironclad, many absorbed traditions, cultural practices, and lineages survived. Following the 1898 abandonment, the persistent danger and lack of governance in the territory prevented external states and academic bodies from conducting systematic ethnographic surveys. Lineages that external archives recorded as extinct persisted in the southern districts, intermarrying with the general population and producing distinct mixed identities, including the Cladish-Jens.
+
 ## 2. The warlord inheritance
 
 The Cladish are the descendants of the Deck. Their politics are the politics of the warlord, and their way of life is heavily militarized.
@@ -70,7 +76,7 @@ In the southern districts armed formations exercise quasi-governmental functions
 ## Unresolved
 
 - **The Deck's own name:** what the Deck called the land, and what the Ironish called it during the six years of rule, are not recorded. *Ironclad* is the Cladish self-name of 1898. The names of the *empire* are recorded in Rogolfenstine.
-- **The extent of the Deck:** its full reach, and which of the world's ethnic groups it absorbed or extinguished, are not recorded.
+- **The extent of the Deck:** its full reach, and which of the world's ethnic groups it absorbed or extinguished, are not recorded. While outside records classified many absorbed groups as extinct, surviving lineages in the interior remain largely undocumented.
 - **The conquest and collapse:** the circumstances of the 1892 conquest and the 1898 collapse are not established.
 - **The isolation:** what occurred in Ironclad between 1898 and 2008 is not recorded.
 - **The warlords:** how many there are, and which, is not established.
