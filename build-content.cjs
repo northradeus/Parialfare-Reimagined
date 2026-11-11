@@ -1012,28 +1012,47 @@ function renderEventsDirectory() {
 fs.writeFileSync(path.join(destDir, 'Events-Directory.md'), renderEventsDirectory());
 console.log(`[events] Generated Events Directory with ${eventData.length} entries.`);
 
-// Replace the published content only after the complete generation succeeds.
-try {
-    if (fs.existsSync(backupDir)) {
-        fs.rmSync(backupDir, { recursive: true, force: true });
+// --- Stage 7: Lint & Autocorrect Staging Files ---
+(async () => {
+    const { scanDirectory, promptApproval, applyAutocorrects } = require('./lint-autocorrect.cjs');
+    const lintResults = scanDirectory(destDir);
+    if (lintResults.totalIssues > 0) {
+        const approved = await promptApproval(lintResults);
+        if (approved) {
+            const count = applyAutocorrects(lintResults);
+            console.log(`[lint] Autocorrected ${lintResults.totalIssues} issue(s) across ${count} file(s) in staging.`);
+        } else {
+            console.error('\n[lint] Build aborted: user declined autocorrects.');
+            try { fs.rmSync(destDir, { recursive: true, force: true }); } catch (e) {}
+            process.exit(1);
+        }
+    } else {
+        console.log('[lint] Staging verification passed. No Markdown syntax defects detected.');
     }
-    if (fs.existsSync(finalDir)) {
-        fs.renameSync(finalDir, backupDir);
-    }
-    fs.renameSync(destDir, finalDir);
-    if (fs.existsSync(backupDir)) {
-        fs.rmSync(backupDir, { recursive: true, force: true });
-    }
-} catch (renameErr) {
-    // If directory rename fails (common on Windows when a watcher or dev server holds a lock on content),
-    // fall back to direct copy.
-    console.warn(`[build] Directory rename locked (${renameErr.message}); syncing files directly into content...`);
-    fs.cpSync(destDir, finalDir, { recursive: true, force: true });
-    fs.rmSync(destDir, { recursive: true, force: true });
-}
 
-if (fs.existsSync(previewOverlayDir)) {
-    fs.rmSync(previewOverlayDir, { recursive: true, force: true });
-}
+    // Replace the published content only after the complete generation succeeds.
+    try {
+        if (fs.existsSync(backupDir)) {
+            fs.rmSync(backupDir, { recursive: true, force: true });
+        }
+        if (fs.existsSync(finalDir)) {
+            fs.renameSync(finalDir, backupDir);
+        }
+        fs.renameSync(destDir, finalDir);
+        if (fs.existsSync(backupDir)) {
+            fs.rmSync(backupDir, { recursive: true, force: true });
+        }
+    } catch (renameErr) {
+        // If directory rename fails (common on Windows when a watcher or dev server holds a lock on content),
+        // fall back to direct copy.
+        console.warn(`[build] Directory rename locked (${renameErr.message}); syncing files directly into content...`);
+        fs.cpSync(destDir, finalDir, { recursive: true, force: true });
+        fs.rmSync(destDir, { recursive: true, force: true });
+    }
 
-console.log('Content built successfully with normalized assets and grid layouts.');
+    if (fs.existsSync(previewOverlayDir)) {
+        fs.rmSync(previewOverlayDir, { recursive: true, force: true });
+    }
+
+    console.log('Content built successfully with normalized assets and grid layouts.');
+})();

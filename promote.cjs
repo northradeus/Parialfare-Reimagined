@@ -86,6 +86,30 @@ function main() {
     console.log('Promoting ' + req.files.length + ' file(s) as ' + version + ' (' + dateISO + ').');
     console.log('');
 
+    // Pre-check for syntax defects in files to be promoted
+    try {
+        const { lintMarkdownText } = require('./lint-autocorrect.cjs');
+        let flaggedFiles = 0;
+        for (const rel of req.files) {
+            const src = path.join(CONTINUITIES_DIR, rel);
+            if (src.endsWith('.md') && fs.existsSync(src)) {
+                const content = fs.readFileSync(src, 'utf-8');
+                const res = lintMarkdownText(content);
+                if (res.hasChanges) {
+                    flaggedFiles++;
+                    console.log('  [lint-warn] ' + rel + ' has ' + res.changes.length + ' syntax issue(s) (spaced bold/italics)');
+                }
+            }
+        }
+        if (flaggedFiles > 0) {
+            console.log('  [lint-warn] NOTE: ' + flaggedFiles + ' file(s) contain syntax issues.');
+            console.log('  [lint-warn] These will be safely autocorrected on the fly during staging (build-content.cjs).');
+            console.log('');
+        }
+    } catch (e) {
+        // Non-blocking warning check
+    }
+
     const copied = [];
     for (const rel of req.files) {
         const src = path.join(CONTINUITIES_DIR, rel);
