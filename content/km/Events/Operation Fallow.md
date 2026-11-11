@@ -88,7 +88,7 @@ GIC បានទទួលយកលក្ខខណ្ឌ។ កំណត់ត្
 - [កងកម្លាំងអាណាចក្រ](/km/factions/anajak-forces)
 - [សម្ព័ន្ធអន្តរាគមន៍សកល](/km/factions/global-intervention-coalition-(gic))
 - [តានីស៊ីតូ](/km/characters/anajak-forces/tanishito)
-- [សាំសារ៉ា លីក័រ](/km/characters/samsara-lykor)
+- [សាំសារ៉ា លីក័រ](/km/characters/lendermaire/samsara-lykor)
 - [ឡង់ឌែរម៉ែរ](/km/factions/lendermaire)
 - [ឧត្តមសេនីយ៍ រ៉ាំឆឺ](/km/characters/anajak-forces/general-ramcher)
 - [កងកម្លាំងកិច្ចការពិសេសអៃរ៉ុន](/km/factions/ironish-task-force-(itf))

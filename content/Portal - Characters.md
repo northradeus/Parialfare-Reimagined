@@ -16,7 +16,7 @@ This is a curated index of the prominent figures operating within the Parialfare
 The thirteen-member black operations unit. They are a shared household, bound by psychological deviation and one man's mentorship.
 - [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)) — Supreme Warlord of Konish's Group.
 - [Hanktonio](/km/characters/lendermaire/hanktonio) — The Second Hand.
-- [Samsara Lykor](/km/characters/samsara-lykor) — The concealed thirteenth member.
+- [Samsara Lykor](/km/characters/lendermaire/samsara-lykor) — The concealed thirteenth member.
 - [Andrew](/km/characters/lendermaire/andrew) — Assaulter; former Ironish Special Forces.
 - [Kaliber](/km/characters/lendermaire/kaliber) — Shield specialist; mute.
 - [Markless](/km/characters/lendermaire/markless) — Breacher; hearing damaged.

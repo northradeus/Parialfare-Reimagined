@@ -321,7 +321,8 @@ function renderRelatedEntities(currentSlug, rels) {
 function resolveWikilinks(text, contextFile = '') {
     // Handles all three forms: [[Foo]], [[Foo|Bar]], [[Foo\|Bar]]
     // Group 1 = target, Group 2 = optional alias (with or without escaped pipe)
-    return text.replace(/\[\[([^\]|\\]+?)(?:\\?\|([^\]]+))?\]\]/g, (match, target, alias) => {
+    // Uses negative lookbehind (?<!\!) to ignore markdown image embeds like ![[Foo]]
+    return text.replace(/(?<!\!)\[\[([^\]|\\]+?)(?:\\?\|([^\]]+))?\]\]/g, (match, target, alias) => {
         if (!target) return match;
         const slug = resolvers[normalizeKey(target.trim())];
         const display = (alias || target).trim();
@@ -335,7 +336,7 @@ function resolveWikilinks(text, contextFile = '') {
 }
 
 function resolveInfoboxWikilinks(text, contextFile = '') {
-    return text.replace(/\[\[([^\]|\\]+?)(?:\\?\|([^\]]+))?\]\]/g, (match, target, alias) => {
+    return text.replace(/(?<!\!)\[\[([^\]|\\]+?)(?:\\?\|([^\]]+))?\]\]/g, (match, target, alias) => {
         if (!target) return match;
         const slug = resolvers[normalizeKey(target.trim())];
         const display = (alias || target).trim();
@@ -548,14 +549,37 @@ function processKhmerDir(kmDir, kmOutDir) {
                         infobox += `</aside>\n\n`;
                     }
 
-                    body = resolveWikilinks(body, item);
+                    // Sanitize any Khmer-translated <រូប> tags to <figure>
+                    body = body.replace(/<\/?រូប>/g, (m) => m === '<រូប>' ? '<figure>' : '</figure>');
 
+                    // 1. Convert wikilink images inside galleries and figures to <img> tags
+                    body = body.replace(/(<div\s+class="[^"]*\b(?:gallery|carousel)\b[^"]*"[^>]*>[\s\S]*?<\/div>|<figure\b[^>]*>[\s\S]*?<\/figure>)/g, (block) => {
+                        return block.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
+                            const imgName = rawInner.split('|')[0].trim();
+                            const mapped = vaultImages.get(imgName.toLowerCase());
+                            if (mapped) return `<img src="assets/${mapped}" alt="${imgName}" loading="lazy" />`;
+                            return match;
+                        });
+                    });
+
+                    // 2. Convert standard wikilink images to standard markdown images
                     body = body.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
                         const iName = rawInner.split('|')[0].trim();
                         const mapped = vaultImages.get(iName.toLowerCase());
                         if (mapped) return `![${iName}](assets/${mapped})`;
                         return match;
                     });
+
+                    // 3. Normalize any relative img src attributes to assets/
+                    body = body.replace(/(<img[^>]+src=")(?!\/|http|data:)([^"]+)(")/g, (match, p1, srcAttr, p3) => {
+                        const imgName = srcAttr.split('/').pop().trim();
+                        const mapped = vaultImages.get(imgName.toLowerCase());
+                        if (mapped) return `${p1}assets/${mapped}${p3}`;
+                        return match;
+                    });
+
+                    // 4. Resolve remaining wikilinks
+                    body = resolveWikilinks(body, item);
 
                     // Auto-prefix relative links to km/ if they point to content folders or portals
                     body = body.replace(/href="(characters|locations|factions|events|lore|portal---)([^"]*)"/g, 'href="km/$1$2"');
@@ -802,17 +826,25 @@ const kmFolderTitles = {
     'locations': 'ទីតាំង',
     'lore': 'ឯកសារ',
     'anajak-forces': 'កងកម្លាំងអាណាចក្រ',
+    'anajak forces': 'កងកម្លាំងអាណាចក្រ',
     'lendermaire': 'ឡង់ឌែរម៉ែរ',
     'vista': 'វីស្តា',
-    'maire-o-mare': "ម៉ែរ អូម៉ែរ",
+    "maire-o'mare": "ម៉ែរ អូម៉ែរ",
+    "maire o'mare": "ម៉ែរ អូម៉ែរ",
+    "maire-o-mare": "ម៉ែរ អូម៉ែរ",
+    "maire-o’mare": "ម៉ែរ អូម៉ែរ",
     'countries': 'ប្រទេស និងដែនដី'
 };
 
 const kmBadgeMap = {
     'lendermaire': 'ឡង់ឌែរម៉ែរ',
     'anajak-forces': 'កងកម្លាំងអាណាចក្រ',
+    'anajak forces': 'កងកម្លាំងអាណាចក្រ',
     'vista': 'វីស្តា',
-    'maire-o-mare': "ម៉ែរ អូម៉ែរ",
+    "maire-o'mare": "ម៉ែរ អូម៉ែរ",
+    "maire o'mare": "ម៉ែរ អូម៉ែរ",
+    "maire-o-mare": "ម៉ែរ អូម៉ែរ",
+    "maire-o’mare": "ម៉ែរ អូម៉ែរ",
     'characters': 'តួអង្គ',
     'events': 'ព្រឹត្តិការណ៍',
     'factions': 'បក្សសម្ព័ន្ធ',

@@ -59,7 +59,7 @@ The designation of Konish's Group was driven by the need to maintain order in th
 
 Lurkinsberg is a major source of personnel for [Anajak Forces](/km/factions/anajak-forces). The majority of the facility-raised members of Anajak's classified assassin core, [Alpha-01](/km/factions/alpha-01), are Lurkish.
 
-Notable Lurkish figures in regional affairs include [Northrad](/characters/vista/noradus), the President of VISTA, and [Samsara Lykor](/km/characters/samsara-lykor), the thirteenth member of [LENDERMAIRE](/km/factions/lendermaire).
+Notable Lurkish figures in regional affairs include [Northrad](/characters/vista/noradus), the President of VISTA, and [Samsara Lykor](/km/characters/lendermaire/samsara-lykor), the thirteenth member of [LENDERMAIRE](/km/factions/lendermaire).
 
 Northrad is recorded as having served as a special operator under Lurkinsberg before entering politics. He is from a wealthy family, a detail that reflects Lurkinsberg's class-conscious society.
 
@@ -78,7 +78,7 @@ Lykor served as a Lurkish SWAT officer and marine. He was diagnosed with individ
 - [VISTA](/km/factions/vista)
 - [Anajak Forces](/km/factions/anajak-forces)
 - [Northrad](/characters/vista/noradus)
-- [Samsara Lykor](/km/characters/samsara-lykor)
+- [Samsara Lykor](/km/characters/lendermaire/samsara-lykor)
 - [Konish's Group](/km/factions/konish's-group)
 
 ## References

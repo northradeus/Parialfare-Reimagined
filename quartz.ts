@@ -2,10 +2,15 @@ import { loadQuartzConfig, loadQuartzLayout } from "./quartz/plugins/loader/conf
 import { componentRegistry } from "./quartz/components/registry"
 import LanguageToggle from "./quartz/components/LanguageToggle"
 import CustomPageTitle from "./quartz/components/CustomPageTitle"
+import CustomBreadcrumbs from "./quartz/components/CustomBreadcrumbs"
 
 componentRegistry.register("page-title", CustomPageTitle, "local")
 componentRegistry.register("@quartz-community/page-title", CustomPageTitle, "local")
 componentRegistry.register("PageTitle", CustomPageTitle, "local")
+
+componentRegistry.register("breadcrumbs", CustomBreadcrumbs, "local")
+componentRegistry.register("@quartz-community/breadcrumbs", CustomBreadcrumbs, "local")
+componentRegistry.register("Breadcrumbs", CustomBreadcrumbs, "local")
 
 // Register local LanguageToggle component
 componentRegistry.register("language-toggle", LanguageToggle, "local", {
@@ -93,12 +98,20 @@ const explorerOverrides = {
         "anajak-forces": "កងកម្លាំងអាណាចក្រ",
         lendermaire: "ឡង់ឌែរម៉ែរ",
         vista: "វីស្តា",
+        "maire-o'mare": "ម៉ែរ អូម៉ែរ",
         "maire-o-mare": "ម៉ែរ អូម៉ែរ",
+        "maire o'mare": "ម៉ែរ អូម៉ែរ",
+        "maire-o’mare": "ម៉ែរ អូម៉ែរ",
+        "maire o’mare": "ម៉ែរ អូម៉ែរ",
+        "maire omare": "ម៉ែរ អូម៉ែរ",
         countries: "ប្រទេស និងដែនដី",
       }
       const seg = (node.slugSegment || "").toLowerCase()
+      const name = (node.displayName || "").toLowerCase()
       if (kmFolderMap[seg]) {
         node.displayName = kmFolderMap[seg]
+      } else if (kmFolderMap[name]) {
+        node.displayName = kmFolderMap[name]
       }
     }
   },

@@ -49,7 +49,7 @@ Salmon tells the old Lurkish naval stories in the household. The stories take fo
 - **The Reading of Names.** The names of the lost, read aloud at port before leave, in order, once.
 - **The Count.** The tally a Lurkish sailor keeps of voyages and losses.
 
-The household knows that Salmon is Lurkish and that the stories are Lurkish naval customs. It treats them as one of Salmon's habits, alongside the unresolved role split between [Grunt](/km/characters/lendermaire/grunt) and [Gunter](/km/characters/lendermaire/gunter). No member of the household has asked him why he tells them. [Lykor](/km/characters/samsara-lykor), the only other Lurkish member of the unit, hears the stories. He does not say what he hears.
+The household knows that Salmon is Lurkish and that the stories are Lurkish naval customs. It treats them as one of Salmon's habits, alongside the unresolved role split between [Grunt](/km/characters/lendermaire/grunt) and [Gunter](/km/characters/lendermaire/gunter). No member of the household has asked him why he tells them. [Lykor](/km/characters/lendermaire/samsara-lykor), the only other Lurkish member of the unit, hears the stories. He does not say what he hears.
 
 The record does not describe what Salmon recites. It notes only that he recites.
 
@@ -67,7 +67,7 @@ Salmon is killed in action during a post-2008 engagement by an airstrike flown b
 
 The record notes the coincidence of the two names without attributing intent to either side: the sailor who took the name of the fish held by Lurkish naval tradition to be a bad omen, and who was recorded in early material as "Hard to Kill," was killed from the air by a pilot operating under the Lurkish word for a giant sea bird.
 
-At the time of his death, his administrative pairing in the Lurkish Navy remains *unmatched*, and his inquiries into the fate of his ship-brother Kalmon end without a recorded answer. Within the household, the four Lurkish naval stories cease with his death, leaving [Lykor](/km/characters/samsara-lykor) as the only remaining Lurkish member under the roof.
+At the time of his death, his administrative pairing in the Lurkish Navy remains *unmatched*, and his inquiries into the fate of his ship-brother Kalmon end without a recorded answer. Within the household, the four Lurkish naval stories cease with his death, leaving [Lykor](/km/characters/lendermaire/samsara-lykor) as the only remaining Lurkish member under the roof.
 
 ## Unresolved
 
@@ -86,6 +86,6 @@ At the time of his death, his administrative pairing in the Lurkish Navy remains
 * [LENDERMAIRE](/km/factions/lendermaire)
 * [Konish's Group](/km/factions/konish's-group)
 * [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined))
-* [Samsara Lykor](/km/characters/samsara-lykor)
+* [Samsara Lykor](/km/characters/lendermaire/samsara-lykor)
 * [Takahashi](/km/characters/anajak-forces/takahashi)
 * [Anajak Forces](/km/factions/anajak-forces)

@@ -47,7 +47,7 @@ Lurkinsberg ចាត់ទុក [អៃរ៉ុនក្លាដ](/km/locati
 
 Lurkinsberg គឺជាប្រភពបុគ្គលិកដ៏សំខាន់សម្រាប់ [កងកម្លាំងអាណាចក្រ](/km/factions/anajak-forces)។ ភាគច្រើននៃសមាជិកដែលលើកឡើងដោយមជ្ឈមណ្ឌលនៃស្នូលឃាតករដែលត្រូវបានចាត់ថ្នាក់របស់ Anajak គឺ [អាល់ហ្វា-០១](/km/factions/alpha-01) គឺ Lurkish។
 
-តួលេខ Lurkish គួរឱ្យកត់សម្គាល់នៅក្នុងកិច្ចការតំបន់រួមមាន [ណ័ររ៉ាឌុស ណ័រត្រាដ](/km/characters/vista/noradus) ប្រធាន VISTA និង [សាំសារ៉ា លីក័រ](/km/characters/samsara-lykor) សមាជិកទី 13 នៃ [ឡង់ឌែរម៉ែរ](/km/factions/lendermaire)។
+តួលេខ Lurkish គួរឱ្យកត់សម្គាល់នៅក្នុងកិច្ចការតំបន់រួមមាន [ណ័ររ៉ាឌុស ណ័រត្រាដ](/km/characters/vista/noradus) ប្រធាន VISTA និង [សាំសារ៉ា លីក័រ](/km/characters/lendermaire/samsara-lykor) សមាជិកទី 13 នៃ [ឡង់ឌែរម៉ែរ](/km/factions/lendermaire)។
 
 Northrad ត្រូវបានកត់ត្រាថាបានបម្រើការជាប្រតិបត្តិករពិសេសនៅក្រោម Lurkinsberg មុនពេលចូលប្រឡូកក្នុងឆាកនយោបាយ។ គាត់មកពីគ្រួសារអ្នកមាន ដែលជាព័ត៌មានលំអិតដែលឆ្លុះបញ្ចាំងពីសង្គមដែលប្រកាន់វណ្ណៈរបស់ Lurkinsberg។
 
@@ -66,7 +66,7 @@ Lykor បានបម្រើការជាមន្រ្តី SWAT Lurkish 
 - [វីស្តា](/km/factions/vista)
 - [កងកម្លាំងអាណាចក្រ](/km/factions/anajak-forces)
 - [ណ័ររ៉ាឌុស ណ័រត្រាដ](/km/characters/vista/noradus)
-- [សាំសារ៉ា លីក័រ](/km/characters/samsara-lykor)
+- [សាំសារ៉ា លីក័រ](/km/characters/lendermaire/samsara-lykor)
 - [ក្រុមរបស់កូនីស](/km/factions/konish's-group)
 
 ## ឯកសារយោង

@@ -60,7 +60,7 @@ She has met [Pepper](/km/characters/anajak-forces/pepper) once, in person.
 
 ## Depiction
 
-Her recruitment from a Pocheasang strip club, and her failed attempt to use the closeness tactic on [Samsara Lykor](/km/characters/samsara-lykor) during the drive to the extraction point, are dramatised in The Lot. The scene is narrative, not record.
+Her recruitment from a Pocheasang strip club, and her failed attempt to use the closeness tactic on [Samsara Lykor](/km/characters/lendermaire/samsara-lykor) during the drive to the extraction point, are dramatised in The Lot. The scene is narrative, not record.
 
 The fullest reading of her interior life — the first place she was given one rather than a specification — is the reference draft of Operation Fallow — Episode. It dramatises her insertion, her absorption into the household, and her inability to tell a genuine feeling from a superior performance. It is a production draft, not canon, and its plot is provisional. Its characterisation is the most complete thing written about her.
 

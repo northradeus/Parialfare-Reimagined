@@ -26,7 +26,7 @@ The year is 2008, and the region is on the brink of war. At the heart of the con
 
 Once you understand the factions, you can explore the individuals who drive the story forward.
 
-*   **[Samsara Lykor](/km/characters/samsara-lykor)**: The concealed thirteenth member of LENDERMAIRE, a man torn between his past and his loyalty.
+*   **[Samsara Lykor](/km/characters/lendermaire/samsara-lykor)**: The concealed thirteenth member of LENDERMAIRE, a man torn between his past and his loyalty.
 *   **[Northrad](/characters/vista/noradus)**: The President of VISTA and the architect of the institutions that oppose Kimbotin.
 *   **[2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid)**: The event that sparked the modern conflict.
 

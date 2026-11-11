@@ -77,7 +77,7 @@ LENDERMAIRE បានចាប់ផ្តើមការវាយលុកព�
 ** [ណ័ររ៉ាឌុស ណ័រត្រាដ](/km/characters/vista/noradus):** ប្រធាន VISTA។ ស្ថាបត្យករនៃ GIC និង Anajak។
 * ** [កូនីស គីមបូទីន](/km/characters/lendermaire/konish-kimbotin-(reimagined)):** ស្តេចចម្បាំង Cladish។ អ្នកដឹកនាំក្រុម Konish និង LENDERMAIR។
 * ** [ហង់តូនីញ៉ូ](/km/characters/lendermaire/hanktonio)៖ ** បញ្ជាការទីពីររបស់ Konish។ "ដៃទីពីរ"។
-* **[សាំសារ៉ា លីក័រ](/km/characters/samsara-lykor):** សមាជិកទីដប់បីដែលលាក់បាំងរបស់ LENDERMAIRE។ មួយទៀត "ខាងជើង"។
+* **[សាំសារ៉ា លីក័រ](/km/characters/lendermaire/samsara-lykor):** សមាជិកទីដប់បីដែលលាក់បាំងរបស់ LENDERMAIRE។ មួយទៀត "ខាងជើង"។
 ** [ឧត្តមសេនីយ៍ រ៉ាំឆឺ](/km/characters/anajak-forces/general-ramcher):** មេបញ្ជាការកងកម្លាំងអាណាចាក។
 * **[តានីស៊ីតូ](/km/characters/anajak-forces/tanishito) & [ណូហ្គោ](/km/characters/anajak-forces/nogo):** ឃាតក​ថ្នាក់ S និង A+ របស់ Anajak។
 * ** [ភិបភ័រ](/km/characters/anajak-forces/pepper):** ប្រតិបត្តិករ Anajak និងអ្នកជំនួយផ្ទាល់របស់ Northrad។

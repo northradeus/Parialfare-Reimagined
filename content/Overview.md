@@ -71,7 +71,7 @@ Beneath the geopolitical struggle are the black sites and the variants.
 * **[Northrad](/characters/vista/noradus):** President of VISTA. Architect of the GIC and Anajak.
 * **[Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)):** Cladish warlord. Leader of Konish's Group and LENDERMAIRE.
 * **[Hanktonio](/km/characters/lendermaire/hanktonio):** Konish's second-in-command. "The Second Hand".
-* **[Samsara Lykor](/km/characters/samsara-lykor):** LENDERMAIRE's concealed thirteenth member. The other "Northrad".
+* **[Samsara Lykor](/km/characters/lendermaire/samsara-lykor):** LENDERMAIRE's concealed thirteenth member. The other "Northrad".
 * **[General Ramcher](/km/characters/anajak-forces/general-ramcher):** Commander of Anajak Forces.
 * **[Tanishito](/km/characters/anajak-forces/tanishito) & [Nogo](/km/characters/anajak-forces/nogo):** S-grade and A+ grade assassins of Anajak.
 * **[Pepper](/km/characters/anajak-forces/pepper):** Anajak operator and Northrad's personal adjutant.

@@ -13,7 +13,7 @@ language: km
 
 <div class="km-draft-badge"><span class="tag">សេចក្តីព្រាង (Draft)</span> <span>ឯកសារនេះជាសេចក្តីព្រាងបឋមដែលកំពុងស្ថិតក្នុងការកែសម្រួលផ្នែកអក្សរសាស្ត្រ។</span></div>
 
-# Characters
+# តួអង្គ
 
 នេះគឺជាលិបិក្រមដែលបានរៀបចំឡើងនៃតួរលេខលេចធ្លោដែលកំពុងប្រតិបត្តិការនៅក្នុង Parialfare: ការបន្តស្រមៃឡើងវិញ។ សម្រាប់បញ្ជីស្វ័យប្រវត្តិនៃឯកសារទាំងអស់ សូមមើលការរុករកគេហទំព័រ។
 
@@ -22,7 +22,7 @@ language: km
 អង្គភាពប្រតិបត្តិការខ្មៅដែលមានសមាជិកដប់បីនាក់។ ពួកគេជាគ្រួសាររួម ដែលចងភ្ជាប់ដោយគម្លាតផ្លូវចិត្ត និងការណែនាំរបស់បុរសម្នាក់។
 - [កូនីស គីមបូទីន](/km/characters/lendermaire/konish-kimbotin-(reimagined)) - កំពូលអ្នកចម្បាំងនៃក្រុម Konish។
 - [ហង់តូនីញ៉ូ](/km/characters/lendermaire/hanktonio) - ដៃទីពីរ។
-- [សាំសារ៉ា លីក័រ](/km/characters/samsara-lykor) - សមាជិកទីដប់បីដែលលាក់កំបាំង។
+- [សាំសារ៉ា លីក័រ](/km/characters/lendermaire/samsara-lykor) - សមាជិកទីដប់បីដែលលាក់កំបាំង។
 - [អង់ដ្រូ](/km/characters/lendermaire/andrew) - អ្នកវាយដំ; អតីតកងកម្លាំងពិសេសរបស់អៀរឡង់។
 - [កាលីប៊ែរ](/km/characters/lendermaire/kaliber) - អ្នកឯកទេសការពារ។ ស្ងាត់។
 - [ម៉ាកឡេស](/km/characters/lendermaire/markless) - អ្នករំលោភបំពាន; ការស្តាប់ខូច។

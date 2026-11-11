@@ -59,7 +59,7 @@ The group consists of thirteen core members under Kimbotin, supported by additio
 | [Medic](/km/characters/lendermaire/medic) | Combat Medic | Previously served another Cladish faction |
 | [Salmon](/km/characters/lendermaire/salmon) | Shock Trooper | Former coast guard and navy; killed in action by [Sahara](/km/characters/anajak-forces/takahashi) |
 | [Gunter](/km/characters/lendermaire/gunter) | Engineer & Sapper | Role split with Grunt unresolved |
-| [Lykor](/km/characters/samsara-lykor) | Cleanup, backup sniper | Thirteenth member. Identity concealed from the public |
+| [Lykor](/km/characters/lendermaire/samsara-lykor) | Cleanup, backup sniper | Thirteenth member. Identity concealed from the public |
 
 **Additional Personnel:**
 *   [Joey](/km/characters/lendermaire/joey): A background member who manages incoming resources. Not counted among the core thirteen.
@@ -81,7 +81,7 @@ Despite the volatility, the record documents sustained mutual care among the cor
 
 **The Unspoken Rule: Recognition Without Disclosure.** The household functions on a single social rule: nobody asks what happened to anybody. Every member has been asked, once, by an institution with a clipboard, and they know how it felt. They recognize what a cast-off looks like—the exit-checking, the fast eating, the bag that is never fully unpacked—and they do not ask about it. Recognition is not the same as trust. It is a truce. The house forgives nearly everything except being left out of the table.
 
-**The Plate Echo.** Care is expressed through logistics. A covered plate is routinely left on the counter and taken upstairs to [Samsara Lykor](/km/characters/samsara-lykor), who does not eat at the table. New arrivals find a plate set in front of them without observing who placed it. The household feeds its strays by the same method, whether they sit at the table or not.
+**The Plate Echo.** Care is expressed through logistics. A covered plate is routinely left on the counter and taken upstairs to [Samsara Lykor](/km/characters/lendermaire/samsara-lykor), who does not eat at the table. New arrivals find a plate set in front of them without observing who placed it. The household feeds its strays by the same method, whether they sit at the table or not.
 
 Three relationships are specifically recorded:
 
@@ -97,7 +97,7 @@ His conditioning of [Leepy](/km/characters/lendermaire/leepy) operates continuou
 
 ### 4.4 The concealed member
 
-The thirteenth member, [Samsara Lykor](/km/characters/samsara-lykor), lives under the same roof as the rest of the household, but is recorded as an outsider to its social structure. He does not depend on the unit's cohesion mechanism and keeps his membership by personal choice. His presence in the household and his separation from it are both recorded facts; the record does not reconcile them.
+The thirteenth member, [Samsara Lykor](/km/characters/lendermaire/samsara-lykor), lives under the same roof as the rest of the household, but is recorded as an outsider to its social structure. He does not depend on the unit's cohesion mechanism and keeps his membership by personal choice. His presence in the household and his separation from it are both recorded facts; the record does not reconcile them.
 
 ### 4.5 Field and home
 
@@ -161,7 +161,7 @@ Open-source intelligence and [VISTA](/km/factions/vista) reports contain several
 *   [Formation of LENDERMAIRE](/km/events/formation-of-lendermaire)
 *   [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid)
 *   [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined))
-*   [Lykor (Thirteenth Member)](/km/characters/samsara-lykor)
+*   [Lykor (Thirteenth Member)](/km/characters/lendermaire/samsara-lykor)
 *   [Konish's Group](/km/factions/konish's-group)
 
 ## 11. References

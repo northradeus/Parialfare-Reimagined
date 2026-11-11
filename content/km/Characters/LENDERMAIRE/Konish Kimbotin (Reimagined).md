@@ -54,13 +54,16 @@ Kimbotin គឺជាស្ថាបនិក និងជាមេបញ្ជ�
 គោលលទ្ធិប្រតិបត្តិការរបស់ Kimbotin គឺមិនធម្មតាទេ។ គាត់ត្រូវបានគេស្គាល់ថាសម្រាប់ការជ្រើសរើសបុគ្គលដែលត្រូវបានកាត់បន្ថយ ឬបដិសេធដោយបក្សពួកផ្សេងទៀត ដែលជាដំណើរការដែលគាត់ហៅថា "ជួសជុល"។ នៅពេលដែលត្រូវបានជ្រើសរើស បុគ្គលទាំងនេះត្រូវបានផ្តល់ឈ្មោះកូដប្រតិបត្តិការជាក់លាក់ និងតួនាទីនៅក្នុងអង្គភាពរបស់គាត់។ ទស្សនវិជ្ជាភាពជាអ្នកដឹកនាំរបស់គាត់ផ្តោតលើជំនឿដែលថា ភាពចម្លែក និងទម្រង់ចិត្តសាស្ត្រដែលមិនមែនជាប្រពៃណីអាចត្រូវបានប្រើប្រាស់ជាកម្លាំងយុទ្ធសាស្ត្រនៅក្នុងសង្គ្រាមមិនស៊ីមេទ្រី។[^4]
 
 <div class="gallery portrait">
-  <រូប>!Konish Breaching.jpg
+  <figure>
+    <img src="assets/konish-breaching.jpg" alt="Konish Breaching.jpg" loading="lazy" />
     <figcaption>កម្រងរូបភាព ប្រតិបត្តិការ Sparta (2008)</figcaption>
   </figure>
-  <រូប>!Konish Forest.jpg
+  <figure>
+    <img src="assets/konish-forest.jpg" alt="Konish Forest.jpg" loading="lazy" />
     <figcaption>ប្រតិបត្តិការវាលនៅភាគខាងត្បូង Ironclad</figcaption>
   </figure>
-  <រូប>!Konish Concept.png
+  <figure>
+    <img src="assets/konish-concept.png" alt="Konish Concept.png" loading="lazy" />
     <figcaption>កម្រងព័ត៌មានប្រតិបត្តិការ និងការវាយតម្លៃឧបករណ៍</figcaption>
   </figure>
 </div>
@@ -85,7 +88,7 @@ Kimbotin ប្រតិបត្តិការ​ទាំង​ជា​ម�
 
 * **[ឡង់ឌែរម៉ែរ](/km/factions/lendermaire):** Kimbotin រក្សាទំនាក់ទំនង symbiotic ជាមួយអង្គការ។ អ្នកវិភាគកត់សម្គាល់ថាក្រុមមិនអាចមានបានទេបើគ្មានការដឹកនាំរបស់គាត់ ហើយសមត្ថភាពប្រតិបត្តិការរបស់គាត់គឺពឹងផ្អែកខ្លាំងលើជំនាញឯកទេសរបស់អង្គភាព។
 * ** [ហង់តូនីញ៉ូ](/km/characters/lendermaire/hanktonio)៖ ** បញ្ជាការទីពីររបស់ Kimbotin។ Hanktonio ចាត់ទុកគាត់ថាជាឥស្សរជនដ៏អស្ចារ្យម្នាក់ដែលមានសមត្ថភាពទាំងការស្តារនីតិសម្បទាបុគ្គល និងតាមដានពួកគេ។
-* **[សាំសារ៉ា លីក័រ](/km/characters/samsara-lykor):** សមាជិកទី 13 របស់ LENDERMAIRE ដែលលាក់ទុកនៅជាមួយអង្គការជាចម្បងដោយសារតែភាពស្មោះត្រង់ផ្ទាល់ខ្លួនចំពោះ Kimbotin។
+* **[សាំសារ៉ា លីក័រ](/km/characters/lendermaire/samsara-lykor):** សមាជិកទី 13 របស់ LENDERMAIRE ដែលលាក់ទុកនៅជាមួយអង្គការជាចម្បងដោយសារតែភាពស្មោះត្រង់ផ្ទាល់ខ្លួនចំពោះ Kimbotin។
 * **[ណ័ររ៉ាឌុស ណ័រត្រាដ](/km/characters/vista/noradus):** ប្រធាន VISTA និងជាគូប្រជែងនយោបាយរបស់ Kimbotin។ Northrad គឺជាបុគ្គលដាច់ដោយឡែកពី Lykor (សមាជិកទីដប់បី)។
 * **[កងកម្លាំងអាណាចក្រ](/km/factions/anajak-forces):** ក្រុមការងារយោធាដែលបង្កើតឡើងជាពិសេសដោយប្រធាន VISTA Northrad ដើម្បីទប់ទល់នឹង Kimbotin, LENDERMAIRE និងបក្សពួក Cladish ផ្សេងទៀត។
 * **[ម៉ែរ អូម៉ែរ](/km/factions/maire-o'mare-(2008))៖** ជាក្រុមបះបោរដែលមិនអាចទាយទុកជាមុនបាន ដែលជួនកាលជាសម្ព័ន្ធមិត្តជាមួយ Kimbotin ប៉ុន្តែជារឿយៗបែរមកប្រឆាំងគាត់។ Kimbotin ចាត់ទុកពួកគេថាជាការគំរាមកំហែងចម្បង។

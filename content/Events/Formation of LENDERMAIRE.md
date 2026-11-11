@@ -20,7 +20,7 @@ Konish chose each member for a specific reason. His working premise is that the 
 Konish recruited members personally. [Hanktonio](/km/characters/lendermaire/hanktonio) describes him as a mysterious man who could not only "fix" people but also find them and persuade them to join. That is Hanktonio's account and is not independently confirmed.
 
 Known or partly known recruitment histories:
-- **[Lykor](/km/characters/samsara-lykor):** a former Lurkish SWAT officer and marine. A worker at a strip club where he was employed passed his résumé to Konish, who persuaded him to join despite Lykor's hostility toward Cladish people.
+- **[Lykor](/km/characters/lendermaire/samsara-lykor):** a former Lurkish SWAT officer and marine. A worker at a strip club where he was employed passed his résumé to Konish, who persuaded him to join despite Lykor's hostility toward Cladish people.
 - **[Markless](/km/characters/lendermaire/markless), [Kaliber](/km/characters/lendermaire/kaliber) and [Andrew](/km/characters/lendermaire/andrew):** a former squad of the Ironish Special Forces, with the group since early in its development. How they were recruited is not established.
 - **[Medic](/km/characters/lendermaire/medic):** served another Cladish faction before joining. Which faction is not established.
 - **[Salmon](/km/characters/lendermaire/salmon) and [Vanny](/km/characters/lendermaire/vanny):** how Konish found Salmon and how he met Vanny are not established.
@@ -37,7 +37,7 @@ Members have goals of their own. Konish merged them into a single goal that bene
 The wider world has rejected the members because of their pasts and the mental health diagnoses they were given. Some never reached therapy. They have no other place to go. The group cannot exist without Konish, and Konish cannot exist without the group.
 
 ## The thirteenth member
-The thirteenth member, [Lykor](/km/characters/samsara-lykor), is the exception. He is not retained by the cohesion described above. He is rejected by the world but also sought by many, and he remains because of Konish by personal choice. His identity is concealed from the public.
+The thirteenth member, [Lykor](/km/characters/lendermaire/samsara-lykor), is the exception. He is not retained by the cohesion described above. He is rejected by the world but also sought by many, and he remains because of Konish by personal choice. His identity is concealed from the public.
 
 ## Unresolved
 

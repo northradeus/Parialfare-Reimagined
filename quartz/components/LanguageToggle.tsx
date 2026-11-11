@@ -45,6 +45,63 @@ function mountLangToggle() {
     explorerTitle.textContent = isKm ? "មាតិកា" : "Explorer";
   }
 
+  // Also update breadcrumbs
+  const breadcrumbs = document.querySelectorAll(".breadcrumb-container .breadcrumb-element");
+  if (breadcrumbs.length > 0) {
+    if (isKm) {
+      const firstA = breadcrumbs[0].querySelector("a");
+      if (firstA && (firstA.textContent.trim() === "Home" || firstA.textContent.trim() === "ទំព័រដើម")) {
+        if (breadcrumbs.length > 1) {
+          const secondA = breadcrumbs[1].querySelector("a");
+          if (secondA && (secondA.textContent.trim() === "ណូលហែម" || secondA.href.endsWith("/km/") || secondA.href.endsWith("/km"))) {
+            breadcrumbs[0].remove();
+            secondA.textContent = "ទំព័រដើម";
+            if (breadcrumbs.length === 2) {
+              const spacer = breadcrumbs[1].querySelector("p");
+              if (spacer) spacer.remove();
+            }
+          } else {
+            firstA.textContent = "ទំព័រដើម";
+            firstA.setAttribute("href", (basePath ? basePath : "") + "/km/");
+          }
+        } else {
+          firstA.textContent = "ទំព័រដើម";
+          firstA.setAttribute("href", (basePath ? basePath : "") + "/km/");
+        }
+      } else if (firstA && firstA.textContent.trim() === "ណូលហែម") {
+        firstA.textContent = "ទំព័រដើម";
+      }
+
+      const kmFolderMap = {
+        characters: "តួអង្គ",
+        events: "ព្រឹត្តិការណ៍",
+        factions: "បក្សសម្ព័ន្ធ",
+        locations: "ទីតាំង",
+        lore: "ឯកសារ",
+        "anajak-forces": "កងកម្លាំងអាណាចក្រ",
+        lendermaire: "ឡង់ឌែរម៉ែរ",
+        vista: "វីស្តា",
+        "maire-o'mare": "ម៉ែរ អូម៉ែរ",
+        "maire-o-mare": "ម៉ែរ អូម៉ែរ",
+        "maire o'mare": "ម៉ែរ អូម៉ែរ",
+        "maire-o’mare": "ម៉ែរ អូម៉ែរ",
+        countries: "ប្រទេស និងដែនដី"
+      };
+      const activeCrumbs = document.querySelectorAll(".breadcrumb-container .breadcrumb-element");
+      activeCrumbs.forEach(function(crumb, idx) {
+        if (idx > 0 && idx < activeCrumbs.length - 1) {
+          const a = crumb.querySelector("a");
+          if (a) {
+            const raw = a.textContent.trim().toLowerCase();
+            if (kmFolderMap[raw]) {
+              a.textContent = kmFolderMap[raw];
+            }
+          }
+        }
+      });
+    }
+  }
+
   // Also update footer author link
   const footerLinks = document.querySelectorAll("footer a");
   footerLinks.forEach(function(link) {

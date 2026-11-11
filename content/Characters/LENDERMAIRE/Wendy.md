@@ -37,11 +37,11 @@ His name came from the circuit's ranking board. It was the one piece of his old 
 ## Unresolved
 
 - **Background beyond airsoft:** the author has no memory of it.
-- **Role overlap:** how his role differs from Leepy's and [Lykor](/km/characters/samsara-lykor)'s sniping.
+- **Role overlap:** how his role differs from Leepy's and [Lykor](/km/characters/lendermaire/samsara-lykor)'s sniping.
 - **The suspicion:** whether he was sold, and whether Konish's Group had any link to the circuit. The record does not answer this and must not.
 
 ## See Also
 
 * [LENDERMAIRE](/km/factions/lendermaire)
 * [Leepy](/km/characters/lendermaire/leepy)
-* [Samsara Lykor](/km/characters/samsara-lykor)
+* [Samsara Lykor](/km/characters/lendermaire/samsara-lykor)

@@ -23,7 +23,7 @@ Andrew was raised in an orphanage after losing his family in an urban house fire
 
 When the border conflicts intensified, Andrew transitioned from civil emergency rescue to the military, enlisting in the Ironish Special Forces. There he was assigned to an assault element alongside Markless and Kaliber. 
 
-His initial service psychology closely mirrored that of [Samsara Lykor](/km/characters/samsara-lykor): he was an earnest believer in the state and its institutions, convinced that military force served to protect civilians who could not protect themselves. That institutional faith eroded as the command structure drifted into compromised political maneuvers. By the time Kaliber and Markless retired from active service, Andrew considered brotherhood his only surviving institution. When they joined LENDERMAIRE, he followed them.
+His initial service psychology closely mirrored that of [Samsara Lykor](/km/characters/lendermaire/samsara-lykor): he was an earnest believer in the state and its institutions, convinced that military force served to protect civilians who could not protect themselves. That institutional faith eroded as the command structure drifted into compromised political maneuvers. By the time Kaliber and Markless retired from active service, Andrew considered brotherhood his only surviving institution. When they joined LENDERMAIRE, he followed them.
 
 ## 2. The contested seat and the conditioning
 
@@ -66,6 +66,6 @@ His enlistment carried no institutional faith or political allegiance. He signed
 * [Kaliber](/km/characters/lendermaire/kaliber)
 * [Salmon](/km/characters/lendermaire/salmon)
 * [Takahashi](/km/characters/anajak-forces/takahashi)
-* [Samsara Lykor](/km/characters/samsara-lykor)
+* [Samsara Lykor](/km/characters/lendermaire/samsara-lykor)
 * [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined))
 * [Noradus](/characters/vista/noradus)

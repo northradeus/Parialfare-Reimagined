@@ -20,7 +20,7 @@ language: km
 
 **Noradus Partenstine** ដែលត្រូវបានគេស្គាល់ថា **Northrad** គឺជាប្រធាន [វីស្តា](/km/factions/vista) និងជាស្ថាបត្យករសំខាន់នៃស្ថាប័នរបស់ខ្លួន។ គាត់គឺជាអតីតប្រតិបត្តិករពិសេសនៅក្រោម [លើឃីនសបឺក](/km/locations/countries/lurkinsberg) និងជាឥស្សរជនសកលពីគ្រួសារអ្នកមានដែលបានទិញផ្លូវរបស់គាត់ចូលទៅក្នុងនយោបាយ។
 
-គាត់គឺជាបុគ្គលម្នាក់ផ្សេងពីសមាជិកទីដប់បីនៃ [ឡង់ឌែរម៉ែរ](/km/factions/lendermaire), [សាំសារ៉ា លីក័រ](/km/characters/samsara-lykor) ដែលចែករំលែកការរចនាតាមរយៈ Military naming custom; អ្នកទាំងពីរមិនមានទំនាក់ទំនងផ្ទាល់ខ្លួន ឬអង្គការទេ។
+គាត់គឺជាបុគ្គលម្នាក់ផ្សេងពីសមាជិកទីដប់បីនៃ [ឡង់ឌែរម៉ែរ](/km/factions/lendermaire), [សាំសារ៉ា លីក័រ](/km/characters/lendermaire/samsara-lykor) ដែលចែករំលែកការរចនាតាមរយៈ Military naming custom; អ្នកទាំងពីរមិនមានទំនាក់ទំនងផ្ទាល់ខ្លួន ឬអង្គការទេ។
 
 ## អត្តសញ្ញាណ
 
@@ -70,10 +70,12 @@ VISTA ចាត់ទុកការវាយតម្លៃរបស់ខ្�
 ម្រេចគឺជាអ្នកជំនួយផ្ទាល់ខ្លួនរបស់ Northrad។ VISTA បានចាត់តាំងនាង ហើយ Northrad មិនបានជ្រើសរើសនាងទេ។ អង្គការចាត់ទុកមុខតំណែងនេះចាំបាច់ដោយសារតែអាយុរបស់គាត់ បន្ទុកការងារ និងគម្លាតបទពិសោធន៍រវាងគាត់ និងមន្ត្រីជាន់ខ្ពស់ជាច្រើន។
 
 <div class="gallery landscape">
-  <រូប>!Noradus Concept.png
+  <figure>
+    <img src="assets/noradus-concept.png" alt="Noradus Concept.png" loading="lazy" />
     <figcaption>Northrad មុន​និមិត្តសញ្ញា VISTA</figcaption>
   </figure>
-  <រូប>!Noradus Office.png
+  <figure>
+    <img src="assets/noradus-office.png" alt="Noradus Office.png" loading="lazy" />
     <figcaption>Northrad នៅក្នុងការិយាល័យរបស់គាត់ជាមួយនឹងជំនួយការរបស់គាត់ Pepper</figcaption>
   </figure>
 </div>
@@ -91,7 +93,7 @@ VISTA ចាត់ទុកការវាយតម្លៃរបស់ខ្�
 ### [តានីស៊ីតូ](/km/characters/anajak-forces/tanishito)
 ធម្មជាតិនៃចំណាប់អារម្មណ៍ផ្ទាល់ខ្លួនរបស់ Northrad ចំពោះ Tanishito ដែលជាឃាតកមនុស្សពេញវ័យកម្រិត S នៃ [កងកម្លាំងអាណាចក្រ](/km/factions/anajak-forces) មិនត្រូវបានដោះស្រាយទេ។
 
-### [សាំសារ៉ា លីក័រ](/km/characters/samsara-lykor)
+### [សាំសារ៉ា លីក័រ](/km/characters/lendermaire/samsara-lykor)
 មិនមានការតភ្ជាប់ដែលបានបង្កើតឡើងទេ។ ឈ្មោះដែលបានចែករំលែកមកពីទម្លាប់ដាក់ឈ្មោះ។
 
 ## មិនទាន់ដោះស្រាយ
@@ -110,6 +112,6 @@ VISTA ចាត់ទុកការវាយតម្លៃរបស់ខ្�
 * [សម្ព័ន្ធអន្តរាគមន៍សកល](/km/factions/global-intervention-coalition-(gic))
 * [កងកម្លាំងអាណាចក្រ](/km/factions/anajak-forces)
 * [កងកម្លាំងកិច្ចការពិសេសអៃរ៉ុន](/km/factions/ironish-task-force-(itf))
-* [សាំសារ៉ា លីក័រ](/km/characters/samsara-lykor)
+* [សាំសារ៉ា លីក័រ](/km/characters/lendermaire/samsara-lykor)
 * [ប្រតិបត្តិការឆ្មក់វាយប្រហាររាជវាំងពោធិ៍សាង ឆ្នាំ២០០៨](/km/events/2008-pocheasang-palace-raid)
 * [2008 Ai'ron request to VISTA](/km/events/2008-ai'ron-request-to-vista)

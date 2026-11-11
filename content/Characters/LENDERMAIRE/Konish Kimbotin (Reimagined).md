@@ -96,7 +96,7 @@ Various intelligence bodies have attributed several unconfirmed activities to Ki
 
 *   **[LENDERMAIRE](/km/factions/lendermaire):** Kimbotin maintains a symbiotic relationship with the organization. Analysts note that the group cannot exist without his leadership, and his operational capacity is heavily reliant on the unit's specialized skills.
 *   **[Hanktonio](/km/characters/lendermaire/hanktonio):** Kimbotin's second-in-command. Hanktonio views him as an enigmatic figure capable of both rehabilitating individuals and tracking them down.
-*   **[Lykor](/km/characters/samsara-lykor):** The concealed thirteenth member of LENDERMAIRE, who remains with the organization primarily due to personal loyalty to Kimbotin.
+*   **[Lykor](/km/characters/lendermaire/samsara-lykor):** The concealed thirteenth member of LENDERMAIRE, who remains with the organization primarily due to personal loyalty to Kimbotin.
 *   **[Northrad](/characters/vista/noradus):** The President of VISTA and a political opponent of Kimbotin. Northrad is a distinct individual from Lykor (the thirteenth member).
 *   **[Anajak Forces](/km/factions/anajak-forces):** A military task force founded specifically by VISTA President Northrad to counter Kimbotin, LENDERMAIRE, and other Cladish factions.
 *   **[Maire O'Mare](/factions/maire-o'mare-(2008)):** An unpredictable insurgent group that occasionally allies with Kimbotin but frequently turns against him. Kimbotin views them as a primary threat.

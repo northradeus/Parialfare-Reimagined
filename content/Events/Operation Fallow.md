@@ -83,7 +83,7 @@ General Ramcher read the report. The record does not describe his response. It e
 - [Anajak Forces](/km/factions/anajak-forces)
 - [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic))
 - [Tanishito](/km/characters/anajak-forces/tanishito)
-- [Samsara Lykor](/km/characters/samsara-lykor)
+- [Samsara Lykor](/km/characters/lendermaire/samsara-lykor)
 - [LENDERMAIRE](/km/factions/lendermaire)
 - [General Ramcher](/km/characters/anajak-forces/general-ramcher)
 - [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf))

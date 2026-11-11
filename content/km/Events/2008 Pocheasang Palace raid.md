@@ -42,7 +42,7 @@ language: km
 
 អគារ​នេះ​បាន​កាន់កាប់​ទីតាំង​ខ្ពស់​មួយ​នៅ​កណ្តាល​ពោធិ៍​សាំង ដែល​មាន​ព្រំប្រទល់​ជាប់​នឹង​ជញ្ជាំង​បរិវេណ​ទ្វារ​ខាងក្រៅ និង​ស្លាប​រដ្ឋបាល​ខាងក្នុង​បី។ ឧបសម្ព័ន្ធរដ្ឋបាលប្រៃសណីយ៍មួយនៅជាប់នឹងព្រំប្រទល់ខាងកើត និងចែករំលែកវិធីសាស្រ្តច្រកទ្វារខាងកើត។ ទីតាំងជាប់គ្នានេះត្រូវបានគេកំណត់ថាជាប្រភពនៃឈ្មោះខុស "ក្រោយការិយាល័យ"។
 
-<figure style="margin: 1em 0; width: 100%;">!Rainy Government Complex with Custom Flags.png
+<figure style="margin: 1em 0; width: 100%;"><img src="assets/rainy-government-complex-with-custom-flags.png" alt="Rainy Government Complex with Custom Flags.png" loading="lazy" />
   <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; color: var(--color-text-secondary);">
     បរិវេណ​វាំង​ពោធិ៍​សាំង មើល​ពី​មាត់​ទ្វារ​ខាងកើត។
   </figcaption>
@@ -100,7 +100,7 @@ language: km
 
 ការ​សាកសួរ​បាន​កំណត់​កត្តា​សម្រេច​ចំនួន​បី៖ ការ​បាត់​បង់​ទំនាក់​ទំនង​នៅ​ម៉ោង​ប្រមាណ ១៨:៤០; អវត្ដមាននៃមេបញ្ជាការនៅនឹងកន្លែង ដែលផ្តល់សិទ្ធិអំណាចក្នុងការប្រព្រឹត្តលើកងកម្លាំងទាំងពីរ។ និងការតំរង់ទិសនៃការការពារឆ្ពោះទៅរកបរិវេណជាជាងច្រករបៀងបណ្ណសារ។
 
-<figure style="margin: 1em 0; width: 100%;">!Archive Corridor CCTV Stack-Up.jpg
+<figure style="margin: 1em 0; width: 100%;"><img src="assets/archive-corridor-cctv-stack-up.jpg" alt="Archive Corridor CCTV Stack-Up.jpg" loading="lazy" />
   <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; color: var(--color-text-secondary);">
     ស៊ុមសៀគ្វីបិទពីកាមេរ៉ាខាងក្នុង CAM 04 នៅក្នុងច្រករបៀងបណ្ណសារ (ថ្ងៃទី 25 ខែសីហា ឆ្នាំ 2008 ម៉ោង 21:14 ម៉ោងក្នុងស្រុក) ដែលត្រូវបានរក្សាទុកក្នុងមូលដ្ឋានអំឡុងពេលទំនាក់ទំនងសកម្ម។
   </figcaption>
@@ -112,9 +112,9 @@ language: km
 
 ខ្សែអាត់វីដេអូនេះបានបង្ហាញពីនិមិត្តសញ្ញាមួយនៅលើឧបករណ៍របស់អ្នកវាយប្រហារដែលមិនមានឯកសារយោងពីមុននៅក្នុងប្រភពបើកចំហ។ សេចក្តីថ្លែងការណ៍ផ្លូវការនៅក្នុងចន្លោះពេលនោះ សំដៅតែចំពោះ "អ្នកវាយប្រហារដែលមិនស្គាល់អត្តសញ្ញាណ។"[^1][^6][^26]
 
-!Bodycam Battle in the Grand Atrium.png
+![Bodycam Battle in the Grand Atrium.png](assets/bodycam-battle-in-the-grand-atrium.png)
 
-<figure style="margin: 1em 0; width: 100%;">!Recovered Bodycam Archive Breach.jpg
+<figure style="margin: 1em 0; width: 100%;"><img src="assets/recovered-bodycam-archive-breach.jpg" alt="Recovered Bodycam Archive Breach.jpg" loading="lazy" />
   <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; color: var(--color-text-secondary);">
     បាន​យក​ស៊ុម​កាមេរ៉ា​ដែល​ពាក់​លើ​រាងកាយ​របស់​អ្នក​វាយប្រហារ​មកវិញ​ពី​ច្រក​របៀង​បណ្ណសារ (25 សីហា 2008, 21:14 ម៉ោង​ក្នុង​តំបន់) ដែល​បង្ហាញ​ធាតុ​រំលោភបំពាន ប្រតិបត្តិករ​ទំនាក់ទំនង និង​តួលេខ​ដែល​ក្រោយ​មក​ត្រូវ​បាន​កំណត់​ដោយ​អាវ​របស់​គាត់។
   </figcaption>

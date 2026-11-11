@@ -29,7 +29,7 @@
 
 **Noradus Partenstine**, known as **Northrad**, is the president of [VISTA](/km/factions/vista) and the principal architect of its institutions. He is a former special operator under [Lurkinsberg](/km/locations/countries/lurkinsberg), and a global figure from a wealthy family who bought his way into politics.
 
-He is a different individual from the thirteenth member of [LENDERMAIRE](/km/factions/lendermaire), [Samsara Lykor](/km/characters/samsara-lykor), who shares the designation through the Military naming custom; the two have no established personal or organizational connection.
+He is a different individual from the thirteenth member of [LENDERMAIRE](/km/factions/lendermaire), [Samsara Lykor](/km/characters/lendermaire/samsara-lykor), who shares the designation through the Military naming custom; the two have no established personal or organizational connection.
 
 ## Identity
 
@@ -102,7 +102,7 @@ Assigned adjutant and caretaker (see above).
 ### [Tanishito](/km/characters/anajak-forces/tanishito)
 The nature of Northrad's personal interest in Tanishito, an adult S-grade assassin of [Anajak Forces](/km/factions/anajak-forces), is unresolved.
 
-### [Lykor](/km/characters/samsara-lykor)
+### [Lykor](/km/characters/lendermaire/samsara-lykor)
 No established connection. The shared name comes from the naming custom.
 
 ## Unresolved
@@ -121,6 +121,6 @@ No established connection. The shared name comes from the naming custom.
 * [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic))
 * [Anajak Forces](/km/factions/anajak-forces)
 * [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf))
-* [Samsara Lykor](/km/characters/samsara-lykor)
+* [Samsara Lykor](/km/characters/lendermaire/samsara-lykor)
 * [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid)
 * [2008 Ai'ron request to VISTA](/km/events/2008-ai'ron-request-to-vista)
