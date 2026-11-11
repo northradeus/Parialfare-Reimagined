@@ -6,7 +6,7 @@
 <tr><th>Subtitle</th><td>Encorean close-combat specialist of Anajak; Royal Army veteran</td></tr>
 <tr><th>Ethnicity</th><td>Encorean</td></tr>
 <tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
-<tr><th>Former Unit</th><td>Encorean Royal Army</td></tr>
+<tr><th>Former Unit</th><td><a href="/locations/countries/kingdom-of-encore">Encorean Royal Army</a></td></tr>
 <tr><th>Earlier Role</th><td>Field Interpreter</td></tr>
 <tr><th>Background</th><td>Royal Academy Close-Quarters System; military-issued knife specialist</td></tr>
 </table>
@@ -15,7 +15,7 @@
 
 # Pich
 
-Pich is an Encorean close-combat specialist serving in [Anajak](factions/anajak-forces) under the operational command of [Tarnished](characters/anajak-forces/tarnished). He was seconded from the Encorean Royal Army into the GIC umbrella structure through a bilateral arrangement between Encore and [General Northrad](characters/vista/noradus)'s office.
+Pich is an Encorean close-combat specialist serving in [Anajak](factions/anajak-forces) under the operational command of [Tarnished](characters/anajak-forces/tarnished). He was seconded from the [Encorean Royal Army](locations/countries/kingdom-of-encore) into the GIC umbrella structure through a bilateral arrangement between Encore and [General Northrad](characters/vista/noradus)'s office.
 
 ## Service Record
 
@@ -27,7 +27,7 @@ This role is distinct from the administrative adjutant functions handled by [Pep
 
 Pich's close-combat methodology derives from the Royal Academy Close-Quarters System, a standardized military curriculum developed by the Encorean Royal Army. The system incorporates traditional Encorean martial practices but has been heavily modified for contemporary battlefield efficiency and integration with a military-issued knife. It is a polished, institutional doctrine optimized for joint operations and VISTA compliance.
 
-This training is explicitly distinct from the older survivalist arts associated with the Black Kroma era. Operators such as Chan Rithipol employ guerrilla-era techniques (including the Reaper and Khmach tonfa systems) that emerged from a different period of Encorean history. Pich's Royal Academy training and Rithipol's Black Kroma-era methods do not share a direct lineage; one is a formalized military system, the other a hardened survival practice born of internal conflict.
+This training is explicitly distinct from the older survivalist arts associated with the [Black Kroma](factions/black-kroma) era. Operators such as Chan Rithipol employ guerrilla-era techniques (including the Reaper and Khmach tonfa systems) that emerged from a different period of Encorean history. Pich's Royal Academy training and Rithipol's Black Kroma-era methods do not share a direct lineage; one is a formalized military system, the other a hardened survival practice born of internal conflict.
 
 ## Linguistic Profile
 
@@ -53,7 +53,7 @@ Pich operates within Tarnished's squad alongside Kody and Shadow. He holds no fo
 
 - [Anajak](factions/anajak-forces) — GIC-aligned deniable task force
 - [Tarnished](characters/anajak-forces/tarnished) — Squad commander (ITF detachment)
-- Kingdom of Encore — Pich's nation of origin
-- Black Kroma — Coexisting military power in Encore
+- [Kingdom of Encore](locations/countries/kingdom-of-encore) — Pich's nation of origin
+- [Black Kroma](factions/black-kroma) — Coexisting military power in Encore
 - Chan Rithipol — Encorean operator from earlier Black Kroma era (different operational scope)
 - [ITF](factions/ironish-task-force-(itf)) — Prior attachment before Anajak activation

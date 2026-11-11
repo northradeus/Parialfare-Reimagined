@@ -23,3 +23,4 @@ A curated index of the major organisations operating in 2008.
 - [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) — The private military contractor.
 - [Laopanster Gendarmerie](factions/laopanster-gendarmerie) — Ironland's national gendarmerie.
 - [Alpha-01](factions/alpha-01) — The ITF label for Anajak's assassin core.
+- [Black Kroma](factions/black-kroma) — Standing armed faction in the Kingdom of Encore.

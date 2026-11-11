@@ -31,17 +31,21 @@ type EmojiMap = {
 }
 
 let emojimap: EmojiMap | undefined = undefined
+let emojimapPromise: Promise<any> | undefined;
+
 export async function loadEmoji(code: string) {
   if (!emojimap) {
-    const data = await import("./emojimap.json")
-    emojimap = data
+    if (!emojimapPromise) {
+      emojimapPromise = import("./emojimap.json");
+    }
+    emojimap = await emojimapPromise;
   }
 
-  const name = emojimap.codePointToName[`${code.toUpperCase()}`]
-  if (!name) throw new Error(`codepoint ${code} not found in map`)
+  const name = emojimap.codePointToName[`${code.toUpperCase()}`];
+  if (!name) throw new Error(`codepoint ${code} not found in map`);
 
-  const b64 = emojimap.nameToBase64[name]
-  if (!b64) throw new Error(`name ${name} not found in map`)
+  const b64 = emojimap.nameToBase64[name];
+  if (!b64) throw new Error(`name ${name} not found in map`);
 
-  return b64
+  return b64;
 }

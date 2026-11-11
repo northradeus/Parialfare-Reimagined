@@ -100,6 +100,13 @@ The Laopanster Gendarmerie detachment held the gatehouse and outer courtyard and
 
 The inquiry identified three decisive factors: the loss of communications at approximately 18:40; the absence of an on-site commander empowered to commit both forces; and the orientation of the defence towards the perimeter rather than the archival corridor.[^11] The jamming did not disable locally stored camera footage, which provided the principal evidentiary basis for later identification.[^13][^14]
 
+<figure style="margin: 1em 0; width: 100%;">
+  <img src="assets/archive-corridor-cctv-stack-up.jpg" alt="Archive Corridor CCTV Stack-Up.jpg" loading="lazy" />
+  <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; color: var(--color-text-secondary);">
+    Closed-circuit frame from internal camera CAM 04 in the archive corridor (25 August 2008, 21:14 local time), stored locally during active communications jamming.
+  </figcaption>
+</figure>
+
 ### 3.4 Recovery and publication of bodycam footage
 
 Footage from three body-worn cameras carried by the assailants was recovered by the Laopanster Gendarmerie during post-incident examination of the central wing and was subsequently published by Ai'ron authorities outside judicial channels rather than released through the courts.[^14][^15] The material was used to reconstruct the sequence of entry and seizure and formed the principal basis for the identification of participants. Its provenance and chain of custody were challenged in parliamentary proceedings, and the release was criticised by legal observers on the grounds that it compromised the evidentiary basis of pending prosecutions; the government stated that publication served the public interest in establishing the identity of the assailants.[^15][^16]
@@ -107,6 +114,13 @@ Footage from three body-worn cameras carried by the assailants was recovered by 
 The footage showed an emblem on the assailants' equipment that had no prior reference in open sources.[^26] Publication on 3 September 2008 preceded the public naming of any organisation by seven days; official statements in that interval referred only to "unidentified assailants."[^1][^6][^26]
 
 ![Bodycam Battle in the Grand Atrium.png](assets/bodycam-battle-in-the-grand-atrium.png)
+
+<figure style="margin: 1em 0; width: 100%;">
+  <img src="assets/recovered-bodycam-archive-breach.jpg" alt="Recovered Bodycam Archive Breach.jpg" loading="lazy" />
+  <figcaption style="text-align: center; font-style: italic; font-size: 0.9em; color: var(--color-text-secondary);">
+    Recovered assailant body-worn camera frame from the archive corridor (25 August 2008, 21:14 local time), showing the breach element, communications operator, and the figure later identified by his coat.
+  </figcaption>
+</figure>
 
 ## 4. Casualties and Aftermath
 

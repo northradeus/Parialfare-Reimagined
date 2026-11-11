@@ -18,9 +18,7 @@
 
 # Tanishito
 
-
-
-**Tanishito** is an adult assassin of the [Anajak Forces](factions/anajak-forces), graded S. She is of mixed Thaiphonese and [Lurkish](locations/countries/lurkinsberg) heritage. She was raised and trained inside a secret facility ([Site-29](locations/site-29)) and was handpicked by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) together with her partner, [Nogo](characters/anajak-forces/nogo). She was also raised as a spy.
+**Tanishito** is an adult assassin of the [Anajak Forces](factions/anajak-forces), graded S. She is of mixed Thaiphonese and [Lurkish](locations/countries/lurkinsberg) heritage. Raised and trained as an operative inside a classified facility ([Site-29](locations/site-29)), she was handpicked by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) alongside her partner, [Nogo](characters/anajak-forces/nogo).
 
 Her recorded description is pale skin and smooth, silky silver hair, a distinctive appearance attributed to her mixed Thaiphonese and Lurkish parentage. This description is shared almost word for word with Nogo's, and the two records do not separate them by appearance.
 
@@ -66,10 +64,13 @@ Her recruitment from a Pocheasang strip club, and her failed attempt to use the 
 
 The fullest reading of her interior life — the first place she was given one rather than a specification — is the reference draft of Operation Fallow — Episode. It dramatises her insertion, her absorption into the household, and her inability to tell a genuine feeling from a superior performance. It is a production draft, not canon, and its plot is provisional. Its characterisation is the most complete thing written about her.
 
+## Proto-Variant Seeds
+
+Early screenplay drafts developed prior to the grounding of *Parialfare: Reimagined* explored an alternate academy setting (North Academy Hub), where she was designated as **Tanishito Yoshinobu** (informally "Tarnish")—a recent secondary school graduate arriving from Tokyo who found herself courted by competing paramilitary student factions.
+
 ## See Also
 
 * The Lot
-
 * [Nogo](characters/anajak-forces/nogo)
 * [Pepper](characters/anajak-forces/pepper)
 * [Anajak Forces](factions/anajak-forces)

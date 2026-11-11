@@ -26,9 +26,7 @@
 
 # LENDERMAIRE
 
-
-
-**LENDERMAIRE** (native name: *Lendus O Mairen*) is a clandestine Cladish special operations formation active in the [Ironclad](locations/ironclad-dmz) region, operating as a black operations unit within the umbrella coalition [Konish's Group](factions/konish's-group). Founded in 2007 and garrisoned in southern Ironclad, the group maintains a core roster of thirteen members in addition to [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined)), who led it operationally. Its motto is *"Let them taste steel."* It fields a modern militiary arsenal.
+**LENDERMAIRE** (native name: *Lendus O Mairen*) is a clandestine Cladish special operations formation active in the [Ironclad](locations/ironclad-dmz) region, operating as a black operations unit within the umbrella coalition [Konish's Group](factions/konish's-group). Founded in 2007 and garrisoned in southern Ironclad, the group maintains a core roster of thirteen members in addition to [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined)), who led it operationally. Its motto is *"Let them taste steel."* It fields a modern military arsenal.
 
 The group remained unknown in open sources until the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid), after which its name entered public reporting through civilian identification of an emblem in recovered bodycam footage. The [VISTA](factions/vista) Intelligence Agency subsequently described it as one formation within Konish's Group, a coalition of armed formations operating with substantial autonomy rather than as a single command. VISTA could not establish Kimbotin's supreme command over the group, and the proposition remained contested.[^2]
 
@@ -139,6 +137,8 @@ The thirteenth member is reported to operate alone, completing objectives left u
 ## 7. Equipment and funding
 
 The group fields a modern military arsenal, including Cladish-style assault rifles, submachine guns, ballistic armor plates, and nano-flash pellets. Its funding is attributed to [Konish's Group](factions/konish's-group). Reports indicate that Kimbotin finances operations by capturing and reusing equipment from the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)).[^4]
+
+Operators frequently field non-standard hybrid combat dress, combining military plate carriers with civilian cold-weather wear: tan tactical chest rigs worn over heavy flannel shirts, dark weather-worn trench coats with fur neck linings (furnecks), and commercial-spec **GreyFox V5** boots. The distinctive angular heel and curved sole tread of the GreyFox boots subsequently became a primary identification marker in civilian investigations and forensic tracking along the border.
 
 ## 8. Relations
 

@@ -12,6 +12,10 @@
 
 This page records changes to the encyclopedia. Entries appear newest first. Version numbers correspond to the internal publication register and have no in-universe meaning.
 
+## v007 — 11 November 2026
+
+This update expands eastern continental intelligence with the formal introduction of the **Kingdom of Encore** and the **Black Kroma**. Encore's sovereign dossier documents its dual colonial heritage under Lurkinsberg and Ai'ron, its formalized close-combat doctrine, and the confidential bilateral security agreement with VISTA that christened **Anajak Forces**. The accompanying file for the **Black Kroma** details its historical transition from a mid-century totalitarian insurgent regime to an entrenched armed establishment coexisting alongside the Encorean Royal Army. Within the frontline factions, **LENDERMAIRE**'s profile now details field dress and GreyFox V5 forensic footwear markers, accompanied by newly recovered CCTV and bodycam frames from the **2008 Pocheasang Palace Raid**. Major personnel expansions include the complete dossier for assaulter **Andrew**—tracing his firefighter beginnings, squad loyalty, Numbrad trauma, and crossover into the GIC—alongside early academy variant seeds for **Tanishito** and updated command records for **Hanktonio**.
+
 ## v006 — 10 November 2026
 
 This major expansion brings extensive new intelligence across the southern theatre, the Ironclad frontier, and the Kingdom of Ai'ron.

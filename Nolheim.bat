@@ -4,6 +4,7 @@ title Nolheim Control Panel
 
 set "BRIDGE_BAT=C:\Users\Administrator\anybridge\start_bridge.bat"
 set "VAULT_DIR=C:\Users\Administrator\Documents\Worldbuild & IP\Nolheim"
+set "BUNDLE_BAT=C:\Users\Administrator\Documents\Worldbuild & IP\bundle_vault.bat"
 set "SNAPSHOTS_DIR=%VAULT_DIR%\Archives\Publish snapshots"
 set "QUARTZ_DIR=%~dp0"
 if "%QUARTZ_DIR:~-1%"=="\" set "QUARTZ_DIR=%QUARTZ_DIR:~0,-1%"
@@ -28,6 +29,7 @@ echo    [6] Open Vault folder
 echo    [7] Open Quartz folder
 echo    [8] Open Website
 echo    [9] Drift Check          (see unpromoted changes in Continuities)
+echo    [10] Bundle AI Vault     (generate clean vault.md + reveal in Explorer)
 echo.
 echo    [0] Exit
 echo.
@@ -42,6 +44,7 @@ if "%CHOICE%"=="6" goto DO_VAULT
 if "%CHOICE%"=="7" goto DO_QUARTZ
 if "%CHOICE%"=="8" goto DO_WEB
 if "%CHOICE%"=="9" goto DO_DRIFT
+if "%CHOICE%"=="10" goto DO_BUNDLE
 if "%CHOICE%"=="0" goto EXIT
 goto MENU
 
@@ -65,7 +68,7 @@ echo   Version:       !VERSION!
 echo   Bridge:        !BRIDGE_STATUS!
 echo   Unpromoted:    !DRIFT_STATUS!
 echo   Pending:       !PENDING!
-echo   Vault:         %VAULT_DIR%
+echo   Vault:         !VAULT_DIR!
 echo ----------------------------------------------------------------
 goto :eof
 
@@ -159,6 +162,19 @@ goto MENU
 echo.
 node "%~dp0drift-check.cjs"
 echo ----------------------------------------------------------------
+echo   Press any key to return to the menu.
+echo ----------------------------------------------------------------
+pause >nul
+goto MENU
+
+:DO_BUNDLE
+echo.
+echo Bundling AI Vault for NotebookLM / LLM ingestion...
+echo.
+call "%BUNDLE_BAT%" --no-pause
+echo.
+echo ----------------------------------------------------------------
+echo   Vault bundled and highlighted in File Explorer.
 echo   Press any key to return to the menu.
 echo ----------------------------------------------------------------
 pause >nul

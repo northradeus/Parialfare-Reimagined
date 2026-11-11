@@ -455,19 +455,104 @@ function featuredMedia(fileName, altText) {
     return `<span class="card-image"><img src="assets/${mappedName}" alt="${altText}" loading="lazy"></span>`;
 }
 
-const indexContent = `---\ntitle: Nolheim\ndescription: "The Independent Encyclopedia of Parialfare: Reimagined — covert operations, warlords, and black-site facilities in the year 2008."\nsocialImage: og-image.png\n---\n<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-author">Created by <a href="https://northrad.carrd.co/" target="_blank" rel="noopener">CHHUM PICHTHYACHHANAN</a></p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div><h2 class="home-section-title">Featured Records</h2><div class="featured-grid"><a href="characters/lendermaire/konish-kimbotin-(reimagined)" class="featured-card">${featuredMedia("konish.jpg", "Konish Kimbotin")}<span class="card-content"><span class="card-title">Konish Kimbotin</span><span class="card-subtitle">Supreme Warlord of the Cladish insurgency.</span></span></a><a href="characters/lendermaire/samsara-lykor" class="featured-card">${featuredMedia("samsara.jpg", "Samsara Lykor")}<span class="card-content"><span class="card-title">Samsara Lykor</span><span class="card-subtitle">The concealed thirteenth member of LENDERMAIRE.</span></span></a><a href="events/2008-pocheasang-palace-raid" class="featured-card">${featuredMedia("nighttime-gendarmerie-assault.png", "Event")}<span class="card-content"><span class="card-title">2008 Pocheasang Palace Raid</span><span class="card-subtitle">The foundational act of the modern insurgency.</span></span></a></div><h2 class="home-section-title">Explore the Archive</h2><div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div><h2 class="home-section-title">Not sure where to start?</h2><div class="portal-grid"><a href="start-here" class="portal-button">Start Here</a><a href="#" class="portal-button" onclick="const h=JSON.parse(sessionStorage.getItem('randomHistory')||'[]');fetch('random-index.json').then(r=>r.json()).then(idx=>{let pool=idx.filter(u=>!h.includes(u));if(!pool.length){h.length=0;pool=idx;}const p=pool[Math.floor(Math.random()*pool.length)];h.push(p);if(h.length>10)h.shift();sessionStorage.setItem('randomHistory',JSON.stringify(h));window.location.href=p;});return false;">Random Article</a></div>`;
-// Reorder homepage: Explore the Archive before Featured Records.
-// Anchored on the three section headings so the swap is stable across edits.
-const _featuredMarker = '<h2 class="home-section-title">Featured Records</h2>';
-const _exploreMarker = '<h2 class="home-section-title">Explore the Archive</h2>';
-const _notSureMarker = '<h2 class="home-section-title">Not sure where to start?</h2>';
-const _fIdx = indexContent.indexOf(_featuredMarker);
-const _eIdx = indexContent.indexOf(_exploreMarker);
-const _nIdx = indexContent.indexOf(_notSureMarker);
-const _reordered = (_fIdx >= 0 && _eIdx >= 0 && _nIdx >= 0 && _fIdx < _eIdx && _eIdx < _nIdx)
-    ? indexContent.slice(0, _fIdx) + indexContent.slice(_eIdx, _nIdx) + indexContent.slice(_fIdx, _eIdx) + indexContent.slice(_nIdx)
-    : indexContent;
-fs.writeFileSync(path.join(destDir, 'index.md'), _reordered);
+const sideSelectorHtml = `<h2 class="home-section-title">Choose Your Side</h2>
+<p class="home-section-subtitle">Two opposing doctrines dominate the 2008 southern continent. Select a faction to inspect their commanders, citadels, and frontline operators.</p>
+
+<div class="side-selector">
+  <input type="radio" id="side-insurgency" name="side-choice" checked />
+  <input type="radio" id="side-order" name="side-choice" />
+
+  <div class="side-tabs">
+    <label for="side-insurgency" class="side-tab-btn tab-insurgency">
+      <span class="tab-badge">FACTION // 01</span>
+      <span class="tab-title">The Insurgency</span>
+      <span class="tab-sub">Konish's Group & LENDERMAIRE</span>
+    </label>
+    <label for="side-order" class="side-tab-btn tab-order">
+      <span class="tab-badge">FACTION // 02</span>
+      <span class="tab-title">The Order</span>
+      <span class="tab-sub">VISTA, New Aester & ITF</span>
+    </label>
+  </div>
+
+  <div class="side-panel panel-insurgency">
+    <div class="side-motto">"Let them taste steel." &mdash; The Cladish warlord coalition defending an unmapped interior.</div>
+    <div class="featured-grid">
+      <a href="characters/lendermaire/konish-kimbotin-(reimagined)" class="featured-card">
+        ${featuredMedia("konish.jpg", "Konish Kimbotin")}
+        <span class="card-content">
+          <span class="card-badge badge-insurgent">COMMANDER</span>
+          <span class="card-title">Konish Kimbotin</span>
+          <span class="card-subtitle">Cladish-Jen warlord shielding the undocumented southern society.</span>
+        </span>
+      </a>
+      <a href="locations/area-31" class="featured-card">
+        ${featuredMedia("area-31.jpg", "Area-31 Citadel")}
+        <span class="card-content">
+          <span class="card-badge badge-insurgent">CITADEL</span>
+          <span class="card-title">Area-31 (Shaiken)</span>
+          <span class="card-subtitle">Brutalist mountain fortress and base for supersonic "Sun" interceptors.</span>
+        </span>
+      </a>
+      <a href="characters/lendermaire/samsara-lykor" class="featured-card">
+        ${featuredMedia("samsara.jpg", "Samsara Lykor")}
+        <span class="card-content">
+          <span class="card-badge badge-insurgent">SPECIAL OPERATOR</span>
+          <span class="card-title">Samsara Lykor</span>
+          <span class="card-subtitle">The concealed thirteenth member erased from all public records.</span>
+        </span>
+      </a>
+    </div>
+  </div>
+
+  <div class="side-panel panel-order">
+    <div class="side-motto">"Progress Through Innovation." &mdash; Corporate technocracy backed by private military contractor power.</div>
+    <div class="featured-grid">
+      <a href="characters/vista/noradus" class="featured-card">
+        ${featuredMedia("naradus.png", "Noradus 'Northrad'")}
+        <span class="card-content">
+          <span class="card-badge badge-order">ARCHITECT</span>
+          <span class="card-title">Noradus "Northrad"</span>
+          <span class="card-subtitle">Billionaire VISTA President and founder of New Aester.</span>
+        </span>
+      </a>
+      <a href="locations/countries/new-aester" class="featured-card">
+        ${featuredMedia("newaester.png", "New Aester")}
+        <span class="card-content">
+          <span class="card-badge badge-order">CORPORATE STATE</span>
+          <span class="card-title">New Aester</span>
+          <span class="card-subtitle">Corporate proving ground city-state locked behind a brutalist defensive wall.</span>
+        </span>
+      </a>
+      <a href="characters/anajak-forces/takahashi" class="featured-card">
+        ${featuredMedia("sahara.jpg", "Takahashi 'Sahara'")}
+        <span class="card-content">
+          <span class="card-badge badge-order">STRIKE PILOT</span>
+          <span class="card-title">Takahashi ("Sahara")</span>
+          <span class="card-subtitle">Thaiphonese strike aviator who inflicted LENDERMAIRE's first casualty.</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>`;
+
+const indexContent = `---
+title: Nolheim
+description: "The Independent Encyclopedia of Parialfare: Reimagined — covert operations, warlords, and black-site facilities in the year 2008."
+socialImage: og-image.png
+---
+<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-author">Created by <a href="https://northrad.carrd.co/" target="_blank" rel="noopener">CHHUM PICHTHYACHHANAN</a></p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div>
+
+<h2 class="home-section-title">Explore the Archive</h2>
+<div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div>
+
+${sideSelectorHtml}
+
+<h2 class="home-section-title">Not sure where to start?</h2>
+<div class="portal-grid"><a href="start-here" class="portal-button">Start Here</a><a href="#" class="portal-button" onclick="const h=JSON.parse(sessionStorage.getItem('randomHistory')||'[]');fetch('random-index.json').then(r=>r.json()).then(idx=>{let pool=idx.filter(u=>!h.includes(u));if(!pool.length){h.length=0;pool=idx;}const p=pool[Math.floor(Math.random()*pool.length)];h.push(p);if(h.length>10)h.shift();sessionStorage.setItem('randomHistory',JSON.stringify(h));window.location.href=p;});return false;">Random Article</a></div>
+`;
+
+fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
 
 const eventData = [];
 
@@ -485,7 +570,7 @@ function parseFile(filePath, fileName) {
         for (const rawLine of fmMatch[1].split('\n')) {
             const line = rawLine.trim();
             if (line.startsWith('title:')) title = line.substring(6).trim().replace(/['"]/g, '');
-            if (line.startsWith('subtitle:')) subtitle = line.substring(9).trim().replace(/['"]/g, '');
+            if (line.startsWith('subtitle:')) subtitle = line.substring(9).trim().replace(/['"]/g, '').replace(/\[\[(?:[^|\]]*\|)?([^\]]+)\]\]/g, '$1');
             if (line.startsWith('image:')) image = parseImageField(line.substring(6));
             if (line.startsWith('status:')) status = line.substring(7).trim().replace(/['"]/g, '');
             if (line.startsWith('date:')) date = line.substring(5).trim().replace(/['"]/g, '');
@@ -507,6 +592,7 @@ function collectArticles(dir, relPrefix) {
         } else if (entry.endsWith('.md') && entry !== 'index.md') {
             const data = parseFile(entryPath, entry);
             data.relPath = relPrefix + entry.replace('.md', '').toLowerCase().replace(/ /g, '-');
+            data.group = path.basename(dir);
             articles.push(data);
         }
     }
@@ -524,7 +610,8 @@ function renderCard(article, outDir) {
         imgHtml = `<span class="card-image placeholder"><span class="placeholder-initial">${initial}</span></span>`;
     }
     const draftBadge = (article.status.toLowerCase() === 'draft') ? '<span class="draft-badge">Draft</span>' : '';
-    return `<a href="${article.relPath}" class="featured-card">${imgHtml}<span class="card-content"><span class="card-title">${article.title}${draftBadge}</span><span class="card-subtitle">${article.subtitle}</span></span></a>`;
+    const badgeLabel = article.group ? article.group.toUpperCase() : (article.entityType ? article.entityType.toUpperCase() : 'ENTRY');
+    return `<a href="${article.relPath}" class="featured-card">${imgHtml}<span class="card-content"><span class="card-badge">${badgeLabel}${draftBadge}</span><span class="card-title">${article.title}</span><span class="card-subtitle">${article.subtitle}</span></span></a>`;
 }
 
 function generateIndices(srcDir, outDir, isRoot = false) {
@@ -651,22 +738,23 @@ fs.writeFileSync(path.join(destDir, 'Events-Directory.md'), renderEventsDirector
 console.log(`[events] Generated Events Directory with ${eventData.length} entries.`);
 
 // Replace the published content only after the complete generation succeeds.
-if (fs.existsSync(backupDir)) {
-    fs.rmSync(backupDir, { recursive: true, force: true });
-}
-if (fs.existsSync(finalDir)) {
-    fs.renameSync(finalDir, backupDir);
-}
 try {
+    if (fs.existsSync(backupDir)) {
+        fs.rmSync(backupDir, { recursive: true, force: true });
+    }
+    if (fs.existsSync(finalDir)) {
+        fs.renameSync(finalDir, backupDir);
+    }
     fs.renameSync(destDir, finalDir);
     if (fs.existsSync(backupDir)) {
         fs.rmSync(backupDir, { recursive: true, force: true });
     }
-} catch (error) {
-    if (!fs.existsSync(finalDir) && fs.existsSync(backupDir)) {
-        fs.renameSync(backupDir, finalDir);
-    }
-    throw error;
+} catch (renameErr) {
+    // If directory rename fails (common on Windows when a watcher or dev server holds a lock on content),
+    // fall back to direct copy.
+    console.warn(`[build] Directory rename locked (${renameErr.message}); syncing files directly into content...`);
+    fs.cpSync(destDir, finalDir, { recursive: true, force: true });
+    fs.rmSync(destDir, { recursive: true, force: true });
 }
 
 if (fs.existsSync(previewOverlayDir)) {

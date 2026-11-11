@@ -33,7 +33,7 @@ No grade is recorded for him. Whether a volunteer entering with a retinue is gra
 
 ## His soldiers
 
-He volunteered alongside [Pich](characters/anajak-forces/pich), Kody, Shadow, and many more. Pich is recorded as an Encorean close-combat specialist and field interpreter seconded from the Encorean Royal Army; Kody and Shadow are recorded only by name, and the remainder of the group is unnumbered.
+He volunteered alongside [Pich](characters/anajak-forces/pich), Kody, Shadow, and many more. Pich is recorded as an Encorean close-combat specialist and field interpreter seconded from the [Encorean Royal Army](locations/countries/kingdom-of-encore); Kody and Shadow are recorded only by name, and the remainder of the group is unnumbered.
 
 Whether the soldiers volunteered individually or followed Tarnished as his command is not stated. The distinction matters: a following is a faction inside the force, while individual volunteers are simply recruits who arrived together.
 

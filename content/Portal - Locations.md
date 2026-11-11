@@ -15,6 +15,7 @@ A curated index of the geographic entities in the region.
 - [Ironland](locations/countries/ironland) — The Kingdom of the Ai'ron Land.
 - [Lurkinsberg](locations/countries/lurkinsberg) — The post-colonial naval power.
 - [New Aester](locations/countries/new-aester) — The corporate city-state.
+- [Kingdom of Encore](locations/countries/kingdom-of-encore) — Constitutional monarchy and eastern VISTA member state.
 
 ## The Frontier
 - [Ironclad](locations/countries/ironclad) — The post-imperial warlord frontier.

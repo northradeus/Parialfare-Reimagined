@@ -24,7 +24,7 @@
 
 Anajak's roster is a multinational, multi-tiered apparatus. Its core consists of highly trained, facility-raised assassins, the majority of whom are of Lurkish ethnicity. This classified assassin core is referred to internally by the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) as "[Alpha-01](factions/alpha-01)". See [Alpha-01](factions/alpha-01).
 
-Surrounding this core are specialized detachments and seconded personnel. This includes ITF soldiers (such as [Tarnished](characters/anajak-forces/tarnished)'s squad), specialized operators from the Encorean Royal Army such as [Pich](characters/anajak-forces/pich), and the Thaiphonese fighter pilot [Takahashi](characters/anajak-forces/takahashi) ("Sahara"), whom [General Ramcher](characters/anajak-forces/general-ramcher) brought in from the inactive GIC roster to fly air support. These seconded personnel serve critical functional niches—from close air support to field-level linguistic and cultural interpretation—bridging the gaps between Lurkish command structures and local operational realities.
+Surrounding this core are specialized detachments and seconded personnel. This includes ITF soldiers (such as [Tarnished](characters/anajak-forces/tarnished)'s squad), specialized operators from the [Encorean Royal Army](locations/countries/kingdom-of-encore) such as [Pich](characters/anajak-forces/pich), and the Thaiphonese fighter pilot [Takahashi](characters/anajak-forces/takahashi) ("Sahara"), whom [General Ramcher](characters/anajak-forces/general-ramcher) brought in from the inactive GIC roster to fly air support. These seconded personnel serve critical functional niches—from close air support to field-level linguistic and cultural interpretation—bridging the gaps between Lurkish command structures and local operational realities.
 
 ## The Mirrored Answer
 
@@ -40,7 +40,7 @@ The record does not state whether this symmetry was intentional, or merely a byp
 
 ## The Name "Anajak"
 
-The designation "Anajak" is an Encorean word. Its adoption traces back to a clandestine side deal negotiated between General Northrad and Encorean representatives during a public VISTA presidential visit to the Kingdom of Encore. The agreement facilitated the placement of Encorean Royal Army personnel into GIC structures and deniable units.
+The designation "Anajak" is an Encorean word. Its adoption traces back to a clandestine side deal negotiated between General Northrad and Encorean representatives during a public VISTA presidential visit to the [Kingdom of Encore](locations/countries/kingdom-of-encore). The agreement facilitated the placement of Encorean Royal Army personnel into GIC structures and deniable units.
 
 During these negotiations, an Encorean liaison offered "Anajak" as a suggested operational designation. Northrad, who does not speak Encorean, adopted the term without knowledge of its semantic meaning, finding it suitably martial and distinct. The name's origin is traceable through the public record of the visit, while the side deal itself remains deniable.
 
