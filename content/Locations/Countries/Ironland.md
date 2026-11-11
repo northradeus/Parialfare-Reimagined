@@ -6,7 +6,7 @@
 <tr><th>Subtitle</th><td>Desteina Reamchea O'Airon</td></tr>
 <tr><th>Motto</th><td>Nations, Religion, King</td></tr>
 <tr><th>Anthem</th><td><span class="val-tbd">TBD</span></td></tr>
-<tr><th>Capital</th><td><a href="/locations/pocheasang">Pocheasang</a></td></tr>
+<tr><th>Capital</th><td><a href="/km/locations/pocheasang">Pocheasang</a></td></tr>
 <tr><th>Largest City</th><td>Soveangasna</td></tr>
 <tr><th>Official Language</th><td>Ironish</td></tr>
 <tr><th>Ethnic Groups</th><td>62% Ironish, 21% Lurkish, 10% Cladish, 7% Others</td></tr>
@@ -19,7 +19,7 @@
 <tr><th>Military</th><td>Royal Ironish Army</td></tr>
 <tr><th>Area Total</th><td>450,000 km²</td></tr>
 <tr><th>Population Estimate</th><td>37,000,000 (2007)</td></tr>
-<tr><th>Borders</th><td><a href="/locations/ironclad-dmz">Ironclad DMZ</a> (South), <a href="/locations/countries/new-aester">New Aester</a> (South)</td></tr>
+<tr><th>Borders</th><td><a href="/km/locations/ironclad-dmz">Ironclad DMZ</a> (South), <a href="/km/locations/countries/new-aester">New Aester</a> (South)</td></tr>
 <tr><th>Currency</th><td>Mon (₥)</td></tr>
 <tr><th>Industries</th><td>Trade, Agriculture, Global Market</td></tr>
 </table>
@@ -35,7 +35,7 @@
 > **Desteina Reamchea O'Airon**
 > 
 > * **Motto:** "Nations, Religion, King"
-> * **Capital:** [Pocheasang](locations/pocheasang)
+> * **Capital:** [Pocheasang](/km/locations/pocheasang)
 > * **Largest city:** Soveangasna
 > * **Official language:** Ironish
 > * **Government:** Constitutional Monarchy
@@ -44,9 +44,9 @@
 > * **Area:** 450,000 km²
 > * **Population:** 37,000,000
 
-The **Kingdom of the Ai'ron Land** (Native: *Desteina Reamchea O'Airon*), commonly known as **Ironland**, is a constitutional monarchy located on the coast of the southern continent. It is bordered by the [Ironclad DMZ](locations/ironclad-dmz) and the city-state of [New Aester](locations/countries/new-aester) to the south, and by the sea to its other frontiers. The country has a population of approximately 37 million, composed primarily of Ironish (62%) and Lurkish (21%) ethnic groups, with significant Cladish (10%) and other minorities.[^1] Its capital is [Pocheasang](locations/pocheasang), while its largest city is Soveangasna.[^2]
+The **Kingdom of the Ai'ron Land** (Native: *Desteina Reamchea O'Airon*), commonly known as **Ironland**, is a constitutional monarchy located on the coast of the southern continent. It is bordered by the [Ironclad DMZ](/km/locations/ironclad-dmz) and the city-state of [New Aester](/km/locations/countries/new-aester) to the south, and by the sea to its other frontiers. The country has a population of approximately 37 million, composed primarily of Ironish (62%) and Lurkish (21%) ethnic groups, with significant Cladish (10%) and other minorities.[^1] Its capital is [Pocheasang](/km/locations/pocheasang), while its largest city is Soveangasna.[^2]
 
-The modern state was established following the 1730 Ai'ross Revolution, a military coup that overthrew the preceding monarchy and installed the Ivynestine dynasty, granting the Crown supreme authority over the armed forces.[^3] Ai'ron maintains a defensive military posture and is a member of [VISTA](factions/vista). The country's economy is driven by trade, agriculture, and its integration into the global market, utilizing the *Mon* as its currency.[^4] In 2008, the country was the site of the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid), an incursion by the insurgent network [LENDERMAIRE](factions/lendermaire) that resulted in the loss of classified military archives and prompted a national declaration of martial law.[^5]
+The modern state was established following the 1730 Ai'ross Revolution, a military coup that overthrew the preceding monarchy and installed the Ivynestine dynasty, granting the Crown supreme authority over the armed forces.[^3] Ai'ron maintains a defensive military posture and is a member of [VISTA](/km/factions/vista). The country's economy is driven by trade, agriculture, and its integration into the global market, utilizing the *Mon* as its currency.[^4] In 2008, the country was the site of the [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid), an incursion by the insurgent network [LENDERMAIRE](/km/factions/lendermaire) that resulted in the loss of classified military archives and prompted a national declaration of martial law.[^5]
 
 ## 1. Etymology
 
@@ -57,14 +57,14 @@ The native name for the country is *Desteina Reamchea O'Airon*, which translates
 The Ironish language and Ai'ron administrative practice observe distinct onomastic traditions for classifying individuals, ethnic lineages, and hostile leaders in official state registers:
 
 *   **The Patronymic/Dynastic *-enstine*:** A traditional Ironish suffix denoting established lineage, notable standing, or association with the ruling order (exemplified by the reigning Ivynestine royal house, and applied to prominent historical and political figures such as *Rogolf → Rogolfenstine* and *Partenstine*).
-*   **The Lurkish *-anski* Suffix:** Individuals of Lurkish descent are systematically recorded in Ai'ron administrative documents with the *-anski* ending (*Noradus → Noradanski*), an administrative convention also reflected in military personnel registers (such as General [Verdanski](characters/anajak-forces/verdanski)).
+*   **The Lurkish *-anski* Suffix:** Individuals of Lurkish descent are systematically recorded in Ai'ron administrative documents with the *-anski* ending (*Noradus → Noradanski*), an administrative convention also reflected in military personnel registers (such as General [Verdanski](/km/characters/anajak-forces/verdanski)).
 *   **Adjectival Delegitimization (*-aric*):** In state communiqués and legal registers, the Crown deliberately refuses to grant sovereign or substantive nomenclature to hostile warlords and insurgent leaders. Rather than recognizing a leader as an individual head of state, the bureaucracy converts their name into an adjectival descriptor (*Konish → Konisharic*). Their authority and forces are thereby categorized as ideological or destabilizing conditions rather than a recognized government—officially catalogued as *"Konisharic elements"* or the *"Konisharic Reign"*.
 
 ## 2. History
 
 ### 2.1 The founding (late medieval)
 
-Ironland was founded in the late medieval era. [Lurkinsberg](locations/countries/lurkinsberg) backed Prince Alion, whose gunpowder cannon and naval strength bloodlessly routed the Democratic Ai'rossland faction. The exiles fled west and became Aerostica. Alion's line has held the Crown since.
+Ironland was founded in the late medieval era. [Lurkinsberg](/km/locations/countries/lurkinsberg) backed Prince Alion, whose gunpowder cannon and naval strength bloodlessly routed the Democratic Ai'rossland faction. The exiles fled west and became Aerostica. Alion's line has held the Crown since.
 
 The kingdom's origin lies in the collapse of Ai'ross, the empire that had betrayed its own coalition and claimed the Global Title during the Deck-Ai'rosslandic War. Ironland's founding is the direct sequel to the fall of the Deck. See CHRONOLOGY for the full arc.
 
@@ -80,17 +80,17 @@ In the 1990s, the Ai'ron government initiated a program to centralize all sensit
 
 ### 2.4 Modern Era
 
-Since 1987, the country has been ruled by King Pohea Ivynestine II. Throughout his reign, Ai'ron has focused on economic integration and border security. In August 2008, the country experienced a severe security crisis following the [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid), which prompted a national lockdown and martial law.[^5] On 2 September 2008, Ai'ron petitioned [VISTA](factions/vista) to fund a full-scale military campaign into the [Ironclad DMZ](locations/ironclad-dmz); the request failed after four member delegations, including VISTA President [Northrad](characters/vista/noradus), voted against it.[^8]
+Since 1987, the country has been ruled by King Pohea Ivynestine II. Throughout his reign, Ai'ron has focused on economic integration and border security. In August 2008, the country experienced a severe security crisis following the [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid), which prompted a national lockdown and martial law.[^5] On 2 September 2008, Ai'ron petitioned [VISTA](/km/factions/vista) to fund a full-scale military campaign into the [Ironclad DMZ](/km/locations/ironclad-dmz); the request failed after four member delegations, including VISTA President [Northrad](/characters/vista/noradus), voted against it.[^8]
 
 ## 3. Geography
 
 ### 3.1 Climate and Terrain
 
-Ai'ron is characterized by a warm, coastal climate. Its geography features lush agricultural plains and bustling market cities along the coast, which contrast sharply with the heavily militarized, arid landscape of the [Ironclad DMZ](locations/ironclad-dmz) to the south. The country encompasses an area of roughly 450,000 km².[^2]
+Ai'ron is characterized by a warm, coastal climate. Its geography features lush agricultural plains and bustling market cities along the coast, which contrast sharply with the heavily militarized, arid landscape of the [Ironclad DMZ](/km/locations/ironclad-dmz) to the south. The country encompasses an area of roughly 450,000 km².[^2]
 
 ### 3.2 Borders
 
-The country is bounded to the south by [New Aester](locations/countries/new-aester), a city-state situated directly between Ai'ron and the DMZ, and by the ungoverned territory of [Ironclad](locations/countries/ironclad) itself. The remainder of the country is flanked by the sea, which supports its global trade economy.[^1]
+The country is bounded to the south by [New Aester](/km/locations/countries/new-aester), a city-state situated directly between Ai'ron and the DMZ, and by the ungoverned territory of [Ironclad](/km/locations/countries/ironclad) itself. The remainder of the country is flanked by the sea, which supports its global trade economy.[^1]
 
 ## 4. Politics and Government
 
@@ -104,11 +104,11 @@ The national legislature is the bicameral The Chamber. It consists of the House 
 
 ### 4.3 Foreign Relations
 
-Ai'ron maintains a defensive foreign policy. It is a member of [VISTA](factions/vista), the intergovernmental military organization, and has historically drawn on VISTA funding for procurement and training.[^8] Its relations with the ungoverned [Ironclad DMZ](locations/ironclad-dmz) are characterized by border security concerns and intermittent armed friction. 
+Ai'ron maintains a defensive foreign policy. It is a member of [VISTA](/km/factions/vista), the intergovernmental military organization, and has historically drawn on VISTA funding for procurement and training.[^8] Its relations with the ungoverned [Ironclad DMZ](/km/locations/ironclad-dmz) are characterized by border security concerns and intermittent armed friction. 
 
 ### 4.4 Military
 
-The nation's defense is managed by the Royal Ironish Army. Internal public-order jurisdiction and perimeter security for key state facilities are delegated to the [Laopanster Gendarmerie](factions/laopanster-gendarmerie), while specialized inner-complex security is often contracted to private military companies, such as the [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)).[^7] 
+The nation's defense is managed by the Royal Ironish Army. Internal public-order jurisdiction and perimeter security for key state facilities are delegated to the [Laopanster Gendarmerie](/km/factions/laopanster-gendarmerie), while specialized inner-complex security is often contracted to private military companies, such as the [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)).[^7] 
 
 ## 5. Economy
 
@@ -120,14 +120,14 @@ The population of Ai'ron is approximately 37 million. The ethnic composition is 
 
 ## 7. See Also
 
-* [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid)
-* [Pocheasang](locations/pocheasang)
+* [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid)
+* [Pocheasang](/km/locations/pocheasang)
 * Soveangasna
 * King Pohea Ivynestine II
 * Prime Minister Parlin Kao
 * The Chamber
 * Royal Ironish Army
-* [VISTA](factions/vista)
+* [VISTA](/km/factions/vista)
 
 ## 8. References
 

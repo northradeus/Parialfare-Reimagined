@@ -4,7 +4,7 @@
 <table>
 <tr><th>Title</th><td>Leepy</td></tr>
 <tr><th>Subtitle</th><td>Sniper of LENDERMAIRE</td></tr>
-<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Roster Position</th><td>Fourth</td></tr>
 <tr><th>Specialty</th><td>Reconnaissance and sniping</td></tr>
 <tr><th>Marksmanship Origin</th><td>Hunting</td></tr>
@@ -16,7 +16,7 @@
 
 
 
-**Leepy** is the fourth member of the black operations unit [LENDERMAIRE](factions/lendermaire) and its sniper. He is recorded as the most psychologically compromised member of the thirteen-member core. His marksmanship originates from hunting rather than military service.
+**Leepy** is the fourth member of the black operations unit [LENDERMAIRE](/km/factions/lendermaire) and its sniper. He is recorded as the most psychologically compromised member of the thirteen-member core. His marksmanship originates from hunting rather than military service.
 
 His visible personality is not his own. It was built for him.
 
@@ -26,7 +26,7 @@ Before he was a soldier, Leepy was a hunter. The record establishes the origin o
 
 What a hunting origin gives a marksman is not accuracy. It is patience. A hunter waits, sometimes for hours, without moving and without needing the wait to end. He learns distance as a habit rather than a calculation. He learns to kill quietly, from far off, and to walk to the body afterwards and deal with it. The record does not say whether he was taught any of this or arrived at it alone.
 
-It is the one part of him that survived. [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined)) built the persona, and the persona took the memory, and the shooting was left untouched.
+It is the one part of him that survived. [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)) built the persona, and the persona took the memory, and the shooting was left untouched.
 
 ## 2. The persona
 
@@ -56,7 +56,7 @@ The record does not state what this makes him able to see in other people. It no
 
 ## 5. Vanny
 
-He is best friends with [Vanny](characters/lendermaire/vanny) across every recorded variant. Vanny is the only established social anchor for him in the unit.
+He is best friends with [Vanny](/km/characters/lendermaire/vanny) across every recorded variant. Vanny is the only established social anchor for him in the unit.
 
 The friendship is not explained in the record. It is recorded as holding across continuities, which is more than most facts about him manage.
 
@@ -83,6 +83,6 @@ The character exists in two other known continuities, which represent different 
 
 ## See Also
 
-* [LENDERMAIRE](factions/lendermaire)
-* [Vanny](characters/lendermaire/vanny)
-* [Konish Kimbotin (Reimagined)](characters/lendermaire/konish-kimbotin-(reimagined))
+* [LENDERMAIRE](/km/factions/lendermaire)
+* [Vanny](/km/characters/lendermaire/vanny)
+* [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined))

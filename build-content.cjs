@@ -2,20 +2,27 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
+const cliArgs = process.argv.slice(2);
+const targetMode = cliArgs.includes('--km') ? 'km' : (cliArgs.includes('--en') ? 'en' : 'all');
+
 // Override these paths on another machine with:
 //   NOLHEIM_SOURCE_DIR="C:/path/to/Parialfare - Reimagined"
 //   NOLHEIM_ASSETS_DIR="C:/path/to/Images"
+//   NOLHEIM_KM_DIR="C:/path/to/Nolheim-Khmer"
 let sourceDir = process.env.NOLHEIM_SOURCE_DIR
     || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Publish\\Parialfare - Reimagined';
 const sourceAssets = process.env.NOLHEIM_ASSETS_DIR
     || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Assets\\Images';
+const kmSourceDir = process.env.NOLHEIM_KM_DIR
+    || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim-Khmer';
+
 const finalDir = path.join(__dirname, 'content');
 const destDir = path.join(__dirname, '.content-staging');
 const backupDir = path.join(__dirname, '.content-previous');
 const destAssets = path.join(destDir, 'assets');
 
 // Validate inputs BEFORE deleting the previous generated site.
-if (!fs.existsSync(sourceDir) || !fs.statSync(sourceDir).isDirectory()) {
+if (targetMode !== 'km' && (!fs.existsSync(sourceDir) || !fs.statSync(sourceDir).isDirectory())) {
     console.error(`[content] Source vault directory does not exist: ${sourceDir}`);
     console.error('[content] Set NOLHEIM_SOURCE_DIR to the correct vault directory.');
     process.exit(1);
@@ -28,6 +35,7 @@ if (!fs.existsSync(sourceAssets) || !fs.statSync(sourceAssets).isDirectory()) {
 
 // Integrity check: Publish/ must match the latest snapshot.
 function validatePublishIntegrity() {
+    if (targetMode === 'km') return;
     const publishRoot = path.dirname(sourceDir);
     const vaultRoot = path.dirname(publishRoot);
     const snapshotsDir = path.join(vaultRoot, 'Archives', 'Publish snapshots');
@@ -203,11 +211,81 @@ function preScanRelations(dir) {
             const fileNameKey = normalizeKey(item.replace('.md', ''));
             if (titleKey && !resolvers[titleKey]) resolvers[titleKey] = relOutPath;
             if (fileNameKey && !resolvers[fileNameKey]) resolvers[fileNameKey] = relOutPath;
+
+            // Also register aliases in resolvers
+            for (const line of fmMatch[1].split('\n')) {
+                const trimmed = line.trim();
+                if (trimmed.startsWith('aliases:') || trimmed.startsWith('alias:')) {
+                    const m = trimmed.match(/\[(.*?)\]/);
+                    if (m) {
+                        const list = m[1].split(',').map(s => s.trim().replace(/^['"]|['"]$/g, ''));
+                        for (const a of list) {
+                            const aKey = normalizeKey(a);
+                            if (aKey && !resolvers[aKey]) resolvers[aKey] = relOutPath;
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
-preScanRelations(sourceDir);
+if (targetMode !== 'km' && fs.existsSync(sourceDir)) {
+    preScanRelations(sourceDir);
+}
+
+function preScanKhmerRelations(kmDir) {
+    if (!fs.existsSync(kmDir)) return;
+    function walk(currentDir) {
+        const entries = fs.readdirSync(currentDir, { withFileTypes: true });
+        for (const entry of entries) {
+            const full = path.join(currentDir, entry.name);
+            if (entry.isDirectory()) {
+                if (entry.name === 'System' || entry.name === 'Assets' || entry.name.startsWith('.')) continue;
+                walk(full);
+            } else if (entry.isFile() && entry.name.endsWith('.md')) {
+                let rel = path.relative(kmDir, full).replace(/\\/g, '/');
+                let relOutPath = '';
+                if (entry.name === 'index.md' && currentDir === kmDir) {
+                    relOutPath = 'km';
+                } else {
+                    rel = rel.replace(/\.md$/, '').replace(/^dossiers\//i, '').toLowerCase().replace(/\s+/g, '-');
+                    relOutPath = `km/${rel}`;
+                }
+                const content = fs.readFileSync(full, 'utf8');
+                const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+                let title = entry.name.replace('.md', '');
+                if (fmMatch) {
+                    for (const line of fmMatch[1].split('\n')) {
+                        const trimmed = line.trim();
+                        if (trimmed.startsWith('title:')) {
+                            title = trimmed.slice(6).trim().replace(/^['"]|['"]$/g, '');
+                        }
+                        if (trimmed.startsWith('aliases:') || trimmed.startsWith('alias:')) {
+                            const m = trimmed.match(/\[(.*?)\]/);
+                            if (m) {
+                                const list = m[1].split(',').map(s => s.trim().replace(/^['"]|['"]$/g, ''));
+                                for (const a of list) {
+                                    const aKey = normalizeKey(a);
+                                    if (aKey) resolvers[aKey] = relOutPath;
+                                }
+                            }
+                        }
+                    }
+                }
+                const titleKey = normalizeKey(title);
+                if (titleKey) resolvers[titleKey] = relOutPath;
+                const baseKey = normalizeKey(entry.name.replace('.md', ''));
+                if (baseKey && !resolvers[baseKey]) resolvers[baseKey] = relOutPath;
+            }
+        }
+    }
+    walk(kmDir);
+}
+
+if (targetMode !== 'en' && fs.existsSync(kmSourceDir)) {
+    preScanKhmerRelations(kmSourceDir);
+}
 
 for (const article of articlesForRelations) {
     for (const field of ['factions', 'part_of', 'location']) {
@@ -251,7 +329,8 @@ function resolveWikilinks(text, contextFile = '') {
             if (contextFile) console.warn(`[wikilink] unresolved target "${target.trim()}" in ${contextFile}`);
             return display;
         }
-        return `[${display}](${slug})`;
+        const cleanSlug = slug.startsWith('/') ? slug : '/' + slug;
+        return `[${display}](${cleanSlug})`;
     });
 }
 
@@ -264,7 +343,8 @@ function resolveInfoboxWikilinks(text, contextFile = '') {
             if (contextFile) console.warn(`[wikilink] unresolved target "${target.trim()}" in ${contextFile} (infobox)`);
             return display;
         }
-        return `<a href="/${slug}">${display}</a>`;
+        const cleanSlug = slug.startsWith('/') ? slug : '/' + slug;
+        return `<a href="${cleanSlug}">${display}</a>`;
     });
 }
 
@@ -402,7 +482,123 @@ function processDir(dir, outDir) {
         }
     }
 }
-processDir(sourceDir, destDir);
+
+function processKhmerDir(kmDir, kmOutDir) {
+    if (!fs.existsSync(kmDir)) return;
+    let count = 0;
+
+    function walk(curDir, curOutDir) {
+        const items = fs.readdirSync(curDir);
+        for (const item of items) {
+            const fullPath = path.join(curDir, item);
+            const stat = fs.statSync(fullPath);
+            if (stat.isDirectory()) {
+                if (item === 'System' || item === 'Assets' || item.startsWith('.')) continue;
+                const nextOutDir = path.join(curOutDir, item === 'Dossiers' ? '' : item);
+                fs.mkdirSync(nextOutDir, { recursive: true });
+                walk(fullPath, nextOutDir);
+            } else if (item.endsWith('.md')) {
+                let content = fs.readFileSync(fullPath, 'utf-8');
+                let outPath = path.join(curOutDir, item);
+                if (item === 'index.md' && curDir === kmDir) {
+                    outPath = path.join(kmOutDir, 'index.md');
+                }
+
+                const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
+                if (fmMatch) {
+                    const yamlStr = fmMatch[1];
+                    let body = content.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
+
+                    const yaml = {};
+                    for (const line of yamlStr.split('\n')) {
+                        const colon = line.indexOf(':');
+                        if (colon !== -1) {
+                            const k = line.slice(0, colon).trim();
+                            const v = line.slice(colon + 1).trim().replace(/^['"]|['"]$/g, '');
+                            yaml[k] = v;
+                        }
+                    }
+
+                    const title = yaml.title || item.replace('.md', '');
+                    const imgName = yaml.image ? parseImageField(yaml.image) : '';
+                    const isDraft = (yaml.status === 'Draft' || yaml.review_status === 'needs-ai-polish' || yaml.review_status === 'blank-scaffold');
+
+                    let draftBanner = '';
+                    if (isDraft) {
+                        draftBanner = `<div class="km-draft-badge"><span class="tag">សេចក្តីព្រាង (Draft)</span> <span>ឯកសារនេះជាសេចក្តីព្រាងបឋមដែលកំពុងស្ថិតក្នុងការកែសម្រួលផ្នែកអក្សរសាស្ត្រ។</span></div>\n\n`;
+                    }
+
+                    let infobox = '';
+                    let infoRows = '';
+                    if (yaml.subtitle) infoRows += `<tr><th>ចំណងជើងរង</th><td>${yaml.subtitle}</td></tr>\n`;
+                    if (yaml.role) infoRows += `<tr><th>តួនាទី</th><td>${resolveInfoboxWikilinks(yaml.role, item)}</td></tr>\n`;
+                    if (yaml.grade) infoRows += `<tr><th>ចំណាត់ថ្នាក់</th><td>${yaml.grade}</td></tr>\n`;
+                    if (yaml.living_status) infoRows += `<tr><th>ស្ថានភាពជីវិត</th><td>${yaml.living_status}</td></tr>\n`;
+                    if (yaml.unit) infoRows += `<tr><th>អង្គភាព</th><td>${resolveInfoboxWikilinks(yaml.unit, item)}</td></tr>\n`;
+                    if (yaml.en_title) infoRows += `<tr><th>English</th><td><em>${yaml.en_title}</em></td></tr>\n`;
+
+                    if (infoRows || imgName) {
+                        infobox = `<aside class="custom-infobox infobox-character">\n`;
+                        if (title) infobox += `<h3>${title}</h3>\n`;
+                        if (imgName) {
+                            const mappedName = vaultImages.get(imgName.toLowerCase()) || assetName(imgName);
+                            infobox += `<img src="assets/${mappedName}" alt="${title}" />\n`;
+                        }
+                        if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
+                        infobox += `</aside>\n\n`;
+                    }
+
+                    body = resolveWikilinks(body, item);
+
+                    body = body.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
+                        const iName = rawInner.split('|')[0].trim();
+                        const mapped = vaultImages.get(iName.toLowerCase());
+                        if (mapped) return `![${iName}](assets/${mapped})`;
+                        return match;
+                    });
+
+                    // Auto-prefix relative links to km/ if they point to content folders or portals
+                    body = body.replace(/href="(characters|locations|factions|events|lore|portal---)([^"]*)"/g, 'href="km/$1$2"');
+
+                    if (item === 'index.md') {
+                        infobox = '';
+                        draftBanner = '';
+                    }
+
+                    const cleanFm = `---\ntitle: "${title.replace(/"/g, '\\"')}"\nlanguage: km\n---\n\n`;
+                    content = cleanFm + infobox + draftBanner + body;
+                }
+
+                fs.mkdirSync(path.dirname(outPath), { recursive: true });
+                fs.writeFileSync(outPath, content, 'utf-8');
+                count++;
+            }
+        }
+    }
+
+    fs.mkdirSync(kmOutDir, { recursive: true });
+    walk(kmDir, kmOutDir);
+
+    // Ensure assets are also accessible under /km/assets/ for clean relative pathing
+    const kmAssetsOut = path.join(kmOutDir, 'assets');
+    const sourceAssets = path.join(destDir, 'assets');
+    if (fs.existsSync(sourceAssets) && !fs.existsSync(kmAssetsOut)) {
+        try {
+            fs.symlinkSync(sourceAssets, kmAssetsOut, 'junction');
+        } catch (e) {
+            copyAssets(sourceAssets, kmAssetsOut);
+        }
+    }
+
+    console.log(`[khmer] Staged ${count} Khmer note(s) into /km/ with Kantumruy Pro styling and draft badges.`);
+}
+
+if (targetMode !== 'km' && fs.existsSync(sourceDir)) {
+    processDir(sourceDir, destDir);
+}
+if (targetMode !== 'en' && fs.existsSync(kmSourceDir)) {
+    processKhmerDir(kmSourceDir, path.join(destDir, 'km'));
+}
 
 // --- Random Article Index ---
 fs.writeFileSync(path.join(destDir, 'random-index.json'), JSON.stringify(articlePaths, null, 2));
@@ -599,6 +795,31 @@ function collectArticles(dir, relPrefix) {
     return articles;
 }
 
+const kmFolderTitles = {
+    'characters': 'តួអង្គ',
+    'events': 'ព្រឹត្តិការណ៍',
+    'factions': 'បក្សសម្ព័ន្ធ',
+    'locations': 'ទីតាំង',
+    'lore': 'ឯកសារ',
+    'anajak-forces': 'កងកម្លាំងអាណាចក្រ',
+    'lendermaire': 'ឡង់ឌែរម៉ែរ',
+    'vista': 'វីស្តា',
+    'maire-o-mare': "ម៉ែរ អូម៉ែរ",
+    'countries': 'ប្រទេស និងដែនដី'
+};
+
+const kmBadgeMap = {
+    'lendermaire': 'ឡង់ឌែរម៉ែរ',
+    'anajak-forces': 'កងកម្លាំងអាណាចក្រ',
+    'vista': 'វីស្តា',
+    'maire-o-mare': "ម៉ែរ អូម៉ែរ",
+    'characters': 'តួអង្គ',
+    'events': 'ព្រឹត្តិការណ៍',
+    'factions': 'បក្សសម្ព័ន្ធ',
+    'locations': 'ទីតាំង',
+    'lore': 'ឯកសារ',
+};
+
 function renderCard(article, outDir) {
     let imgHtml = '';
     const mappedName = article.image ? vaultImages.get(article.image.toLowerCase()) : null;
@@ -609,12 +830,24 @@ function renderCard(article, outDir) {
         const initial = article.title.charAt(0).toUpperCase();
         imgHtml = `<span class="card-image placeholder"><span class="placeholder-initial">${initial}</span></span>`;
     }
-    const draftBadge = (article.status.toLowerCase() === 'draft') ? '<span class="draft-badge">Draft</span>' : '';
-    const badgeLabel = article.group ? article.group.toUpperCase() : (article.entityType ? article.entityType.toUpperCase() : 'ENTRY');
+    const isKm = (article.relPath || '').startsWith('km/') || (outDir && outDir.replace(/\\/g, '/').includes('/km'));
+    let draftBadge = '';
+    if (article.status && article.status.toLowerCase() === 'draft') {
+        draftBadge = isKm ? '<span class="draft-badge">សេចក្តីព្រាង</span>' : '<span class="draft-badge">Draft</span>';
+    }
+    let badgeLabel = 'ENTRY';
+    if (isKm) {
+        const groupKey = (article.group || '').toLowerCase().replace(/ /g, '-');
+        const entityKey = (article.entityType || '').toLowerCase().replace(/ /g, '-');
+        badgeLabel = kmBadgeMap[groupKey] || kmBadgeMap[entityKey] || (article.group ? article.group.toUpperCase() : 'ឯកសារ');
+    } else {
+        badgeLabel = article.group ? article.group.toUpperCase() : (article.entityType ? article.entityType.toUpperCase() : 'ENTRY');
+    }
     return `<a href="${article.relPath}" class="featured-card">${imgHtml}<span class="card-content"><span class="card-badge">${badgeLabel}${draftBadge}</span><span class="card-title">${article.title}</span><span class="card-subtitle">${article.subtitle}</span></span></a>`;
 }
 
 function generateIndices(srcDir, outDir, isRoot = false) {
+    if (!fs.existsSync(srcDir)) return;
     const items = fs.readdirSync(srcDir);
 
     // First, recursively generate sub-folder indexes so their own pages exist
@@ -622,6 +855,7 @@ function generateIndices(srcDir, outDir, isRoot = false) {
         const srcPath = path.join(srcDir, item);
         const stat = fs.statSync(srcPath);
         if (stat.isDirectory()) {
+            if (item === 'System' || item === 'Assets' || item.startsWith('.')) continue;
             const outPath = path.join(outDir, item);
             if (!fs.existsSync(outPath)) fs.mkdirSync(outPath, { recursive: true });
             generateIndices(srcPath, outPath);
@@ -639,13 +873,22 @@ function generateIndices(srcDir, outDir, isRoot = false) {
             cardsHtml += renderCard(a, outDir);
         }
         cardsHtml += '</div>';
-        const folderTitle = path.basename(srcDir);
-        const indexContent = `---\ntitle: ${folderTitle}\n---\n\n${cardsHtml}`;
+        const isKm = outDir.replace(/\\/g, '/').includes('/km') || outDir.replace(/\\/g, '/').endsWith('/km');
+        const baseKey = path.basename(srcDir).toLowerCase().replace(/ /g, '-');
+        const folderTitle = isKm ? (kmFolderTitles[baseKey] || path.basename(srcDir)) : path.basename(srcDir);
+        const langFm = isKm ? '\nlanguage: km' : '';
+        const indexContent = `---\ntitle: "${folderTitle}"${langFm}\n---\n\n${cardsHtml}`;
         fs.writeFileSync(path.join(outDir, 'index.md'), indexContent);
     }
 }
 
-generateIndices(sourceDir, destDir, true);
+if (targetMode !== 'km' && fs.existsSync(sourceDir)) {
+    generateIndices(sourceDir, destDir, true);
+}
+const kmDossiersDir = path.join(kmSourceDir, 'Dossiers');
+if (targetMode !== 'en' && fs.existsSync(kmDossiersDir)) {
+    generateIndices(kmDossiersDir, path.join(destDir, 'km'), true);
+}
 
 // --- Collect Events for Events Directory ---
 const allArticles = collectArticles(sourceDir, '');

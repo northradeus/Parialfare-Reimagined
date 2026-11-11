@@ -6,7 +6,7 @@
 <tr><th>Governance</th><td>Ungoverned</td></tr>
 <tr><th>Government Type</th><td>None — warlord frontier</td></tr>
 <tr><th>Demonym</th><td>Cladish</td></tr>
-<tr><th>Borders</th><td><a href="/locations/countries/ironland">Ironland</a> (north), <a href="/locations/countries/new-aester">New Aester</a> (north)</td></tr>
+<tr><th>Borders</th><td><a href="/locations/countries/ironland">Ironland</a> (north), <a href="/km/locations/countries/new-aester">New Aester</a> (north)</td></tr>
 </table>
 </aside>
 
@@ -15,7 +15,7 @@
 
 
 
-**Ironclad** is an ungoverned territory between the [Kingdom of the Ai'ron Land](locations/countries/ironland) and its neighbours. It is not a state. It has no central government, no unified security force, and no authority exercising jurisdiction across it. Competing warlords rule it. Its people are the Cladish.
+**Ironclad** is an ungoverned territory between the [Kingdom of the Ai'ron Land](/locations/countries/ironland) and its neighbours. It is not a state. It has no central government, no unified security force, and no authority exercising jurisdiction across it. Competing warlords rule it. Its people are the Cladish.
 
 The territory was conquered by an empire, abandoned six years later, and left to itself for a hundred and ten years. Its people named it Ironclad themselves, after the abandonment.
 
@@ -61,7 +61,7 @@ The wars of Ironclad are not wars between states. They are wars between armed fo
 
 Two visions compete for the future of the territory.
 
-**[Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined))** seeks to unify the militias into a single armed force, the CAF, and to build an actual society out of the wreckage. He is a warlord who wants Ironclad to become a state.
+**[Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined))** seeks to unify the militias into a single armed force, the CAF, and to build an actual society out of the wreckage. He is a warlord who wants Ironclad to become a state.
 
 **Maire O'Mare** seeks to revive the Rogolfenstine era, the medieval deep past of Nolheim and the age of Koilen Rogolf, the Supreme Leader of the Maire O'Mare movement. In 2008 Maire O'Mare is an insurgency that has adapted that ideology to modern warfare. It is not the person returning. It is the idea.
 
@@ -69,9 +69,9 @@ Konish regards Maire O'Mare as extreme, and as a threat capable of outlasting hi
 
 ## 4. Geography
 
-The [Ironclad DMZ](locations/ironclad-dmz) lies within the territory, on its northern approach to [Ironland](locations/countries/ironland). The [New Aester](locations/countries/new-aester) city-state sits on the northern border, between Ironland and the zone.
+The [Ironclad DMZ](/km/locations/ironclad-dmz) lies within the territory, on its northern approach to [Ironland](/locations/countries/ironland). The [New Aester](/km/locations/countries/new-aester) city-state sits on the northern border, between Ironland and the zone.
 
-In the southern districts armed formations exercise quasi-governmental functions — taxation, adjudication, and conscription — on a local basis. [Konish's Group](factions/konish's-group) holds territory there.
+In the southern districts armed formations exercise quasi-governmental functions — taxation, adjudication, and conscription — on a local basis. [Konish's Group](/km/factions/konish's-group) holds territory there.
 
 ## Unresolved
 
@@ -84,10 +84,10 @@ In the southern districts armed formations exercise quasi-governmental functions
 
 ## See Also
 
-- [Ironland](locations/countries/ironland)
-- [Ironclad DMZ](locations/ironclad-dmz)
-- [Konish's Group](factions/konish's-group)
-- [LENDERMAIRE](factions/lendermaire)
+- [Ironland](/locations/countries/ironland)
+- [Ironclad DMZ](/km/locations/ironclad-dmz)
+- [Konish's Group](/km/factions/konish's-group)
+- [LENDERMAIRE](/km/factions/lendermaire)
 - Koilen Rogolf
 - Rogolfenstine
-- [New Aester](locations/countries/new-aester)
+- [New Aester](/km/locations/countries/new-aester)

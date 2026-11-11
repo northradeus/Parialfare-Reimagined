@@ -12,4 +12,4 @@
 A curated index of the systems and meta-lore governing the world.
 
 ## Systems
-- [Anajak grading system](lore/anajak-grading-system) — The scale by which assassins are measured.
+- [Anajak grading system](/km/lore/anajak-grading-system) — The scale by which assassins are measured.

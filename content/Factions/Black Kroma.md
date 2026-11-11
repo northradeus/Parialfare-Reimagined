@@ -4,7 +4,7 @@
 <tr><th>Title</th><td>Black Kroma</td></tr>
 <tr><th>Subtitle</th><td>Military apparatus and historic revolutionary regime of Encore</td></tr>
 <tr><th>Active</th><td>Mid-20th century–present</td></tr>
-<tr><th>Headquarters</th><td><a href="/locations/countries/kingdom-of-encore">Kingdom of Encore</a></td></tr>
+<tr><th>Headquarters</th><td><a href="/km/locations/countries/kingdom-of-encore">Kingdom of Encore</a></td></tr>
 <tr><th>Leadership</th><td>Military Directorate</td></tr>
 <tr><th>Parent</th><td>Independent</td></tr>
 <tr><th>Allegiance</th><td>Autonomous within Encore territory</td></tr>
@@ -16,11 +16,11 @@
 
 # Black Kroma
 
-The **Black Kroma** is a standing military formation in the [Kingdom of Encore](locations/countries/kingdom-of-encore). Historically functioning as a radical totalitarian regime responsible for nationwide internment, forced purges, and wartime facilities, the organization transitioned over subsequent decades into an entrenched, conventional armed power that coexists tensely alongside the Encorean Royal Army.
+The **Black Kroma** is a standing military formation in the [Kingdom of Encore](/km/locations/countries/kingdom-of-encore). Historically functioning as a radical totalitarian regime responsible for nationwide internment, forced purges, and wartime facilities, the organization transitioned over subsequent decades into an entrenched, conventional armed power that coexists tensely alongside the Encorean Royal Army.
 
 ## 1. Historical Regime Era
 
-During the mid-20th century, the Black Kroma emerged as an insurgent revolutionary government following the contraction of [Lurkinsberg](locations/countries/lurkinsberg) colonial oversight. During this consolidation period, the regime operated extensive detention and interrogation centers across the countryside, targeting intellectuals, civil servants, and alleged foreign operatives under false espionage allegations.
+During the mid-20th century, the Black Kroma emerged as an insurgent revolutionary government following the contraction of [Lurkinsberg](/km/locations/countries/lurkinsberg) colonial oversight. During this consolidation period, the regime operated extensive detention and interrogation centers across the countryside, targeting intellectuals, civil servants, and alleged foreign operatives under false espionage allegations.
 
 Historical figures such as Chan Rithipol were interned within Black Kroma facilities during this era. Rithipol was subjected to physical torture before manufacturing improvised weapons, executing his prison detachment, and launching a subsequent counter-assault that ended in his execution.
 
@@ -32,7 +32,7 @@ In the 2008 era, the Black Kroma holds designated garrisons, territorial zones, 
 
 ## 3. Impact on International Alignment
 
-The continuous presence of a heavily armed Black Kroma within national borders was the decisive strategic catalyst behind the Kingdom of Encore seeking membership in [VISTA](factions/vista). Fearing eventual internal military destabilization or renewed factional conflict, the Encorean monarchy sought security guarantees, multilateral intelligence sharing, and economic ties through VISTA and the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)).
+The continuous presence of a heavily armed Black Kroma within national borders was the decisive strategic catalyst behind the Kingdom of Encore seeking membership in [VISTA](/km/factions/vista). Fearing eventual internal military destabilization or renewed factional conflict, the Encorean monarchy sought security guarantees, multilateral intelligence sharing, and economic ties through VISTA and the [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)).
 
 ## 4. Unresolved
 
@@ -41,8 +41,8 @@ The continuous presence of a heavily armed Black Kroma within national borders w
 
 ## See Also
 
-- [Kingdom of Encore](locations/countries/kingdom-of-encore)
+- [Kingdom of Encore](/km/locations/countries/kingdom-of-encore)
 - Chan Rithipol
-- [Pich](characters/anajak-forces/pich)
-- [VISTA](factions/vista)
-- [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic))
+- [Pich](/km/characters/anajak-forces/pich)
+- [VISTA](/km/factions/vista)
+- [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic))

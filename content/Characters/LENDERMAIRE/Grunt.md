@@ -3,9 +3,9 @@
 <table>
 <tr><th>Title</th><td>Grunt</td></tr>
 <tr><th>Subtitle</th><td>Member of LENDERMAIRE; role unresolved</td></tr>
-<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Earlier Role</th><td>Nade Specialist</td></tr>
-<tr><th>Role Status</th><td>Unresolved; see <a href="/characters/lendermaire/gunter">Gunter</a></td></tr>
+<tr><th>Role Status</th><td>Unresolved; see <a href="/km/characters/lendermaire/gunter">Gunter</a></td></tr>
 </table>
 </aside>
 
@@ -14,9 +14,9 @@
 
 
 
-**Grunt** is a member of the black operations unit [LENDERMAIRE](factions/lendermaire). His earlier roster entry records him as "Nade Specialist."
+**Grunt** is a member of the black operations unit [LENDERMAIRE](/km/factions/lendermaire). His earlier roster entry records him as "Nade Specialist."
 
-His current role is unresolved for the same reason as [Gunter](characters/lendermaire/gunter)'s role: one of the two throws grenades and the other suppresses fire, and which man holds which role has not been decided. His background is unrecorded.
+His current role is unresolved for the same reason as [Gunter](/km/characters/lendermaire/gunter)'s role: one of the two throws grenades and the other suppresses fire, and which man holds which role has not been decided. His background is unrecorded.
 
 ## Unresolved
 
@@ -24,5 +24,5 @@ His current role is unresolved for the same reason as [Gunter](characters/lender
 
 ## See Also
 
-* [LENDERMAIRE](factions/lendermaire)
-* [Gunter](characters/lendermaire/gunter)
+* [LENDERMAIRE](/km/factions/lendermaire)
+* [Gunter](/km/characters/lendermaire/gunter)

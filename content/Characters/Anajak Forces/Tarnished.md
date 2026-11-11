@@ -6,9 +6,9 @@
 <tr><th>Subtitle</th><td>Former ITF special task force leader, volunteer of Anajak Forces</td></tr>
 <tr><th>Codename</th><td>Tarnished</td></tr>
 <tr><th>Former Role</th><td>Special task force leader under <a href="/factions/ironish-task-force-(itf)">ITF</a></td></tr>
-<tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
+<tr><th>Factions</th><td><a href="/km/factions/anajak-forces">Anajak Forces</a></td></tr>
 <tr><th>Entry</th><td>Volunteer</td></tr>
-<tr><th>Soldiers</th><td><a href="/characters/anajak-forces/pich">Pich</a>, Kody, Shadow</td></tr>
+<tr><th>Soldiers</th><td><a href="/km/characters/anajak-forces/pich">Pich</a>, Kody, Shadow</td></tr>
 </table>
 </aside>
 
@@ -17,13 +17,13 @@
 
 
 
-**Tarnished** is the only recorded volunteer in [Anajak Forces](factions/anajak-forces) who did not arrive through the institution's facility pipeline. He served under the [ITF](factions/ironish-task-force-(itf)) as a special task force leader, then volunteered to join Anajak alongside his own soldiers.
+**Tarnished** is the only recorded volunteer in [Anajak Forces](/km/factions/anajak-forces) who did not arrive through the institution's facility pipeline. He served under the [ITF](/factions/ironish-task-force-(itf)) as a special task force leader, then volunteered to join Anajak alongside his own soldiers.
 
 ## ITF service
 
-Tarnished led a special task force within the ITF before his transfer. The ITF is a private military contractor and a separate institution from the [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) that established Anajak — but its personnel also serve inside Anajak, and it handpicked at least two of Anajak's assassins. Tarnished's path is the inverse: he left the contractor's structure to join the force the contractor supplies.
+Tarnished led a special task force within the ITF before his transfer. The ITF is a private military contractor and a separate institution from the [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)) that established Anajak — but its personnel also serve inside Anajak, and it handpicked at least two of Anajak's assassins. Tarnished's path is the inverse: he left the contractor's structure to join the force the contractor supplies.
 
-He is explicitly not the ITF commander established as part of [Alpha-01](factions/alpha-01). No link between the two men is established, and the similarity of their positions is the only thing they share.
+He is explicitly not the ITF commander established as part of [Alpha-01](/km/factions/alpha-01). No link between the two men is established, and the similarity of their positions is the only thing they share.
 
 ## The volunteer transfer
 
@@ -33,7 +33,7 @@ No grade is recorded for him. Whether a volunteer entering with a retinue is gra
 
 ## His soldiers
 
-He volunteered alongside [Pich](characters/anajak-forces/pich), Kody, Shadow, and many more. Pich is recorded as an Encorean close-combat specialist and field interpreter seconded from the [Encorean Royal Army](locations/countries/kingdom-of-encore); Kody and Shadow are recorded only by name, and the remainder of the group is unnumbered.
+He volunteered alongside [Pich](/km/characters/anajak-forces/pich), Kody, Shadow, and many more. Pich is recorded as an Encorean close-combat specialist and field interpreter seconded from the [Encorean Royal Army](/km/locations/countries/kingdom-of-encore); Kody and Shadow are recorded only by name, and the remainder of the group is unnumbered.
 
 Whether the soldiers volunteered individually or followed Tarnished as his command is not stated. The distinction matters: a following is a faction inside the force, while individual volunteers are simply recruits who arrived together.
 
@@ -46,8 +46,8 @@ Whether the soldiers volunteered individually or followed Tarnished as his comma
 
 ## See Also
 
-* [Anajak Forces](factions/anajak-forces)
-* [Ironish Task Force (ITF)](factions/ironish-task-force-(itf))
-* [Pich](characters/anajak-forces/pich)
-* [Alpha-01](factions/alpha-01)
-* [Anajak grading system](lore/anajak-grading-system)
+* [Anajak Forces](/km/factions/anajak-forces)
+* [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf))
+* [Pich](/km/characters/anajak-forces/pich)
+* [Alpha-01](/km/factions/alpha-01)
+* [Anajak grading system](/km/lore/anajak-grading-system)

@@ -4,9 +4,9 @@
 <table>
 <tr><th>Title</th><td>Salarean "Salmon</td></tr>
 <tr><th>Subtitle</th><td>Shock trooper of LENDERMAIRE; Lurkish naval veteran</td></tr>
-<tr><th>Ethnicity</th><td><a href="/locations/countries/lurkinsberg">Lurkish</a></td></tr>
-<tr><th>Living Status</th><td>Killed in action (airstrike by <a href="/characters/anajak-forces/takahashi">Sahara</a>)</td></tr>
-<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Ethnicity</th><td><a href="/km/locations/countries/lurkinsberg">Lurkish</a></td></tr>
+<tr><th>Living Status</th><td>Killed in action (airstrike by <a href="/km/characters/anajak-forces/takahashi">Sahara</a>)</td></tr>
+<tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Former Unit</th><td>Lurkish Navy</td></tr>
 <tr><th>Earlier Role</th><td>Hard to Kill</td></tr>
 <tr><th>Background</th><td>Coastal guard and navy</td></tr>
@@ -16,7 +16,7 @@
 
 # Salarean "Salmon"
 
-**Salmon** is a member of the black operations unit [LENDERMAIRE](factions/lendermaire), recorded in earlier material as "Hard to Kill." He is Lurkish and served in the Lurkish Navy before his recruitment. He survived the sinking of his ship and is the only member of that ship's company recorded as having returned. He tells the old Lurkish naval stories in the household. The record does not establish why.
+**Salmon** is a member of the black operations unit [LENDERMAIRE](/km/factions/lendermaire), recorded in earlier material as "Hard to Kill." He is Lurkish and served in the Lurkish Navy before his recruitment. He survived the sinking of his ship and is the only member of that ship's company recorded as having returned. He tells the old Lurkish naval stories in the household. The record does not establish why.
 
 ## 1. Service
 
@@ -49,13 +49,13 @@ Salmon tells the old Lurkish naval stories in the household. The stories take fo
 - **The Reading of Names.** The names of the lost, read aloud at port before leave, in order, once.
 - **The Count.** The tally a Lurkish sailor keeps of voyages and losses.
 
-The household knows that Salmon is Lurkish and that the stories are Lurkish naval customs. It treats them as one of Salmon's habits, alongside the unresolved role split between [Grunt](characters/lendermaire/grunt) and [Gunter](characters/lendermaire/gunter). No member of the household has asked him why he tells them. [Lykor](characters/lendermaire/samsara-lykor), the only other Lurkish member of the unit, hears the stories. He does not say what he hears.
+The household knows that Salmon is Lurkish and that the stories are Lurkish naval customs. It treats them as one of Salmon's habits, alongside the unresolved role split between [Grunt](/km/characters/lendermaire/grunt) and [Gunter](/km/characters/lendermaire/gunter). No member of the household has asked him why he tells them. [Lykor](/km/characters/samsara-lykor), the only other Lurkish member of the unit, hears the stories. He does not say what he hears.
 
 The record does not describe what Salmon recites. It notes only that he recites.
 
 ## 5. In the household
 
-Salmon was recruited to LENDERMAIRE by [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined)). The record does not establish how the recruitment took place. No member of the household has stated that they know why Kimbotin chose him.
+Salmon was recruited to LENDERMAIRE by [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)). The record does not establish how the recruitment took place. No member of the household has stated that they know why Kimbotin chose him.
 
 Salmon's physical resilience is recorded and is the origin of his earlier epithet. He is recorded as performing well underwater. The record does not explain either.
 
@@ -63,11 +63,11 @@ Salmon is listed in the household as a shock trooper. When the stories are not b
 
 ## 6. Death
 
-Salmon is killed in action during a post-2008 engagement by an airstrike flown by the [Anajak Forces](factions/anajak-forces) strike pilot [Takahashi](characters/anajak-forces/takahashi) (codename **"Sahara"**). He is the first confirmed fatality among LENDERMAIRE's thirteen core members.
+Salmon is killed in action during a post-2008 engagement by an airstrike flown by the [Anajak Forces](/km/factions/anajak-forces) strike pilot [Takahashi](/km/characters/anajak-forces/takahashi) (codename **"Sahara"**). He is the first confirmed fatality among LENDERMAIRE's thirteen core members.
 
 The record notes the coincidence of the two names without attributing intent to either side: the sailor who took the name of the fish held by Lurkish naval tradition to be a bad omen, and who was recorded in early material as "Hard to Kill," was killed from the air by a pilot operating under the Lurkish word for a giant sea bird.
 
-At the time of his death, his administrative pairing in the Lurkish Navy remains *unmatched*, and his inquiries into the fate of his ship-brother Kalmon end without a recorded answer. Within the household, the four Lurkish naval stories cease with his death, leaving [Lykor](characters/lendermaire/samsara-lykor) as the only remaining Lurkish member under the roof.
+At the time of his death, his administrative pairing in the Lurkish Navy remains *unmatched*, and his inquiries into the fate of his ship-brother Kalmon end without a recorded answer. Within the household, the four Lurkish naval stories cease with his death, leaving [Lykor](/km/characters/samsara-lykor) as the only remaining Lurkish member under the roof.
 
 ## Unresolved
 
@@ -83,9 +83,9 @@ At the time of his death, his administrative pairing in the Lurkish Navy remains
 
 ## See Also
 
-* [LENDERMAIRE](factions/lendermaire)
-* [Konish's Group](factions/konish's-group)
-* [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined))
-* [Samsara Lykor](characters/lendermaire/samsara-lykor)
-* [Takahashi](characters/anajak-forces/takahashi)
-* [Anajak Forces](factions/anajak-forces)
+* [LENDERMAIRE](/km/factions/lendermaire)
+* [Konish's Group](/km/factions/konish's-group)
+* [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined))
+* [Samsara Lykor](/km/characters/samsara-lykor)
+* [Takahashi](/km/characters/anajak-forces/takahashi)
+* [Anajak Forces](/km/factions/anajak-forces)

@@ -12,15 +12,15 @@
 A curated index of the major organisations operating in 2008.
 
 ## The Insurgency
-- [Konish's Group](factions/konish's-group) — The transnational Cladish umbrella coalition.
-- [LENDERMAIRE](factions/lendermaire) — Konish's black operations unit.
-- [Maire O'Mare (2008)](factions/maire-o'mare-(2008)) — The returned insurgency.
+- [Konish's Group](/km/factions/konish's-group) — The transnational Cladish umbrella coalition.
+- [LENDERMAIRE](/km/factions/lendermaire) — Konish's black operations unit.
+- [Maire O'Mare (2008)](/factions/maire-o'mare-(2008)) — The returned insurgency.
 
 ## The Institutional Order
-- [VISTA](factions/vista) — The intergovernmental military organisation.
-- [Global Intervention Coalition (GIC)](factions/global-intervention-coalition-(gic)) — VISTA's military arm.
-- [Anajak Forces](factions/anajak-forces) — The task force fighting the insurgency.
-- [Ironish Task Force (ITF)](factions/ironish-task-force-(itf)) — The private military contractor.
-- [Laopanster Gendarmerie](factions/laopanster-gendarmerie) — Ironland's national gendarmerie.
-- [Alpha-01](factions/alpha-01) — The ITF label for Anajak's assassin core.
-- [Black Kroma](factions/black-kroma) — Standing armed faction in the Kingdom of Encore.
+- [VISTA](/km/factions/vista) — The intergovernmental military organisation.
+- [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)) — VISTA's military arm.
+- [Anajak Forces](/km/factions/anajak-forces) — The task force fighting the insurgency.
+- [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)) — The private military contractor.
+- [Laopanster Gendarmerie](/km/factions/laopanster-gendarmerie) — Ironland's national gendarmerie.
+- [Alpha-01](/km/factions/alpha-01) — The ITF label for Anajak's assassin core.
+- [Black Kroma](/km/factions/black-kroma) — Standing armed faction in the Kingdom of Encore.

@@ -5,7 +5,7 @@
 <tr><th>Title</th><td>Hanktonio</td></tr>
 <tr><th>Subtitle</th><td>Second-in-command of Konish's Group and LENDERMAIRE</td></tr>
 <tr><th>Codename</th><td>The Second Hand</td></tr>
-<tr><th>Factions</th><td><a href="/factions/konish's-group">Konish's Group</a>, <a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Factions</th><td><a href="/km/factions/konish's-group">Konish's Group</a>, <a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Rank</th><td>Second-in-command</td></tr>
 </table>
 </aside>
@@ -13,7 +13,7 @@
 
 # Hanktonio
 
-**Hanktonio**, also called **Hank** and known by the codename "The Second Hand," is the second-in-command of the umbrella coalition [Konish's Group](factions/konish's-group) and of its black operations unit [LENDERMAIRE](factions/lendermaire). He oversees operations and maintains the coalition's network in [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined))'s absence, taking operational command when needed, and is largely responsible for keeping the group intact.
+**Hanktonio**, also called **Hank** and known by the codename "The Second Hand," is the second-in-command of the umbrella coalition [Konish's Group](/km/factions/konish's-group) and of its black operations unit [LENDERMAIRE](/km/factions/lendermaire). He oversees operations and maintains the coalition's network in [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined))'s absence, taking operational command when needed, and is largely responsible for keeping the group intact.
 
 He holds two different posts under one title. In Konish's Group he is second to the head of a network of autonomous militias. In LENDERMAIRE he is second to the head of a household. The record does not distinguish between the two roles, and he is not recorded as finding the distinction difficult.
 
@@ -76,7 +76,7 @@ The household reads this as practical. The record does not establish whether it 
 
 ## See Also
 
-* [Konish's Group](factions/konish's-group)
-* [LENDERMAIRE](factions/lendermaire)
-* [Konish Kimbotin (Reimagined)](characters/lendermaire/konish-kimbotin-(reimagined))
-* [Formation of LENDERMAIRE](events/formation-of-lendermaire)
+* [Konish's Group](/km/factions/konish's-group)
+* [LENDERMAIRE](/km/factions/lendermaire)
+* [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined))
+* [Formation of LENDERMAIRE](/km/events/formation-of-lendermaire)

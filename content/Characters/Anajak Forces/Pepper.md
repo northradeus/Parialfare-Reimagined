@@ -4,11 +4,11 @@
 <tr><th>Title</th><td>Pepper</td></tr>
 <tr><th>Subtitle</th><td>Anajak Forces operator; adjutant to the president of VISTA</td></tr>
 <tr><th>Role</th><td>Operator (multi-role)</td></tr>
-<tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a>, <a href="/factions/vista">VISTA</a></td></tr>
+<tr><th>Factions</th><td><a href="/km/factions/anajak-forces">Anajak Forces</a>, <a href="/km/factions/vista">VISTA</a></td></tr>
 <tr><th>Adjutant Post</th><td>Personal adjutant to <a href="/characters/vista/noradus">Northrad</a> (currency contested)</td></tr>
 <tr><th>Grade</th><td>S+ (multitasking), A (combat)</td></tr>
 <tr><th>Pipeline</th><td>Facility-raised</td></tr>
-<tr><th>Origin</th><td><a href="/locations/site-29">Site-29</a></td></tr>
+<tr><th>Origin</th><td><a href="/km/locations/site-29">Site-29</a></td></tr>
 </table>
 </aside>
 
@@ -17,11 +17,11 @@
 
 
 
-**Pepper** is a multi-role operator of the [Anajak Forces](factions/anajak-forces) who was trained in a secret facility ([Site-29](locations/site-29)) as a personal bodyguard. She holds an S+ in multitasking and an A in combat. [VISTA](factions/vista) assigned her as personal adjutant to [Northrad](characters/vista/noradus) on the strength of her multitasking grade. She is also registered as an operator in Anajak.
+**Pepper** is a multi-role operator of the [Anajak Forces](/km/factions/anajak-forces) who was trained in a secret facility ([Site-29](/km/locations/site-29)) as a personal bodyguard. She holds an S+ in multitasking and an A in combat. [VISTA](/km/factions/vista) assigned her as personal adjutant to [Northrad](/characters/vista/noradus) on the strength of her multitasking grade. She is also registered as an operator in Anajak.
 
 ## 1. Facility training
 
-She was trained in the facility as a personal bodyguard. She is unrelated to [Tanishito](characters/anajak-forces/tanishito) and [Nogo](characters/anajak-forces/nogo), who were raised in the same facility, and shares no history with them.
+She was trained in the facility as a personal bodyguard. She is unrelated to [Tanishito](/km/characters/anajak-forces/tanishito) and [Nogo](/km/characters/anajak-forces/nogo), who were raised in the same facility, and shares no history with them.
 
 ## 2. Multi-role record
 
@@ -31,11 +31,11 @@ Her record is graded per skill. She holds S+ in multitasking and A in combat. No
 
 VISTA assigned her as personal adjutant to Northrad. He did not select her. The assignment followed from her S+ in multitasking.
 
-That she holds both roles is settled. A resolution of 2026-11-03 records one person with two roles — VISTA-assigned adjutant and facility-trained operator in [Anajak Forces](factions/anajak-forces) — and both stand.
+That she holds both roles is settled. A resolution of 2026-11-03 records one person with two roles — VISTA-assigned adjutant and facility-trained operator in [Anajak Forces](/km/factions/anajak-forces) — and both stand.
 
 Whether she currently serves as adjutant, has moved fully to Anajak, or holds both posts at once is not established. The record treats the two as simultaneous rather than sequential.
 
-Her S+ in multitasking is recorded as the reason for both placements — the adjutant assignment and the [Tanishito](characters/anajak-forces/tanishito) meeting — and the same grade is the only stated ground on which simultaneous service would be possible. [Site-29](locations/site-29) keeps its graduates in separate compartments unless an operational requirement dictates otherwise. Whether her grade constitutes that requirement, and who decided it did, is not established.
+Her S+ in multitasking is recorded as the reason for both placements — the adjutant assignment and the [Tanishito](/km/characters/anajak-forces/tanishito) meeting — and the same grade is the only stated ground on which simultaneous service would be possible. [Site-29](/km/locations/site-29) keeps its graduates in separate compartments unless an operational requirement dictates otherwise. Whether her grade constitutes that requirement, and who decided it did, is not established.
 
 ## 4. Anajak registration
 
@@ -52,7 +52,7 @@ The record lists no other encounter with either of them.
 
 ## Unresolved
 
-- **Facility of origin:** confirm [Site-29](locations/site-29) as the facility.
+- **Facility of origin:** confirm [Site-29](/km/locations/site-29) as the facility.
 - **Background:** unestablished.
 - **Current post:** whether she currently serves as adjutant, has moved fully to Anajak, or holds both posts at once.
 - **Concurrency:** whether simultaneous service is authorised, and who authorised it.
@@ -61,9 +61,9 @@ The record lists no other encounter with either of them.
 
 ## See Also
 
-* [Tanishito](characters/anajak-forces/tanishito)
-* [Nogo](characters/anajak-forces/nogo)
-* [Noradus](characters/vista/noradus)
-* [VISTA](factions/vista)
-* [Anajak Forces](factions/anajak-forces)
-* [Site-29](locations/site-29)
+* [Tanishito](/km/characters/anajak-forces/tanishito)
+* [Nogo](/km/characters/anajak-forces/nogo)
+* [Noradus](/characters/vista/noradus)
+* [VISTA](/km/factions/vista)
+* [Anajak Forces](/km/factions/anajak-forces)
+* [Site-29](/km/locations/site-29)

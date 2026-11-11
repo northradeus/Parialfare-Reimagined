@@ -3,7 +3,7 @@
 <img src="assets/samsara.jpg" alt="Samsara Lykor" />
 <table>
 <tr><th>Title</th><td>Samsara Lykor</td></tr>
-<tr><th>Subtitle</th><td>Lurkish operator, the concealed thirteenth member of <a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Subtitle</th><td>Lurkish operator, the concealed thirteenth member of <a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Full Name</th><td>Samsara Lykor</td></tr>
 <tr><th>Life Span</th><td>1987-Present</td></tr>
 <tr><th>Living Status</th><td>Alive</td></tr>
@@ -11,11 +11,11 @@
 <tr><th>Ethnicity</th><td>Lurkish</td></tr>
 <tr><th>Gender</th><td>Male</td></tr>
 <tr><th>Tier</th><td>3</td></tr>
-<tr><th>Factions</th><td><a href="/factions/lendermaire">LENDERMAIRE</a>, Lurkish Army</td></tr>
-<tr><th>Nation</th><td><a href="/locations/countries/lurkinsberg">Lurkinsberg</a>, <a href="/locations/countries/ironclad">Ironclad</a></td></tr>
+<tr><th>Factions</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a>, Lurkish Army</td></tr>
+<tr><th>Nation</th><td><a href="/km/locations/countries/lurkinsberg">Lurkinsberg</a>, <a href="/km/locations/countries/ironclad">Ironclad</a></td></tr>
 <tr><th>Codename</th><td>Northrad</td></tr>
 <tr><th>Specialty</th><td>Cleanup, backup sniper</td></tr>
-<tr><th>Unit Role</th><td>The 13th of <a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Unit Role</th><td>The 13th of <a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Weapons</th><td>SMG, Sniper Rifle</td></tr>
 <tr><th>Fighting Style</th><td>Solo, finishes unfinished objectives</td></tr>
 <tr><th>Training Origin</th><td>Lurkish Marine Training</td></tr>
@@ -27,9 +27,9 @@
 
 
 
-**Samsara Lykor** (born 1987) is a Lurkish operator and the concealed thirteenth member of [LENDERMAIRE](factions/lendermaire). A former Lurkish SWAT officer and marine, he is an independent operator who completes unfinished objectives and serves as the team's backup sniper. He is known publicly only by the designation "Northrad."
+**Samsara Lykor** (born 1987) is a Lurkish operator and the concealed thirteenth member of [LENDERMAIRE](/km/factions/lendermaire). A former Lurkish SWAT officer and marine, he is an independent operator who completes unfinished objectives and serves as the team's backup sniper. He is known publicly only by the designation "Northrad."
 
-Lykor is a different individual from [Noradus](characters/vista/noradus), the president of [VISTA](factions/vista). The two share a designation through the Military naming custom and have no established personal or organizational connection.
+Lykor is a different individual from [Noradus](/characters/vista/noradus), the president of [VISTA](/km/factions/vista). The two share a designation through the Military naming custom and have no established personal or organizational connection.
 
 ## Designation
 
@@ -64,7 +64,7 @@ The findings led to his demotion. His behavior and individualistic tendencies di
 
 ## Life after military service
 
-Lykor became a bodyguard at a strip club owned by gang members connected to [Konish](characters/lendermaire/konish-kimbotin-(reimagined)).
+Lykor became a bodyguard at a strip club owned by gang members connected to [Konish](/characters/lendermaire/konish-kimbotin-(reimagined)).
 
 He was struggling financially and accumulating debt. He was also paranoid that law enforcement would issue arrest warrants after he stole military equipment issued to him during his service. He wanted a way out of his circumstances and a way to distance himself from his past.
 
@@ -74,17 +74,17 @@ A worker at the establishment passed his résumé to Konish. This is how Konish 
 
 Konish found Lykor while he was struggling financially and looking for an escape from his previous life.
 
-Lykor hates Cladish people. Konish persuaded him to join anyway, and Lykor became the thirteenth member. The arrangement is unusual: he joined an organization led by a man from a group he fundamentally hated. *See also [Formation of LENDERMAIRE](events/formation-of-lendermaire).*
+Lykor hates Cladish people. Konish persuaded him to join anyway, and Lykor became the thirteenth member. The arrangement is unusual: he joined an organization led by a man from a group he fundamentally hated. *See also [Formation of LENDERMAIRE](/km/events/formation-of-lendermaire).*
 
 ## Alternative allegiance
 
-Lykor's Lurkish military background places him on [ITF](factions/ironish-task-force-(itf))'s recruitment list. His continued involvement with LENDERMAIRE is an alternative to joining ITF. If Konish were removed from the equation, Lykor could potentially work for ITF.
+Lykor's Lurkish military background places him on [ITF](/factions/ironish-task-force-(itf))'s recruitment list. His continued involvement with LENDERMAIRE is an alternative to joining ITF. If Konish were removed from the equation, Lykor could potentially work for ITF.
 
 This is a key difference between Lykor and the other twelve members: he has an alternative outside LENDERMAIRE and chooses to stay.
 
 ## The thirteenth seat
 
-LENDERMAIRE maintains thirteen core members in addition to [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined)). It is publicly known that the unit has thirteen; it is not publicly known who the thirteenth is. The seat is associated publicly only with the designation "Northrad," and the identity of its holder remains a point of speculation and internal tension.
+LENDERMAIRE maintains thirteen core members in addition to [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)). It is publicly known that the unit has thirteen; it is not publicly known who the thirteenth is. The seat is associated publicly only with the designation "Northrad," and the identity of its holder remains a point of speculation and internal tension.
 
 <div class="gallery landscape">
   !6ae9db7ab81dbdf9d07b2b3828ee1075.jpg
@@ -99,13 +99,13 @@ The record notes that his existence makes the dependence of members 1–12 on Ki
 
 ## Relationships
 
-### [Konish Kimbotin](characters/lendermaire/konish-kimbotin-(reimagined))
+### [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined))
 Konish brought Lykor into LENDERMAIRE. The relationship is significant because Lykor's hatred of Cladish people was outweighed by a personal connection to Konish.
 
-### [LENDERMAIRE](factions/lendermaire)
+### [LENDERMAIRE](/km/factions/lendermaire)
 Lykor is the thirteenth member. Unlike members 1–12, he does not depend on the cohesion mechanism to remain. He operates independently and keeps his membership by choice.
 
-### [Noradus](characters/vista/noradus)
+### [Noradus](/characters/vista/noradus)
 No personal or organizational connection is established.
 
 ## Unresolved
@@ -118,7 +118,7 @@ No personal or organizational connection is established.
 
 His stay in the household, and his own account of why he remains, are dramatised in The Thirteenth. The scene is narrative, not record; the facts it turns on — the locked door, the Task Force's offer, his refusal of it — are consistent with the article.
 
-His recruitment of [Tanishito](characters/anajak-forces/tanishito) from the strip club where he once worked, and his quiet dismantling of her performance on the drive to the helipad, are dramatised in The Lot. He mistakes her for a broken veteran, not a spy.
+His recruitment of [Tanishito](/km/characters/anajak-forces/tanishito) from the strip club where he once worked, and his quiet dismantling of her performance on the drive to the helipad, are dramatised in The Lot. He mistakes her for a broken veteran, not a spy.
 
 His departure from the household, and the terms on which he returned to the GIC, are dramatised in the reference draft of Operation Fallow — Episode. The draft is not canon and its plot is provisional, but it is the fullest reading of how he behaves when he decides something.
 
@@ -129,7 +129,7 @@ For a synthesis of these depictions into a usable character reading — how he b
 * Samsara Lykor — Personality Profile
 *   The Thirteenth
 *   The Lot
-*   [LENDERMAIRE](factions/lendermaire)
-*   [Konish Kimbotin (Reimagined)](characters/lendermaire/konish-kimbotin-(reimagined))
-*   [Noradus](characters/vista/noradus)
-*   [2008 Pocheasang Palace raid](events/2008-pocheasang-palace-raid)
+*   [LENDERMAIRE](/km/factions/lendermaire)
+*   [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined))
+*   [Noradus](/characters/vista/noradus)
+*   [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid)
