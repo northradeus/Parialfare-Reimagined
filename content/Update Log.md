@@ -12,6 +12,10 @@
 
 This page records changes to the encyclopedia. Entries appear newest first. Version numbers correspond to the internal publication register and have no in-universe meaning.
 
+## v011 — 12 November 2026
+
+LENDERMAIRE Roster Portraits Expansion
+
 ## v010 — 12 November 2026
 
 This milestone release establishes the **Documentary Fiction Incident Architecture** across the Nolheim encyclopedia, pivoting the presentation of canon scenes from an encyclopedia-first wiki model into classified, ground-level operational incident logs. It officially declassifies a 3-incident launch buffer alongside an SCP-inspired intelligence archive hub.

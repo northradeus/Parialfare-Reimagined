@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Vanny</h3>
-<img src="assets/vanni.jpg" alt="Vanny" />
+<img src="assets/vanny.jpg" alt="Vanny" />
 <table>
 <tr><th>Image Status</th><td>concept</td></tr>
 <tr><th>Title</th><td>Vanny</td></tr>

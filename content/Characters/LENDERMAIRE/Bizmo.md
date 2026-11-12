@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Bizmo</h3>
+<img src="assets/bizmo.jpg" alt="Bizmo" />
 <table>
 <tr><th>Title</th><td>Bizmo</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE background operator, field fabrication</td></tr>

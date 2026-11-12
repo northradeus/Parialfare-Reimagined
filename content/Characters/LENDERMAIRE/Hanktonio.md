@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Hanktonio</h3>
-<img src="assets/hank.png" alt="Hanktonio" />
+<img src="assets/hank-2.jpg" alt="Hanktonio" />
 <table>
 <tr><th>Title</th><td>Hanktonio</td></tr>
 <tr><th>Subtitle</th><td>Second-in-command of Konish's Group and LENDERMAIRE</td></tr>

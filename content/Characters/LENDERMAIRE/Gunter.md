@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Gunter</h3>
+<img src="assets/gunter.jpg" alt="Gunter" />
 <table>
 <tr><th>Title</th><td>Gunter</td></tr>
 <tr><th>Subtitle</th><td>Member of LENDERMAIRE; role unresolved</td></tr>

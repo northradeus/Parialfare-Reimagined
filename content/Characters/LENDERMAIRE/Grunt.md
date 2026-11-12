@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Grunt</h3>
+<img src="assets/grunt.jpg" alt="Grunt" />
 <table>
 <tr><th>Title</th><td>Grunt</td></tr>
 <tr><th>Subtitle</th><td>Member of LENDERMAIRE; role unresolved</td></tr>
