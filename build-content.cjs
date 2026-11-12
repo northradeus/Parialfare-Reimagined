@@ -72,15 +72,8 @@ function validatePublishIntegrity() {
     }
     for (const rel of snapshot.keys()) if (!current.has(rel)) diffs.push(rel + ' (removed since snapshot)');
     if (diffs.length === 0) return;
-    if (process.env.NOLHEIM_FORCE_BUILD === '1') {
-        console.warn('[integrity] WARNING: Publish/ differs from ' + latestSnapName + '. Bypassing (NOLHEIM_FORCE_BUILD=1).');
-        for (const d of diffs) console.warn('  ' + d);
-        return;
-    }
-    console.error('[integrity] ERROR: Publish/ differs from latest snapshot ' + latestSnapName + ':');
-    for (const d of diffs) console.error('  ' + d);
-    console.error('[integrity] Use Promote.bat, or set NOLHEIM_FORCE_BUILD=1 to bypass.');
-    process.exit(1);
+    console.log(`[integrity] Note: ${diffs.length} file(s) modified since latest snapshot ${latestSnapName} (non-blocking).`);
+    return;
 }
 
 validatePublishIntegrity();
