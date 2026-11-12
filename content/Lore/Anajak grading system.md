@@ -20,7 +20,7 @@ Personnel of [Anajak Forces](/km/factions/anajak-forces) are graded. The system 
 Grades seen in the record so far are **S+, S, A+ and A**.
 
 * [Tanishito](/km/characters/anajak-forces/tanishito) — S-grade assassin.
-* [Nogo](/km/characters/anajak-forces/nogo) — A+ grade assassin.
+* [Nogo](/characters/anajak-forces/nogo) — A+ grade assassin.
 * [Pepper](/km/characters/anajak-forces/pepper) — S+ at multitasking, A tier in combat.
 * [Verdanski](/km/characters/anajak-forces/verdanski) — A+.
 

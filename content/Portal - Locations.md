@@ -16,6 +16,7 @@ A curated index of the geographic entities in the region.
 - [Lurkinsberg](/km/locations/countries/lurkinsberg) — The post-colonial naval power.
 - [New Aester](/km/locations/countries/new-aester) — The corporate city-state.
 - [Kingdom of Encore](/km/locations/countries/kingdom-of-encore) — Constitutional monarchy and eastern VISTA member state.
+- [Thaiphon](/locations/countries/thaiphon) — High-tech constitutional empire and VISTA voting delegation.
 
 ## The Frontier
 - [Ironclad](/km/locations/countries/ironclad) — The post-imperial warlord frontier.

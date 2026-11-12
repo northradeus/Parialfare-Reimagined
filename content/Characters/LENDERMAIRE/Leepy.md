@@ -2,6 +2,7 @@
 <h3>Leepy</h3>
 <img src="assets/leepy.jpg" alt="Leepy" />
 <table>
+<tr><th>Image Status</th><td>concept</td></tr>
 <tr><th>Title</th><td>Leepy</td></tr>
 <tr><th>Subtitle</th><td>Sniper of LENDERMAIRE</td></tr>
 <tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>

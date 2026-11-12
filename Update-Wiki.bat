@@ -27,6 +27,7 @@ if exist "content\assets" (
 echo.
 
 echo [3/5] Committing and pushing to GitHub...
+git add -A
 call npx quartz sync
 if %ERRORLEVEL% NEQ 0 (
     echo ERROR: Push failed. Check internet or git credentials.
@@ -42,6 +43,14 @@ where gh >nul 2>nul
 if %ERRORLEVEL% NEQ 0 (
     echo WARNING: GitHub CLI ^(gh^) not installed.
     echo Cannot wait for deployment status. Install with: winget install GitHub.cli
+    echo The push succeeded; check status manually at:
+    echo   https://github.com/northradeus/Parialfare-Reimagined/actions
+    goto :deploy_check_skipped
+)
+
+gh auth status >nul 2>nul
+if %ERRORLEVEL% NEQ 0 (
+    echo NOTE: GitHub CLI is not authenticated ^(run 'gh auth login' to watch runs live^).
     echo The push succeeded; check status manually at:
     echo   https://github.com/northradeus/Parialfare-Reimagined/actions
     goto :deploy_check_skipped

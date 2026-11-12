@@ -21,7 +21,7 @@
 
 ## 1. Facility training
 
-She was trained in the facility as a personal bodyguard. She is unrelated to [Tanishito](/km/characters/anajak-forces/tanishito) and [Nogo](/km/characters/anajak-forces/nogo), who were raised in the same facility, and shares no history with them.
+She was trained in the facility as a personal bodyguard. She is unrelated to [Tanishito](/km/characters/anajak-forces/tanishito) and [Nogo](/characters/anajak-forces/nogo), who were raised in the same facility, and shares no history with them.
 
 ## 2. Multi-role record
 
@@ -62,7 +62,7 @@ The record lists no other encounter with either of them.
 ## See Also
 
 * [Tanishito](/km/characters/anajak-forces/tanishito)
-* [Nogo](/km/characters/anajak-forces/nogo)
+* [Nogo](/characters/anajak-forces/nogo)
 * [Noradus](/characters/vista/noradus)
 * [VISTA](/km/factions/vista)
 * [Anajak Forces](/km/factions/anajak-forces)

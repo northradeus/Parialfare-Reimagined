@@ -19,7 +19,7 @@ language: km
 
 ## ការបះបោរ
 - [ក្រុមរបស់កូនីស](/km/factions/konish's-group) - សម្ព័ន្ធឆ័ត្រ Cladish ឆ្លងដែន។
-- [ឡង់ឌែរម៉ែរ](/km/factions/lendermaire) - អង្គភាពប្រតិបត្តិការខ្មៅរបស់ Konish។
+- [ឡង់ឌែរម៉ែរ](/km/factions/lendermaire) - អង្គភាពប្រតិបត្តិការខ្មៅរបស់ កូនីស។
 - [ម៉ែរ អូម៉ែរ](/km/factions/maire-o'mare-(2008)) - ការបះបោរត្រឡប់មកវិញ។
 
 ## បទបញ្ជារបស់ស្ថាប័ន
@@ -27,6 +27,6 @@ language: km
 - [សម្ព័ន្ធអន្តរាគមន៍សកល](/km/factions/global-intervention-coalition-(gic)) - អាវុធយោធារបស់ VISTA។
 - [កងកម្លាំងអាណាចក្រ](/km/factions/anajak-forces) - ក្រុមការងារប្រយុទ្ធនឹងការបះបោរ។
 - [កងកម្លាំងកិច្ចការពិសេសអៃរ៉ុន](/km/factions/ironish-task-force-(itf)) - អ្នកម៉ៅការយោធាឯកជន។
-- [កងរាជអាវុធហត្ថឡៅប៉ានស្ទ័រ](/km/factions/laopanster-gendarmerie) - កងរាជអាវុធហត្ថជាតិរបស់ Ironland។
+- [កងរាជអាវុធហត្ថឡៅប៉ានស្ទ័រ](/km/factions/laopanster-gendarmerie) - កងរាជអាវុធហត្ថជាតិរបស់ ដែនដីអៃរ៉ុន។
 - [អាល់ហ្វា-០១](/km/factions/alpha-01) — ស្លាក ITF សម្រាប់ស្នូលឃាតករបស់ Anajak។
 - [ក្រមាខ្មៅ](/km/factions/black-kroma) - បក្សពួកប្រដាប់អាវុធឈរនៅក្នុងព្រះរាជាណាចក្រ Encore។

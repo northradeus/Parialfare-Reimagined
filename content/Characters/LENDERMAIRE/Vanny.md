@@ -2,6 +2,7 @@
 <h3>Vanny</h3>
 <img src="assets/vanni.jpg" alt="Vanny" />
 <table>
+<tr><th>Image Status</th><td>concept</td></tr>
 <tr><th>Title</th><td>Vanny</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE core member; cyber and electronic warfare specialist</td></tr>
 <tr><th>Age</th><td>18–19 in August 2008</td></tr>

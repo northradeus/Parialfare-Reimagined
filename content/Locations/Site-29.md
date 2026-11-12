@@ -22,14 +22,14 @@ Site-29 operates as a black site. It houses extensive facilities for psychologic
 
 ## 2. Structure and Compartmentalization
 
-The facility is defined by extreme compartmentalization. Operatives are raised and trained in isolated groups, and are intentionally kept separate unless a specific operational requirement dictates otherwise. This doctrine ensures that subjects like [Tanishito](/km/characters/anajak-forces/tanishito), [Nogo](/km/characters/anajak-forces/nogo), and [Pepper](/km/characters/anajak-forces/pepper) do not share a collective history or overlapping social bonds.
+The facility is defined by extreme compartmentalization. Operatives are raised and trained in isolated groups, and are intentionally kept separate unless a specific operational requirement dictates otherwise. This doctrine ensures that subjects like [Tanishito](/km/characters/anajak-forces/tanishito), [Nogo](/characters/anajak-forces/nogo), and [Pepper](/km/characters/anajak-forces/pepper) do not share a collective history or overlapping social bonds.
 
 ## 3. Training and Grading
 
 The facility employs a strict grading system, evaluating subjects on specialized metrics. Grades range from standard combat readiness to extreme psychological aptitude.
 
 * [Tanishito](/km/characters/anajak-forces/tanishito) received a final evaluation grade of S.
-* [Nogo](/km/characters/anajak-forces/nogo) received a final evaluation grade of A+.
+* [Nogo](/characters/anajak-forces/nogo) received a final evaluation grade of A+.
 * [Pepper](/km/characters/anajak-forces/pepper) received an S+ in multitasking and an A in combat.
 
 ## 4. Outside Contracts
@@ -45,7 +45,7 @@ Site-29 accepts highly specific requisitions from aligned state actors, such as 
 ## 6. See Also
 
 * [Tanishito](/km/characters/anajak-forces/tanishito)
-* [Nogo](/km/characters/anajak-forces/nogo)
+* [Nogo](/characters/anajak-forces/nogo)
 * [Pepper](/km/characters/anajak-forces/pepper)
 * [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf))
 * [VISTA](/km/factions/vista)

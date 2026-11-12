@@ -32,7 +32,7 @@ language: km
     <div class="side-motto">«ឱ្យពួកគេភ្លក្សរសជាតិដែកថែប។» &mdash; សម្ព័ន្ធមេទ័ពក្លាឌីស ដែលការពារដែនដីអាថ៌កំបាំងភាគខាងត្បូង។</div>
     <div class="featured-grid">
       <a href="km/characters/lendermaire/konish-kimbotin-(reimagined)" class="featured-card">
-        <span class="card-image"><img src="assets/konish.jpg" alt="Konish Kimbotin" loading="lazy"></span>
+        <span class="card-image"><img src="assets/konish.jpg" alt="កូនីស គីមបូទីន" loading="lazy"></span>
         <span class="card-content">
           <span class="card-badge badge-insurgent">មេបញ្ជាការ</span>
           <span class="card-title">កូនីស គីមបូទីន</span>
@@ -40,7 +40,7 @@ language: km
         </span>
       </a>
       <a href="km/locations/area-31" class="featured-card">
-        <span class="card-image"><img src="assets/area-31.jpg" alt="Area-31 Citadel" loading="lazy"></span>
+        <span class="card-image"><img src="assets/area-31.jpg" alt="តំបន់-៣១ Citadel" loading="lazy"></span>
         <span class="card-content">
           <span class="card-badge badge-insurgent">បន្ទាយការពារ</span>
           <span class="card-title">តំបន់-៣១ (សៃខេន)</span>
@@ -48,7 +48,7 @@ language: km
         </span>
       </a>
       <a href="km/characters/lendermaire/samsara-lykor" class="featured-card">
-        <span class="card-image"><img src="assets/samsara.jpg" alt="Samsara Lykor" loading="lazy"></span>
+        <span class="card-image"><img src="assets/samsara.jpg" alt="សាំសារ៉ា លីក័រ" loading="lazy"></span>
         <span class="card-content">
           <span class="card-badge badge-insurgent">ប្រតិបត្តិករពិសេស</span>
           <span class="card-title">សាំសារ៉ា លីក័រ</span>
@@ -62,7 +62,7 @@ language: km
     <div class="side-motto">«វឌ្ឍនភាពតាមរយៈនវានុវត្តន៍។» &mdash; របបបច្ចេកវិទ្យាសាជីវកម្ម ដែលគាំទ្រដោយកម្លាំងក្រុមហ៊ុនយោធាឯកជន។</div>
     <div class="featured-grid">
       <a href="km/characters/vista/noradus" class="featured-card">
-        <span class="card-image"><img src="assets/naradus.png" alt="Noradus 'Northrad'" loading="lazy"></span>
+        <span class="card-image"><img src="assets/naradus.png" alt="ណ័ររ៉ាឌុស 'ណ័រត្រាដ'" loading="lazy"></span>
         <span class="card-content">
           <span class="card-badge badge-order">ស្ថាបត្យករ</span>
           <span class="card-title">ណ័ររ៉ាឌុស «ណ័រត្រាដ»</span>
@@ -70,7 +70,7 @@ language: km
         </span>
       </a>
       <a href="km/locations/countries/new-aester" class="featured-card">
-        <span class="card-image"><img src="assets/newaester.png" alt="New Aester" loading="lazy"></span>
+        <span class="card-image"><img src="assets/newaester.png" alt="ញូវអេសស្ទ័រ" loading="lazy"></span>
         <span class="card-content">
           <span class="card-badge badge-order">រដ្ឋសាជីវកម្ម</span>
           <span class="card-title">ញូវអែស្ទ័រ</span>
@@ -78,7 +78,7 @@ language: km
         </span>
       </a>
       <a href="km/characters/anajak-forces/takahashi" class="featured-card">
-        <span class="card-image"><img src="assets/sahara.jpg" alt="Takahashi 'Sahara'" loading="lazy"></span>
+        <span class="card-image"><img src="assets/sahara.jpg" alt="តាកាហាស៊ី 'Sahara'" loading="lazy"></span>
         <span class="card-content">
           <span class="card-badge badge-order">អ្នកបើកយន្តហោះវាយប្រហារ</span>
           <span class="card-title">តាកាហាស៊ី («សាហារ៉ា»)</span>

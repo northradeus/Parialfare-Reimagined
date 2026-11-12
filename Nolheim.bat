@@ -23,36 +23,46 @@ echo ================================================================
 echo   NOLHEIM CONTROL PANEL
 echo ================================================================
 echo.
-echo    [1] Website Operations   (Preview, Local, Deploy -^> EN / KM / Both)
-echo    [2] Start Bridge         (new window - agent server)
-echo    [3] Publish Pages        (choose pages, write a note, go live)
-echo    [4] Drift Check          (Continuities vs Publish)
-echo    [5] Bundle AI Vault      (EN / KM / Bilingual -^> NotebookLM/LLMs)
-echo    [6] Bilingual Drift      (Track EN vs KM translation status)
-echo    [7] Translate to Draft   (Single note, group, or all)
-echo    [8] Copy Polish Prompt   (Generate AI polish prompt to clipboard)
-echo    [9] Scaffold Template    (Blank structured note from English)
-echo    [10] Open Vault (EN)     (English Nolheim)
-echo    [11] Open Vault (KM)     (Nolheim-Khmer)
-echo    [12] Open Quartz Folder
+echo    [1] Nolheim Studio Suite (Local Web App - Recommended)
+echo    [2] Website Operations   (Preview, Local, Deploy -^> EN / KM / Both)
+echo    [3] Start Bridge         (new window - agent server)
+echo    [4] Publish Pages        (choose pages, write a note, go live)
+echo    [5] Drift Check          (Continuities vs Publish)
+echo    [6] Bundle AI Vault      (EN / KM / Bilingual -^> NotebookLM/LLMs)
+echo    [7] Bilingual Drift      (Track EN vs KM translation status)
+echo    [8] Bulk Polish Khmer    (Deterministic polish, terms, punctuation, .bak)
+echo    [9] Markdown Syntax Lint (Detect ^& fix spaced bold, italics, tags)
+echo    [10] Translate to Draft  (Single note, group, or all)
+echo    [11] Copy Polish Prompt  (Generate AI polish prompt to clipboard)
+echo    [12] Scaffold Template   (Blank structured note from English)
+echo    [13] Open Vault (EN)     (English Nolheim)
+echo    [14] Open Vault (KM)     (Nolheim-Khmer)
+echo    [15] Open Quartz Folder
 echo.
 echo    [0] Exit
 echo.
 set "CHOICE="
 set /p "CHOICE=Select: "
-if "%CHOICE%"=="1" goto WEBSITE_MENU
-if "%CHOICE%"=="2" goto DO_BRIDGE
-if "%CHOICE%"=="3" goto DO_PROMOTE
-if "%CHOICE%"=="4" goto DO_DRIFT
-if "%CHOICE%"=="5" goto DO_BUNDLE
-if "%CHOICE%"=="6" goto DO_BILINGUAL_DRIFT
-if "%CHOICE%"=="7" goto DO_TRANSLATE_DRAFT
-if "%CHOICE%"=="8" goto DO_POLISH_PROMPT
-if "%CHOICE%"=="9" goto DO_SCAFFOLD
-if "%CHOICE%"=="10" goto DO_VAULT
-if "%CHOICE%"=="11" goto DO_KM_VAULT
-if "%CHOICE%"=="12" goto DO_QUARTZ
-if "%CHOICE%"=="0" goto EXIT
+if "!CHOICE!"=="1" goto DO_STUDIO
+if "!CHOICE!"=="2" goto WEBSITE_MENU
+if "!CHOICE!"=="3" goto DO_BRIDGE
+if "!CHOICE!"=="4" goto DO_PROMOTE
+if "!CHOICE!"=="5" goto DO_DRIFT
+if "!CHOICE!"=="6" goto DO_BUNDLE
+if "!CHOICE!"=="7" goto DO_BILINGUAL_DRIFT
+if "!CHOICE!"=="8" goto DO_KHMER_POLISH
+if "!CHOICE!"=="9" goto DO_SYNTAX_CHECK
+if "!CHOICE!"=="10" goto DO_TRANSLATE_DRAFT
+if "!CHOICE!"=="11" goto DO_POLISH_PROMPT
+if "!CHOICE!"=="12" goto DO_SCAFFOLD
+if "!CHOICE!"=="13" goto DO_VAULT
+if "!CHOICE!"=="14" goto DO_KM_VAULT
+if "!CHOICE!"=="15" goto DO_QUARTZ
+if "!CHOICE!"=="0" goto EXIT
+goto MENU
+
+:DO_STUDIO
+start "" "%QUARTZ_DIR%\Studio.bat"
 goto MENU
 
 :SHOW_STATUS
@@ -71,7 +81,7 @@ for /f "tokens=*" %%D in ('node "%~dp0drift-check.cjs" --summary 2^>nul') do (
     set "DRIFT_STATUS=%%D"
 )
 set "BILINGUAL_STATUS=checking..."
-for /f "tokens=*" %%B in ('node "!BILINGUAL_TOOL!" drift --summary 2^>nul') do (
+for /f "tokens=*" %%B in ('node "%BILINGUAL_TOOL%" drift --summary 2^>nul') do (
     set "BILINGUAL_STATUS=%%B"
 )
 echo ----------------------------------------------------------------
@@ -206,6 +216,7 @@ if exist "%~dp0content\assets" (
 )
 echo.
 echo [3/4] Committing and pushing to GitHub Pages...
+git add -A
 call npx quartz sync
 if errorlevel 1 (
     echo [ERROR] Push failed. Check internet or git credentials.
@@ -272,7 +283,7 @@ echo.
 echo ----------------------------------------------------------------
 echo   Done. Press any key to return to the menu.
 echo ----------------------------------------------------------------
-pause >nul
+pause
 goto MENU
 
 :PROMOTE_STOP
@@ -280,28 +291,17 @@ echo.
 echo ----------------------------------------------------------------
 echo   Press any key to return to the menu.
 echo ----------------------------------------------------------------
-pause >nul
-goto MENU
-
-:DO_VAULT
-start "" "%VAULT_DIR%"
-goto MENU
-
-:DO_KM_VAULT
-start "" "%KM_VAULT_DIR%"
-goto MENU
-
-:DO_QUARTZ
-start "" "%QUARTZ_DIR%"
+pause
 goto MENU
 
 :DO_DRIFT
 echo.
-node "%~dp0drift-check.cjs"
+call node "%~dp0drift-check.cjs"
+echo.
 echo ----------------------------------------------------------------
 echo   Press any key to return to the menu.
 echo ----------------------------------------------------------------
-pause >nul
+pause
 goto MENU
 
 :DO_BUNDLE
@@ -315,31 +315,144 @@ echo    [2] Khmer Vault                   -^> vault_km.md
 echo    [3] Bilingual Master Vault        -^> vault_bilingual.md
 echo    [4] All bundles (EN + KM + Both)
 echo.
+echo    [0] Back to Main Menu
+echo.
 set "B_CHOICE=1"
-set /p "B_CHOICE=Select target [1-4] (default 1): "
+set /p "B_CHOICE=Select target [0-4] (default 1): "
+if "!B_CHOICE!"=="0" goto MENU
 set "B_FLAG=--en"
 if "!B_CHOICE!"=="2" set "B_FLAG=--km"
 if "!B_CHOICE!"=="3" set "B_FLAG=--bilingual"
 if "!B_CHOICE!"=="4" set "B_FLAG=--all"
 echo.
-call "!BUNDLE_BAT!" !B_FLAG! --no-pause
+call "%BUNDLE_BAT%" !B_FLAG! --no-pause
 echo.
 echo ----------------------------------------------------------------
 echo   Vault bundled and highlighted in File Explorer.
 echo   Press any key to return to the menu.
 echo ----------------------------------------------------------------
-pause >nul
+pause
 goto MENU
 
 :DO_BILINGUAL_DRIFT
 echo.
-node "!BILINGUAL_TOOL!" drift
+call node "%BILINGUAL_TOOL%" drift
 echo.
 echo ----------------------------------------------------------------
 echo   Press any key to return to the menu.
 echo ----------------------------------------------------------------
-pause >nul
+pause
 goto MENU
+
+:DO_KHMER_POLISH
+cls
+color 0E
+echo.
+echo ================================================================
+echo   NOLHEIM KHMER BULK POLISHER
+echo ================================================================
+echo.
+echo   Target Vault: !KM_VAULT_DIR!
+echo.
+echo   Deterministic Polish Features:
+echo     - Punctuation (colons : -^> ៖, proper spacing)
+echo     - Markdown formatting (spaced bold/italics, ^<figure^> tags)
+echo     - Master term dictionary (50+ official faction/character terms)
+echo     - Section headings (Pure Native Khmer)
+echo     - Updates metadata: review_status: script-polished
+echo.
+echo   * Safety: Creates individual companion '.bak' backups automatically.
+echo.
+echo    [1] Interactive Polish   (Inspect proposed changes ^& approve per file)
+echo    [2] Dry-Run Preview      (View all detected improvements - 0 files changed)
+echo    [3] Auto-Polish All      (Apply all improvements with safety .bak backups)
+echo    [4] Undo / Restore .bak  (Roll back files to their pre-polish state)
+echo    [5] Clean .bak Backups   (Permanently remove backup files when satisfied)
+echo.
+echo    [0] Back to Main Menu
+echo.
+set "KP_CHOICE="
+set /p "KP_CHOICE=Select [0-5]: "
+if "!KP_CHOICE!"=="1" (
+    echo.
+    call node "%QUARTZ_DIR%\polish-khmer.cjs"
+    echo.
+    pause
+    goto DO_KHMER_POLISH
+)
+if "!KP_CHOICE!"=="2" (
+    echo.
+    call node "%QUARTZ_DIR%\polish-khmer.cjs" --dry-run
+    echo.
+    pause
+    goto DO_KHMER_POLISH
+)
+if "!KP_CHOICE!"=="3" (
+    echo.
+    call node "%QUARTZ_DIR%\polish-khmer.cjs" --yes
+    echo.
+    pause
+    goto DO_KHMER_POLISH
+)
+if "!KP_CHOICE!"=="4" (
+    echo.
+    call node "%QUARTZ_DIR%\polish-khmer.cjs" --restore-bak
+    echo.
+    pause
+    goto DO_KHMER_POLISH
+)
+if "!KP_CHOICE!"=="5" (
+    echo.
+    call node "%QUARTZ_DIR%\polish-khmer.cjs" --clean-bak
+    echo.
+    pause
+    goto DO_KHMER_POLISH
+)
+if "!KP_CHOICE!"=="0" goto MENU
+goto DO_KHMER_POLISH
+
+:DO_SYNTAX_CHECK
+cls
+color 0B
+echo.
+echo ================================================================
+echo   MARKDOWN SYNTAX ^& FORMAT LINTER
+echo ================================================================
+echo.
+echo   Detects spaced bold (** text **), italics (* text *),
+echo   and unescaped Khmer figure tags (^<រូប^>).
+echo.
+echo    [1] Lint Content Staging  (interactive check ^& fix on quartz-site\content)
+echo    [2] Lint Khmer Vault      (interactive check ^& fix on Nolheim-Khmer)
+echo    [3] Dry-Run Check Only    (view syntax issues without modifying files)
+echo.
+echo    [0] Back to Main Menu
+echo.
+set "SC_CHOICE="
+set /p "SC_CHOICE=Select [0-3]: "
+if "!SC_CHOICE!"=="1" (
+    echo.
+    call node "%QUARTZ_DIR%\lint-autocorrect.cjs" "%QUARTZ_DIR%\content"
+    echo.
+    pause
+    goto DO_SYNTAX_CHECK
+)
+if "!SC_CHOICE!"=="2" (
+    echo.
+    call node "%QUARTZ_DIR%\lint-autocorrect.cjs" "!KM_VAULT_DIR!"
+    echo.
+    pause
+    goto DO_SYNTAX_CHECK
+)
+if "!SC_CHOICE!"=="3" (
+    echo.
+    call node "%QUARTZ_DIR%\lint-autocorrect.cjs" "!KM_VAULT_DIR!" --dry-run
+    echo.
+    pause
+    goto DO_SYNTAX_CHECK
+)
+if "!SC_CHOICE!"=="0" goto MENU
+goto DO_SYNTAX_CHECK
 
 :DO_TRANSLATE_DRAFT
 echo.
@@ -351,26 +464,29 @@ echo    [1] Single Note    (e.g. Tanishito, Noradus, LENDERMAIRE)
 echo    [2] Faction Group  (e.g. LENDERMAIRE, Anajak Forces)
 echo    [3] All Pending Notes
 echo.
+echo    [0] Back to Main Menu
+echo.
 set "T_CHOICE=1"
-set /p "T_CHOICE=Select [1-3] (default 1): "
+set /p "T_CHOICE=Select [0-3] (default 1): "
+if "!T_CHOICE!"=="0" goto MENU
 if "!T_CHOICE!"=="1" (
     set "T_NOTE="
     set /p "T_NOTE=Enter note name: "
-    if not "!T_NOTE!"=="" node "!BILINGUAL_TOOL!" translate "!T_NOTE!" --force
+    if not "!T_NOTE!"=="" call node "%BILINGUAL_TOOL%" translate "!T_NOTE!" --force
 )
 if "!T_CHOICE!"=="2" (
     set "T_GROUP="
     set /p "T_GROUP=Enter group/faction name: "
-    if not "!T_GROUP!"=="" node "!BILINGUAL_TOOL!" translate --group "!T_GROUP!"
+    if not "!T_GROUP!"=="" call node "%BILINGUAL_TOOL%" translate --group "!T_GROUP!"
 )
 if "!T_CHOICE!"=="3" (
-    node "!BILINGUAL_TOOL!" translate --all
+    call node "%BILINGUAL_TOOL%" translate --all
 )
 echo.
 echo ----------------------------------------------------------------
 echo   Press any key to return to the menu.
 echo ----------------------------------------------------------------
-pause >nul
+pause
 goto MENU
 
 :DO_POLISH_PROMPT
@@ -379,17 +495,18 @@ echo ================================================================
 echo   COPY AI POLISH PROMPT TO CLIPBOARD
 echo ================================================================
 echo.
+echo   Press Enter without typing to cancel.
+echo.
 set "P_NOTE="
 set /p "P_NOTE=Enter note name (e.g. Andrew, Samsara Lykor): "
 if not "!P_NOTE!"=="" (
-    node "!BILINGUAL_TOOL!" polish-prompt "!P_NOTE!" --copy
+    call node "%BILINGUAL_TOOL%" polish-prompt "!P_NOTE!" --copy
+    echo.
+    echo ----------------------------------------------------------------
+    echo   Prompt copied! You can paste (Ctrl+V) into Claude / ChatGPT.
+    echo ----------------------------------------------------------------
 )
-echo.
-echo ----------------------------------------------------------------
-echo   Prompt copied! You can paste (Ctrl+V) into Claude / ChatGPT.
-echo   Press any key to return to the menu.
-echo ----------------------------------------------------------------
-pause >nul
+pause
 goto MENU
 
 :DO_SCAFFOLD
@@ -398,16 +515,27 @@ echo ================================================================
 echo   SCAFFOLD KHMER NOTE FROM ENGLISH CANON
 echo ================================================================
 echo.
+echo   Press Enter without typing to cancel.
+echo.
 set "NOTE_NAME="
 set /p "NOTE_NAME=Enter note name or UID (e.g. Tanishito, LENDERMAIRE, Pocheasang): "
 if not "!NOTE_NAME!"=="" (
-    node "!BILINGUAL_TOOL!" scaffold "!NOTE_NAME!"
+    call node "%BILINGUAL_TOOL%" scaffold "!NOTE_NAME!"
+    echo.
 )
-echo.
-echo ----------------------------------------------------------------
-echo   Press any key to return to the menu.
-echo ----------------------------------------------------------------
-pause >nul
+pause
+goto MENU
+
+:DO_VAULT
+start "" "%VAULT_DIR%"
+goto MENU
+
+:DO_KM_VAULT
+start "" "%KM_VAULT_DIR%"
+goto MENU
+
+:DO_QUARTZ
+start "" "%QUARTZ_DIR%"
 goto MENU
 
 :EXIT

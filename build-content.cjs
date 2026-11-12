@@ -379,6 +379,7 @@ function processDir(dir, outDir) {
                 let entityType = 'concept';
                 let imgName = '';
                 let infoRows = '';
+                const rawFields = {};
 
                 const lines = yaml.split('\n');
                 let inMultiline = false;
@@ -396,6 +397,7 @@ function processDir(dir, outDir) {
                     if (match) {
                         const key = match[1];
                         let val = match[2].trim();
+                        rawFields[key.toLowerCase()] = val.replace(/^["']|["']$/g, '');
 
                         if (key === 'title') title = val.replace(/"/g, '');
                         if (key === 'entity-type') entityType = val.toLowerCase().replace(/['"]/g, '');
@@ -432,7 +434,19 @@ function processDir(dir, outDir) {
                 }
 
                 let infobox = '';
-                if (infoRows || imgName) {
+                if (item === 'index.md' || entityType === 'hub') {
+                    infobox = '';
+                } else if (entityType === 'incident' || fullPath.includes('Incidents')) {
+                    if (!body.includes('class="scp-stamp-box"')) {
+                        const sec = rawFields['sector'] || 'POCHEASANG STRIP // IRONCLAD DMZ';
+                        const pov = rawFields['pov'] || 'TANISHITO, T.';
+                        const dt = rawFields['date'] || '28 AUG 2008';
+                        const secLevel = rawFields['security_level'] || 'RESTRICTED // NEED-TO-KNOW (GIC DEPT. 4)';
+                        const disp = rawFields['disposition'] || 'RECOVERED / OFF-NETWORK (<span class="redacted">SITE-29</span>)';
+
+                        infobox = `<div class="scp-stamp-box">\n  <div class="scp-stamp-grid">\n    <span class="stamp-label">INCIDENT LOG:</span>\n    <span class="stamp-val">${title || path.basename(item, '.md')}</span>\n    <span class="stamp-label">SECURITY LEVEL:</span>\n    <span class="stamp-val">${secLevel}</span>\n    <span class="stamp-label">PRIMARY OPERATIVE:</span>\n    <span class="stamp-val">${pov}</span>\n    <span class="stamp-label">OPERATIONAL SECTOR:</span>\n    <span class="stamp-val">${sec}</span>\n    <span class="stamp-label">TIMELINE DATE:</span>\n    <span class="stamp-val">${dt}</span>\n    <span class="stamp-label">DISPOSITION:</span>\n    <span class="stamp-val">${disp}</span>\n  </div>\n</div>\n\n`;
+                    }
+                } else if (infoRows || imgName) {
                     infobox = `<aside class="custom-infobox infobox-${entityType}">\n`;
                     if (title) infobox += `<h3>${title}</h3>\n`;
                     if (imgName) {
@@ -473,7 +487,11 @@ function processDir(dir, outDir) {
                 // Lead paragraph styling is now handled via CSS (article p:first-of-type)
                 // instead of HTML wrapping, which was breaking markdown processing.
 
-                content = infobox + '\n' + body;
+                if (entityType === 'incident' || fullPath.includes('Incidents') || item === 'index.md' || entityType === 'hub') {
+                    content = `---\n${yaml}\n---\n\n${infobox ? infobox + '\n' : ''}${body}`;
+                } else {
+                    content = infobox + '\n' + body;
+                }
             }
             const rels = reverseLinks[relPath];
             if (rels && rels.length > 0) {
@@ -761,10 +779,11 @@ title: Nolheim
 description: "The Independent Encyclopedia of Parialfare: Reimagined — covert operations, warlords, and black-site facilities in the year 2008."
 socialImage: og-image.png
 ---
-<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-author">Created by <a href="https://northrad.carrd.co/" target="_blank" rel="noopener">CHHUM PICHTHYACHHANAN</a></p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div>
+<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-author">Created by <a href="https://northrad.carrd.co/" target="_blank" rel="noopener">CHHUM PICHTHYACHHANAN</a></p><p class="hero-lead"><strong>"A household of people every institution threw away becomes the one thing a superpower cannot buy back."</strong><br/>The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div>
 
 <h2 class="home-section-title">Explore the Archive</h2>
 <div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div>
+<div class="portal-grid" style="margin-top: 0.6rem;"><a href="incidents" class="portal-button" style="border-color: #a6535c; color: #a6535c; font-weight: 700;">★ Declassified Incident Archive (Incidents 001–003)</a></div>
 
 ${sideSelectorHtml}
 
@@ -900,6 +919,9 @@ function generateIndices(srcDir, outDir, isRoot = false) {
     const articles = collectArticles(srcDir, relPrefix ? relPrefix + '/' : '');
 
     if (!isRoot && articles.length > 0) {
+        if (fs.existsSync(path.join(srcDir, 'index.md'))) {
+            return;
+        }
         let cardsHtml = '<div class="category-grid">';
         for (const a of articles) {
             cardsHtml += renderCard(a, outDir);

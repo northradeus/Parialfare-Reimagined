@@ -38,7 +38,7 @@ In the contemporary era, the Black Kroma has evolved from an ideological insurge
 
 Following the founding of the [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)), member delegations sought standardized forward deployment protocols. VISTA President [General Northrad](/characters/vista/noradus) conducted an official state visit to Encore to ratify mutual defense and border observation terms.
 
-Concurrent with public treaty negotiations, Northrad concluded a confidential bilateral security understanding regarding regional intervention rights. This diplomatic exchange is historically linked to the designation of [Anajak Forces](/km/factions/anajak-forces), adopting the Encorean term *Anajak* (denoting sovereign authority or realm) for the covert intervention task force commanded by [General Ramcher](/km/characters/anajak-forces/general-ramcher).
+Concurrent with public treaty negotiations, Northrad concluded a confidential bilateral security understanding regarding regional intervention rights. This diplomatic exchange is historically linked to the designation of [Anajak Forces](/km/factions/anajak-forces), adopting the Encorean term *Anajak* for the covert intervention task force commanded by [General Ramcher](/km/characters/anajak-forces/general-ramcher).
 
 ## 4. Military Doctrine
 

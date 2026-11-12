@@ -45,7 +45,7 @@ By identifying as Deckish, Amberly refuses the name his own people chose after t
 
 The ideology is recorded as built around the supremacy of the warlord and the permanence of the Deck's conquest. In the medieval era, the surviving Deck warlords left the movement alone out of fear of Rogolf. In 2008, the insurgency has adapted the ideology to modern warfare, and is recorded as chaotic: it sometimes takes the side of [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)) and frequently turns against him.
 
-Amberly coordinates that movement. He is not its author. The record does not establish what he believes about the ideology he coordinates, or whether he believes it at all. The claim he coordinates has drawn particular attention from [Ironland](/locations/countries/ironland), [Lurkinsberg](/km/locations/countries/lurkinsberg), and Thaiphon, all three members of the coalition that broke the Deck Empire.
+Amberly coordinates that movement. He is not its author. The record does not establish what he believes about the ideology he coordinates, or whether he believes it at all. The claim he coordinates has drawn particular attention from [Ironland](/locations/countries/ironland), [Lurkinsberg](/km/locations/countries/lurkinsberg), and [Thaiphon](/locations/countries/thaiphon), all three members of the coalition that broke the Deck Empire.
 
 ## 4. The method
 

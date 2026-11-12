@@ -18,7 +18,7 @@ language: km
 លិបិក្រមដែលបានរៀបចំនៃព្រឹត្តិការណ៍ប្រវត្តិសាស្ត្រសំខាន់ៗ។
 
 ## ឆ្នាំ ២០០៨
-- [ប្រតិបត្តិការឆ្មក់វាយប្រហាររាជវាំងពោធិ៍សាង ឆ្នាំ២០០៨](/km/events/2008-pocheasang-palace-raid) - ការវាយលុករបស់ LENDERMAIRE លើបណ្ណសារ។
+- [ប្រតិបត្តិការឆ្មក់វាយប្រហាររាជវាំងពោធិ៍សាង ឆ្នាំ២០០៨](/km/events/2008-pocheasang-palace-raid) - ការវាយលុករបស់ ឡង់ឌែរម៉ែរ លើបណ្ណសារ។
 - [2008 Ai'ron request to VISTA](/km/events/2008-ai'ron-request-to-vista) - ការបោះឆ្នោតបរាជ័យក្នុងការផ្តល់មូលនិធិដល់សង្រ្គាម។
-- [Formation of LENDERMAIRE](/km/events/formation-of-lendermaire) — របៀបដែល Konish សាងសង់គ្រួសារ។
+- [Formation of LENDERMAIRE](/km/events/formation-of-lendermaire) — របៀបដែល កូនីស សាងសង់គ្រួសារ។
 - [ប្រតិបត្តិការ ហ្វាឡូវ](/km/events/operation-fallow) - ប្រតិបត្តិការទាញយករបស់ GIC។

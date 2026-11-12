@@ -2,6 +2,7 @@
 <h3>Kaliber</h3>
 <img src="assets/kaliber.jpg" alt="Kaliber" />
 <table>
+<tr><th>Image Status</th><td>concept</td></tr>
 <tr><th>Title</th><td>Kaliber</td></tr>
 <tr><th>Subtitle</th><td>Shield specialist of LENDERMAIRE</td></tr>
 <tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>

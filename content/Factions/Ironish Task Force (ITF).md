@@ -53,7 +53,7 @@ The ITF provides security management and static protection services, primarily t
 
 The ITF operates under a corporate structure, with a site director responsible for contract performance at each facility. The company's Pocheasang deployment was headed by an ITF Site Director, who coordinated defensive protocols with the Laopanster Gendarmerie detachment. The company is registered in Ai'ron and maintains its headquarters in [Pocheasang](/km/locations/pocheasang).[^1]
 
-ITF personnel also serve in [Anajak Forces](/km/factions/anajak-forces), and the ITF handpicked the assassins [Tanishito](/km/characters/anajak-forces/tanishito) and [Nogo](/km/characters/anajak-forces/nogo) for service. ITF's influence is extensive: the [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)) is popularly called "the global ITF" because of it, though the two are separate institutions and the naming confusion is intentional.
+ITF personnel also serve in [Anajak Forces](/km/factions/anajak-forces), and the ITF handpicked the assassins [Tanishito](/km/characters/anajak-forces/tanishito) and [Nogo](/characters/anajak-forces/nogo) for service. ITF's influence is extensive: the [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)) is popularly called "the global ITF" because of it, though the two are separate institutions and the naming confusion is intentional.
 
 ## Controversies and Inquiries
 

@@ -2,6 +2,7 @@
 <h3>Markless</h3>
 <img src="assets/markless.jpg" alt="Markless" />
 <table>
+<tr><th>Image Status</th><td>concept</td></tr>
 <tr><th>Title</th><td>Markless</td></tr>
 <tr><th>Subtitle</th><td>Breacher of LENDERMAIRE</td></tr>
 <tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>

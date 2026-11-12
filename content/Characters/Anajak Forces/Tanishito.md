@@ -2,23 +2,24 @@
 <h3>Tanishito</h3>
 <img src="assets/tanishito.jpg" alt="Tanishito" />
 <table>
+<tr><th>Image Status</th><td>concept</td></tr>
 <tr><th>Title</th><td>Tanishito</td></tr>
 <tr><th>Subtitle</th><td>Anajak Forces assassin</td></tr>
 <tr><th>Role</th><td>Assassin</td></tr>
 <tr><th>Factions</th><td><a href="/km/factions/anajak-forces">Anajak Forces</a></td></tr>
 <tr><th>Grade</th><td>S (final entry only)</td></tr>
-<tr><th>Ethnicity</th><td>Thaiphonese and <a href="/km/locations/countries/lurkinsberg">Lurkish</a></td></tr>
+<tr><th>Ethnicity</th><td><a href="/locations/countries/thaiphon">Thaiphonese</a> and <a href="/km/locations/countries/lurkinsberg">Lurkish</a></td></tr>
 <tr><th>Age</th><td>Adult (exact age not recorded)</td></tr>
 <tr><th>Pipeline</th><td>Facility-raised</td></tr>
 <tr><th>Origin</th><td><a href="/km/locations/site-29">Site-29</a></td></tr>
-<tr><th>Partner</th><td><a href="/km/characters/anajak-forces/nogo">Nogo</a></td></tr>
+<tr><th>Partner</th><td><a href="/characters/anajak-forces/nogo">Nogo</a></td></tr>
 </table>
 </aside>
 
 
 # Tanishito
 
-**Tanishito** is an adult assassin of the [Anajak Forces](/km/factions/anajak-forces), graded S. She is of mixed Thaiphonese and [Lurkish](/km/locations/countries/lurkinsberg) heritage. Raised and trained as an operative inside a classified facility ([Site-29](/km/locations/site-29)), she was handpicked by the [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)) alongside her partner, [Nogo](/km/characters/anajak-forces/nogo).
+**Tanishito** is an adult assassin of the [Anajak Forces](/km/factions/anajak-forces), graded S. She is of mixed [Thaiphonese](/locations/countries/thaiphon) and [Lurkish](/km/locations/countries/lurkinsberg) heritage. Raised and trained as an operative inside a classified facility ([Site-29](/km/locations/site-29)), she was handpicked by the [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)) alongside her partner, [Nogo](/characters/anajak-forces/nogo).
 
 Her recorded description is pale skin and smooth, silky silver hair, a distinctive appearance attributed to her mixed Thaiphonese and Lurkish parentage. This description is shared almost word for word with Nogo's, and the two records do not separate them by appearance.
 
@@ -71,7 +72,7 @@ Early screenplay drafts developed prior to the grounding of *Parialfare: Reimagi
 ## See Also
 
 * The Lot
-* [Nogo](/km/characters/anajak-forces/nogo)
+* [Nogo](/characters/anajak-forces/nogo)
 * [Pepper](/km/characters/anajak-forces/pepper)
 * [Anajak Forces](/km/factions/anajak-forces)
 * [Site-29](/km/locations/site-29)

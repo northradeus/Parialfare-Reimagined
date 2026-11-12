@@ -1,0 +1,50 @@
+{
+  "description": "Nolheim Khmer Terminology & Translation Polish Dictionary",
+  "terms": {
+    "General Ramcher": "ឧត្តមសេនីយ៍ រ៉ាំឆឺ",
+    "Maire O'Mare": "ម៉ែរ អូម៉ែរ",
+    "Anajak Forces": "កងកម្លាំងអាណាចក្រ",
+    "Black Kroma": "ក្រមាខ្មៅ",
+    "LENDERMAIRE": "ឡង់ឌែរម៉ែរ",
+    "Global Intervention Coalition": "សម្ព័ន្ធអន្តរាគមន៍សកល",
+    "Ironish Task Force": "កងកម្លាំងកិច្ចការពិសេសអៃរ៉ុន",
+    "Laopanster Gendarmerie": "កងរាជអាវុធហត្ថឡៅប៉ានស្ទ័រ",
+    "Kingdom of Encore": "ព្រះរាជាណាចក្រអង្គរ",
+    "Kingdom of Ai'ron": "ព្រះរាជាណាចក្រអៃរ៉ុន",
+    "Ironland": "ដែនដីអៃរ៉ុន",
+    "Ironclad": "អៃរ៉ុនក្លាដ",
+    "Lurkinsberg": "លើឃីនសបឺក",
+    "New Aester": "ញូវអេសស្ទ័រ",
+    "Area-31": "តំបន់-៣១",
+    "Pocheasang": "ពោធិ៍សាង",
+    "Shaiken": "សៃកេន",
+    "Konish Kimbotin": "កូនីស គីមបូទីន",
+    "Konish": "កូនីស",
+    "Northrad": "ណ័រត្រាដ",
+    "Noradus": "ណ័ររ៉ាឌុស",
+    "Samsara Lykor": "សាំសារ៉ា លីក័រ",
+    "Hanktonio": "ហង់តូនីញ៉ូ",
+    "Takahashi": "តាកាហាស៊ី",
+    "Tanishito": "តានីស៊ីតូ",
+    "Verdanski": "វែដាន់ស្គី",
+    "Pepper": "ភិបភ័រ"
+  },
+  "mistranslations": {
+    "បំពង់បង្ហូរប្រេង៖": "ច្រកជ្រើសរើសបុគ្គលិក៖",
+    "បំពង់បង្ហូរប្រេង": "ច្រកជ្រើសរើសបុគ្គលិក"
+  },
+  "headings": {
+    "# Characters": "# តួអង្គ",
+    "## Characters": "## តួអង្គ",
+    "# Events": "# ព្រឹត្តិការណ៍",
+    "## Events": "## ព្រឹត្តិការណ៍",
+    "# Factions": "# បក្សសម្ព័ន្ធ",
+    "## Factions": "## បក្សសម្ព័ន្ធ",
+    "# Locations": "# ទីតាំង",
+    "## Locations": "## ទីតាំង",
+    "# Lore": "# ឯកសារ",
+    "## Lore": "## ឯកសារ",
+    "# Overview": "# ទិដ្ឋភាពទូទៅ",
+    "## Overview": "## ទិដ្ឋភាពទូទៅ"
+  }
+}

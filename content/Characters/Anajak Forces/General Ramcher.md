@@ -17,7 +17,7 @@
 
 ## Command functions
 
-The commander of Anajak organises missions, coordinates air strikes, calls reinforcements, and directs where the force will deploy. Taken together these describe a post that sits at the junction of planning, air support and movement — the authority to commit the force, rather than to fight alongside it. To provide the task force's strike aviation, Ramcher transferred the Thaiphonese fighter pilot [Takahashi](/km/characters/anajak-forces/takahashi) ("Sahara") into Anajak from the inactive [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)) roster.
+The commander of Anajak organises missions, coordinates air strikes, calls reinforcements, and directs where the force will deploy. Taken together these describe a post that sits at the junction of planning, air support and movement — the authority to commit the force, rather than to fight alongside it. To provide the task force's strike aviation, Ramcher transferred the [Thaiphonese](/locations/countries/thaiphon) fighter pilot [Takahashi](/km/characters/anajak-forces/takahashi) ("Sahara") into Anajak from the inactive [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)) roster.
 
 No subordinate commander is named, and no second-in-command is recorded. Whether Ramcher is the sole authority between Anajak's political sponsors and its operators is unresolved.
 

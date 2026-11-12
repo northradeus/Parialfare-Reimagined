@@ -41,11 +41,15 @@ The intergovernmental military organisation holding the region together.
 The task force created to counter LENDERMAIRE.
 - [General Ramcher](/km/characters/anajak-forces/general-ramcher) — Commander.
 - [Tanishito](/km/characters/anajak-forces/tanishito) — S-grade assassin.
-- [Nogo](/km/characters/anajak-forces/nogo) — A+ grade assassin.
+- [Nogo](/characters/anajak-forces/nogo) — A+ grade assassin.
 - [Tarnished](/km/characters/anajak-forces/tarnished) — Volunteer.
 - [Verdanski](/km/characters/anajak-forces/verdanski) — A+ operative.
 - [Pich](/km/characters/anajak-forces/pich) — Encorean close-combat specialist and field interpreter.
 - [Takahashi](/km/characters/anajak-forces/takahashi) — Thaiphonese fighter pilot ("Sahara").
 
 ## Other Factions
+### Konish's Group & Cladish Armed Forces
+- [Hayakawa Oradachi](/characters/konish's-group/hayakawa-oradachi) — Thaiphonese fighter pilot of "The Sun" ("Infinity" / "Aifensto"), Area-31 air wing.
+
+### Maire O'Mare
 - [Amberly](/km/characters/maire-o'mare/amberly) — Coordinator of the Maire O'Mare insurgency.

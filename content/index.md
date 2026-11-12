@@ -3,10 +3,11 @@ title: Nolheim
 description: "The Independent Encyclopedia of Parialfare: Reimagined — covert operations, warlords, and black-site facilities in the year 2008."
 socialImage: og-image.png
 ---
-<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-author">Created by <a href="https://northrad.carrd.co/" target="_blank" rel="noopener">CHHUM PICHTHYACHHANAN</a></p><p class="hero-lead">The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div>
+<div class="home-hero"><h1 class="hero-title">NOLHEIM</h1><p class="hero-subtitle">The Independent Encyclopedia of Parialfare: Reimagined</p><p class="hero-author">Created by <a href="https://northrad.carrd.co/" target="_blank" rel="noopener">CHHUM PICHTHYACHHANAN</a></p><p class="hero-lead"><strong>"A household of people every institution threw away becomes the one thing a superpower cannot buy back."</strong><br/>The year is 2008. The world is dominated by a technology race and an information war, fought through covert operations, contractors, and black-site facilities rather than open conventional war. The most powerful figures in the region are not states, but warlords, intelligence agencies, and private military companies.</p></div>
 
 <h2 class="home-section-title">Explore the Archive</h2>
 <div class="portal-grid"><a href="portal---characters" class="portal-button">01. Personnel</a><a href="portal---factions" class="portal-button">02. Organizations</a><a href="portal---locations" class="portal-button">03. Geography</a><a href="portal---events" class="portal-button">04. Historical Log</a><a href="portal---lore" class="portal-button">05. Systems & Lore</a></div>
+<div class="portal-grid" style="margin-top: 0.6rem;"><a href="incidents" class="portal-button" style="border-color: #a6535c; color: #a6535c; font-weight: 700;">★ Declassified Incident Archive (Incidents 001–003)</a></div>
 
 <h2 class="home-section-title">Choose Your Side</h2>
 <p class="home-section-subtitle">Two opposing doctrines dominate the 2008 southern continent. Select a faction to inspect their commanders, citadels, and frontline operators.</p>

@@ -38,6 +38,8 @@ Area-31 serves as the primary operational hub for the air wings of Konish's Grou
 
 These supersonic interceptors operate under rapid-scramble alert status. Their presence provides Konish's Group with supersonic strike and intercept capabilities unmatched by any other warlord formation in the region, countering the technological advantages of the [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)) and [VISTA](/km/factions/vista).
 
+Following the aerial clashes of Operation Numbrad, retrieval teams dispatched from Area-31 successfully located and recovered the wreck of [Infinity](/characters/konish's-group/hayakawa-oradachi)'s supersonic interceptor deep in the Ironclad interior after it glided to fuel exhaustion. The secure recovery prevented VISTA or coalition investigators from obtaining physical debris, telemetry cores, or pilot remains.
+
 ## 4. Strategic Role and the Southern Shield
 
 Geopolitically, Area-31 acts as a fortress-barrier between two distinct spheres:
@@ -48,12 +50,15 @@ Geopolitically, Area-31 acts as a fortress-barrier between two distinct spheres:
 ## Unresolved
 
 - **Aviation logistics:** The precise industrial origin, maintenance pipeline, and parts supply for "The Sun" supersonic fighters remain undocumented by outside observers.
+- **Flight training and auto-recovery:** The identity and background of the flight instructors who train foreign recruits inside Shaiken, and the engineering of the fly-by-wire auto-recovery system that stabilized Infinity's aircraft after pilot incapacitation.
 - **Subterranean extent:** The full depth and civilian capacity of the subterranean corridors beneath Shaiken are unknown to foreign intelligence services.
 
 ## See Also
 
 - [Konish's Group](/km/factions/konish's-group)
 - [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined))
+- [Hayakawa Oradachi](/characters/konish's-group/hayakawa-oradachi)
+- Operation Numbrad — The Fall of New Aester
 - [Ironclad DMZ](/km/locations/ironclad-dmz)
 - [New Aester](/km/locations/countries/new-aester)
 - [Ironclad](/km/locations/countries/ironclad)

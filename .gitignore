@@ -12,4 +12,8 @@ replit.nix
 .quartz/
 quartz/cli/tui/dist/
 .turbo/
+content/km/assets
 content/km/assets/
+studio/studio-config.json
+studio/.snapshots/
+studio/chat_sessions/

@@ -1,0 +1,14 @@
+{
+  "activeModel": "gpt-4o",
+  "temperature": 0.3,
+  "theme": "dark",
+  "providers": {
+    "openrouter": {
+      "apiKey": "",
+      "baseURL": "https://openrouter.ai/api/v1"
+    },
+    "gemini": {
+      "apiKey": ""
+    }
+  }
+}

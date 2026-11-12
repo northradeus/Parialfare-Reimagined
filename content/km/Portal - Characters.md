@@ -20,7 +20,7 @@ language: km
 ## ការបះបោរ
 ### អ្នកផ្តល់ប្រាក់កម្ចី
 អង្គភាពប្រតិបត្តិការខ្មៅដែលមានសមាជិកដប់បីនាក់។ ពួកគេជាគ្រួសាររួម ដែលចងភ្ជាប់ដោយគម្លាតផ្លូវចិត្ត និងការណែនាំរបស់បុរសម្នាក់។
-- [កូនីស គីមបូទីន](/km/characters/lendermaire/konish-kimbotin-(reimagined)) - កំពូលអ្នកចម្បាំងនៃក្រុម Konish។
+- [កូនីស គីមបូទីន](/km/characters/lendermaire/konish-kimbotin-(reimagined)) - កំពូលអ្នកចម្បាំងនៃក្រុម កូនីស។
 - [ហង់តូនីញ៉ូ](/km/characters/lendermaire/hanktonio) - ដៃទីពីរ។
 - [សាំសារ៉ា លីក័រ](/km/characters/lendermaire/samsara-lykor) - សមាជិកទីដប់បីដែលលាក់កំបាំង។
 - [អង់ដ្រូ](/km/characters/lendermaire/andrew) - អ្នកវាយដំ; អតីតកងកម្លាំងពិសេសរបស់អៀរឡង់។
@@ -41,11 +41,11 @@ language: km
 ### វីស្តា
 អង្គការយោធាអន្តររដ្ឋាភិបាលដែលកាន់កាប់តំបន់ជាមួយគ្នា។
 - [ណ័ររ៉ាឌុស ណ័រត្រាដ](/km/characters/vista/noradus) - ប្រធាន VISTA។
-- [ភិបភ័រ](/km/characters/anajak-forces/pepper) - អ្នកជំនួយផ្ទាល់ខ្លួនទៅ Northrad។
+- ភិបភ័រ - អ្នកជំនួយផ្ទាល់ខ្លួនទៅ ណ័រត្រាដ។
 
 ### កងកម្លាំងអាណាចាក
-ក្រុមការងារត្រូវបានបង្កើតឡើងដើម្បីប្រឆាំងនឹង LENDERMAIRE។
-- [ឧត្តមសេនីយ៍ រ៉ាំឆឺ](/km/characters/anajak-forces/general-ramcher) - មេបញ្ជាការ។
+ក្រុមការងារត្រូវបានបង្កើតឡើងដើម្បីប្រឆាំងនឹង ឡង់ឌែរម៉ែរ។
+- ឧត្តមសេនីយ៍ រ៉ាំឆឺ - មេបញ្ជាការ។
 - [តានីស៊ីតូ](/km/characters/anajak-forces/tanishito) - ឃាតកថ្នាក់ S។
 - [ណូហ្គោ](/km/characters/anajak-forces/nogo) - ឃាតកកម្រិត A+។
 - [ថានីស](/km/characters/anajak-forces/tarnished) - អ្នកស្ម័គ្រចិត្ត។
@@ -54,4 +54,4 @@ language: km
 - [តាកាហាស៊ី](/km/characters/anajak-forces/takahashi) - អ្នកបើកយន្តហោះចម្បាំង Thaiphonese ("សាហារ៉ា")។
 
 ## បក្សពួកផ្សេងទៀត។
-- [អែមប៊ឺលី](/km/characters/maire-o'mare/amberly) - អ្នកសម្របសម្រួលនៃចលនាបះបោរ Maire O'Mare។
+- [អែមប៊ឺលី](/km/characters/maire-o'mare/amberly) - អ្នកសម្របសម្រួលនៃចលនាបះបោរ ម៉ែរ អូម៉ែរ។

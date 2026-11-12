@@ -283,15 +283,26 @@ if (require.main === module) {
             process.exit(0);
         }
 
-        const approved = await promptApproval(result);
+        const isDryRun = args.includes('--dry-run') || args.includes('--check-only');
+        if (isDryRun) {
+            console.log(`\n[lint:dry-run] Found ${result.totalIssues} issue(s) across ${result.affectedFiles.length} file(s).`);
+            for (const file of result.affectedFiles) {
+                console.log(`\nFile: ${file.relPath}`);
+                for (const c of file.changes) {
+                    console.log(`  Line ${c.line} (${c.type}):`);
+                    console.log(`    - ${c.oldText}`);
+                    console.log(`    + ${c.newText}`);
+                }
+            }
+            console.log('\n[lint:dry-run] Dry run complete. No files modified.');
+            process.exit(0);
+        }
+
+        const isAutoApprove = args.includes('--yes') || args.includes('-y') || process.env.NOLHEIM_AUTO_CORRECT === '1';
+        const approved = await promptApproval(result, isAutoApprove);
         if (!approved) {
             console.log('[lint] Aborted.');
             process.exit(1);
-        }
-
-        if (args.includes('--dry-run')) {
-            console.log('[lint] Dry run complete. No files modified.');
-            process.exit(0);
         }
 
         const count = applyAutocorrects(result);

@@ -61,7 +61,7 @@ The raid also revealed the existence of LENDERMAIRE, which had previously been u
 
 Beneath the geopolitical struggle are the black sites and the variants.
 
-**[Site-29](/km/locations/site-29)** is a heavily concealed training installation operating outside official oversight. It psychologically conditions and trains covert operatives. Its graduates include [Tanishito](/km/characters/anajak-forces/tanishito), [Nogo](/km/characters/anajak-forces/nogo), and [Pepper](/km/characters/anajak-forces/pepper). It deliberately isolates its subjects so they share no collective history. The institution that runs it remains unknown.
+**[Site-29](/km/locations/site-29)** is a heavily concealed training installation operating outside official oversight. It psychologically conditions and trains covert operatives. Its graduates include [Tanishito](/km/characters/anajak-forces/tanishito), [Nogo](/characters/anajak-forces/nogo), and [Pepper](/km/characters/anajak-forces/pepper). It deliberately isolates its subjects so they share no collective history. The institution that runs it remains unknown.
 
 **The Variants.** This continuity is one of several. Many characters here are variants of characters in other continuities (e.g., Konish (Classic), Leepy (Classic)). A variant is a separate entity. Do not import facts or history from another continuity unless explicitly linked. See Variants at the vault root.
 
@@ -73,7 +73,7 @@ Beneath the geopolitical struggle are the black sites and the variants.
 * **[Hanktonio](/km/characters/lendermaire/hanktonio):** Konish's second-in-command. "The Second Hand".
 * **[Samsara Lykor](/km/characters/lendermaire/samsara-lykor):** LENDERMAIRE's concealed thirteenth member. The other "Northrad".
 * **[General Ramcher](/km/characters/anajak-forces/general-ramcher):** Commander of Anajak Forces.
-* **[Tanishito](/km/characters/anajak-forces/tanishito) & [Nogo](/km/characters/anajak-forces/nogo):** S-grade and A+ grade assassins of Anajak.
+* **[Tanishito](/km/characters/anajak-forces/tanishito) & [Nogo](/characters/anajak-forces/nogo):** S-grade and A+ grade assassins of Anajak.
 * **[Pepper](/km/characters/anajak-forces/pepper):** Anajak operator and Northrad's personal adjutant.
 
 **Key Locations:**

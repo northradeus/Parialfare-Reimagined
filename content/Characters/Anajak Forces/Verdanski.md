@@ -5,7 +5,7 @@
 <tr><th>Title</th><td>Verdanski</td></tr>
 <tr><th>Subtitle</th><td>A+ facility-trained operative of Anajak Forces</td></tr>
 <tr><th>Codename</th><td>Verdanski</td></tr>
-<tr><th>Ethnicity</th><td>Cladish and Thaiphonese</td></tr>
+<tr><th>Ethnicity</th><td>Cladish and <a href="/locations/countries/thaiphon">Thaiphonese</a></td></tr>
 <tr><th>Grade</th><td>A+</td></tr>
 <tr><th>Training</th><td>Facility trained in combat</td></tr>
 <tr><th>Factions</th><td><a href="/km/factions/anajak-forces">Anajak Forces</a></td></tr>
@@ -16,7 +16,7 @@
 
 # Verdanski
 
-**Verdanski** is an A+ operative of [Anajak Forces](/km/factions/anajak-forces), facility-trained in combat. He is of mixed Cladish and Thaiphonese heritage, an uncommon lineage within a task force whose core membership is predominantly [Lurkish](/km/locations/countries/lurkinsberg).
+**Verdanski** is an A+ operative of [Anajak Forces](/km/factions/anajak-forces), facility-trained in combat. He is of mixed Cladish and [Thaiphonese](/locations/countries/thaiphon) heritage, an uncommon lineage within a task force whose core membership is predominantly [Lurkish](/km/locations/countries/lurkinsberg).
 
 ## 1. Heritage and training
 

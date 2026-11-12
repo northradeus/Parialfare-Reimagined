@@ -29,7 +29,7 @@ In 2008 the ideology has been adapted to modern warfare. The faction is recorded
 
 ## 2. The attention
 
-The insurgency draws particular attention from [Ironland](/locations/countries/ironland), [Lurkinsberg](/km/locations/countries/lurkinsberg), and Thaiphon. All three were members of the coalition that broke the Deck Empire, and Ironland was founded from the faction that betrayed that coalition.
+The insurgency draws particular attention from [Ironland](/locations/countries/ironland), [Lurkinsberg](/km/locations/countries/lurkinsberg), and [Thaiphon](/locations/countries/thaiphon). All three were members of the coalition that broke the Deck Empire, and Ironland was founded from the faction that betrayed that coalition.
 
 Thaiphon's attention is recorded as the sharpest of the three. The record does not establish what Thaiphon gained from the Deck's fall, or what specifically it fears from a movement claiming to restore it. Its relationship with the Shijo is recorded elsewhere and is not addressed here.
 

@@ -2,6 +2,7 @@
 <h3>Joey</h3>
 <img src="assets/joey.jpg" alt="Joey" />
 <table>
+<tr><th>Image Status</th><td>concept</td></tr>
 <tr><th>Title</th><td>Joey</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE background member, logistics</td></tr>
 <tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
