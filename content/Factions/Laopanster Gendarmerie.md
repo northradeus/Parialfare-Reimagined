@@ -11,11 +11,11 @@
 <tr><th>Type</th><td>Paramilitary law enforcement</td></tr>
 <tr><th>Size</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Part Of</th><td>Ministry of the Interior</td></tr>
-<tr><th>Garrison</th><td><a href="/km/locations/pocheasang">Pocheasang</a>, <a href="/locations/countries/ironland">Ironland</a></td></tr>
+<tr><th>Garrison</th><td><a href="/locations/pocheasang">Pocheasang</a>, <a href="/locations/countries/ironland">Ironland</a></td></tr>
 <tr><th>Nickname</th><td>Laosentine</td></tr>
 <tr><th>Motto</th><td>"Let them taste steel, therefore we are Ironish!"</td></tr>
 <tr><th>Colors</th><td>Red, Black, and Steel</td></tr>
-<tr><th>Notable Engagement</th><td><a href="/km/events/2008-pocheasang-palace-raid">2008 Pocheasang Palace raid</a></td></tr>
+<tr><th>Notable Engagement</th><td><a href="/events/2008-pocheasang-palace-raid">2008 Pocheasang Palace raid</a></td></tr>
 <tr><th>Current Commander</th><td>Marshal Lopesh</td></tr>
 </table>
 </aside>
@@ -24,7 +24,7 @@
 
 
 
-The **Laopanster Gendarmerie** (Native: *Gendarmerie Laopanster*) is the national gendarmerie force of the [Kingdom of the Ai'ron Land](/locations/countries/ironland). It is a branch of the Ministry of the Interior and is responsible for the maintenance of public order and internal security within Ai'ron. The paramilitary unit operates as a heavily armed domestic security force, distinct from the external defense mandate of the Royal Ironish Army. Its headquarters is located in [Pocheasang](/km/locations/pocheasang), with the unit's chain of command reporting directly to the Minister of the Interior. The Gendarmerie is under the direct supervision of a commander with the rank of Marshal. The current commander is Marshal Lopesh.[^1][^2]
+The **Laopanster Gendarmerie** (Native: *Gendarmerie Laopanster*) is the national gendarmerie force of the [Kingdom of the Ai'ron Land](/locations/countries/ironland). It is a branch of the Ministry of the Interior and is responsible for the maintenance of public order and internal security within Ai'ron. The paramilitary unit operates as a heavily armed domestic security force, distinct from the external defense mandate of the Royal Ironish Army. Its headquarters is located in [Pocheasang](/locations/pocheasang), with the unit's chain of command reporting directly to the Minister of the Interior. The Gendarmerie is under the direct supervision of a commander with the rank of Marshal. The current commander is Marshal Lopesh.[^1][^2]
 
 ## Duties
 
@@ -46,13 +46,13 @@ In 2001, the government formally established the Laopanster Gendarmerie as a cen
 
 ### Modern Era and the Pocheasang Raid
 
-By the late 2000s, the Gendarmerie had assumed primary responsibility for the perimeter security of major state facilities, including the Pocheasang palace complex. During the [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid), the Gendarmerie's outer-perimeter detachment was the first line of defense against the [LENDERMAIRE](/km/factions/lendermaire) assault force at approximately 18:00 on 25 August.
+By the late 2000s, the Gendarmerie had assumed primary responsibility for the perimeter security of major state facilities, including the Pocheasang palace complex. During the [2008 Pocheasang Palace raid](/events/2008-pocheasang-palace-raid), the Gendarmerie's outer-perimeter detachment was the first line of defense against the [LENDERMAIRE](/factions/lendermaire) assault force at approximately 18:00 on 25 August.
 
 The Gendarmerie suffered three fatalities during the initial breach and the subsequent firefight. The 2009 General Staff Inquiry later identified the force's rules of engagement—which required Gendarmerie authorization for the use of heavy weapons inside the perimeter—as a critical vulnerability when LENDERMAIRE forces deployed signal-jamming devices, effectively cutting off communications.[^2][^3]
 
 ## Organization
 
-The Laopanster Gendarmerie is commanded by Marshal Lopesh, who reports directly to the Minister of the Interior. The force is organized into regional battalions, with the primary garrison located in [Pocheasang](/km/locations/pocheasang). Unlike standard police forces, the Gendarmerie operates under a strict military hierarchy, utilizing ranks and operational doctrines similar to the Royal Ironish Army.
+The Laopanster Gendarmerie is commanded by Marshal Lopesh, who reports directly to the Minister of the Interior. The force is organized into regional battalions, with the primary garrison located in [Pocheasang](/locations/pocheasang). Unlike standard police forces, the Gendarmerie operates under a strict military hierarchy, utilizing ranks and operational doctrines similar to the Royal Ironish Army.
 
 The detachment stationed at the Pocheasang complex operates as an independent security unit, tasked with coordinating defensive protocols with private military contractors, such as the [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)).[^1]
 
@@ -66,7 +66,7 @@ Contrary to standard law enforcement agencies, the Laopanster Gendarmerie is hea
 *   [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf))
 *   Ministry of the Interior
 *   Marshal Lopesh
-*   [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid)
+*   [2008 Pocheasang Palace raid](/events/2008-pocheasang-palace-raid)
 
 ## References
 

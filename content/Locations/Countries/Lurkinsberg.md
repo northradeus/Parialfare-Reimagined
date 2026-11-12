@@ -29,7 +29,7 @@
 
 
 
-**Lurkinsberg** is a wealthy, disciplined nation and a member of [VISTA](/km/factions/vista). It is a post-colonial power with a dominant naval tradition. The state controls major global sea lanes and maintains a powerful fleet. Its society is highly structured, and its military institutions export elite operatives and special operators to allied states and coalitions.
+**Lurkinsberg** is a wealthy, disciplined nation and a member of [VISTA](/factions/vista). It is a post-colonial power with a dominant naval tradition. The state controls major global sea lanes and maintains a powerful fleet. Its society is highly structured, and its military institutions export elite operatives and special operators to allied states and coalitions.
 
 The Lurkish diaspora is extensive. Twenty-one percent of the population of the [Kingdom of the Ai'ron Land](/locations/countries/ironland) is recorded as Lurkish, reflecting the historical reach of Lurkinsberg's maritime trade networks.
 
@@ -45,21 +45,21 @@ Lurkinsberg is a post-colonial power. Its historical empire is no longer formall
 
 ## 3. The Navy and VISTA
 
-Lurkinsberg dominates the sea. Its navy is a major strategic asset, relied upon by [VISTA](/km/factions/vista) for trade protection and maritime security.
+Lurkinsberg dominates the sea. Its navy is a major strategic asset, relied upon by [VISTA](/factions/vista) for trade protection and maritime security.
 
-The Lurkish military institutions designated [Konish's Group](/km/factions/konish's-group) a destabilizing organization on 10 October 2008. This designation came in sequence with other bodies: Ironland, New Aester, and VISTA.
+The Lurkish military institutions designated [Konish's Group](/factions/konish's-group) a destabilizing organization on 10 October 2008. This designation came in sequence with other bodies: Ironland, New Aester, and VISTA.
 
 ## 4. The Cladish Question
 
-Lurkinsberg regards the [Cladish](/km/locations/countries/ironclad) as a heavily militarized people. The state holds a wary respect for Cladish combat capabilities, recognizing their martial skill, while simultaneously viewing them as a source of regional instability.
+Lurkinsberg regards the [Cladish](/locations/countries/ironclad) as a heavily militarized people. The state holds a wary respect for Cladish combat capabilities, recognizing their martial skill, while simultaneously viewing them as a source of regional instability.
 
 The designation of Konish's Group was driven by the need to maintain order in the sea lanes and trade routes, rather than by a fear of Cladish expansion.
 
 ## 5. The Anajak Pipeline
 
-Lurkinsberg is a major source of personnel for [Anajak Forces](/km/factions/anajak-forces). The majority of the facility-raised members of Anajak's classified assassin core, [Alpha-01](/km/factions/alpha-01), are Lurkish.
+Lurkinsberg is a major source of personnel for [Anajak Forces](/factions/anajak-forces). The majority of the facility-raised members of Anajak's classified assassin core, [Alpha-01](/factions/alpha-01), are Lurkish.
 
-Notable Lurkish figures in regional affairs include [Northrad](/characters/vista/noradus), the President of VISTA, and [Samsara Lykor](/km/characters/lendermaire/samsara-lykor), the thirteenth member of [LENDERMAIRE](/km/factions/lendermaire).
+Notable Lurkish figures in regional affairs include [Northrad](/characters/vista/noradus), the President of VISTA, and [Samsara Lykor](/characters/lendermaire/samsara-lykor), the thirteenth member of [LENDERMAIRE](/factions/lendermaire).
 
 Northrad is recorded as having served as a special operator under Lurkinsberg before entering politics. He is from a wealthy family, a detail that reflects Lurkinsberg's class-conscious society.
 
@@ -75,11 +75,11 @@ Lykor served as a Lurkish SWAT officer and marine. He was diagnosed with individ
 ## See Also
 
 - [Ironland](/locations/countries/ironland)
-- [VISTA](/km/factions/vista)
-- [Anajak Forces](/km/factions/anajak-forces)
+- [VISTA](/factions/vista)
+- [Anajak Forces](/factions/anajak-forces)
 - [Northrad](/characters/vista/noradus)
-- [Samsara Lykor](/km/characters/lendermaire/samsara-lykor)
-- [Konish's Group](/km/factions/konish's-group)
+- [Samsara Lykor](/characters/lendermaire/samsara-lykor)
+- [Konish's Group](/factions/konish's-group)
 
 ## References
 

@@ -5,7 +5,7 @@
 <tr><th>Title</th><td>Medic</td></tr>
 <tr><th>Subtitle</th><td>Combat medic of LENDERMAIRE</td></tr>
 <tr><th>Ethnicity</th><td>Cladish</td></tr>
-<tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Prior Allegiance</th><td>Another Cladish faction</td></tr>
 </table>
 </aside>
@@ -15,11 +15,11 @@
 
 
 
-**Medic** is the combat medic of the black operations unit [LENDERMAIRE](/km/factions/lendermaire). He served another Cladish faction before joining; which faction is not established.
+**Medic** is the combat medic of the black operations unit [LENDERMAIRE](/factions/lendermaire). He served another Cladish faction before joining; which faction is not established.
 
 No personal name is recorded for him. *Medic* is a designation, not a name, and the record does not establish whether he has one, whether he uses it, or whether any member of the household has ever asked.
 
-He is the only member of the household recorded as having been inside another faction, and the only one whose past did not end with his leaving it. It ended when [Konish's Group](/km/factions/konish's-group) absorbed it.
+He is the only member of the household recorded as having been inside another faction, and the only one whose past did not end with his leaving it. It ended when [Konish's Group](/factions/konish's-group) absorbed it.
 
 ## 1. The faction
 
@@ -71,6 +71,6 @@ The household reads this, if it reads it at all, as habit. The record does not d
 
 ## See Also
 
-* [LENDERMAIRE](/km/factions/lendermaire)
+* [LENDERMAIRE](/factions/lendermaire)
 * [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined))
-* [Konish's Group](/km/factions/konish's-group)
+* [Konish's Group](/factions/konish's-group)

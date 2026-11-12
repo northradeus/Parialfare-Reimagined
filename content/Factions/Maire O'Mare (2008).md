@@ -4,7 +4,7 @@
 <tr><th>Title</th><td>Maire O'Mare</td></tr>
 <tr><th>Subtitle</th><td>The returned insurgency in Ironclad</td></tr>
 <tr><th>Active</th><td>2008</td></tr>
-<tr><th>Region</th><td><a href="/km/locations/countries/ironclad">Ironclad</a></td></tr>
+<tr><th>Region</th><td><a href="/locations/countries/ironclad">Ironclad</a></td></tr>
 <tr><th>Origin</th><td>Maire O'Mare (claimed)</td></tr>
 <tr><th>Relation To Konish</th><td>Chaotic; sometimes allied, frequently hostile</td></tr>
 </table>
@@ -15,7 +15,7 @@
 
 
 
-**Maire O'Mare** is an insurgent group in [Ironclad](/km/locations/countries/ironclad), active in 2008. It presents itself as the modern return of the ideology of the medieval Maire O'Mare movement led by Rogolf.
+**Maire O'Mare** is an insurgent group in [Ironclad](/locations/countries/ironclad), active in 2008. It presents itself as the modern return of the ideology of the medieval Maire O'Mare movement led by Rogolf.
 
 It is not the person returning. It is the idea.
 
@@ -29,7 +29,7 @@ In 2008 the ideology has been adapted to modern warfare. The faction is recorded
 
 ## 2. The attention
 
-The insurgency draws particular attention from [Ironland](/locations/countries/ironland), [Lurkinsberg](/km/locations/countries/lurkinsberg), and [Thaiphon](/locations/countries/thaiphon). All three were members of the coalition that broke the Deck Empire, and Ironland was founded from the faction that betrayed that coalition.
+The insurgency draws particular attention from [Ironland](/locations/countries/ironland), [Lurkinsberg](/locations/countries/lurkinsberg), and [Thaiphon](/locations/countries/thaiphon). All three were members of the coalition that broke the Deck Empire, and Ironland was founded from the faction that betrayed that coalition.
 
 Thaiphon's attention is recorded as the sharpest of the three. The record does not establish what Thaiphon gained from the Deck's fall, or what specifically it fears from a movement claiming to restore it. Its relationship with the Shijo is recorded elsewhere and is not addressed here.
 
@@ -50,8 +50,8 @@ The distinction matters. Konish can absorb rival warlords, men who want land or 
 ## See Also
 
 - Maire O'Mare (the medieval movement)
-- [Amberly](/km/characters/maire-o'mare/amberly)
+- [Amberly](/characters/maire-o'mare/amberly)
 - [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined))
-- [Konish's Group](/km/factions/konish's-group)
-- [Ironclad](/km/locations/countries/ironclad)
+- [Konish's Group](/factions/konish's-group)
+- [Ironclad](/locations/countries/ironclad)
 - Koilen Rogolf

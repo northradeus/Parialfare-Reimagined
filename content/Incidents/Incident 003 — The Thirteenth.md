@@ -179,7 +179,7 @@ He kept watch.
 > [!record-closing] VISTA ARCHIVAL ASSESSMENT // STRATEGIC DISPOSITION
 > *ASSESSOR: Senior Intelligence Officer B. Varma*
 > *EVALUATION: Subject Samsara Lykor confirmed to have refused unconditional repatriation terms tendered by Ironish Task Force command. Strategic vulnerability: the 13th operator cannot be turned through standard financial or legal leverage. Lykor remains committed solely by personal election to the unit structure. Note: Subject confirms cognitive awareness of the 'fourth approach' to Site-29. Surveillance perimeters must adjust accordingly.*
-> *CROSS-REFERENCE: The Lot · The Youngest · [Samsara Lykor](/km/characters/lendermaire/samsara-lykor) · Konish · [LENDERMAIRE](/km/factions/lendermaire)*
+> *CROSS-REFERENCE: The Lot · The Youngest · [Samsara Lykor](/characters/lendermaire/samsara-lykor) · Konish · [LENDERMAIRE](/factions/lendermaire)*
 
 ---
 

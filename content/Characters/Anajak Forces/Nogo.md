@@ -7,13 +7,13 @@
 <tr><th>Subtitle</th><td>Anajak Forces assassin</td></tr>
 <tr><th>Variant Of</th><td>Nolgo</td></tr>
 <tr><th>Role</th><td>Assassin</td></tr>
-<tr><th>Factions</th><td><a href="/km/factions/anajak-forces">Anajak Forces</a></td></tr>
+<tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
 <tr><th>Grade</th><td>A+ (final entry only)</td></tr>
-<tr><th>Ethnicity</th><td><a href="/locations/countries/thaiphon">Thaiphonese</a> and <a href="/km/locations/countries/lurkinsberg">Lurkish</a></td></tr>
+<tr><th>Ethnicity</th><td><a href="/locations/countries/thaiphon">Thaiphonese</a> and <a href="/locations/countries/lurkinsberg">Lurkish</a></td></tr>
 <tr><th>Age</th><td>Adult (exact age not recorded)</td></tr>
 <tr><th>Pipeline</th><td>Facility-raised</td></tr>
-<tr><th>Origin</th><td><a href="/km/locations/site-29">Site-29</a></td></tr>
-<tr><th>Partner</th><td><a href="/km/characters/anajak-forces/tanishito">Tanishito</a></td></tr>
+<tr><th>Origin</th><td><a href="/locations/site-29">Site-29</a></td></tr>
+<tr><th>Partner</th><td><a href="/characters/anajak-forces/tanishito">Tanishito</a></td></tr>
 </table>
 </aside>
 
@@ -22,7 +22,7 @@
 
 
 
-**Nogo** is an adult assassin of the [Anajak Forces](/km/factions/anajak-forces), graded A+. Like [Tanishito](/km/characters/anajak-forces/tanishito), he is of mixed [Thaiphonese](/locations/countries/thaiphon) and [Lurkish](/km/locations/countries/lurkinsberg) heritage. He was raised and trained inside a secret facility ([Site-29](/km/locations/site-29)) alongside his assigned partner, Tanishito, and was handpicked by the [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)) together with her. He was also raised as a spy.
+**Nogo** is an adult assassin of the [Anajak Forces](/factions/anajak-forces), graded A+. Like [Tanishito](/characters/anajak-forces/tanishito), he is of mixed [Thaiphonese](/locations/countries/thaiphon) and [Lurkish](/locations/countries/lurkinsberg) heritage. He was raised and trained inside a secret facility ([Site-29](/locations/site-29)) alongside his assigned partner, Tanishito, and was handpicked by the [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)) together with her. He was also raised as a spy.
 
 *Not to be confused with Nolgo, a Purgatory character. Nogo is a variant of that name, the two are separate entities, and no facts are shared.*
 
@@ -52,13 +52,13 @@ The archives hold no entry on him that is not stated in relation to Tanishito. I
 
 ## Depiction
 
-The reference draft of Operation Fallow — Episode is the only production piece that shows him beside [Tanishito](/km/characters/anajak-forces/tanishito). It depicts the closeness between them as something he performs perfectly and reads nothing into, and her return to him as a silence he does not notice. The draft is not canon. What it establishes about him is a reading, not a record: that a man trained to know where his partner is standing may not be trained to see what has changed in her.
+The reference draft of Operation Fallow — Episode is the only production piece that shows him beside [Tanishito](/characters/anajak-forces/tanishito). It depicts the closeness between them as something he performs perfectly and reads nothing into, and her return to him as a silence he does not notice. The draft is not canon. What it establishes about him is a reading, not a record: that a man trained to know where his partner is standing may not be trained to see what has changed in her.
 
 ## See Also
 
-* [Tanishito](/km/characters/anajak-forces/tanishito)
+* [Tanishito](/characters/anajak-forces/tanishito)
 * Operation Fallow — Episode
-* [Pepper](/km/characters/anajak-forces/pepper)
-* [Anajak Forces](/km/factions/anajak-forces)
-* [Site-29](/km/locations/site-29)
+* [Pepper](/characters/anajak-forces/pepper)
+* [Anajak Forces](/factions/anajak-forces)
+* [Site-29](/locations/site-29)
 * Nolgo (disambiguation only)

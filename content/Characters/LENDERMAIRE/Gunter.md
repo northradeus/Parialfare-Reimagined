@@ -3,9 +3,9 @@
 <table>
 <tr><th>Title</th><td>Gunter</td></tr>
 <tr><th>Subtitle</th><td>Member of LENDERMAIRE; role unresolved</td></tr>
-<tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Earlier Role</th><td>Engineer & Sapper</td></tr>
-<tr><th>Role Status</th><td>Unresolved; see <a href="/km/characters/lendermaire/grunt">Grunt</a></td></tr>
+<tr><th>Role Status</th><td>Unresolved; see <a href="/characters/lendermaire/grunt">Grunt</a></td></tr>
 </table>
 </aside>
 
@@ -14,9 +14,9 @@
 
 
 
-**Gunter** is a member of the black operations unit [LENDERMAIRE](/km/factions/lendermaire). His earlier roster entry records him as "Engineer & Sapper."
+**Gunter** is a member of the black operations unit [LENDERMAIRE](/factions/lendermaire). His earlier roster entry records him as "Engineer & Sapper."
 
-His current role is unresolved. [Gunter](/km/characters/lendermaire/gunter) and [Grunt](/km/characters/lendermaire/grunt) are described as easily confused: one throws grenades and the other suppresses fire, and which man holds which role has not been decided. His background is unrecorded.
+His current role is unresolved. [Gunter](/characters/lendermaire/gunter) and [Grunt](/characters/lendermaire/grunt) are described as easily confused: one throws grenades and the other suppresses fire, and which man holds which role has not been decided. His background is unrecorded.
 
 ## Unresolved
 
@@ -24,5 +24,5 @@ His current role is unresolved. [Gunter](/km/characters/lendermaire/gunter) and 
 
 ## See Also
 
-* [LENDERMAIRE](/km/factions/lendermaire)
-* [Grunt](/km/characters/lendermaire/grunt)
+* [LENDERMAIRE](/factions/lendermaire)
+* [Grunt](/characters/lendermaire/grunt)

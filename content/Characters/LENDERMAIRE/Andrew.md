@@ -4,7 +4,7 @@
 <table>
 <tr><th>Title</th><td>Andrew</td></tr>
 <tr><th>Subtitle</th><td>Assaulter of LENDERMAIRE</td></tr>
-<tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Former Unit</th><td>Ironish Special Forces</td></tr>
 <tr><th>Living Status</th><td>Alive</td></tr>
 </table>
@@ -13,7 +13,7 @@
 
 # Andrew
 
-**Andrew** is the assaulter of the black operations unit [LENDERMAIRE](/km/factions/lendermaire) and a former operator of the Ironish Special Forces alongside [Markless](/km/characters/lendermaire/markless) and [Kaliber](/km/characters/lendermaire/kaliber). Before his military service, he was an urban firefighter and an orphanage ward. 
+**Andrew** is the assaulter of the black operations unit [LENDERMAIRE](/factions/lendermaire) and a former operator of the Ironish Special Forces alongside [Markless](/characters/lendermaire/markless) and [Kaliber](/characters/lendermaire/kaliber). Before his military service, he was an urban firefighter and an orphanage ward. 
 
 He is the only member of the household whose place in it remained contested throughout its early development. Where he sat on the thirteen-member roster was never formally confirmed, and he is the only member recorded as having entered the house entirely for someone else.
 
@@ -23,7 +23,7 @@ Andrew was raised in an orphanage after losing his family in an urban house fire
 
 When the border conflicts intensified, Andrew transitioned from civil emergency rescue to the military, enlisting in the Ironish Special Forces. There he was assigned to an assault element alongside Markless and Kaliber. 
 
-His initial service psychology closely mirrored that of [Samsara Lykor](/km/characters/lendermaire/samsara-lykor): he was an earnest believer in the state and its institutions, convinced that military force served to protect civilians who could not protect themselves. That institutional faith eroded as the command structure drifted into compromised political maneuvers. By the time Kaliber and Markless retired from active service, Andrew considered brotherhood his only surviving institution. When they joined LENDERMAIRE, he followed them.
+His initial service psychology closely mirrored that of [Samsara Lykor](/characters/lendermaire/samsara-lykor): he was an earnest believer in the state and its institutions, convinced that military force served to protect civilians who could not protect themselves. That institutional faith eroded as the command structure drifted into compromised political maneuvers. By the time Kaliber and Markless retired from active service, Andrew considered brotherhood his only surviving institution. When they joined LENDERMAIRE, he followed them.
 
 ## 2. The contested seat and the conditioning
 
@@ -45,7 +45,7 @@ During the siege of Numbrad, the assault element collapsed. Both Kaliber and Mar
 
 To Andrew, the collapse was experienced not merely as an operational defeat, but as a catastrophic failed rescue. Having spent his formative years pulling casualties from burning buildings, he was unable to reach his own brothers before the collapse. In the aftermath, he fell into severe clinical depression and acute survivor's guilt.
 
-During his stabilization, he received care from a civilian field trauma nurse specializing in severe blast and burn trauma. Her clinic provided the only calm environment that could de-escalate his trauma responses. The relationship carried heavy unspoken tension: the nurse was married to [Sahara](/km/characters/anajak-forces/takahashi), the pilot whose airstrike had killed [Salmon](/km/characters/lendermaire/salmon) during the Numbrad assault. 
+During his stabilization, he received care from a civilian field trauma nurse specializing in severe blast and burn trauma. Her clinic provided the only calm environment that could de-escalate his trauma responses. The relationship carried heavy unspoken tension: the nurse was married to [Sahara](/characters/anajak-forces/takahashi), the pilot whose airstrike had killed [Salmon](/characters/lendermaire/salmon) during the Numbrad assault. 
 
 ## 5. Transition to GIC
 
@@ -61,11 +61,11 @@ His enlistment carried no institutional faith or political allegiance. He signed
 
 ## See Also
 
-* [LENDERMAIRE](/km/factions/lendermaire)
-* [Markless](/km/characters/lendermaire/markless)
-* [Kaliber](/km/characters/lendermaire/kaliber)
-* [Salmon](/km/characters/lendermaire/salmon)
-* [Takahashi](/km/characters/anajak-forces/takahashi)
-* [Samsara Lykor](/km/characters/lendermaire/samsara-lykor)
+* [LENDERMAIRE](/factions/lendermaire)
+* [Markless](/characters/lendermaire/markless)
+* [Kaliber](/characters/lendermaire/kaliber)
+* [Salmon](/characters/lendermaire/salmon)
+* [Takahashi](/characters/anajak-forces/takahashi)
+* [Samsara Lykor](/characters/lendermaire/samsara-lykor)
 * [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined))
 * [Noradus](/characters/vista/noradus)

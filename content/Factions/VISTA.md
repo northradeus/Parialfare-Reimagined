@@ -9,7 +9,7 @@
 <tr><th>Presidency</th><td><a href="/characters/vista/noradus">Northrad</a></td></tr>
 <tr><th>Decision Threshold</th><td>Two-thirds (eight of twelve) for funding and military programmes</td></tr>
 <tr><th>Organs</th><td>Presidency; General Secretariat; Intelligence Agency; delegations in assembly</td></tr>
-<tr><th>Established Body</th><td><a href="/km/factions/global-intervention-coalition-(gic)">Global Intervention Coalition (GIC)</a></td></tr>
+<tr><th>Established Body</th><td><a href="/factions/global-intervention-coalition-(gic)">Global Intervention Coalition (GIC)</a></td></tr>
 </table>
 </aside>
 
@@ -20,7 +20,7 @@
 
 **VISTA** is an intergovernmental military organisation of twelve member delegations. Under its charter the presidency casts one vote among the delegations, and a two-thirds majority — eight of twelve — is required to authorise funding and military programmes. The organisation's institutional architecture is attributed to its president, [Northrad](/characters/vista/noradus), who is described as its founder and principal architect; how and when he came to lead it is not established in the available record.
 
-VISTA declined a request by the [Kingdom of the Ai'ron Land](/locations/countries/ironland) in September 2008 to fund a campaign into the [Ironclad DMZ](/km/locations/ironclad-dmz). Its Intelligence Agency later disclosed the existence of [Konish's Group](/km/factions/konish's-group), and on 4 December 2008 it established the [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)).
+VISTA declined a request by the [Kingdom of the Ai'ron Land](/locations/countries/ironland) in September 2008 to fund a campaign into the [Ironclad DMZ](/locations/ironclad-dmz). Its Intelligence Agency later disclosed the existence of [Konish's Group](/factions/konish's-group), and on 4 December 2008 it established the [Global Intervention Coalition (GIC)](/factions/global-intervention-coalition-(gic)).
 
 ## 1. Charter and decision-making
 
@@ -41,21 +41,21 @@ VISTA comprises twelve member delegations. The [Kingdom of the Ai'ron Land](/loc
 
 ## 4. 2008: the Ai'ron request
 
-On 2 September 2008 the Ai'ron government requested that VISTA prepare and fund military programmes for a full-scale campaign in the Ironclad DMZ. The request was referred to a vote of the twelve delegations and failed. *Main article: [2008 Ai'ron request to VISTA](/km/events/2008-ai'ron-request-to-vista)*.
+On 2 September 2008 the Ai'ron government requested that VISTA prepare and fund military programmes for a full-scale campaign in the Ironclad DMZ. The request was referred to a vote of the twelve delegations and failed. *Main article: [2008 Ai'ron request to VISTA](/events/2008-ai'ron-request-to-vista)*.
 
 ## 5. 2008: intelligence and designation
 
-The Intelligence Agency investigated the Ironclad DMZ beyond the question of state sponsorship and concluded that [LENDERMAIRE](/km/factions/lendermaire) was one formation within an umbrella coalition designated [Konish's Group](/km/factions/konish's-group). The finding was reported to member delegations and the coalition's existence was disclosed on 16 September 2008.[^3]
+The Intelligence Agency investigated the Ironclad DMZ beyond the question of state sponsorship and concluded that [LENDERMAIRE](/factions/lendermaire) was one formation within an umbrella coalition designated [Konish's Group](/factions/konish's-group). The finding was reported to member delegations and the coalition's existence was disclosed on 16 September 2008.[^3]
 
 The report described Konish's Group as a coalition of armed formations operating with substantial autonomy rather than as a single command. It recorded that [Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined))'s position within the coalition — including the proposition that he held supreme command — could not be established from the available material.
 
-Designation was not simultaneous. The Kingdom of the Ai'ron Land designated Konish's Group through its Ministry of the Interior on 28 August 2008; [New Aester](/km/locations/countries/new-aester) followed on 5 September; the VISTA General Secretariat on 16 September; and [Lurkinsberg](/km/locations/countries/lurkinsberg)'s military institutions on 10 October. VISTA's designation therefore came nineteen days after Ai'ron's, and third of the four recorded.
+Designation was not simultaneous. The Kingdom of the Ai'ron Land designated Konish's Group through its Ministry of the Interior on 28 August 2008; [New Aester](/locations/countries/new-aester) followed on 5 September; the VISTA General Secretariat on 16 September; and [Lurkinsberg](/locations/countries/lurkinsberg)'s military institutions on 10 October. VISTA's designation therefore came nineteen days after Ai'ron's, and third of the four recorded.
 
 Publicly, Kimbotin is often described as the most wanted man in the region. The description is a public characterisation rather than a formal designation by VISTA.
 
 ## 6. 2008: the Global Intervention Coalition
 
-On 4 December 2008 VISTA established the [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)) by delegation vote, as a strategic military organisation with a mandate covering counter-terrorism and the mitigation of disruptions to peace and stability among member and neighbouring states.[^4] Its mandate was narrower than the funding request that had failed in September.
+On 4 December 2008 VISTA established the [Global Intervention Coalition (GIC)](/factions/global-intervention-coalition-(gic)) by delegation vote, as a strategic military organisation with a mandate covering counter-terrorism and the mitigation of disruptions to peace and stability among member and neighbouring states.[^4] Its mandate was narrower than the funding request that had failed in September.
 
 Member delegations differed publicly on its significance: some described it as an institutional answer to the Pocheasang raid, others that its authorities fell short of what the raid had shown to be necessary. In the period following its establishment the GIC conducted no combat deployments.
 
@@ -73,13 +73,13 @@ VISTA retains limited intelligence on Konish's forces. No VISTA or GIC operation
 
 ## 9. See Also
 
-* [2008 Ai'ron request to VISTA](/km/events/2008-ai'ron-request-to-vista)
-* [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic))
-* [Konish's Group](/km/factions/konish's-group)
-* [LENDERMAIRE](/km/factions/lendermaire)
-* [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid)
+* [2008 Ai'ron request to VISTA](/events/2008-ai'ron-request-to-vista)
+* [Global Intervention Coalition (GIC)](/factions/global-intervention-coalition-(gic))
+* [Konish's Group](/factions/konish's-group)
+* [LENDERMAIRE](/factions/lendermaire)
+* [2008 Pocheasang Palace raid](/events/2008-pocheasang-palace-raid)
 * [Ironland](/locations/countries/ironland)
-* [Ironclad DMZ](/km/locations/ironclad-dmz)
+* [Ironclad DMZ](/locations/ironclad-dmz)
 * [Noradus](/characters/vista/noradus)
 
 ## 10. References
@@ -88,3 +88,21 @@ VISTA retains limited intelligence on Konish's forces. No VISTA or GIC operation
 [^2]: Ministry of the Interior (Ai'ron), *Statement on the Events of 25–26 August 2008* (Pocheasang: Crown Printing Office, 2008).
 [^3]: VISTA Intelligence Agency, *Findings on LENDERMAIRE and Associated Structures* (16 September 2008; summary release).
 [^4]: VISTA, *Instrument Establishing the Global Intervention Coalition* (4 December 2008).
+
+
+<section class="related-entities">
+<h2>Related Entities</h2>
+<div class="rel-group">
+<h3>Associated Characters</h3>
+<ul>
+<li><a href="/characters/anajak-forces/pepper">Pepper</a></li>
+<li><a href="/characters/vista/noradus">Noradus "Northrad</a></li>
+</ul>
+</div>
+<div class="rel-group">
+<h3>Related Events</h3>
+<ul>
+<li><a href="/events/2008-ai'ron-request-to-vista">2008 Ai'ron request to VISTA</a></li>
+</ul>
+</div>
+</section>

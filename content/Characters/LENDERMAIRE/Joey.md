@@ -5,7 +5,7 @@
 <tr><th>Image Status</th><td>concept</td></tr>
 <tr><th>Title</th><td>Joey</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE background member, logistics</td></tr>
-<tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Tier</th><td>Background personnel</td></tr>
 <tr><th>Specialty</th><td>Logistics and incoming resources</td></tr>
 <tr><th>Unit Role</th><td>Background member; manages incoming resources</td></tr>
@@ -17,11 +17,11 @@
 
 
 
-**Joey** is a background member of the black operations unit [LENDERMAIRE](/km/factions/lendermaire), where he manages incoming resources. He is not counted among the group's thirteen core members, and belongs to the additional background personnel who support the unit's operations.
+**Joey** is a background member of the black operations unit [LENDERMAIRE](/factions/lendermaire), where he manages incoming resources. He is not counted among the group's thirteen core members, and belongs to the additional background personnel who support the unit's operations.
 
-Joey resides with LENDERMAIRE personnel on land owned by [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined)) in the southern [Ironclad DMZ](/km/locations/ironclad-dmz). Background personnel are treated as members of the household's family unit despite their exclusion from the core membership count. He is not established as a combat-deployable operator.
+Joey resides with LENDERMAIRE personnel on land owned by [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined)) in the southern [Ironclad DMZ](/locations/ironclad-dmz). Background personnel are treated as members of the household's family unit despite their exclusion from the core membership count. He is not established as a combat-deployable operator.
 
-He is also recorded as working for [Konish's Group](/km/factions/konish's-group) itself, not only for the household. He answers to Kimbotin directly. The household is not recorded as knowing this.
+He is also recorded as working for [Konish's Group](/factions/konish's-group) itself, not only for the household. He answers to Kimbotin directly. The household is not recorded as knowing this.
 
 ## The liaison role
 
@@ -45,7 +45,7 @@ No specific procurement authority is established.
 
 ## Resource Management and the Vanny Overlap
 
-A separate unresolved overlap concerns [Vanny](/km/characters/lendermaire/vanny)'s logistics responsibilities. Vanny is a core member specialising in cyber operations, electronic warfare, and logistics. A note associated with Vanny identifies the question of how Vanny's responsibilities overlap with Joey's resource-management work. The division of responsibility remains unresolved.
+A separate unresolved overlap concerns [Vanny](/characters/lendermaire/vanny)'s logistics responsibilities. Vanny is a core member specialising in cyber operations, electronic warfare, and logistics. A note associated with Vanny identifies the question of how Vanny's responsibilities overlap with Joey's resource-management work. The division of responsibility remains unresolved.
 
 *Proposed:* Joey handles structural logistics — the ongoing flow of resources between Konish's Group and the household, including intake, storage, and household-level distribution. Vanny handles operational logistics — the technical requirements of a specific mission, including procurement and coordination. They meet where a mission requirement becomes a supply request.
 
@@ -85,10 +85,10 @@ His position within LENDERMAIRE's command structure is not established beyond hi
 
 ## See Also
 
-* [LENDERMAIRE](/km/factions/lendermaire)
-* [Konish's Group](/km/factions/konish's-group)
+* [LENDERMAIRE](/factions/lendermaire)
+* [Konish's Group](/factions/konish's-group)
 * [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined))
-* [Vanny](/km/characters/lendermaire/vanny)
-* [Bizmo](/km/characters/lendermaire/bizmo)
-* [Gazmo](/km/characters/lendermaire/gazmo)
-* [Ironclad DMZ](/km/locations/ironclad-dmz)
+* [Vanny](/characters/lendermaire/vanny)
+* [Bizmo](/characters/lendermaire/bizmo)
+* [Gazmo](/characters/lendermaire/gazmo)
+* [Ironclad DMZ](/locations/ironclad-dmz)

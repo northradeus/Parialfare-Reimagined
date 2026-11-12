@@ -42,5 +42,5 @@ Anajak ត្រូវបានបង្កើតឡើងដោយ [Global Inte
 
 * [Anajak Forces](/km/factions/anajak-forces)
 * [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic))
-* [Noradus](/characters/vista/noradus)
+* [Noradus](/km/characters/vista/noradus)
 * [Takahashi](/km/characters/anajak-forces/takahashi)

@@ -162,7 +162,9 @@ const ignoreKeys = ['tags', 'entity-type', 'character-type', 'faction-type', 'lo
 const articlePaths = [];
 
 // --- Stage 3: Related Entities Pre-Scan ---
-const resolvers = {};
+const enResolvers = {};
+const kmResolvers = {};
+const resolvers = enResolvers;
 const articlesForRelations = [];
 const reverseLinks = {};
 
@@ -209,10 +211,10 @@ function preScanRelations(dir) {
             articlesForRelations.push({ slug: relOutPath, title, fields });
             const titleKey = normalizeKey(title);
             const fileNameKey = normalizeKey(item.replace('.md', ''));
-            if (titleKey && !resolvers[titleKey]) resolvers[titleKey] = relOutPath;
-            if (fileNameKey && !resolvers[fileNameKey]) resolvers[fileNameKey] = relOutPath;
+            if (titleKey && !enResolvers[titleKey]) enResolvers[titleKey] = relOutPath;
+            if (fileNameKey && !enResolvers[fileNameKey]) enResolvers[fileNameKey] = relOutPath;
 
-            // Also register aliases in resolvers
+            // Also register aliases in enResolvers
             for (const line of fmMatch[1].split('\n')) {
                 const trimmed = line.trim();
                 if (trimmed.startsWith('aliases:') || trimmed.startsWith('alias:')) {
@@ -221,7 +223,7 @@ function preScanRelations(dir) {
                         const list = m[1].split(',').map(s => s.trim().replace(/^['"]|['"]$/g, ''));
                         for (const a of list) {
                             const aKey = normalizeKey(a);
-                            if (aKey && !resolvers[aKey]) resolvers[aKey] = relOutPath;
+                            if (aKey && !enResolvers[aKey]) enResolvers[aKey] = relOutPath;
                         }
                     }
                 }
@@ -267,16 +269,16 @@ function preScanKhmerRelations(kmDir) {
                                 const list = m[1].split(',').map(s => s.trim().replace(/^['"]|['"]$/g, ''));
                                 for (const a of list) {
                                     const aKey = normalizeKey(a);
-                                    if (aKey) resolvers[aKey] = relOutPath;
+                                    if (aKey && !kmResolvers[aKey]) kmResolvers[aKey] = relOutPath;
                                 }
                             }
                         }
                     }
                 }
                 const titleKey = normalizeKey(title);
-                if (titleKey) resolvers[titleKey] = relOutPath;
+                if (titleKey && !kmResolvers[titleKey]) kmResolvers[titleKey] = relOutPath;
                 const baseKey = normalizeKey(entry.name.replace('.md', ''));
-                if (baseKey && !resolvers[baseKey]) resolvers[baseKey] = relOutPath;
+                if (baseKey && !kmResolvers[baseKey]) kmResolvers[baseKey] = relOutPath;
             }
         }
     }
@@ -290,7 +292,7 @@ if (targetMode !== 'en' && fs.existsSync(kmSourceDir)) {
 for (const article of articlesForRelations) {
     for (const field of ['factions', 'part_of', 'location']) {
         for (const target of article.fields[field]) {
-            const targetSlug = resolvers[normalizeKey(target)];
+            const targetSlug = enResolvers[normalizeKey(target)];
             if (!targetSlug || targetSlug === article.slug) continue;
             if (!reverseLinks[targetSlug]) reverseLinks[targetSlug] = [];
             if (reverseLinks[targetSlug].some(r => r.slug === article.slug && r.field === field)) continue;
@@ -318,13 +320,19 @@ function renderRelatedEntities(currentSlug, rels) {
     return html;
 }
 
-function resolveWikilinks(text, contextFile = '') {
+function resolveWikilinks(text, contextFile = '', lang = 'en') {
     // Handles all three forms: [[Foo]], [[Foo|Bar]], [[Foo\|Bar]]
     // Group 1 = target, Group 2 = optional alias (with or without escaped pipe)
     // Uses negative lookbehind (?<!\!) to ignore markdown image embeds like ![[Foo]]
     return text.replace(/(?<!\!)\[\[([^\]|\\]+?)(?:\\?\|([^\]]+))?\]\]/g, (match, target, alias) => {
         if (!target) return match;
-        const slug = resolvers[normalizeKey(target.trim())];
+        const key = normalizeKey(target.trim());
+        let slug = null;
+        if (lang === 'km') {
+            slug = kmResolvers[key] || enResolvers[key];
+        } else {
+            slug = enResolvers[key];
+        }
         const display = (alias || target).trim();
         if (!slug) {
             if (contextFile) console.warn(`[wikilink] unresolved target "${target.trim()}" in ${contextFile}`);
@@ -335,10 +343,16 @@ function resolveWikilinks(text, contextFile = '') {
     });
 }
 
-function resolveInfoboxWikilinks(text, contextFile = '') {
+function resolveInfoboxWikilinks(text, contextFile = '', lang = 'en') {
     return text.replace(/(?<!\!)\[\[([^\]|\\]+?)(?:\\?\|([^\]]+))?\]\]/g, (match, target, alias) => {
         if (!target) return match;
-        const slug = resolvers[normalizeKey(target.trim())];
+        const key = normalizeKey(target.trim());
+        let slug = null;
+        if (lang === 'km') {
+            slug = kmResolvers[key] || enResolvers[key];
+        } else {
+            slug = enResolvers[key];
+        }
         const display = (alias || target).trim();
         if (!slug) {
             if (contextFile) console.warn(`[wikilink] unresolved target "${target.trim()}" in ${contextFile} (infobox)`);
@@ -550,10 +564,10 @@ function processKhmerDir(kmDir, kmOutDir) {
                     let infobox = '';
                     let infoRows = '';
                     if (yaml.subtitle) infoRows += `<tr><th>ចំណងជើងរង</th><td>${yaml.subtitle}</td></tr>\n`;
-                    if (yaml.role) infoRows += `<tr><th>តួនាទី</th><td>${resolveInfoboxWikilinks(yaml.role, item)}</td></tr>\n`;
+                    if (yaml.role) infoRows += `<tr><th>តួនាទី</th><td>${resolveInfoboxWikilinks(yaml.role, item, 'km')}</td></tr>\n`;
                     if (yaml.grade) infoRows += `<tr><th>ចំណាត់ថ្នាក់</th><td>${yaml.grade}</td></tr>\n`;
                     if (yaml.living_status) infoRows += `<tr><th>ស្ថានភាពជីវិត</th><td>${yaml.living_status}</td></tr>\n`;
-                    if (yaml.unit) infoRows += `<tr><th>អង្គភាព</th><td>${resolveInfoboxWikilinks(yaml.unit, item)}</td></tr>\n`;
+                    if (yaml.unit) infoRows += `<tr><th>អង្គភាព</th><td>${resolveInfoboxWikilinks(yaml.unit, item, 'km')}</td></tr>\n`;
                     if (yaml.en_title) infoRows += `<tr><th>English</th><td><em>${yaml.en_title}</em></td></tr>\n`;
 
                     if (infoRows || imgName) {
@@ -597,7 +611,7 @@ function processKhmerDir(kmDir, kmOutDir) {
                     });
 
                     // 4. Resolve remaining wikilinks
-                    body = resolveWikilinks(body, item);
+                    body = resolveWikilinks(body, item, 'km');
 
                     // Auto-prefix relative links to km/ if they point to content folders or portals
                     body = body.replace(/href="(characters|locations|factions|events|lore|portal---)([^"]*)"/g, 'href="km/$1$2"');

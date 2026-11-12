@@ -3,11 +3,11 @@
 <table>
 <tr><th>Title</th><td>Bizmo</td></tr>
 <tr><th>Subtitle</th><td>LENDERMAIRE background operator, field fabrication</td></tr>
-<tr><th>Unit</th><td><a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Unit</th><td><a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
 <tr><th>Tier</th><td>Background personnel</td></tr>
 <tr><th>Specialty</th><td>3D printing and unconventional field fabrication</td></tr>
 <tr><th>Unit Role</th><td>Background operator; workshop-only, not deployable</td></tr>
-<tr><th>Collaborator</th><td><a href="/km/characters/lendermaire/vanny">Vanny</a></td></tr>
+<tr><th>Collaborator</th><td><a href="/characters/lendermaire/vanny">Vanny</a></td></tr>
 </table>
 </aside>
 
@@ -16,7 +16,7 @@
 
 
 
-**Bizmo** is a background operator of the black operations unit [LENDERMAIRE](/km/factions/lendermaire), responsible for 3D printing and the engineering of unconventional gadgets, accessories, and equipment designed for warfare. He is not counted among the group's thirteen core members, and works from the workshop rather than deploying in the field. He is an outsider to the group's core membership, and was recruited through a connection to [Vanny](/km/characters/lendermaire/vanny), with whom he collaborates on hardware projects. Vanny's field is cyber operations, electronic warfare, and logistics; the division of responsibility between the two is maintained on a project basis.
+**Bizmo** is a background operator of the black operations unit [LENDERMAIRE](/factions/lendermaire), responsible for 3D printing and the engineering of unconventional gadgets, accessories, and equipment designed for warfare. He is not counted among the group's thirteen core members, and works from the workshop rather than deploying in the field. He is an outsider to the group's core membership, and was recruited through a connection to [Vanny](/characters/lendermaire/vanny), with whom he collaborates on hardware projects. Vanny's field is cyber operations, electronic warfare, and logistics; the division of responsibility between the two is maintained on a project basis.
 
 ## Specialisation
 
@@ -40,7 +40,7 @@ The two collaborate on hardware projects. The exact division of responsibility i
 
 ## Household Assignment
 
-Bizmo resides with LENDERMAIRE personnel on land owned by [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined)) in the southern [Ironclad DMZ](/km/locations/ironclad-dmz). He is a background operator and is not included among the thirteen core members. Background personnel are treated as members of the household's family unit despite their exclusion from the core membership count.
+Bizmo resides with LENDERMAIRE personnel on land owned by [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined)) in the southern [Ironclad DMZ](/locations/ironclad-dmz). He is a background operator and is not included among the thirteen core members. Background personnel are treated as members of the household's family unit despite their exclusion from the core membership count.
 
 His daily schedule and domestic responsibilities are not recorded.
 
@@ -67,10 +67,10 @@ His relationship to LENDERMAIRE's operational command structure is not documente
 
 ## See Also
 
-* [LENDERMAIRE](/km/factions/lendermaire)
-* [Konish's Group](/km/factions/konish's-group)
+* [LENDERMAIRE](/factions/lendermaire)
+* [Konish's Group](/factions/konish's-group)
 * [Konish Kimbotin (Reimagined)](/characters/lendermaire/konish-kimbotin-(reimagined))
-* [Vanny](/km/characters/lendermaire/vanny)
-* [Joey](/km/characters/lendermaire/joey)
-* [Gazmo](/km/characters/lendermaire/gazmo)
-* [Ironclad DMZ](/km/locations/ironclad-dmz)
+* [Vanny](/characters/lendermaire/vanny)
+* [Joey](/characters/lendermaire/joey)
+* [Gazmo](/characters/lendermaire/gazmo)
+* [Ironclad DMZ](/locations/ironclad-dmz)

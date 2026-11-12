@@ -19,7 +19,7 @@
 <tr><th>Military</th><td><a href="/factions/ironish-task-force-(itf)">Ironish Task Force (ITF)</a> (Garrison)</td></tr>
 <tr><th>Area Total</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Population Estimate</th><td><span class="val-tbd">TBD</span></td></tr>
-<tr><th>Borders</th><td><a href="/locations/countries/ironland">Ironland</a> (North), <a href="/km/locations/ironclad-dmz">Ironclad DMZ</a> (South)</td></tr>
+<tr><th>Borders</th><td><a href="/locations/countries/ironland">Ironland</a> (North), <a href="/locations/ironclad-dmz">Ironclad DMZ</a> (South)</td></tr>
 <tr><th>Currency</th><td><span class="val-tbd">TBD</span></td></tr>
 <tr><th>Industries</th><td>Technology, Corporate Research, Defense Contracting</td></tr>
 </table>
@@ -30,7 +30,7 @@
 
 
 
-**New Aester** is a corporate city-state situated on the border between the [Kingdom of the Ai'ron Land](/locations/countries/ironland) and the [Ironclad DMZ](/km/locations/ironclad-dmz). It is a member of [VISTA](/km/factions/vista) and operates as a heavily policed proving ground for corporate technologies. The state was built as an estate project by [Northrad](/characters/vista/noradus), who serves as its architect and founder. It is populated by a diverse, mixed-nationality citizenry drawn by the promise of a highly advanced smart city.
+**New Aester** is a corporate city-state situated on the border between the [Kingdom of the Ai'ron Land](/locations/countries/ironland) and the [Ironclad DMZ](/locations/ironclad-dmz). It is a member of [VISTA](/factions/vista) and operates as a heavily policed proving ground for corporate technologies. The state was built as an estate project by [Northrad](/characters/vista/noradus), who serves as its architect and founder. It is populated by a diverse, mixed-nationality citizenry drawn by the promise of a highly advanced smart city.
 
 The country functions as a crucial strategic buffer between the established order of Ironland and the ungoverned territories of the Cladish warlords. Its outer edges are heavily militarized, garrisoned by the [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)).
 
@@ -62,7 +62,7 @@ New Aester sits directly between Ironland and the Ironclad DMZ. It does not touc
 
 During the events of 2008, Northrad declined a full-scale invasion of the Ironclad DMZ because open war would put New Aester on the frontline. While the city-state maintains formal plans for a Southern Frontier Expansion to annex the South Ironclad Region, forward operations remain permanently stalled. 
 
-Directly across the southern border lies [Area-31](/km/locations/area-31) in Shaiken—a city-scale brutalist citadel garrisoned by [Konish's Group](/km/factions/konish's-group). Area-31 maintains the densest integrated anti-aircraft missile umbrella in the region along with deployable supersonic interceptor wings ("The Sun"). The risk of catastrophic retaliation against corporate infrastructure and [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)) armored columns has kept New Aester's forces pinned behind their own brutalist perimeter walls, freezing the southern frontier in an armed standoff.
+Directly across the southern border lies [Area-31](/locations/area-31) in Shaiken—a city-scale brutalist citadel garrisoned by [Konish's Group](/factions/konish's-group). Area-31 maintains the densest integrated anti-aircraft missile umbrella in the region along with deployable supersonic interceptor wings ("The Sun"). The risk of catastrophic retaliation against corporate infrastructure and [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)) armored columns has kept New Aester's forces pinned behind their own brutalist perimeter walls, freezing the southern frontier in an armed standoff.
 
 ## Unresolved
 
@@ -74,11 +74,11 @@ Directly across the southern border lies [Area-31](/km/locations/area-31) in Sha
 
 ## See Also
 
-- [Area-31](/km/locations/area-31)
+- [Area-31](/locations/area-31)
 - [Ironland](/locations/countries/ironland)
-- [Ironclad DMZ](/km/locations/ironclad-dmz)
+- [Ironclad DMZ](/locations/ironclad-dmz)
 - [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf))
-- [VISTA](/km/factions/vista)
+- [VISTA](/factions/vista)
 - [Northrad](/characters/vista/noradus)
 
 ## References

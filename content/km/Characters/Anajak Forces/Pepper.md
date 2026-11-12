@@ -63,7 +63,7 @@ S+ របស់នាងនៅក្នុងកិច្ចការច្រ�
 
 * [Tanishito](/km/characters/anajak-forces/tanishito)
 * [ណូហ្គោ](/km/characters/anajak-forces/nogo)
-* [Noradus](/characters/vista/noradus)
+* [Noradus](/km/characters/vista/noradus)
 * [វីស្តា](/km/factions/vista)
 * [Anajak Forces](/km/factions/anajak-forces)
 * [មូលដ្ឋាន-២៩](/km/locations/site-29)

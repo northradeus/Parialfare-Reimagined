@@ -3,7 +3,7 @@
 <table>
 <tr><th>Title</th><td>Anajak grading system</td></tr>
 <tr><th>Subtitle</th><td>Grading of Anajak Forces personnel</td></tr>
-<tr><th>Applies To</th><td><a href="/km/factions/anajak-forces">Anajak Forces</a></td></tr>
+<tr><th>Applies To</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
 <tr><th>Grades Observed</th><td>S+, S, A+, A</td></tr>
 </table>
 </aside>
@@ -13,16 +13,16 @@
 
 
 
-Personnel of [Anajak Forces](/km/factions/anajak-forces) are graded. The system is not fully documented, and its criteria, scale and authority are unestablished.
+Personnel of [Anajak Forces](/factions/anajak-forces) are graded. The system is not fully documented, and its criteria, scale and authority are unestablished.
 
 ## Observed grades
 
 Grades seen in the record so far are **S+, S, A+ and A**.
 
-* [Tanishito](/km/characters/anajak-forces/tanishito) — S-grade assassin.
+* [Tanishito](/characters/anajak-forces/tanishito) — S-grade assassin.
 * [Nogo](/characters/anajak-forces/nogo) — A+ grade assassin.
-* [Pepper](/km/characters/anajak-forces/pepper) — S+ at multitasking, A tier in combat.
-* [Verdanski](/km/characters/anajak-forces/verdanski) — A+.
+* [Pepper](/characters/anajak-forces/pepper) — S+ at multitasking, A tier in combat.
+* [Verdanski](/characters/anajak-forces/verdanski) — A+.
 
 Because Pepper carries different grades for different skills, per-skill grading appears to exist alongside overall ranks. This is a reading of the data, not a stated rule.
 
@@ -35,5 +35,5 @@ Because Pepper carries different grades for different skills, per-skill grading 
 
 ## See Also
 
-* [Anajak Forces](/km/factions/anajak-forces)
-* [Alpha-01](/km/factions/alpha-01)
+* [Anajak Forces](/factions/anajak-forces)
+* [Alpha-01](/factions/alpha-01)

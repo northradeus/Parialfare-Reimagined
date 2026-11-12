@@ -11,9 +11,9 @@
 <tr><th>Monarch</th><td>Emperor Kenshin (Imperial Throne)</td></tr>
 <tr><th>Prime Minister</th><td>Daisuke Takeda</td></tr>
 <tr><th>Military</th><td>Thaiphonese Imperial Armed Forces</td></tr>
-<tr><th>Alliances</th><td><a href="/km/factions/vista">VISTA</a></td></tr>
+<tr><th>Alliances</th><td><a href="/factions/vista">VISTA</a></td></tr>
 <tr><th>Region</th><td>Coastal and island archipelago, Parial Continent</td></tr>
-<tr><th>Borders</th><td>Maritime borders; <a href="/km/locations/countries/kingdom-of-encore">Kingdom of Encore</a> (eastern maritime neighbor)</td></tr>
+<tr><th>Borders</th><td>Maritime borders; <a href="/locations/countries/kingdom-of-encore">Kingdom of Encore</a> (eastern maritime neighbor)</td></tr>
 <tr><th>Industries</th><td>Aerospace Metallurgy, High-Speed Rail, Consumer Electronics, Robotics, Maritime Logistics</td></tr>
 </table>
 </aside>
@@ -21,17 +21,17 @@
 
 # Thaiphon
 
-The **Empire of Thaiphon** (conventionally **Thaiphon**) is an independent constitutional empire situated across an extensive coastal and island archipelago on the Parial continent, and a founding voting delegation of [VISTA](/km/factions/vista). Enduring as a continuous sovereign civilization for over eight centuries, modern Thaiphon balances high-tech industrial primacy, advanced aerospace metallurgy, and robotics with cultural reverence for its ancient Imperial Throne. Within contemporary geopolitics, it acts as a pragmatic, pro-stability power that favors precise air superiority, technological deterrence, and maritime trade security over unilateral ground intervention.
+The **Empire of Thaiphon** (conventionally **Thaiphon**) is an independent constitutional empire situated across an extensive coastal and island archipelago on the Parial continent, and a founding voting delegation of [VISTA](/factions/vista). Enduring as a continuous sovereign civilization for over eight centuries, modern Thaiphon balances high-tech industrial primacy, advanced aerospace metallurgy, and robotics with cultural reverence for its ancient Imperial Throne. Within contemporary geopolitics, it acts as a pragmatic, pro-stability power that favors precise air superiority, technological deterrence, and maritime trade security over unilateral ground intervention.
 
 ## 1. Deep History & Imperial Continuity
 
-Thaiphon is one of the oldest surviving political structures on the Parial continent. During the medieval Balthazar Era (12th–14th century), when the Deck Empire expanded aggressively through prisoner-of-war labor, Thaiphon entered the grand defensive coalition alongside [Lurkinsberg](/km/locations/countries/lurkinsberg), the Jennies, and Ai'ross to dismantle Deck hegemony.
+Thaiphon is one of the oldest surviving political structures on the Parial continent. During the medieval Balthazar Era (12th–14th century), when the Deck Empire expanded aggressively through prisoner-of-war labor, Thaiphon entered the grand defensive coalition alongside [Lurkinsberg](/locations/countries/lurkinsberg), the Jennies, and Ai'ross to dismantle Deck hegemony.
 
 Catastrophic military casualties suffered during early coalition campaigns left the Thaiphonese conventional army incapable of immediate mass mobilization. To maintain its operational standing on the continent, the Imperial Court negotiated a confidential expeditionary alliance with the **Shijo** clan:
 * Imperial authorities funded, equipped, and granted wide recruitment powers to the Shijo as an imperial expeditionary vanguard under its cooperative founder, **Senei-Odateri**.
 * In return, the throne promised Shijo commanders hereditary integration into the Thaiphonese imperial nobility—an arrangement that led later medieval chieftains such as **Koganshi** to attend ceremonial imperial court functions.
 
-At the climax of the Deck War, Ai'ross unleashed its hoarded reserves, seized the Deck capital, claimed the Global Title, and renamed the conquered territory *Ai'ronclad*. While the Jennies were driven to extinction in the aftermath, Thaiphon preserved its maritime borders, civilian population, and imperial dynasty intact. In ancient Thaiphonese court dialect, the insurgent movement *[Maire O'Mare](/km/factions/maire-o'mare-(2008))* was rendered phonetically as **Maire O'Rama**, and the territory of *Clandestine* as **Clandestan**.
+At the climax of the Deck War, Ai'ross unleashed its hoarded reserves, seized the Deck capital, claimed the Global Title, and renamed the conquered territory *Ai'ronclad*. While the Jennies were driven to extinction in the aftermath, Thaiphon preserved its maritime borders, civilian population, and imperial dynasty intact. In ancient Thaiphonese court dialect, the insurgent movement *[Maire O'Mare](/factions/maire-o'mare-(2008))* was rendered phonetically as **Maire O'Rama**, and the territory of *Clandestine* as **Clandestan**.
 
 ## 2. Modern Governance & Everyday Culture
 
@@ -43,11 +43,11 @@ Modern Thaiphon operates as a constitutional empire centered in the coastal capi
 
 ## 3. Geopolitics & VISTA Alignment
 
-Thaiphon joined [VISTA](/km/factions/vista) as one of the twelve charter voting delegations upon its establishment in 2004. 
+Thaiphon joined [VISTA](/factions/vista) as one of the twelve charter voting delegations upon its establishment in 2004. 
 
-Following the [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid), Thaiphon strongly opposed Ironland's demands for a unilateral, large-scale ground invasion of the [Ironclad DMZ](/km/locations/ironclad-dmz). Reflecting its core defense doctrine, the Thaiphonese delegation advocated containment, electronic border surveillance, and economic stabilization, seeking to prevent a chaotic regional war that could disrupt vital shipping lanes along the Parial coast.
+Following the [2008 Pocheasang Palace raid](/events/2008-pocheasang-palace-raid), Thaiphon strongly opposed Ironland's demands for a unilateral, large-scale ground invasion of the [Ironclad DMZ](/locations/ironclad-dmz). Reflecting its core defense doctrine, the Thaiphonese delegation advocated containment, electronic border surveillance, and economic stabilization, seeking to prevent a chaotic regional war that could disrupt vital shipping lanes along the Parial coast.
 
-While maintaining diplomatic distance from the Ai'ron monarchy, Thaiphon maintains close bilateral defense arrangements with VISTA President [General Northrad](/characters/vista/noradus), supporting multilateral [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic)) initiatives that deploy precision air assets and specialized contractor teams over mass ground infantry.
+While maintaining diplomatic distance from the Ai'ron monarchy, Thaiphon maintains close bilateral defense arrangements with VISTA President [General Northrad](/characters/vista/noradus), supporting multilateral [Global Intervention Coalition (GIC)](/factions/global-intervention-coalition-(gic)) initiatives that deploy precision air assets and specialized contractor teams over mass ground infantry.
 
 ## 4. Military Doctrine & "The Pilot Cult"
 
@@ -58,8 +58,8 @@ Military aviators, experimental test pilots, and flight propulsion engineers occ
 
 ### Operations in Numbrad
 Thaiphonese aviation assets played a pivotal role in the aerial theatre of Operation Numbrad:
-* **[Takahashi](/km/characters/anajak-forces/takahashi) ("Sahara"):** A former two-time motorsport champion turned elite army aviator, Takahashi was seconded to GIC aviation and hand-picked by [General Ramcher](/km/characters/anajak-forces/general-ramcher) for [Anajak Forces](/km/factions/anajak-forces). During Numbrad, Takahashi flew low-altitude strike sorties against [LENDERMAIRE](/km/factions/lendermaire), eliminating the shock trooper [Salarean "Salmon"](/km/characters/lendermaire/salmon). Following the strike, his aircraft was hit by a panicking coalition anti-aircraft battery blindly firing at Cladish Flash Pallets. Surviving the crash, Takahashi was repatriated to Thaiphon as a celebrated national hero; his sincere, public debriefs formed the primary basis for the world's knowledge of "The Sun."
-* **The Shadow Paradox:** Unknown to VISTA, GIC intelligence, and the Thaiphonese government, an exiled Thaiphonese citizen—disgraced former racing driver **[Hayakawa Oradachi](/characters/konish's-group/hayakawa-oradachi) ("Infinity")**—flew the Mach 2 interceptor "The Sun" on the opposing side for [Konish's Group](/km/factions/konish's-group), having been recruited abroad into Shaiken's secret flight program at [Area-31](/km/locations/area-31). The classified reality that a Thaiphonese pilot manned the phantom aircraft remains known in available records only to [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)).
+* **[Takahashi](/characters/anajak-forces/takahashi) ("Sahara"):** A former two-time motorsport champion turned elite army aviator, Takahashi was seconded to GIC aviation and hand-picked by [General Ramcher](/characters/anajak-forces/general-ramcher) for [Anajak Forces](/factions/anajak-forces). During Numbrad, Takahashi flew low-altitude strike sorties against [LENDERMAIRE](/factions/lendermaire), eliminating the shock trooper [Salarean "Salmon"](/characters/lendermaire/salmon). Following the strike, his aircraft was hit by a panicking coalition anti-aircraft battery blindly firing at Cladish Flash Pallets. Surviving the crash, Takahashi was repatriated to Thaiphon as a celebrated national hero; his sincere, public debriefs formed the primary basis for the world's knowledge of "The Sun."
+* **The Shadow Paradox:** Unknown to VISTA, GIC intelligence, and the Thaiphonese government, an exiled Thaiphonese citizen—disgraced former racing driver **[Hayakawa Oradachi](/characters/konish's-group/hayakawa-oradachi) ("Infinity")**—flew the Mach 2 interceptor "The Sun" on the opposing side for [Konish's Group](/factions/konish's-group), having been recruited abroad into Shaiken's secret flight program at [Area-31](/locations/area-31). The classified reality that a Thaiphonese pilot manned the phantom aircraft remains known in available records only to [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)).
 
 ## Unresolved
 
@@ -69,13 +69,13 @@ Thaiphonese aviation assets played a pivotal role in the aerial theatre of Opera
 
 ## See Also
 
-* [VISTA](/km/factions/vista)
-* [Global Intervention Coalition (GIC)](/km/factions/global-intervention-coalition-(gic))
-* [Takahashi](/km/characters/anajak-forces/takahashi)
+* [VISTA](/factions/vista)
+* [Global Intervention Coalition (GIC)](/factions/global-intervention-coalition-(gic))
+* [Takahashi](/characters/anajak-forces/takahashi)
 * [Hayakawa Oradachi](/characters/konish's-group/hayakawa-oradachi)
-* [Kingdom of Encore](/km/locations/countries/kingdom-of-encore)
+* [Kingdom of Encore](/locations/countries/kingdom-of-encore)
 * The Balthazar Era
 * Shijo
-* [Area-31](/km/locations/area-31)
+* [Area-31](/locations/area-31)
 * Operation Numbrad — The Fall of New Aester
 * [Portal - Locations](/portal---locations)

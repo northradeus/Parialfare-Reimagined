@@ -11,13 +11,13 @@
 <tr><th>Current Status</th><td>Alive</td></tr>
 <tr><th>Ethnicity</th><td>Cladish, Jen</td></tr>
 <tr><th>Gender</th><td>Male</td></tr>
-<tr><th>Factions</th><td><a href="/km/factions/konish's-group">Konish's Group</a>, <a href="/km/factions/lendermaire">LENDERMAIRE</a></td></tr>
-<tr><th>Nation</th><td><a href="/km/locations/countries/ironclad">Ironclad</a></td></tr>
-<tr><th>Territory</th><td>Southern <a href="/km/locations/countries/ironclad">Ironclad</a></td></tr>
+<tr><th>Factions</th><td><a href="/factions/konish's-group">Konish's Group</a>, <a href="/factions/lendermaire">LENDERMAIRE</a></td></tr>
+<tr><th>Nation</th><td><a href="/locations/countries/ironclad">Ironclad</a></td></tr>
+<tr><th>Territory</th><td>Southern <a href="/locations/countries/ironclad">Ironclad</a></td></tr>
 <tr><th>Rank</th><td>Supreme Warlord</td></tr>
 <tr><th>Occupation</th><td>Warlord, Political Figure</td></tr>
 <tr><th>Known For</th><td>Founding Konish Group and LENDERMAIRE; 2008 Pocheasang Palace raid</td></tr>
-<tr><th>Battles</th><td><a href="/km/events/2008-pocheasang-palace-raid">2008 Pocheasang Palace raid</a></td></tr>
+<tr><th>Battles</th><td><a href="/events/2008-pocheasang-palace-raid">2008 Pocheasang Palace raid</a></td></tr>
 </table>
 </aside>
 
@@ -26,15 +26,15 @@
 
 
 
-**Konish Kimbotin** (native Cladish: *Kon 'aishen Kimbo 'shin*; shorthand alias pronounced *Knish*; born September 12, 1978) is a Cladish-Jen warlord and political figure operating in the ungoverned region of [Ironclad](/km/locations/countries/ironclad). He is the founder and supreme commander of the umbrella coalition [Konish's Group](/km/factions/konish's-group) and its black operations unit, [LENDERMAIRE](/km/factions/lendermaire).[^1] Kimbotin is widely regarded as one of the most powerful warlords in the Ironclad region, and the [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid) is widely cited as the foundational source of his intelligence network.
+**Konish Kimbotin** (native Cladish: *Kon 'aishen Kimbo 'shin*; shorthand alias pronounced *Knish*; born September 12, 1978) is a Cladish-Jen warlord and political figure operating in the ungoverned region of [Ironclad](/locations/countries/ironclad). He is the founder and supreme commander of the umbrella coalition [Konish's Group](/factions/konish's-group) and its black operations unit, [LENDERMAIRE](/factions/lendermaire).[^1] Kimbotin is widely regarded as one of the most powerful warlords in the Ironclad region, and the [2008 Pocheasang Palace raid](/events/2008-pocheasang-palace-raid) is widely cited as the foundational source of his intelligence network.
 
-Kimbotin maintains an extensive network of political and military contacts both within and outside Ironland, which he uses to fund and equip his operations. The [VISTA](/km/factions/vista) Intelligence Agency assesses that his primary strategic weapon is information, leveraging classified materials obtained during the 2008 raid to expand his influence.[^4]
+Kimbotin maintains an extensive network of political and military contacts both within and outside Ironland, which he uses to fund and equip his operations. The [VISTA](/factions/vista) Intelligence Agency assesses that his primary strategic weapon is information, leveraging classified materials obtained during the 2008 raid to expand his influence.[^4]
 
 ## Heritage and appearance
 
 Kimbotin is of mixed Cladish and Jen descent (Cladish-Jen). His physical features reflect this dual ancestry, combining the sharp facial bone structure characteristic of the Dekish with the amber eyes and faint ginger hair associated with the Jennies. In combat and public appearances, his face is typically obscured by a combat balaclava, and he is identified in field intelligence by his dark, fur-collared Supreme Coat.
 
-External historical records compiled by Ai'ron and [VISTA](/km/factions/vista) institutions widely treated the Jennies as having been extinguished during the Balthazar Era. The persistence of Jen lineage within the southern [Ironclad](/km/locations/countries/ironclad) DMZ reflects the survival of traditions and ethnic groups absorbed during the era of the Deck Empire, which remained largely unrecorded due to the hazardous, ungoverned nature of the frontier.
+External historical records compiled by Ai'ron and [VISTA](/factions/vista) institutions widely treated the Jennies as having been extinguished during the Balthazar Era. The persistence of Jen lineage within the southern [Ironclad](/locations/countries/ironclad) DMZ reflects the survival of traditions and ethnic groups absorbed during the era of the Deck Empire, which remained largely unrecorded due to the hazardous, ungoverned nature of the frontier.
 
 ### Nomenclature and linguistic variants
 
@@ -51,11 +51,11 @@ The Ironclad region lacks a central government or unified leader, functioning as
 
 Operating under the banner of Konish Group, his forces engage in territorial conflicts with neighboring militias. Lacking a traditional state treasury, Kimbotin's forces are reported to fund their operations through asymmetric means, including the capture and reuse of military equipment from the private security contractor [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)).[^1]
 
-In 2008, Kimbotin personally led LENDERMAIRE in the [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid). The operation resulted in the extraction of classified military documentation and hard drives from the Ai'ron national archives. Analysts widely cite this raid as the foundational source of Kimbotin's vast intelligence network.[^2]
+In 2008, Kimbotin personally led LENDERMAIRE in the [2008 Pocheasang Palace raid](/events/2008-pocheasang-palace-raid). The operation resulted in the extraction of classified military documentation and hard drives from the Ai'ron national archives. Analysts widely cite this raid as the foundational source of Kimbotin's vast intelligence network.[^2]
 
 ## Command and organization
 
-Kimbotin is the founder and supreme commander of the umbrella coalition [Konish's Group](/km/factions/konish's-group) and its black operations unit, [LENDERMAIRE](/km/factions/lendermaire).[^1] Analysts describe his relationship with LENDERMAIRE as symbiotic: the unit cannot exist without his leadership, and his own operational capacity is heavily reliant on its specialized skills.[^1]
+Kimbotin is the founder and supreme commander of the umbrella coalition [Konish's Group](/factions/konish's-group) and its black operations unit, [LENDERMAIRE](/factions/lendermaire).[^1] Analysts describe his relationship with LENDERMAIRE as symbiotic: the unit cannot exist without his leadership, and his own operational capacity is heavily reliant on its specialized skills.[^1]
 
 ## Strategy and methods
 
@@ -94,11 +94,11 @@ Various intelligence bodies have attributed several unconfirmed activities to Ki
 
 ### Assessed relationships
 
-*   **[LENDERMAIRE](/km/factions/lendermaire):** Kimbotin maintains a symbiotic relationship with the organization. Analysts note that the group cannot exist without his leadership, and his operational capacity is heavily reliant on the unit's specialized skills.
-*   **[Hanktonio](/km/characters/lendermaire/hanktonio):** Kimbotin's second-in-command. Hanktonio views him as an enigmatic figure capable of both rehabilitating individuals and tracking them down.
-*   **[Lykor](/km/characters/lendermaire/samsara-lykor):** The concealed thirteenth member of LENDERMAIRE, who remains with the organization primarily due to personal loyalty to Kimbotin.
+*   **[LENDERMAIRE](/factions/lendermaire):** Kimbotin maintains a symbiotic relationship with the organization. Analysts note that the group cannot exist without his leadership, and his operational capacity is heavily reliant on the unit's specialized skills.
+*   **[Hanktonio](/characters/lendermaire/hanktonio):** Kimbotin's second-in-command. Hanktonio views him as an enigmatic figure capable of both rehabilitating individuals and tracking them down.
+*   **[Lykor](/characters/lendermaire/samsara-lykor):** The concealed thirteenth member of LENDERMAIRE, who remains with the organization primarily due to personal loyalty to Kimbotin.
 *   **[Northrad](/characters/vista/noradus):** The President of VISTA and a political opponent of Kimbotin. Northrad is a distinct individual from Lykor (the thirteenth member).
-*   **[Anajak Forces](/km/factions/anajak-forces):** A military task force founded specifically by VISTA President Northrad to counter Kimbotin, LENDERMAIRE, and other Cladish factions.
+*   **[Anajak Forces](/factions/anajak-forces):** A military task force founded specifically by VISTA President Northrad to counter Kimbotin, LENDERMAIRE, and other Cladish factions.
 *   **[Maire O'Mare](/factions/maire-o'mare-(2008)):** An unpredictable insurgent group that occasionally allies with Kimbotin but frequently turns against him. Kimbotin views them as a primary threat.
 
 ## Legacy and assessment
@@ -116,10 +116,10 @@ His relationship with the thirteenth member — the one man in the household he 
 ## See Also
 
 *   The Thirteenth
-*   [Konish's Group](/km/factions/konish's-group)
-*   [LENDERMAIRE](/km/factions/lendermaire)
-*   [2008 Pocheasang Palace raid](/km/events/2008-pocheasang-palace-raid)
-*   [Ironclad](/km/locations/countries/ironclad)
+*   [Konish's Group](/factions/konish's-group)
+*   [LENDERMAIRE](/factions/lendermaire)
+*   [2008 Pocheasang Palace raid](/events/2008-pocheasang-palace-raid)
+*   [Ironclad](/locations/countries/ironclad)
 
 ## References
 

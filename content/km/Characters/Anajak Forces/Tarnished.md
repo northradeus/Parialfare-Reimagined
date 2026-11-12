@@ -48,7 +48,7 @@ Tarnished បានដឹកនាំក្រុមការងារពិស�
 ## សូមមើលផងដែរ
 
 * [Anajak Forces](/km/factions/anajak-forces)
-* [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf))
+* [Ironish Task Force (ITF)](/km/factions/ironish-task-force-(itf))
 * [ពេជ្រ](/km/characters/anajak-forces/pich)
 * [អាល់ហ្វា-០១](/km/factions/alpha-01)
 * [Anajak grading system](/km/lore/anajak-grading-system)

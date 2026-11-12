@@ -328,7 +328,7 @@ He did not know the fourth. He thought, for the first time, that he might not wa
 > *ANALYST ID: Monitoring Specialist 09-K*
 > *RE: SUBJECT VANNY // APPROACH ANALYSIS*
 > *"Subject continues to mentally map perimeter coverage gaps during domestic interaction. Note sub-vocal calculation at 05:48 UTC regarding the 'fourth approach' (road, east track, creek bed... gap unresolved). Subject Northrad (Lykor) remains permanently fixed at rooftop vantage point. No anomalous security breach detected, but domestic cohesion among former disparate operators remains remarkably stable."*
-> *CROSS-REFERENCE: The Thirteenth · [Vanny](/km/characters/lendermaire/vanny) · Lykor · [Hanktonio](/km/characters/lendermaire/hanktonio) · Konish · [Leepy](/km/characters/lendermaire/leepy)*
+> *CROSS-REFERENCE: The Thirteenth · [Vanny](/characters/lendermaire/vanny) · Lykor · [Hanktonio](/characters/lendermaire/hanktonio) · Konish · [Leepy](/characters/lendermaire/leepy)*
 
 ---
 

@@ -6,7 +6,7 @@
 <tr><th>Governance</th><td>Ungoverned</td></tr>
 <tr><th>Government Type</th><td>None — warlord frontier</td></tr>
 <tr><th>Demonym</th><td>Cladish</td></tr>
-<tr><th>Borders</th><td><a href="/locations/countries/ironland">Ironland</a> (north), <a href="/km/locations/countries/new-aester">New Aester</a> (north)</td></tr>
+<tr><th>Borders</th><td><a href="/locations/countries/ironland">Ironland</a> (north), <a href="/locations/countries/new-aester">New Aester</a> (north)</td></tr>
 </table>
 </aside>
 
@@ -69,9 +69,9 @@ Konish regards Maire O'Mare as extreme, and as a threat capable of outlasting hi
 
 ## 4. Geography
 
-The [Ironclad DMZ](/km/locations/ironclad-dmz) lies within the territory, on its northern approach to [Ironland](/locations/countries/ironland). The [New Aester](/km/locations/countries/new-aester) city-state sits on the northern border, between Ironland and the zone.
+The [Ironclad DMZ](/locations/ironclad-dmz) lies within the territory, on its northern approach to [Ironland](/locations/countries/ironland). The [New Aester](/locations/countries/new-aester) city-state sits on the northern border, between Ironland and the zone.
 
-In the southern districts armed formations exercise quasi-governmental functions — taxation, adjudication, and conscription — on a local basis. [Konish's Group](/km/factions/konish's-group) holds territory there.
+In the southern districts armed formations exercise quasi-governmental functions — taxation, adjudication, and conscription — on a local basis. [Konish's Group](/factions/konish's-group) holds territory there.
 
 ## Unresolved
 
@@ -85,9 +85,9 @@ In the southern districts armed formations exercise quasi-governmental functions
 ## See Also
 
 - [Ironland](/locations/countries/ironland)
-- [Ironclad DMZ](/km/locations/ironclad-dmz)
-- [Konish's Group](/km/factions/konish's-group)
-- [LENDERMAIRE](/km/factions/lendermaire)
+- [Ironclad DMZ](/locations/ironclad-dmz)
+- [Konish's Group](/factions/konish's-group)
+- [LENDERMAIRE](/factions/lendermaire)
 - Koilen Rogolf
 - Rogolfenstine
-- [New Aester](/km/locations/countries/new-aester)
+- [New Aester](/locations/countries/new-aester)

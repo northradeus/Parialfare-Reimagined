@@ -6,12 +6,12 @@
 <tr><th>Title</th><td>Tanishito</td></tr>
 <tr><th>Subtitle</th><td>Anajak Forces assassin</td></tr>
 <tr><th>Role</th><td>Assassin</td></tr>
-<tr><th>Factions</th><td><a href="/km/factions/anajak-forces">Anajak Forces</a></td></tr>
+<tr><th>Factions</th><td><a href="/factions/anajak-forces">Anajak Forces</a></td></tr>
 <tr><th>Grade</th><td>S (final entry only)</td></tr>
-<tr><th>Ethnicity</th><td><a href="/locations/countries/thaiphon">Thaiphonese</a> and <a href="/km/locations/countries/lurkinsberg">Lurkish</a></td></tr>
+<tr><th>Ethnicity</th><td><a href="/locations/countries/thaiphon">Thaiphonese</a> and <a href="/locations/countries/lurkinsberg">Lurkish</a></td></tr>
 <tr><th>Age</th><td>Adult (exact age not recorded)</td></tr>
 <tr><th>Pipeline</th><td>Facility-raised</td></tr>
-<tr><th>Origin</th><td><a href="/km/locations/site-29">Site-29</a></td></tr>
+<tr><th>Origin</th><td><a href="/locations/site-29">Site-29</a></td></tr>
 <tr><th>Partner</th><td><a href="/characters/anajak-forces/nogo">Nogo</a></td></tr>
 </table>
 </aside>
@@ -19,7 +19,7 @@
 
 # Tanishito
 
-**Tanishito** is an adult assassin of the [Anajak Forces](/km/factions/anajak-forces), graded S. She is of mixed [Thaiphonese](/locations/countries/thaiphon) and [Lurkish](/km/locations/countries/lurkinsberg) heritage. Raised and trained as an operative inside a classified facility ([Site-29](/km/locations/site-29)), she was handpicked by the [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)) alongside her partner, [Nogo](/characters/anajak-forces/nogo).
+**Tanishito** is an adult assassin of the [Anajak Forces](/factions/anajak-forces), graded S. She is of mixed [Thaiphonese](/locations/countries/thaiphon) and [Lurkish](/locations/countries/lurkinsberg) heritage. Raised and trained as an operative inside a classified facility ([Site-29](/locations/site-29)), she was handpicked by the [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf)) alongside her partner, [Nogo](/characters/anajak-forces/nogo).
 
 Her recorded description is pale skin and smooth, silky silver hair, a distinctive appearance attributed to her mixed Thaiphonese and Lurkish parentage. This description is shared almost word for word with Nogo's, and the two records do not separate them by appearance.
 
@@ -48,11 +48,11 @@ The partnership with Nogo was assigned, and the closeness between them is a tact
 
 ITF soldiers who have met Anajak forces talk about her repeatedly, and her appearance is what stands out most. They call her "Ghost" because of her ethereal appearance. This is a rumor reported among ITF soldiers. Its origin is not verified and it is not an official designation.
 
-She has met [Pepper](/km/characters/anajak-forces/pepper) once, in person.
+She has met [Pepper](/characters/anajak-forces/pepper) once, in person.
 
 ## Unresolved
 
-- **Facility:** confirm [Site-29](/km/locations/site-29) is the facility.
+- **Facility:** confirm [Site-29](/locations/site-29) is the facility.
 - **Background:** anything beyond the biography line.
 - **Northrad's interest:** whether this personal interest is current canon or an older draft, and how she regards him.
 - **ITF relationship:** whether the ITF selected her from the facility, bought her through it, or has some other arrangement.
@@ -61,7 +61,7 @@ She has met [Pepper](/km/characters/anajak-forces/pepper) once, in person.
 
 ## Depiction
 
-Her recruitment from a Pocheasang strip club, and her failed attempt to use the closeness tactic on [Samsara Lykor](/km/characters/lendermaire/samsara-lykor) during the drive to the extraction point, are dramatised in The Lot. The scene is narrative, not record.
+Her recruitment from a Pocheasang strip club, and her failed attempt to use the closeness tactic on [Samsara Lykor](/characters/lendermaire/samsara-lykor) during the drive to the extraction point, are dramatised in The Lot. The scene is narrative, not record.
 
 The fullest reading of her interior life — the first place she was given one rather than a specification — is the reference draft of Operation Fallow — Episode. It dramatises her insertion, her absorption into the household, and her inability to tell a genuine feeling from a superior performance. It is a production draft, not canon, and its plot is provisional. Its characterisation is the most complete thing written about her.
 
@@ -73,8 +73,8 @@ Early screenplay drafts developed prior to the grounding of *Parialfare: Reimagi
 
 * The Lot
 * [Nogo](/characters/anajak-forces/nogo)
-* [Pepper](/km/characters/anajak-forces/pepper)
-* [Anajak Forces](/km/factions/anajak-forces)
-* [Site-29](/km/locations/site-29)
+* [Pepper](/characters/anajak-forces/pepper)
+* [Anajak Forces](/factions/anajak-forces)
+* [Site-29](/locations/site-29)
 * [Ironish Task Force (ITF)](/factions/ironish-task-force-(itf))
 * [Noradus](/characters/vista/noradus)

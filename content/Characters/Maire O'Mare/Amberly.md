@@ -17,7 +17,7 @@
 
 
 
-**Amberly** is the coordinator of the [Maire O'Mare](/factions/maire-o'mare-(2008)) insurgency in [Ironclad](/km/locations/countries/ironclad) in 2008. He is recorded as Cladish by ethnicity and identifies himself as Deckish. He is not the movement's founder, and its ideology does not depend on his survival; he holds the insurgency's separate parts in coordination rather than commanding them.
+**Amberly** is the coordinator of the [Maire O'Mare](/factions/maire-o'mare-(2008)) insurgency in [Ironclad](/locations/countries/ironclad) in 2008. He is recorded as Cladish by ethnicity and identifies himself as Deckish. He is not the movement's founder, and its ideology does not depend on his survival; he holds the insurgency's separate parts in coordination rather than commanding them.
 
 The public register records him as the leader of an insurgent organisation. The structural record records him as a coordinator. Both are correct, and the difference between them is the whole of his position.
 
@@ -45,7 +45,7 @@ By identifying as Deckish, Amberly refuses the name his own people chose after t
 
 The ideology is recorded as built around the supremacy of the warlord and the permanence of the Deck's conquest. In the medieval era, the surviving Deck warlords left the movement alone out of fear of Rogolf. In 2008, the insurgency has adapted the ideology to modern warfare, and is recorded as chaotic: it sometimes takes the side of [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)) and frequently turns against him.
 
-Amberly coordinates that movement. He is not its author. The record does not establish what he believes about the ideology he coordinates, or whether he believes it at all. The claim he coordinates has drawn particular attention from [Ironland](/locations/countries/ironland), [Lurkinsberg](/km/locations/countries/lurkinsberg), and [Thaiphon](/locations/countries/thaiphon), all three members of the coalition that broke the Deck Empire.
+Amberly coordinates that movement. He is not its author. The record does not establish what he believes about the ideology he coordinates, or whether he believes it at all. The claim he coordinates has drawn particular attention from [Ironland](/locations/countries/ironland), [Lurkinsberg](/locations/countries/lurkinsberg), and [Thaiphon](/locations/countries/thaiphon), all three members of the coalition that broke the Deck Empire.
 
 ## 4. The method
 
@@ -55,7 +55,7 @@ Coordination without command is the defining feature of his position.
 
 He meets, relays, reconciles, and puts one argument forward ahead of another. He does not order, and is not recorded as having ordered. When a cell of the movement acts without him, the record does not describe the aftermath.
 
-His method is closer to [Hanktonio](/km/characters/lendermaire/hanktonio) than to [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)), and the resemblance is instructive. Hanktonio holds a household together by personal gravity and is not exempt from the cohesion that holds it. Amberly holds a movement together by an authority that exists only while it is accepted, and is not needed for the movement to survive his loss. Konish is load-bearing. Amberly is not.
+His method is closer to [Hanktonio](/characters/lendermaire/hanktonio) than to [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined)), and the resemblance is instructive. Hanktonio holds a household together by personal gravity and is not exempt from the cohesion that holds it. Amberly holds a movement together by an authority that exists only while it is accepted, and is not needed for the movement to survive his loss. Konish is load-bearing. Amberly is not.
 
 ## 5. Konish
 
@@ -82,8 +82,8 @@ Whether the two have ever met is not recorded.
 * [Maire O'Mare](/factions/maire-o'mare-(2008))
 * Maire O'Mare (the medieval movement)
 * [Konish Kimbotin](/characters/lendermaire/konish-kimbotin-(reimagined))
-* [Konish's Group](/km/factions/konish's-group)
-* [Ironclad](/km/locations/countries/ironclad)
+* [Konish's Group](/factions/konish's-group)
+* [Ironclad](/locations/countries/ironclad)
 * Koilen Rogolf
 * Deck Empire
 * Cladish
