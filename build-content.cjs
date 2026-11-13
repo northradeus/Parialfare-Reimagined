@@ -51,7 +51,9 @@ const assetName = (name) => {
         .toLowerCase()
         .trim()
         .replace(/\s+/g, '-')
-        .replace(/[^a-z0-9_-]/g, '');
+        .replace(/[^a-z0-9_-]/g, '')
+        .replace(/-+/g, '-')
+        .replace(/^-|-$/g, '');
     return base + ext;
 };
 
@@ -62,6 +64,14 @@ function parseImageField(raw) {
 }
 
 const vaultImages = new Map();
+
+function findVaultImage(rawName) {
+    if (!rawName) return null;
+    const clean = rawName.trim();
+    const lower = clean.toLowerCase();
+    const slug = assetName(clean);
+    return vaultImages.get(lower) || vaultImages.get(slug) || null;
+}
 if (fs.existsSync(sourceAssets) && fs.statSync(sourceAssets).isDirectory()) {
     const walkAssets = (dir) => {
         for (const file of fs.readdirSync(dir)) {
@@ -427,9 +437,9 @@ function processDir(dir, outDir) {
                         infobox = `<aside class="custom-infobox infobox-${entityType}">\n`;
                         if (title) infobox += `<h3>${title}</h3>\n`;
                         if (imgName) {
-                            const mappedName = vaultImages.get(imgName.toLowerCase()) || assetName(imgName);
-                            if (!vaultImages.has(imgName.toLowerCase())) recordMissingImage(imgName, item);
-                            infobox += `<img src="assets/${mappedName}" alt="${title}" />\n`;
+                            const mappedName = findVaultImage(imgName);
+                            if (!mappedName) recordMissingImage(imgName, item);
+                            infobox += `<img src="assets/${mappedName || assetName(imgName)}" alt="${title}" />\n`;
                         }
                         if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
                         infobox += `</aside>\n`;
@@ -440,7 +450,7 @@ function processDir(dir, outDir) {
                     body = body.replace(/(<div\s+class="[^"]*\b(?:gallery|carousel)\b[^"]*"[^>]*>[\s\S]*?<\/div>|<figure\b[^>]*>[\s\S]*?<\/figure>)/g, (block) => {
                         return block.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
                             const imgName = rawInner.split('|')[0].trim();
-                            const mapped = vaultImages.get(imgName.toLowerCase());
+                            const mapped = findVaultImage(imgName);
                             if (mapped) return `<img src="${relAssetsPath}/${mapped}" alt="${imgName}" loading="lazy" />`;
                             recordMissingImage(imgName, item);
                             return match;
@@ -449,7 +459,7 @@ function processDir(dir, outDir) {
 
                     body = body.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
                         const imgName = rawInner.split('|')[0].trim();
-                        const mapped = vaultImages.get(imgName.toLowerCase());
+                        const mapped = findVaultImage(imgName);
                         if (mapped) return `![${imgName}](${relAssetsPath}/${mapped})`;
                         recordMissingImage(imgName, item);
                         return match;
@@ -457,7 +467,7 @@ function processDir(dir, outDir) {
 
                     body = body.replace(/(<img[^>]+src=")(?!\/|http|data:)([^"]+)(")/g, (match, p1, srcAttr, p3) => {
                         const imgName = srcAttr.split('/').pop().trim();
-                        const mapped = vaultImages.get(imgName.toLowerCase());
+                        const mapped = findVaultImage(imgName);
                         if (mapped) return `${p1}${relAssetsPath}/${mapped}${p3}`;
                         return match;
                     });
@@ -549,9 +559,9 @@ function processKhmerDir(kmDir, kmOutDir) {
                         infobox = `<aside class="custom-infobox infobox-character">\n`;
                         if (title) infobox += `<h3>${title}</h3>\n`;
                         if (imgName) {
-                            const mappedName = vaultImages.get(imgName.toLowerCase()) || assetName(imgName);
-                            if (!vaultImages.has(imgName.toLowerCase())) recordMissingImage(imgName, item);
-                            infobox += `<img src="assets/${mappedName}" alt="${title}" />\n`;
+                            const mappedName = findVaultImage(imgName);
+                            if (!mappedName) recordMissingImage(imgName, item);
+                            infobox += `<img src="assets/${mappedName || assetName(imgName)}" alt="${title}" />\n`;
                         }
                         if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
                         infobox += `</aside>\n\n`;
@@ -564,7 +574,7 @@ function processKhmerDir(kmDir, kmOutDir) {
                     body = body.replace(/(<div\s+class="[^"]*\b(?:gallery|carousel)\b[^"]*"[^>]*>[\s\S]*?<\/div>|<figure\b[^>]*>[\s\S]*?<\/figure>)/g, (block) => {
                         return block.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
                             const imgName = rawInner.split('|')[0].trim();
-                            const mapped = vaultImages.get(imgName.toLowerCase());
+                            const mapped = findVaultImage(imgName);
                             if (mapped) return `<img src="assets/${mapped}" alt="${imgName}" loading="lazy" />`;
                             recordMissingImage(imgName, item);
                             return match;
@@ -574,7 +584,7 @@ function processKhmerDir(kmDir, kmOutDir) {
                     // 2. Convert standard wikilink images to standard markdown images
                     body = body.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
                         const iName = rawInner.split('|')[0].trim();
-                        const mapped = vaultImages.get(iName.toLowerCase());
+                        const mapped = findVaultImage(iName);
                         if (mapped) return `![${iName}](assets/${mapped})`;
                         recordMissingImage(iName, item);
                         return match;
@@ -583,7 +593,7 @@ function processKhmerDir(kmDir, kmOutDir) {
                     // 3. Normalize any relative img src attributes to assets/
                     body = body.replace(/(<img[^>]+src=")(?!\/|http|data:)([^"]+)(")/g, (match, p1, srcAttr, p3) => {
                         const imgName = srcAttr.split('/').pop().trim();
-                        const mapped = vaultImages.get(imgName.toLowerCase());
+                        const mapped = findVaultImage(imgName);
                         if (mapped) return `${p1}assets/${mapped}${p3}`;
                         return match;
                     });
@@ -670,7 +680,7 @@ Once you understand the factions, you can explore the individuals who drive the 
 if (!isDryRun) fs.writeFileSync(path.join(destDir, 'Start-Here.md'), resolveWikilinks(startHereContent));
 
 function featuredMedia(fileName, altText) {
-    const mappedName = vaultImages.get(fileName.toLowerCase());
+    const mappedName = findVaultImage(fileName);
     if (!mappedName) {
         const initial = altText.charAt(0).toUpperCase();
         return `<span class="card-image placeholder"><span class="placeholder-initial">${initial}</span></span>`;
@@ -776,7 +786,7 @@ ${sideSelectorHtml}
 <div class="portal-grid"><a href="start-here" class="portal-button">Start Here</a><a href="#" class="portal-button" onclick="const h=JSON.parse(sessionStorage.getItem('randomHistory')||'[]');fetch('random-index.json').then(r=>r.json()).then(idx=>{let pool=idx.filter(u=>!h.includes(u));if(!pool.length){h.length=0;pool=idx;}const p=pool[Math.floor(Math.random()*pool.length)];h.push(p);if(h.length>10)h.shift();sessionStorage.setItem('randomHistory',JSON.stringify(h));window.location.href=p;});return false;">Random Article</a></div>
 `;
 
-fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
+if (!isDryRun) fs.writeFileSync(path.join(destDir, 'index.md'), indexContent);
 
 const eventData = [];
 
@@ -858,7 +868,7 @@ const kmBadgeMap = {
 
 function renderCard(article, outDir) {
     let imgHtml = '';
-    const mappedName = article.image ? vaultImages.get(article.image.toLowerCase()) : null;
+    const mappedName = article.image ? findVaultImage(article.image) : null;
     if (article.image && !mappedName) recordMissingImage(article.image, article.fileName);
     if (mappedName) {
         imgHtml = `<span class="card-image"><img src="assets/${mappedName}" alt="${article.title}" loading="lazy"></span>`;
