@@ -12,6 +12,7 @@ const ROOT_DIR = path.resolve(__dirname, '..');
 const LIVE_EN = 'https://northradeus.github.io/Parialfare-Reimagined/';
 const LIVE_KM = 'https://northradeus.github.io/Parialfare-Reimagined/km/';
 const BUNDLE_BAT = 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\bundle_vault.bat';
+const BILINGUAL_TOOL = 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\bilingual_tool.cjs';
 
 function run(cmd, opts = {}) {
     return execSync(cmd, { cwd: ROOT_DIR, stdio: 'inherit', ...opts });
@@ -199,6 +200,19 @@ async function doStatus() {
     note(statusBody, 'Nolheim Status');
 }
 
+async function doTranslateQueue() {
+    if (!fs.existsSync(BILINGUAL_TOOL)) {
+        note('bilingual_tool.cjs not found.', 'Translation Queue');
+        return;
+    }
+    const output = runSilent(`node "${BILINGUAL_TOOL}" drift`);
+    if (output) {
+        console.log('\n' + output + '\n');
+    } else {
+        note('Could not load translation status.', 'Translation Queue');
+    }
+}
+
 async function doStudio() {
     console.log(styleText('cyan', '\nLaunching Nolheim Studio Suite on http://localhost:3333 ...'));
     const studioBat = path.join(ROOT_DIR, 'Studio.bat');
@@ -283,6 +297,7 @@ async function main() {
     if (cliArg === 'preview') return doPreview();
     if (cliArg === 'publish') return doPublish();
     if (cliArg === 'status') return doStatus();
+    if (cliArg === 'translate') return doTranslateQueue();
     if (cliArg === 'studio') return doStudio();
     if (cliArg === 'bundle') return doUtilities();
 
@@ -295,6 +310,7 @@ async function main() {
                 { value: 'preview', label: 'Preview (build unified + local server on :8080)' },
                 { value: 'publish', label: 'Publish (build + commit + push to GitHub Pages)' },
                 { value: 'status', label: 'Status (git branch, pending changes, live links)' },
+                { value: 'translate', label: 'Translation Queue (Khmer parity & pending notes)' },
                 { value: 'studio', label: 'Open Studio (:3333 local suite)' },
                 { value: 'utilities', label: 'Utilities (AI bundler, Khmer polisher, linter)' },
                 { value: 'exit', label: 'Exit' },
@@ -309,6 +325,7 @@ async function main() {
         if (action === 'preview') await doPreview();
         else if (action === 'publish') await doPublish();
         else if (action === 'status') await doStatus();
+        else if (action === 'translate') await doTranslateQueue();
         else if (action === 'studio') await doStudio();
         else if (action === 'utilities') await doUtilities();
     }

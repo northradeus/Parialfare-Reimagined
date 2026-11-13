@@ -19,6 +19,7 @@
     "preview": "node build-content.cjs && npx quartz build --serve",
     "publish": "node build-content.cjs && git add -A && npx quartz sync",
     "status": "node cli/nolheim.mjs status",
+    "translate": "node cli/nolheim.mjs translate",
     "lint:syntax": "node lint-autocorrect.cjs",
     "check:syntax": "node lint-autocorrect.cjs --dry-run",
     "polish:khmer": "node polish-khmer.cjs",
