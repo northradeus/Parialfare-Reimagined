@@ -33,77 +33,6 @@ if (!fs.existsSync(sourceAssets) || !fs.statSync(sourceAssets).isDirectory()) {
     console.warn('[assets] Continuing without copied image assets.');
 }
 
-// Integrity check: Publish/ must match the latest snapshot.
-function validatePublishIntegrity() {
-    if (targetMode === 'km') return;
-    const publishRoot = path.dirname(sourceDir);
-    const vaultRoot = path.dirname(publishRoot);
-    const snapshotsDir = path.join(vaultRoot, 'Archives', 'Publish snapshots');
-    if (!fs.existsSync(snapshotsDir)) return;
-    const snaps = fs.readdirSync(snapshotsDir).filter(e => /^v\d{3}-/.test(e)).sort().reverse();
-    if (snaps.length === 0) return;
-    const latestSnapName = snaps[0];
-    const latestSnapDir = path.join(snapshotsDir, latestSnapName);
-    function walk(dir) {
-        const result = new Map();
-        if (!fs.existsSync(dir)) return result;
-        const stack = [''];
-        while (stack.length) {
-            const rel = stack.pop();
-            const full = path.join(dir, rel);
-            let entries;
-            try { entries = fs.readdirSync(full); } catch (e) { continue; }
-            for (const entry of entries) {
-                const entryFull = path.join(full, entry);
-                const entryRel = rel ? rel + '/' + entry : entry;
-                const stat = fs.statSync(entryFull);
-                if (stat.isDirectory()) stack.push(entryRel);
-                else result.set(entryRel, crypto.createHash('sha256').update(fs.readFileSync(entryFull)).digest('hex'));
-            }
-        }
-        return result;
-    }
-    const current = walk(publishRoot);
-    const snapshot = walk(latestSnapDir);
-    const diffs = [];
-    for (const [rel, hash] of current) {
-        if (!snapshot.has(rel)) diffs.push(rel + ' (added since snapshot)');
-        else if (snapshot.get(rel) !== hash) diffs.push(rel + ' (changed since snapshot)');
-    }
-    for (const rel of snapshot.keys()) if (!current.has(rel)) diffs.push(rel + ' (removed since snapshot)');
-    if (diffs.length === 0) return;
-    console.log(`[integrity] Note: ${diffs.length} file(s) modified since latest snapshot ${latestSnapName} (non-blocking).`);
-    return;
-}
-
-validatePublishIntegrity();
-
-const previewOverlayDir = path.join(__dirname, '.publish-preview');
-if (fs.existsSync(previewOverlayDir)) {
-    fs.rmSync(previewOverlayDir, { recursive: true, force: true });
-}
-const promoteReqPath = path.join(__dirname, 'Promote-Request.json');
-if (process.env.NOLHEIM_FORCE_BUILD === '1' && fs.existsSync(promoteReqPath)) {
-    try {
-        const req = JSON.parse(fs.readFileSync(promoteReqPath, 'utf-8'));
-        const continuitiesDir = path.join(path.dirname(path.dirname(sourceDir)), 'Continuities', path.basename(sourceDir));
-        if (Array.isArray(req.files) && req.files.length > 0 && fs.existsSync(continuitiesDir)) {
-            fs.cpSync(sourceDir, previewOverlayDir, { recursive: true });
-            for (const rel of req.files) {
-                const srcFile = path.join(continuitiesDir, rel);
-                const dstFile = path.join(previewOverlayDir, rel);
-                if (fs.existsSync(srcFile)) {
-                    fs.mkdirSync(path.dirname(dstFile), { recursive: true });
-                    fs.copyFileSync(srcFile, dstFile);
-                }
-            }
-            console.log(`[preview] Overlaying ${req.files.length} pending promotion file(s) from Continuities.`);
-            sourceDir = previewOverlayDir;
-        }
-    } catch (e) {
-        console.warn('[preview] Could not apply Promote-Request.json overlay: ' + e.message);
-    }
-}
 
 if (fs.existsSync(destDir)) {
     fs.rmSync(destDir, { recursive: true, force: true });
@@ -628,16 +557,7 @@ function processKhmerDir(kmDir, kmOutDir) {
     fs.mkdirSync(kmOutDir, { recursive: true });
     walk(kmDir, kmOutDir);
 
-    // Ensure assets are also accessible under /km/assets/ for clean relative pathing
-    const kmAssetsOut = path.join(kmOutDir, 'assets');
-    const sourceAssets = path.join(destDir, 'assets');
-    if (fs.existsSync(sourceAssets) && !fs.existsSync(kmAssetsOut)) {
-        try {
-            fs.symlinkSync(sourceAssets, kmAssetsOut, 'junction');
-        } catch (e) {
-            copyAssets(sourceAssets, kmAssetsOut);
-        }
-    }
+
 
     console.log(`[khmer] Staged ${count} Khmer note(s) into /km/ with Kantumruy Pro styling and draft badges.`);
 }
@@ -1079,8 +999,21 @@ console.log(`[events] Generated Events Directory with ${eventData.length} entrie
         fs.rmSync(destDir, { recursive: true, force: true });
     }
 
-    if (fs.existsSync(previewOverlayDir)) {
-        fs.rmSync(previewOverlayDir, { recursive: true, force: true });
+    // Ensure assets are accessible under /km/assets/ in the final directory
+    const finalKmAssets = path.join(finalDir, 'km', 'assets');
+    const finalMainAssets = path.join(finalDir, 'assets');
+    if (fs.existsSync(path.join(finalDir, 'km')) && fs.existsSync(finalMainAssets)) {
+        try {
+            if (fs.existsSync(finalKmAssets)) {
+                const stat = fs.lstatSync(finalKmAssets);
+                if (stat.isSymbolicLink()) fs.unlinkSync(finalKmAssets);
+            }
+            if (!fs.existsSync(finalKmAssets)) {
+                fs.symlinkSync(finalMainAssets, finalKmAssets, 'junction');
+            }
+        } catch (e) {
+            console.warn('[assets] Note: Could not link km/assets: ' + e.message);
+        }
     }
 
     console.log('Content built successfully with normalized assets and grid layouts.');
