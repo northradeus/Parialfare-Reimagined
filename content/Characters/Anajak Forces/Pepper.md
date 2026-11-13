@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Pepper</h3>
+<img src="assets/pepper.jpg" alt="Pepper" />
 <table>
 <tr><th>Title</th><td>Pepper</td></tr>
 <tr><th>Subtitle</th><td>Anajak Forces operator; adjutant to the president of VISTA</td></tr>

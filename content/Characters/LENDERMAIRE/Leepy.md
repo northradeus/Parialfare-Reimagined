@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Leepy</h3>
-<img src="assets/leepy--2-.jpg" alt="Leepy" />
+<img src="assets/leepy-2.jpg" alt="Leepy" />
 <table>
 <tr><th>Image Status</th><td>concept</td></tr>
 <tr><th>Title</th><td>Leepy</td></tr>

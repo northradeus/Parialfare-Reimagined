@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Nogo</h3>
-<img src="assets/nogo.png" alt="Nogo" />
+<img src="assets/nogo.jpg" alt="Nogo" />
 <table>
 <tr><th>Image Status</th><td>canon</td></tr>
 <tr><th>Title</th><td>Nogo</td></tr>

@@ -28,7 +28,7 @@
 The organization gained global prominence following the [2008 Pocheasang Palace raid](/events/2008-pocheasang-palace-raid), an operation conducted by its black operations unit, [LENDERMAIRE](/factions/lendermaire), against the government of the [Kingdom of the Ai'ron Land](/locations/countries/ironland). The raid resulted in the extraction of classified military archives. In public discourse Kimbotin is described as the most wanted man in the region; the characterisation is a public one rather than a formal finding by [VISTA](/factions/vista).[^3] The group is known for its asymmetric warfare tactics, its use of information as a primary weapon, and its complex network of political and military contacts that extend far beyond the Ironclad DMZ.[^4]
 
 <div class="gallery landscape">
-  ![[Konish-s Group.jpg]]
+  <img src="assets/konish-s-group.jpg" alt="Konish-s Group.jpg" loading="lazy" />
 </div>
 
 ## 1. Name

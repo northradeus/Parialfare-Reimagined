@@ -1,5 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>General Ramcher</h3>
+<img src="assets/ramcher.jpg" alt="General Ramcher" />
 <table>
 <tr><th>Title</th><td>General Ramcher</td></tr>
 <tr><th>Subtitle</th><td>Commander of Anajak Forces</td></tr>

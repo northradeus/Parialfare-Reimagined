@@ -1,6 +1,6 @@
 <aside class="custom-infobox infobox-character">
 <h3>Pich</h3>
-<img src="assets/pich.jpg" alt="Pich" />
+<img src="assets/pich.png" alt="Pich" />
 <table>
 <tr><th>Title</th><td>Pich</td></tr>
 <tr><th>Subtitle</th><td>Encorean close-combat specialist of Anajak; Royal Army veteran</td></tr>
