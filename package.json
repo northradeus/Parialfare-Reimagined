@@ -12,12 +12,13 @@
     "url": "https://github.com/jackyzha0/quartz.git"
   },
   "scripts": {
+    "nolheim": "node cli/nolheim.mjs",
     "quartz": "./quartz/bootstrap-cli.mjs",
     "build:content": "node build-content.cjs",
     "build": "node build-content.cjs && npx quartz build",
     "preview": "node build-content.cjs && npx quartz build --serve",
     "publish": "node build-content.cjs && git add -A && npx quartz sync",
-    "status": "git status --short",
+    "status": "node cli/nolheim.mjs status",
     "lint:syntax": "node lint-autocorrect.cjs",
     "check:syntax": "node lint-autocorrect.cjs --dry-run",
     "polish:khmer": "node polish-khmer.cjs",
