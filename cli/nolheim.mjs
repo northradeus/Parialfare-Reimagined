@@ -25,6 +25,44 @@ function runSilent(cmd, opts = {}) {
     }
 }
 
+function getPortPid(port = 8080) {
+    try {
+        const out = execSync(`netstat -ano | findstr :${port} | findstr LISTENING`, { encoding: 'utf-8', stdio: 'pipe' });
+        const lines = out.trim().split('\r\n').filter(Boolean);
+        for (const line of lines) {
+            const parts = line.trim().split(/\s+/);
+            const pid = parts[parts.length - 1];
+            if (pid && !isNaN(Number(pid))) return pid;
+        }
+        return null;
+    } catch {
+        return null;
+    }
+}
+
+function launchServerTab() {
+    const title = 'Nolheim Preview';
+    const serverCmd = 'npx quartz build --serve --port 8080';
+    try {
+        // Try Windows Terminal new tab first
+        execSync(`wt.exe -w 0 nt --title "${title}" -d "${ROOT_DIR}" cmd.exe /k "${serverCmd}"`, { stdio: 'ignore' });
+        return true;
+    } catch {
+        // Fallback: spawn independent cmd window
+        try {
+            const child = spawn('cmd.exe', ['/c', 'start', `"${title}"`, '/d', ROOT_DIR, 'cmd.exe', '/k', serverCmd], {
+                detached: true,
+                stdio: 'ignore'
+            });
+            child.unref();
+            return true;
+        } catch (err) {
+            console.error('Failed to launch preview process in new tab/window:', err.message);
+            return false;
+        }
+    }
+}
+
 async function doPreview() {
     const s = spinner();
     s.start('Compiling unified content (English + Khmer)...');
@@ -37,15 +75,42 @@ async function doPreview() {
         return;
     }
 
-    const openUrl = 'http://localhost:8080/';
-    console.log(styleText('cyan', `\nStarting local server on ${openUrl} ...\n`));
-    
-    // Open browser on Windows
-    try {
-        spawn('cmd.exe', ['/c', 'start', openUrl], { detached: true, stdio: 'ignore' });
-    } catch {}
+    const previewUrl = 'http://localhost:8080/';
+    const existingPid = getPortPid(8080);
 
-    run('npx quartz build --serve --port 8080');
+    if (existingPid) {
+        note(`A preview server is already running on ${previewUrl} (PID: ${existingPid}).`, 'Server Active');
+        const action = await select({
+            message: 'Preview server status:',
+            options: [
+                { value: 'keep', label: 'Keep current server running (content changes are updated)' },
+                { value: 'restart', label: 'Restart server (close old instance and open in a new tab)' },
+            ]
+        });
+        if (isCancel(action)) return;
+
+        if (action === 'restart') {
+            try {
+                execSync(`taskkill /F /PID ${existingPid}`, { stdio: 'ignore' });
+            } catch {}
+            launchServerTab();
+            note(`Launched preview server on ${previewUrl} in a new tab.`, 'Preview Active');
+        }
+    } else {
+        launchServerTab();
+        note(`Preview server launched in a new tab on ${previewUrl}\nClose that tab or press Ctrl+C there to stop it anytime.`, 'Preview Active');
+    }
+
+    const shouldOpen = await confirm({
+        message: 'Open preview in browser now?',
+        initialValue: false,
+    });
+
+    if (!isCancel(shouldOpen) && shouldOpen) {
+        try {
+            spawn('cmd.exe', ['/c', 'start', previewUrl], { detached: true, stdio: 'ignore' });
+        } catch {}
+    }
 }
 
 async function doPublish() {
