@@ -10,7 +10,7 @@ const targetMode = cliArgs.includes('--km') ? 'km' : (cliArgs.includes('--en') ?
 //   NOLHEIM_ASSETS_DIR="C:/path/to/Images"
 //   NOLHEIM_KM_DIR="C:/path/to/Nolheim-Khmer"
 let sourceDir = process.env.NOLHEIM_SOURCE_DIR
-    || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Publish\\Parialfare - Reimagined';
+    || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Continuities\\Parialfare - Reimagined';
 const sourceAssets = process.env.NOLHEIM_ASSETS_DIR
     || 'C:\\Users\\Administrator\\Documents\\Worldbuild & IP\\Nolheim\\Assets\\Images';
 const kmSourceDir = process.env.NOLHEIM_KM_DIR
