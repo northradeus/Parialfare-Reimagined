@@ -15,22 +15,13 @@ in_universe_status: Active
 ---
 
 
-<div class="scp-stamp-box">
-  <div class="scp-stamp-grid">
-    <span class="stamp-label">INCIDENT LOG:</span>
-    <span class="stamp-val">001-THE-LOT</span>
-    <span class="stamp-label">SECURITY LEVEL:</span>
-    <span class="stamp-val">RESTRICTED // NEED-TO-KNOW (GIC DEPT. 4)</span>
-    <span class="stamp-label">TARGET OPERATIVE:</span>
-    <span class="stamp-val">TANISHITO, T. [FIELD COVER: "VARN, DESSA"]</span>
-    <span class="stamp-label">PRIMARY RECEPTOR:</span>
-    <span class="stamp-val">SAMSARA LYKOR [MEMBER 13, CONCEALED]</span>
-    <span class="stamp-label">OPERATIONAL SECTOR:</span>
-    <span class="stamp-val">POCHEASANG STRIP // IRONCLAD DMZ</span>
-    <span class="stamp-label">DISPOSITION:</span>
-    <span class="stamp-val">RECOVERED / OFF-NETWORK (<span class="redacted">SITE-29</span>)</span>
-  </div>
-</div>
+> [!stamp]
+> **INCIDENT LOG:** 001-THE-LOT  
+> **SECURITY LEVEL:** RESTRICTED // NEED-TO-KNOW (GIC DEPT. 4)  
+> **TARGET OPERATIVE:** TANISHITO, T. [FIELD COVER: "VARN, DESSA"]  
+> **PRIMARY RECEPTOR:** SAMSARA LYKOR [MEMBER 13, CONCEALED]  
+> **OPERATIONAL SECTOR:** POCHEASANG STRIP // IRONCLAD DMZ  
+> **DISPOSITION:** RECOVERED / OFF-NETWORK (<span class="redacted">SITE-29</span>)
 
 > [!record-opening] GIC COVERT SURVEILLANCE INTERCEPT // DISPATCH 44-B
 > *ORIGIN: GIC Surveillance Station 9 (Northern Sector)*

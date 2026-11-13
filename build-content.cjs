@@ -424,14 +424,14 @@ function processDir(dir, outDir) {
                     if (item === 'index.md' || entityType === 'hub') {
                         infobox = '';
                     } else if (entityType === 'incident' || fullPath.includes('Incidents')) {
-                        if (!body.includes('class="scp-stamp-box"')) {
+                        if (!body.includes('class="scp-stamp-box"') && !body.includes('[!stamp]')) {
                             const sec = rawFields['sector'] || 'POCHEASANG STRIP // IRONCLAD DMZ';
                             const pov = rawFields['pov'] || 'TANISHITO, T.';
                             const dt = rawFields['date'] || '28 AUG 2008';
                             const secLevel = rawFields['security_level'] || 'RESTRICTED // NEED-TO-KNOW (GIC DEPT. 4)';
                             const disp = rawFields['disposition'] || 'RECOVERED / OFF-NETWORK (<span class="redacted">SITE-29</span>)';
 
-                            infobox = `<div class="scp-stamp-box">\n  <div class="scp-stamp-grid">\n    <span class="stamp-label">INCIDENT LOG:</span>\n    <span class="stamp-val">${title || path.basename(item, '.md')}</span>\n    <span class="stamp-label">SECURITY LEVEL:</span>\n    <span class="stamp-val">${secLevel}</span>\n    <span class="stamp-label">PRIMARY OPERATIVE:</span>\n    <span class="stamp-val">${pov}</span>\n    <span class="stamp-label">OPERATIONAL SECTOR:</span>\n    <span class="stamp-val">${sec}</span>\n    <span class="stamp-label">TIMELINE DATE:</span>\n    <span class="stamp-val">${dt}</span>\n    <span class="stamp-label">DISPOSITION:</span>\n    <span class="stamp-val">${disp}</span>\n  </div>\n</div>\n\n`;
+                            infobox = `> [!stamp]\n> **INCIDENT LOG:** ${title || path.basename(item, '.md')}  \n> **SECURITY LEVEL:** ${secLevel}  \n> **PRIMARY OPERATIVE:** ${pov}  \n> **OPERATIONAL SECTOR:** ${sec}  \n> **TIMELINE DATE:** ${dt}  \n> **DISPOSITION:** ${disp}\n\n`;
                         }
                     } else if (infoRows || imgName) {
                         infobox = `<aside class="custom-infobox infobox-${entityType}">\n`;

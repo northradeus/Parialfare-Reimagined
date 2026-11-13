@@ -12,22 +12,13 @@ date: 2008-09-03
 ---
 
 
-<div class="scp-stamp-box">
-<div class="scp-stamp-grid">
-<span class="stamp-label">INCIDENT LOG:</span>
-<span class="stamp-val">003-THE-THIRTEENTH</span>
-<span class="stamp-label">SECURITY LEVEL:</span>
-<span class="stamp-val">EYES ONLY // STRATEGIC RECONNAISSANCE</span>
-<span class="stamp-label">PRIMARY SUBJECT:</span>
-<span class="stamp-val">SAMSARA LYKOR [MEMBER 13, CONCEALED SNIPER]</span>
-<span class="stamp-label">SECONDARY SUBJECT:</span>
-<span class="stamp-val">KONISH KIMBOTIN [COMMANDER, LENDERMAIRE]</span>
-<span class="stamp-label">OPERATIONAL SECTOR:</span>
-<span class="stamp-val">SITE-29 // ROOFTOP VANTAGE POINT</span>
-<span class="stamp-label">DISPOSITION:</span>
-<span class="stamp-val">EXTERNAL OFFER REJECTED // FOURTH APPROACH CONFIRMED</span>
-</div>
-</div>
+> [!stamp]
+> **INCIDENT LOG:** 003-THE-THIRTEENTH  
+> **SECURITY LEVEL:** EYES ONLY // STRATEGIC RECONNAISSANCE  
+> **PRIMARY SUBJECT:** SAMSARA LYKOR [MEMBER 13, CONCEALED SNIPER]  
+> **SECONDARY SUBJECT:** KONISH KIMBOTIN [COMMANDER, LENDERMAIRE]  
+> **OPERATIONAL SECTOR:** SITE-29 // ROOFTOP VANTAGE POINT  
+> **DISPOSITION:** EXTERNAL OFFER REJECTED // FOURTH APPROACH CONFIRMED
 
 > [!record-opening] VISTA LONG-RANGE THERMAL & AUDIO SURVEILLANCE // SUMMIT LOG
 > *ORIGIN: High-Altitude Perimeter UAV Orbit / Optical-Audio Relay 2*

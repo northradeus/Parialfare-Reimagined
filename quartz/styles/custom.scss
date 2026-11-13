@@ -1245,6 +1245,16 @@ article:has(.callout[data-callout="record-opening"]) {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    display: inline-block;
+    min-width: 175px;
+  }
+
+  @media (max-width: 600px) {
+    strong {
+      min-width: unset;
+      display: block;
+      margin-top: 0.3rem;
+    }
   }
 }
 

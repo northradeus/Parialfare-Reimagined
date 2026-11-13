@@ -12,22 +12,13 @@ date: 2008-09-03
 ---
 
 
-<div class="scp-stamp-box">
-<div class="scp-stamp-grid">
-<span class="stamp-label">INCIDENT LOG:</span>
-<span class="stamp-val">002-THE-YOUNGEST</span>
-<span class="stamp-label">SECURITY LEVEL:</span>
-<span class="stamp-val">CONFIDENTIAL // INTERNAL SURVEILLANCE</span>
-<span class="stamp-label">PRIMARY SUBJECT:</span>
-<span class="stamp-val">VANNY [RADIO-COMMS / RECON LEAD]</span>
-<span class="stamp-label">KEY SUBJECTS:</span>
-<span class="stamp-val">KONISH, HANKTONIO, KALIBER, LEEPY, LYKOR</span>
-<span class="stamp-label">OPERATIONAL SECTOR:</span>
-<span class="stamp-val">SITE-29 // RESIDENCE COMPOUND</span>
-<span class="stamp-label">DISPOSITION:</span>
-<span class="stamp-val">DOMESTIC MONITORING // FOURTH APPROACH UNRESOLVED</span>
-</div>
-</div>
+> [!stamp]
+> **INCIDENT LOG:** 002-THE-YOUNGEST  
+> **SECURITY LEVEL:** CONFIDENTIAL // INTERNAL SURVEILLANCE  
+> **PRIMARY SUBJECT:** VANNY [RADIO-COMMS / RECON LEAD]  
+> **KEY SUBJECTS:** KONISH, HANKTONIO, KALIBER, LEEPY, LYKOR  
+> **OPERATIONAL SECTOR:** SITE-29 // RESIDENCE COMPOUND  
+> **DISPOSITION:** DOMESTIC MONITORING // FOURTH APPROACH UNRESOLVED
 
 > [!record-opening] VISTA SENSOR INTERCEPT // RESIDENCE MONITORING CH-4
 > *ORIGIN: Perimeter Sensor Array Station 4 (Site-29 North)*
