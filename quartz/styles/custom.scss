@@ -1216,11 +1216,12 @@ article:has(.callout[data-callout="record-opening"]) {
   }
 }
 
-// Classification Dossier Stamp
-.scp-stamp-box {
-  border: 1px solid rgba(166, 83, 92, 0.45);
-  background: rgba(166, 83, 92, 0.05);
-  border-left: 4px solid #a6535c;
+// Classification Dossier Stamp (supports both .scp-stamp-box and native > [!stamp] callout)
+.scp-stamp-box,
+.callout[data-callout="stamp"] {
+  border: 1px solid rgba(166, 83, 92, 0.45) !important;
+  background: rgba(166, 83, 92, 0.05) !important;
+  border-left: 4px solid #a6535c !important;
   padding: 0.9rem 1.3rem;
   margin: 1.5rem 0 2rem 0;
   font-family: var(--codeFont), monospace;
@@ -1229,6 +1230,22 @@ article:has(.callout[data-callout="record-opening"]) {
   border-radius: 4px;
   color: #cbd5e1;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+  .callout-title {
+    display: none;
+  }
+
+  p {
+    margin: 0.2rem 0;
+    line-height: 1.6;
+  }
+
+  strong {
+    color: #a6535c;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
 }
 
 .scp-stamp-grid {

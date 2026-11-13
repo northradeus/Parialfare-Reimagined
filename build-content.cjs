@@ -86,6 +86,30 @@ const ignoreKeys = ['tags', 'entity-type', 'character-type', 'faction-type', 'lo
 
 const articlePaths = [];
 
+// --- Health Diagnostics Tracking (Phase 3) ---
+const healthIssues = {
+    missingImages: new Map(),
+    unresolvedWikilinks: new Map(),
+};
+
+function recordMissingImage(imgName, contextFile) {
+    if (!imgName) return;
+    const clean = imgName.trim();
+    if (!healthIssues.missingImages.has(clean)) {
+        healthIssues.missingImages.set(clean, new Set());
+    }
+    if (contextFile) healthIssues.missingImages.get(clean).add(contextFile);
+}
+
+function recordUnresolvedWikilink(target, contextFile) {
+    if (!target) return;
+    const clean = target.trim();
+    if (!healthIssues.unresolvedWikilinks.has(clean)) {
+        healthIssues.unresolvedWikilinks.set(clean, new Set());
+    }
+    if (contextFile) healthIssues.unresolvedWikilinks.get(clean).add(contextFile);
+}
+
 // --- Stage 3: Related Entities Pre-Scan ---
 const enResolvers = {};
 const kmResolvers = {};
@@ -118,6 +142,10 @@ function preScanRelations(dir) {
             const content = fs.readFileSync(fullPath, 'utf-8');
             const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
             if (!fmMatch) continue;
+            // Phase 3: True Draft Filtering (publish: false or draft: true)
+            if (/^publish:\s*false/mi.test(fmMatch[1]) || /^draft:\s*true/mi.test(fmMatch[1])) {
+                continue;
+            }
             const relOutPath = path.relative(sourceDir, fullPath).replace(/\\/g, '/').replace('.md', '').toLowerCase().replace(/ /g, '-');
             let title = item.replace('.md', '');
             const fields = { factions: [], part_of: [], location: [] };
@@ -181,6 +209,9 @@ function preScanKhmerRelations(kmDir) {
                 }
                 const content = fs.readFileSync(full, 'utf8');
                 const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---/);
+                if (fmMatch && (/^publish:\s*false/mi.test(fmMatch[1]) || /^draft:\s*true/mi.test(fmMatch[1]))) {
+                    continue;
+                }
                 let title = entry.name.replace('.md', '');
                 if (fmMatch) {
                     for (const line of fmMatch[1].split('\n')) {
@@ -260,7 +291,7 @@ function resolveWikilinks(text, contextFile = '', lang = 'en') {
         }
         const display = (alias || target).trim();
         if (!slug) {
-            if (contextFile) console.warn(`[wikilink] unresolved target "${target.trim()}" in ${contextFile}`);
+            if (contextFile) recordUnresolvedWikilink(target, contextFile);
             return display;
         }
         const cleanSlug = slug.startsWith('/') ? slug : '/' + slug;
@@ -280,7 +311,7 @@ function resolveInfoboxWikilinks(text, contextFile = '', lang = 'en') {
         }
         const display = (alias || target).trim();
         if (!slug) {
-            if (contextFile) console.warn(`[wikilink] unresolved target "${target.trim()}" in ${contextFile} (infobox)`);
+            if (contextFile) recordUnresolvedWikilink(target, contextFile);
             return display;
         }
         const cleanSlug = slug.startsWith('/') ? slug : '/' + slug;
@@ -300,11 +331,17 @@ function processDir(dir, outDir) {
             processDir(fullPath, outPath);
         } else if (item.endsWith('.md')) {
             try {
+                let content = fs.readFileSync(fullPath, 'utf-8');
+                const initialFmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
+                // Phase 3: True Draft Filtering (publish: false or draft: true)
+                if (initialFmMatch && (/^publish:\s*false/mi.test(initialFmMatch[1]) || /^draft:\s*true/mi.test(initialFmMatch[1]))) {
+                    console.log(`[draft] Skipping unpublished note: ${item}`);
+                    continue;
+                }
+
                 // Record article path for Random Article
                 const relPath = path.relative(destDir, outPath).replace(/\\/g, '/').replace('.md', '').toLowerCase().replace(/ /g, '-');
                 articlePaths.push(relPath);
-
-                let content = fs.readFileSync(fullPath, 'utf-8');
                 
                 content = content.replace(/â€“/g, '–').replace(/â€”/g, '—').replace(/â€™/g, "'").replace(/â€œ/g, '"').replace(/â€\x9d/g, '"');
                 content = content.replace(/^\*?From Wikipedia, the free encyclopedia\*?\s*$/gm, '');
@@ -391,6 +428,7 @@ function processDir(dir, outDir) {
                         if (title) infobox += `<h3>${title}</h3>\n`;
                         if (imgName) {
                             const mappedName = vaultImages.get(imgName.toLowerCase()) || assetName(imgName);
+                            if (!vaultImages.has(imgName.toLowerCase())) recordMissingImage(imgName, item);
                             infobox += `<img src="assets/${mappedName}" alt="${title}" />\n`;
                         }
                         if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
@@ -404,6 +442,7 @@ function processDir(dir, outDir) {
                             const imgName = rawInner.split('|')[0].trim();
                             const mapped = vaultImages.get(imgName.toLowerCase());
                             if (mapped) return `<img src="${relAssetsPath}/${mapped}" alt="${imgName}" loading="lazy" />`;
+                            recordMissingImage(imgName, item);
                             return match;
                         });
                     });
@@ -412,6 +451,7 @@ function processDir(dir, outDir) {
                         const imgName = rawInner.split('|')[0].trim();
                         const mapped = vaultImages.get(imgName.toLowerCase());
                         if (mapped) return `![${imgName}](${relAssetsPath}/${mapped})`;
+                        recordMissingImage(imgName, item);
                         return match;
                     });
 
@@ -459,7 +499,7 @@ function processKhmerDir(kmDir, kmOutDir) {
             if (stat.isDirectory()) {
                 if (item === 'System' || item === 'Assets' || item.startsWith('.')) continue;
                 const nextOutDir = path.join(curOutDir, item === 'Dossiers' ? '' : item);
-                fs.mkdirSync(nextOutDir, { recursive: true });
+                if (!isDryRun) fs.mkdirSync(nextOutDir, { recursive: true });
                 walk(fullPath, nextOutDir);
             } else if (item.endsWith('.md')) {
                 let content = fs.readFileSync(fullPath, 'utf-8');
@@ -469,6 +509,10 @@ function processKhmerDir(kmDir, kmOutDir) {
                 }
 
                 const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
+                if (fmMatch && (/^publish:\s*false/mi.test(fmMatch[1]) || /^draft:\s*true/mi.test(fmMatch[1]))) {
+                    console.log(`[draft] Skipping unpublished Khmer note: ${item}`);
+                    continue;
+                }
                 if (fmMatch) {
                     const yamlStr = fmMatch[1];
                     let body = content.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
@@ -506,6 +550,7 @@ function processKhmerDir(kmDir, kmOutDir) {
                         if (title) infobox += `<h3>${title}</h3>\n`;
                         if (imgName) {
                             const mappedName = vaultImages.get(imgName.toLowerCase()) || assetName(imgName);
+                            if (!vaultImages.has(imgName.toLowerCase())) recordMissingImage(imgName, item);
                             infobox += `<img src="assets/${mappedName}" alt="${title}" />\n`;
                         }
                         if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
@@ -521,6 +566,7 @@ function processKhmerDir(kmDir, kmOutDir) {
                             const imgName = rawInner.split('|')[0].trim();
                             const mapped = vaultImages.get(imgName.toLowerCase());
                             if (mapped) return `<img src="assets/${mapped}" alt="${imgName}" loading="lazy" />`;
+                            recordMissingImage(imgName, item);
                             return match;
                         });
                     });
@@ -530,6 +576,7 @@ function processKhmerDir(kmDir, kmOutDir) {
                         const iName = rawInner.split('|')[0].trim();
                         const mapped = vaultImages.get(iName.toLowerCase());
                         if (mapped) return `![${iName}](assets/${mapped})`;
+                        recordMissingImage(iName, item);
                         return match;
                     });
 
@@ -812,7 +859,7 @@ const kmBadgeMap = {
 function renderCard(article, outDir) {
     let imgHtml = '';
     const mappedName = article.image ? vaultImages.get(article.image.toLowerCase()) : null;
-    if (article.image && !mappedName) console.warn(`[image] not found in vault: "${article.image}" (${article.fileName})`);
+    if (article.image && !mappedName) recordMissingImage(article.image, article.fileName);
     if (mappedName) {
         imgHtml = `<span class="card-image"><img src="assets/${mappedName}" alt="${article.title}" loading="lazy"></span>`;
     } else {
@@ -972,20 +1019,66 @@ function renderEventsDirectory() {
 if (!isDryRun) fs.writeFileSync(path.join(destDir, 'Events-Directory.md'), renderEventsDirectory());
 console.log(`[events] Generated Events Directory with ${eventData.length} entries.`);
 
+function printHealthReport(isDry = false) {
+    const missingImgs = Array.from(healthIssues.missingImages.entries());
+    const unresolvedLinks = Array.from(healthIssues.unresolvedWikilinks.entries());
+
+    const totalMissingImgs = missingImgs.length;
+    const totalUnresolvedLinks = unresolvedLinks.length;
+
+    console.log(`\n================================================================`);
+    console.log(`  NOLHEIM HEALTH & QUALITY REPORT ${isDry ? '(--dry-run)' : ''}`);
+    console.log(`================================================================`);
+    console.log(`  - Target mode:                 ${targetMode}`);
+    console.log(`  - Source vault:                ${sourceDir}`);
+    console.log(`  - English articles processed:  ${articlePaths.length}`);
+    console.log(`  - Khmer notes scanned:         ${Object.keys(kmResolvers).length}`);
+    console.log(`  - Reverse relation targets:    ${Object.keys(reverseLinks).length}`);
+    console.log(`  - Images indexed:              ${vaultImages.size}`);
+
+    if (totalMissingImgs === 0 && totalUnresolvedLinks === 0) {
+        console.log(`\n  [SUCCESS] All referenced images and wikilinks resolved perfectly!`);
+    } else {
+        if (totalMissingImgs > 0) {
+            console.log(`\n  [IMAGE WARNINGS] Missing image assets (${totalMissingImgs}):`);
+            missingImgs.sort((a, b) => b[1].size - a[1].size);
+            for (const [img, files] of missingImgs.slice(0, 15)) {
+                const sampleFiles = Array.from(files).slice(0, 3).join(', ');
+                const more = files.size > 3 ? ` (+${files.size - 3} more)` : '';
+                console.log(`    ! "${img}" referenced in: ${sampleFiles}${more}`);
+            }
+            if (missingImgs.length > 15) {
+                console.log(`    ... and ${missingImgs.length - 15} more missing images.`);
+            }
+        }
+
+        if (totalUnresolvedLinks > 0) {
+            console.log(`\n  [LINK WARNINGS] Unresolved wikilinks (${totalUnresolvedLinks}):`);
+            unresolvedLinks.sort((a, b) => b[1].size - a[1].size);
+            for (const [target, files] of unresolvedLinks.slice(0, 15)) {
+                const sampleFiles = Array.from(files).slice(0, 3).join(', ');
+                const more = files.size > 3 ? ` (+${files.size - 3} more)` : '';
+                console.log(`    ? [[${target}]] referenced in: ${sampleFiles}${more}`);
+            }
+            if (unresolvedLinks.length > 15) {
+                console.log(`    ... and ${unresolvedLinks.length - 15} more unresolved links.`);
+            }
+        }
+    }
+
+    if (isDry) {
+        console.log(`\n  All markdown transforms, layout rules, and wikilinks verified.`);
+        console.log(`  (Dry run complete: 0 files written to disk).`);
+    } else {
+        console.log(`\n  Note: Quality warnings are non-blocking. Content built successfully.`);
+    }
+    console.log(`================================================================\n`);
+}
+
 // --- Stage 7: Lint & Autocorrect Staging Files ---
 (async () => {
     if (isDryRun) {
-        console.log(`\n================================================================`);
-        console.log(`  NOLHEIM BUILD PRE-FLIGHT VERIFICATION (--dry-run)`);
-        console.log(`================================================================`);
-        console.log(`  - Target mode:                 ${targetMode}`);
-        console.log(`  - Source vault:                ${sourceDir}`);
-        console.log(`  - English articles processed:  ${articlePaths.length}`);
-        console.log(`  - Khmer notes scanned:         ${Object.keys(kmResolvers).length}`);
-        console.log(`  - Reverse relation targets:    ${Object.keys(reverseLinks).length}`);
-        console.log(`  - Images indexed:              ${vaultImages.size}`);
-        console.log(`\n  All markdown transforms, layout rules, and wikilinks verified.`);
-        console.log(`  (Dry run mode: 0 files written to disk).\n`);
+        printHealthReport(true);
         return;
     }
     const { scanDirectory, promptApproval, applyAutocorrects } = require('./lint-autocorrect.cjs');
@@ -1042,4 +1135,5 @@ console.log(`[events] Generated Events Directory with ${eventData.length} entrie
     }
 
     console.log('Content built successfully with normalized assets and grid layouts.');
+    printHealthReport(false);
 })();

@@ -175,6 +175,34 @@ async function doPublish() {
         run('npx quartz sync');
         deploySpinner.stop(styleText('green', 'Deployment complete!'));
 
+        // Optional Release Tagging (Phase 3)
+        const latestTag = runSilent('git describe --tags --abbrev=0') || 'v010';
+        let nextSuggestedTag = 'v011';
+        const tagMatch = latestTag.match(/v?(\d+)/i);
+        if (tagMatch) {
+            const nextNum = parseInt(tagMatch[1], 10) + 1;
+            nextSuggestedTag = `v${String(nextNum).padStart(3, '0')}`;
+        }
+
+        const shouldTag = await confirm({
+            message: `Tag this release in git as ${nextSuggestedTag}?`,
+            initialValue: false,
+        });
+
+        if (!isCancel(shouldTag) && shouldTag) {
+            const chosenTag = await text({
+                message: 'Tag name:',
+                defaultValue: nextSuggestedTag,
+                placeholder: nextSuggestedTag,
+            });
+            if (!isCancel(chosenTag) && chosenTag.trim()) {
+                const finalTag = chosenTag.trim();
+                runSilent(`git tag -a "${finalTag}" -m "${commitMsg.replace(/"/g, '\\"')}"`);
+                runSilent(`git push origin "${finalTag}"`);
+                note(`Release tagged as ${finalTag} and pushed to GitHub.`, 'Release Tagged');
+            }
+        }
+
         note(`Live URLs:\n  English: ${LIVE_EN}\n  Khmer:   ${LIVE_KM}`, 'Success');
     } catch (e) {
         deploySpinner.stop(styleText('red', 'Push failed.'));
@@ -186,9 +214,10 @@ async function doStatus() {
     const gitHead = runSilent('git log -1 --oneline');
     const branch = runSilent('git branch --show-current');
     const statusOut = runSilent('git status --short');
+    const releaseTag = runSilent('git describe --tags --always') || 'v010';
     const lines = statusOut ? statusOut.split('\n').filter(Boolean) : [];
 
-    let statusBody = `Branch:  ${branch || 'v5'}\nLatest:  ${gitHead || 'unknown'}\nChanges: ${lines.length} uncommitted file(s)\n`;
+    let statusBody = `Branch:  ${branch || 'v5'}\nRelease: ${releaseTag}\nLatest:  ${gitHead || 'unknown'}\nChanges: ${lines.length} uncommitted file(s)\n`;
     if (lines.length > 0) {
         statusBody += '\n' + lines.slice(0, 12).map(l => '  ' + l).join('\n');
         if (lines.length > 12) statusBody += `\n  ... and ${lines.length - 12} more`;
