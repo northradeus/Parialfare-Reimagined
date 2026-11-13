@@ -16,6 +16,7 @@
     "quartz": "./quartz/bootstrap-cli.mjs",
     "build:content": "node build-content.cjs",
     "build": "node build-content.cjs && npx quartz build",
+    "build:check": "node build-content.cjs --dry-run",
     "preview": "node build-content.cjs && npx quartz build --serve",
     "publish": "node build-content.cjs && git add -A && npx quartz sync",
     "status": "node cli/nolheim.mjs status",

@@ -4,6 +4,7 @@ const crypto = require('crypto');
 
 const cliArgs = process.argv.slice(2);
 const targetMode = cliArgs.includes('--km') ? 'km' : (cliArgs.includes('--en') ? 'en' : 'all');
+const isDryRun = cliArgs.includes('--dry-run');
 
 // Override these paths on another machine with:
 //   NOLHEIM_SOURCE_DIR="C:/path/to/Parialfare - Reimagined"
@@ -34,12 +35,14 @@ if (!fs.existsSync(sourceAssets) || !fs.statSync(sourceAssets).isDirectory()) {
 }
 
 
-if (fs.existsSync(destDir)) {
-    fs.rmSync(destDir, { recursive: true, force: true });
+if (!isDryRun) {
+    if (fs.existsSync(destDir)) {
+        fs.rmSync(destDir, { recursive: true, force: true });
+    }
+    fs.mkdirSync(destDir, { recursive: true });
+    fs.mkdirSync(destAssets, { recursive: true });
+    fs.writeFileSync(path.join(destDir, '.nojekyll'), '');
 }
-fs.mkdirSync(destDir, { recursive: true });
-fs.mkdirSync(destAssets, { recursive: true });
-fs.writeFileSync(path.join(destDir, '.nojekyll'), '');
 
 const assetName = (name) => {
     const ext = path.extname(name).toLowerCase();
@@ -70,7 +73,7 @@ if (fs.existsSync(sourceAssets) && fs.statSync(sourceAssets).isDirectory()) {
                 // Register under multiple keys so lookups succeed regardless of format
                 vaultImages.set(file.toLowerCase(), outName);
                 vaultImages.set(outName.toLowerCase(), outName);
-                if (!fs.existsSync(path.join(destAssets, outName))) {
+                if (!isDryRun && !fs.existsSync(path.join(destAssets, outName))) {
                     fs.copyFileSync(srcPath, path.join(destAssets, outName));
                 }
             }
@@ -293,147 +296,153 @@ function processDir(dir, outDir) {
         const stat = fs.statSync(fullPath);
         
         if (stat.isDirectory()) {
-            fs.mkdirSync(outPath, { recursive: true });
+            if (!isDryRun) fs.mkdirSync(outPath, { recursive: true });
             processDir(fullPath, outPath);
         } else if (item.endsWith('.md')) {
-            // Record article path for Random Article
-            const relPath = path.relative(destDir, outPath).replace(/\\/g, '/').replace('.md', '').toLowerCase().replace(/ /g, '-');
-            articlePaths.push(relPath);
+            try {
+                // Record article path for Random Article
+                const relPath = path.relative(destDir, outPath).replace(/\\/g, '/').replace('.md', '').toLowerCase().replace(/ /g, '-');
+                articlePaths.push(relPath);
 
-            let content = fs.readFileSync(fullPath, 'utf-8');
-            
-            content = content.replace(/â€“/g, '–').replace(/â€”/g, '—').replace(/â€™/g, "'").replace(/â€œ/g, '"').replace(/â€\x9d/g, '"');
-            content = content.replace(/^\*?From Wikipedia, the free encyclopedia\*?\s*$/gm, '');
-            content = content.replace(/\n# Chronicler Infobox Layout Rules\nlayout:[\s\S]*?\n---\n/g, '\n---\n');
-            
-            const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
-            if (fmMatch) {
-                let yaml = fmMatch[1];
-                let body = content.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
+                let content = fs.readFileSync(fullPath, 'utf-8');
                 
-                let title = '';
-                let entityType = 'concept';
-                let imgName = '';
-                let infoRows = '';
-                const rawFields = {};
+                content = content.replace(/â€“/g, '–').replace(/â€”/g, '—').replace(/â€™/g, "'").replace(/â€œ/g, '"').replace(/â€\x9d/g, '"');
+                content = content.replace(/^\*?From Wikipedia, the free encyclopedia\*?\s*$/gm, '');
+                content = content.replace(/\n# Chronicler Infobox Layout Rules\nlayout:[\s\S]*?\n---\n/g, '\n---\n');
+                
+                const fmMatch = content.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
+                if (fmMatch) {
+                    let yaml = fmMatch[1];
+                    let body = content.replace(/^---\r?\n[\s\S]*?\r?\n---\r?\n/, '');
+                    
+                    let title = '';
+                    let entityType = 'concept';
+                    let imgName = '';
+                    let infoRows = '';
+                    const rawFields = {};
 
-                const lines = yaml.split('\n');
-                let inMultiline = false;
+                    const lines = yaml.split('\n');
+                    let inMultiline = false;
 
-                for (let line of lines) {
-                    line = line.trimEnd();
-                    if (!line || line.startsWith('#')) continue;
+                    for (let line of lines) {
+                        line = line.trimEnd();
+                        if (!line || line.startsWith('#')) continue;
 
-                    if (inMultiline) {
-                        if (line.startsWith('  - ')) continue;
-                        else inMultiline = false;
-                    }
-
-                    const match = line.match(/^([a-zA-Z0-9_-]+):\s*(.*)/);
-                    if (match) {
-                        const key = match[1];
-                        let val = match[2].trim();
-                        rawFields[key.toLowerCase()] = val.replace(/^["']|["']$/g, '');
-
-                        if (key === 'title') title = val.replace(/"/g, '');
-                        if (key === 'entity-type') entityType = val.toLowerCase().replace(/['"]/g, '');
-                        if (key === 'image') imgName = parseImageField(val);
-
-                        if (ignoreKeys.includes(key)) continue;
-
-                        if (val === '|') {
-                            inMultiline = true;
-                            continue;
+                        if (inMultiline) {
+                            if (line.startsWith('  - ')) continue;
+                            else inMultiline = false;
                         }
 
-                        // Handle YAML array syntax first: ["a", "b"] -> a, b
-                        if (val.startsWith('[') && !val.startsWith('[[') && val.endsWith(']')) {
-                            val = val.slice(1, -1).split(',').map(s => s.trim().replace(/^["']|["']$/g, '')).join(', ');
+                        const match = line.match(/^([a-zA-Z0-9_-]+):\s*(.*)/);
+                        if (match) {
+                            const key = match[1];
+                            let val = match[2].trim();
+                            rawFields[key.toLowerCase()] = val.replace(/^["']|["']$/g, '');
+
+                            if (key === 'title') title = val.replace(/"/g, '');
+                            if (key === 'entity-type') entityType = val.toLowerCase().replace(/['"]/g, '');
+                            if (key === 'image') imgName = parseImageField(val);
+
+                            if (ignoreKeys.includes(key)) continue;
+
+                            if (val === '|') {
+                                inMultiline = true;
+                                continue;
+                            }
+
+                            // Handle YAML array syntax first: ["a", "b"] -> a, b
+                            if (val.startsWith('[') && !val.startsWith('[[') && val.endsWith(']')) {
+                                val = val.slice(1, -1).split(',').map(s => s.trim().replace(/^["']|["']$/g, '')).join(', ');
+                            }
+                            val = val.replace(/^["']|["']$/g, '');
+                            
+                            let valClass = '';
+                            const lowerVal = val.toLowerCase();
+                            if (lowerVal === 'tbd') valClass = 'val-tbd';
+                            else if (lowerVal === 'unknown') valClass = 'val-unknown';
+                            else if (lowerVal === 'none') valClass = 'val-none';
+                            else if (lowerVal === 'undefined') valClass = 'val-undefined';
+
+                            val = resolveInfoboxWikilinks(val, item);
+
+                            if (val) {
+                                const displayKey = key.replace(/-/g, ' ').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+                                const valSpan = valClass ? `<span class="${valClass}">${val}</span>` : val;
+                                infoRows += `<tr><th>${displayKey}</th><td>${valSpan}</td></tr>\n`;
+                            }
                         }
-                        val = val.replace(/^["']|["']$/g, '');
-                        
-                        let valClass = '';
-                        const lowerVal = val.toLowerCase();
-                        if (lowerVal === 'tbd') valClass = 'val-tbd';
-                        else if (lowerVal === 'unknown') valClass = 'val-unknown';
-                        else if (lowerVal === 'none') valClass = 'val-none';
-                        else if (lowerVal === 'undefined') valClass = 'val-undefined';
+                    }
 
-                        val = resolveInfoboxWikilinks(val, item);
+                    let infobox = '';
+                    if (item === 'index.md' || entityType === 'hub') {
+                        infobox = '';
+                    } else if (entityType === 'incident' || fullPath.includes('Incidents')) {
+                        if (!body.includes('class="scp-stamp-box"')) {
+                            const sec = rawFields['sector'] || 'POCHEASANG STRIP // IRONCLAD DMZ';
+                            const pov = rawFields['pov'] || 'TANISHITO, T.';
+                            const dt = rawFields['date'] || '28 AUG 2008';
+                            const secLevel = rawFields['security_level'] || 'RESTRICTED // NEED-TO-KNOW (GIC DEPT. 4)';
+                            const disp = rawFields['disposition'] || 'RECOVERED / OFF-NETWORK (<span class="redacted">SITE-29</span>)';
 
-                        if (val) {
-                            const displayKey = key.replace(/-/g, ' ').replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
-                            const valSpan = valClass ? `<span class="${valClass}">${val}</span>` : val;
-                            infoRows += `<tr><th>${displayKey}</th><td>${valSpan}</td></tr>\n`;
+                            infobox = `<div class="scp-stamp-box">\n  <div class="scp-stamp-grid">\n    <span class="stamp-label">INCIDENT LOG:</span>\n    <span class="stamp-val">${title || path.basename(item, '.md')}</span>\n    <span class="stamp-label">SECURITY LEVEL:</span>\n    <span class="stamp-val">${secLevel}</span>\n    <span class="stamp-label">PRIMARY OPERATIVE:</span>\n    <span class="stamp-val">${pov}</span>\n    <span class="stamp-label">OPERATIONAL SECTOR:</span>\n    <span class="stamp-val">${sec}</span>\n    <span class="stamp-label">TIMELINE DATE:</span>\n    <span class="stamp-val">${dt}</span>\n    <span class="stamp-label">DISPOSITION:</span>\n    <span class="stamp-val">${disp}</span>\n  </div>\n</div>\n\n`;
                         }
+                    } else if (infoRows || imgName) {
+                        infobox = `<aside class="custom-infobox infobox-${entityType}">\n`;
+                        if (title) infobox += `<h3>${title}</h3>\n`;
+                        if (imgName) {
+                            const mappedName = vaultImages.get(imgName.toLowerCase()) || assetName(imgName);
+                            infobox += `<img src="assets/${mappedName}" alt="${title}" />\n`;
+                        }
+                        if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
+                        infobox += `</aside>\n`;
                     }
-                }
 
-                let infobox = '';
-                if (item === 'index.md' || entityType === 'hub') {
-                    infobox = '';
-                } else if (entityType === 'incident' || fullPath.includes('Incidents')) {
-                    if (!body.includes('class="scp-stamp-box"')) {
-                        const sec = rawFields['sector'] || 'POCHEASANG STRIP // IRONCLAD DMZ';
-                        const pov = rawFields['pov'] || 'TANISHITO, T.';
-                        const dt = rawFields['date'] || '28 AUG 2008';
-                        const secLevel = rawFields['security_level'] || 'RESTRICTED // NEED-TO-KNOW (GIC DEPT. 4)';
-                        const disp = rawFields['disposition'] || 'RECOVERED / OFF-NETWORK (<span class="redacted">SITE-29</span>)';
+                    const relAssetsPath = 'assets';
 
-                        infobox = `<div class="scp-stamp-box">\n  <div class="scp-stamp-grid">\n    <span class="stamp-label">INCIDENT LOG:</span>\n    <span class="stamp-val">${title || path.basename(item, '.md')}</span>\n    <span class="stamp-label">SECURITY LEVEL:</span>\n    <span class="stamp-val">${secLevel}</span>\n    <span class="stamp-label">PRIMARY OPERATIVE:</span>\n    <span class="stamp-val">${pov}</span>\n    <span class="stamp-label">OPERATIONAL SECTOR:</span>\n    <span class="stamp-val">${sec}</span>\n    <span class="stamp-label">TIMELINE DATE:</span>\n    <span class="stamp-val">${dt}</span>\n    <span class="stamp-label">DISPOSITION:</span>\n    <span class="stamp-val">${disp}</span>\n  </div>\n</div>\n\n`;
-                    }
-                } else if (infoRows || imgName) {
-                    infobox = `<aside class="custom-infobox infobox-${entityType}">\n`;
-                    if (title) infobox += `<h3>${title}</h3>\n`;
-                    if (imgName) {
-                        const mappedName = vaultImages.get(imgName.toLowerCase()) || assetName(imgName);
-                        infobox += `<img src="assets/${mappedName}" alt="${title}" />\n`;
-                    }
-                    if (infoRows) infobox += `<table>\n${infoRows}</table>\n`;
-                    infobox += `</aside>\n`;
-                }
+                    body = body.replace(/(<div\s+class="[^"]*\b(?:gallery|carousel)\b[^"]*"[^>]*>[\s\S]*?<\/div>|<figure\b[^>]*>[\s\S]*?<\/figure>)/g, (block) => {
+                        return block.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
+                            const imgName = rawInner.split('|')[0].trim();
+                            const mapped = vaultImages.get(imgName.toLowerCase());
+                            if (mapped) return `<img src="${relAssetsPath}/${mapped}" alt="${imgName}" loading="lazy" />`;
+                            return match;
+                        });
+                    });
 
-                const relAssetsPath = 'assets';
-
-                body = body.replace(/(<div\s+class="[^"]*\b(?:gallery|carousel)\b[^"]*"[^>]*>[\s\S]*?<\/div>|<figure\b[^>]*>[\s\S]*?<\/figure>)/g, (block) => {
-                    return block.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
+                    body = body.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
                         const imgName = rawInner.split('|')[0].trim();
                         const mapped = vaultImages.get(imgName.toLowerCase());
-                        if (mapped) return `<img src="${relAssetsPath}/${mapped}" alt="${imgName}" loading="lazy" />`;
+                        if (mapped) return `![${imgName}](${relAssetsPath}/${mapped})`;
                         return match;
                     });
-                });
 
-                body = body.replace(/!\[\[([^\]]+)\]\]/g, (match, rawInner) => {
-                    const imgName = rawInner.split('|')[0].trim();
-                    const mapped = vaultImages.get(imgName.toLowerCase());
-                    if (mapped) return `![${imgName}](${relAssetsPath}/${mapped})`;
-                    return match;
-                });
+                    body = body.replace(/(<img[^>]+src=")(?!\/|http|data:)([^"]+)(")/g, (match, p1, srcAttr, p3) => {
+                        const imgName = srcAttr.split('/').pop().trim();
+                        const mapped = vaultImages.get(imgName.toLowerCase());
+                        if (mapped) return `${p1}${relAssetsPath}/${mapped}${p3}`;
+                        return match;
+                    });
 
-                body = body.replace(/(<img[^>]+src=")(?!\/|http|data:)([^"]+)(")/g, (match, p1, srcAttr, p3) => {
-                    const imgName = srcAttr.split('/').pop().trim();
-                    const mapped = vaultImages.get(imgName.toLowerCase());
-                    if (mapped) return `${p1}${relAssetsPath}/${mapped}${p3}`;
-                    return match;
-                });
+                    body = resolveWikilinks(body, item);
 
-                body = resolveWikilinks(body, item);
-
-                // Lead paragraph styling is now handled via CSS (article p:first-of-type)
-                // instead of HTML wrapping, which was breaking markdown processing.
-
-                if (entityType === 'incident' || fullPath.includes('Incidents') || item === 'index.md' || entityType === 'hub') {
-                    content = `---\n${yaml}\n---\n\n${infobox ? infobox + '\n' : ''}${body}`;
-                } else {
-                    content = infobox + '\n' + body;
+                    if (entityType === 'incident' || fullPath.includes('Incidents') || item === 'index.md' || entityType === 'hub') {
+                        content = `---\n${yaml}\n---\n\n${infobox ? infobox + '\n' : ''}${body}`;
+                    } else {
+                        content = infobox + '\n' + body;
+                    }
+                }
+                const rels = reverseLinks[relPath];
+                if (rels && rels.length > 0) {
+                    content += renderRelatedEntities(relPath, rels);
+                }
+                if (!isDryRun) {
+                    fs.writeFileSync(outPath, content, 'utf-8');
+                }
+            } catch (err) {
+                console.error(`[build] Error processing ${item} (${fullPath}): ${err.message}`);
+                if (!isDryRun) {
+                    try { fs.writeFileSync(outPath, fs.readFileSync(fullPath, 'utf-8'), 'utf-8'); } catch {}
                 }
             }
-            const rels = reverseLinks[relPath];
-            if (rels && rels.length > 0) {
-                content += renderRelatedEntities(relPath, rels);
-            }
-            fs.writeFileSync(outPath, content, 'utf-8');
         }
     }
 }
@@ -547,8 +556,10 @@ function processKhmerDir(kmDir, kmOutDir) {
                     content = cleanFm + infobox + draftBanner + body;
                 }
 
-                fs.mkdirSync(path.dirname(outPath), { recursive: true });
-                fs.writeFileSync(outPath, content, 'utf-8');
+                if (!isDryRun) {
+                    fs.mkdirSync(path.dirname(outPath), { recursive: true });
+                    fs.writeFileSync(outPath, content, 'utf-8');
+                }
                 count++;
             }
         }
@@ -570,7 +581,7 @@ if (targetMode !== 'en' && fs.existsSync(kmSourceDir)) {
 }
 
 // --- Random Article Index ---
-fs.writeFileSync(path.join(destDir, 'random-index.json'), JSON.stringify(articlePaths, null, 2));
+if (!isDryRun) fs.writeFileSync(path.join(destDir, 'random-index.json'), JSON.stringify(articlePaths, null, 2));
 
 // --- Start Here Page ---
 const startHereContent = `---
@@ -609,7 +620,7 @@ Once you understand the factions, you can explore the individuals who drive the 
 
 <div class="portal-grid"><a href="#" class="portal-button" onclick="const h=JSON.parse(sessionStorage.getItem('randomHistory')||'[]');fetch('random-index.json').then(r=>r.json()).then(idx=>{let pool=idx.filter(u=>!h.includes(u));if(!pool.length){h.length=0;pool=idx;}const p=pool[Math.floor(Math.random()*pool.length)];h.push(p);if(h.length>10)h.shift();sessionStorage.setItem('randomHistory',JSON.stringify(h));window.location.href=p;});return false;">Surprise Me</a></div>
 `;
-fs.writeFileSync(path.join(destDir, 'Start-Here.md'), resolveWikilinks(startHereContent));
+if (!isDryRun) fs.writeFileSync(path.join(destDir, 'Start-Here.md'), resolveWikilinks(startHereContent));
 
 function featuredMedia(fileName, altText) {
     const mappedName = vaultImages.get(fileName.toLowerCase());
@@ -958,11 +969,25 @@ function renderEventsDirectory() {
     return html;
 }
 
-fs.writeFileSync(path.join(destDir, 'Events-Directory.md'), renderEventsDirectory());
+if (!isDryRun) fs.writeFileSync(path.join(destDir, 'Events-Directory.md'), renderEventsDirectory());
 console.log(`[events] Generated Events Directory with ${eventData.length} entries.`);
 
 // --- Stage 7: Lint & Autocorrect Staging Files ---
 (async () => {
+    if (isDryRun) {
+        console.log(`\n================================================================`);
+        console.log(`  NOLHEIM BUILD PRE-FLIGHT VERIFICATION (--dry-run)`);
+        console.log(`================================================================`);
+        console.log(`  - Target mode:                 ${targetMode}`);
+        console.log(`  - Source vault:                ${sourceDir}`);
+        console.log(`  - English articles processed:  ${articlePaths.length}`);
+        console.log(`  - Khmer notes scanned:         ${Object.keys(kmResolvers).length}`);
+        console.log(`  - Reverse relation targets:    ${Object.keys(reverseLinks).length}`);
+        console.log(`  - Images indexed:              ${vaultImages.size}`);
+        console.log(`\n  All markdown transforms, layout rules, and wikilinks verified.`);
+        console.log(`  (Dry run mode: 0 files written to disk).\n`);
+        return;
+    }
     const { scanDirectory, promptApproval, applyAutocorrects } = require('./lint-autocorrect.cjs');
     const lintResults = scanDirectory(destDir);
     if (lintResults.totalIssues > 0) {

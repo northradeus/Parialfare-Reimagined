@@ -17,3 +17,5 @@ content/km/assets/
 studio/studio-config.json
 studio/.snapshots/
 studio/chat_sessions/
+.content-staging/
+.content-previous/
